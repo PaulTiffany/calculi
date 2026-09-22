@@ -8,6 +8,12 @@ The original explanatory text is licensed under [CC BY 4.0](LICENSE.md). Source 
 
 Teach the calculus, name the people and sources that made it possible, and distinguish source claims from pedagogical reconstruction.
 
+## Pantheon map
+
+| Page | Main lineage |
+|---|---|
+| [The Pantheon of Calculi](PANTHEON.md) | comparative pedagogical synthesis across analysis, geometry, logic, computation, proof theory, process algebra, AI action formalisms, databases, and distinction-centered systems |
+
 ## Beginner foundation
 
 | Page | Main lineage |
