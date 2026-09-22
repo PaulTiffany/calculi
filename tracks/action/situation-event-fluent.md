@@ -1,79 +1,71 @@
-# Track — Situation, Event, and Fluent Calculi: Reasoning About Change in Worlds
+# Track — Situation, Event, and Fluent Calculi: What Changes After an Action?
 
-## Need
+**Start with:** statements that can be true or false.\
+**By the end:** describe an action's effects and name an assumption about what stays unchanged.
 
-An intelligent system often needs to reason about statements such as:
+## A worked example
 
-- the door is closed now;
-- opening it changes what is true later;
-- some facts persist unless an event changes them;
-- actions have preconditions and effects.
+A cupboard starts closed. A cup is inside it. Someone opens the cupboard.
 
-This is not primarily a problem of numerical differentiation.
+In our small model, opening changes the door's state and does not move the cup.
 
-It is a problem of **logical change through action and time**.
+| Fact | Before | After |
+|---|---|---|
+| Door is closed | True | False |
+| Cup is inside | True | True |
 
-## Situation calculus
+Reasoning needs both kinds of information: **what changes** and **what persists**.
 
-### World
+A **fluent** is a property whose truth or value can vary with the situation or time.
 
-The classical situation-calculus tradition represents world states or action histories using **situations**.
+## Three related approaches
 
-Actions transform one situation into another.
+| Calculus | What it brings into focus | Typical question |
+|---|---|---|
+| Situation calculus | Actions and the histories or situations they produce | What holds after this sequence of actions? |
+| Event calculus | Events, times, and facts they initiate or terminate | What holds between these events? |
+| Fluent calculus | States described through fluents and their updates | Which parts of the state change, and which remain? |
 
-### Primitive intuition
+They address related problems with different formal machinery. “Fluent” is used across this area, not only in the calculus with that name.
 
-If \(s\) is a situation and \(a\) an action, then a term such as
-\[
+## Try it somewhere else
+
+A parcel starts on a shelf. Someone scans its label.
+
+Must the parcel now be somewhere else? Give one model where its location stays the same and one where an extra action changes it.
+
+<details>
+<summary>Check your reasoning</summary>
+
+A scan-only model updates the parcel's record but leaves its location unchanged.
+
+A model that includes “scan, then move to the conveyor” changes the location through the additional move. We must state that action; the word “scan” alone does not imply it.
+
+This repeats the cupboard question: which effects have our rules actually specified?
+
+</details>
+
+<details>
+<summary>Optional notation — successors and persistence</summary>
+
+In a common situation-calculus presentation,
+
+$$
 do(a,s)
-\]
-denotes the successor situation after performing \(a\) in \(s\), in common presentations.
+$$
 
-Fluents are properties whose truth can depend on the situation.
+denotes the successor situation after action $a$ in situation $s$. Fluent statements can depend on that situation.
 
-### Characteristic question
+Event-calculus presentations use rules about events initiating or terminating fluents and about persistence between relevant events.
 
-> What becomes true after an action?
+The **frame problem** asks how to represent what actions leave unchanged without listing every unaffected fact separately for every action. Fluent-calculus state updates offer one formal treatment.
 
-The situation calculus traces to McCarthy's work on formalizing common-sense reasoning about action, with McCarthy and Hayes (1969) as an early accessible source.
+Persistence follows from the model's rules and assumptions; it is not simply “anything unmentioned must be true.”
 
-## Event calculus
-
-### World
-
-Event calculus foregrounds events, time, and **fluents** whose truth is initiated or terminated by events.
-
-Characteristic questions include:
-
-- when did an event happen?
-- what did it initiate?
-- what did it terminate?
-- what persists between events?
-
-Kowalski and Sergot introduced the original event calculus in the 1980s.
-
-## Fluent calculus
-
-Fluent-calculus approaches place strong emphasis on representing changing state via fluents and solving frame-style problems about what remains unchanged.
-
-## Why these are calculi
-
-The formal moves are logical rather than differential.
-
-They provide disciplined rules for transforming or deriving descriptions of evolving worlds.
-
-## Boundary
-
-These calculi do not automatically model concurrent communication topology the way π-calculus does, nor observer-resolution limits the way distinction or bounded-observer formalisms may.
-
-## Relation label
-
-Situation, event, and fluent calculi belong in the same **problem constellation**—reasoning about action and change—but their exact historical and formal relations must be stated source by source.
-
-Do not draw one as a simple descendant of another without evidence.
+</details>
 
 ## Sources
 
-- John McCarthy and Patrick J. Hayes, “Some Philosophical Problems from the Standpoint of Artificial Intelligence,” 1969.
-- Robert Kowalski and Marek Sergot, foundational event-calculus work, 1986.
-- Stanford Encyclopedia of Philosophy, “Logic-Based Artificial Intelligence.”
+The cupboard and parcel examples are original. See McCarthy and Hayes (1969) for situation-calculus foundations; Kowalski and Sergot, *A Logic-based Calculus of Events* (1986); and Thielscher, [*From Situation Calculus to Fluent Calculus*](https://www.cse.unsw.edu.au/~mit/Papers/AIJ99.pdf) (1999). Full records are in [References](../../REFERENCES.md#situation-event-and-fluent-calculi).
+
+[Home](../../README.md) · [Action family](../../PANTHEON.md#7-actions-events-and-changing-worlds) · [Compare with quantity models](../../lessons/08-comparison.md)

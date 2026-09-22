@@ -1,72 +1,78 @@
-# Track — Sequent Calculus: Proof as a Calculus
+# Track — Sequent Calculus: Proof as Careful Steps
 
-## Need
+**Start with:** reading an “if … then …” statement.\
+**By the end:** distinguish what follows from assumptions from what merely sounds plausible.
 
-How can deduction itself become the object of a formal transformation system?
+## A worked example
 
-Gentzen's sequent calculi answer by making inferential contexts explicit.
+Assume these two statements:
 
-## World
+1. If this jar is sealed, then it is labeled.
+2. This jar is sealed.
 
-A sequent has the schematic form
-\[
-\Gamma\vdash\Delta,
-\]
-where \(\Gamma\) and \(\Delta\) are collections or sequences of formulas, depending on the system.
+We may conclude: **this jar is labeled**.
 
-Intuitively, the left side records assumptions and the right side records conclusions or alternatives justified from them.
+A **proof** makes each allowed step explicit. A **sequent** records what follows from a collection of assumptions. Sequent calculus gives precise rules for building such proofs.
 
-## Primitive
+## Try it
 
-The key objects are:
+Keep the first assumption, but change the second to “this jar is labeled.”
 
-- formulas;
-- contexts;
-- sequents;
-- inference rules.
+Can you now conclude that it is sealed?
 
-Logical connectives are governed by rules for how they enter or leave relevant positions in a sequent.
+<details>
+<summary>Check your reasoning</summary>
 
-## Move — inference rule
+No. A labeled jar could be open. That possibility agrees with the first assumption, so the proposed conclusion is not guaranteed.
 
-A proof is a tree of rule applications.
+The direction of the implication matters.
 
-For example, a rule may transform premises containing \(A\) and \(B\) into a conclusion containing \(A\land B\).
+</details>
 
-The characteristic motion is not numerical change but **licensed derivation**.
+## Try it somewhere else
 
-## Cut
+“If the printer is out of paper, its warning light is on.” You see the light.
 
-One of the central structural ideas is the cut rule: roughly, if one derivation establishes an intermediate formula and another uses it, the derivations can be composed through that formula.
+What would you need before concluding that the printer is out of paper?
 
-Gentzen's cut-elimination theorem shows, for his systems, that proofs using cuts can be transformed into cut-free proofs.
+<details>
+<summary>Check and connect</summary>
 
-That makes **proof normalization itself** a kind of computation.
+You would need a rule or evidence ruling out other causes, such as a jam. The given statement supplies only one direction.
 
-## Why this matters for the atlas
+This has the same structure as the jar example. Changing the nouns does not repair the inference.
 
-Sequent calculus makes a point that classical-calculus intuition can obscure:
+</details>
 
-> a calculus can be about valid transformation rather than quantity.
+<details>
+<summary>Optional notation — sequents, rules, and cut</summary>
 
-This prepares the conceptual ground for λ-reduction and process transition systems.
+A sequent is often written
 
-## Relation to natural deduction
+$$
+\Gamma\vdash\Delta.
+$$
 
-**Historical/formal sibling relation.**
+The left side records assumptions. The right side records conclusions or alternatives, depending on the chosen system.
 
-Gentzen developed both natural-deduction and sequent calculi to analyze proof.
+For a single-conclusion system, an AND rule can take this form:
 
-They organize inferential structure differently.
+$$
+\frac{\Gamma\vdash A\qquad\Gamma\vdash B}{\Gamma\vdash A\land B}.
+$$
 
-## Relation to λ-calculus
+Read it as: if the same assumptions establish $A$ and establish $B$, they establish both.
 
-Through Curry–Howard-style correspondences, proof normalization and program reduction can be related very deeply.
+A proof is a tree of rule applications. The **cut rule** lets one proof supply an intermediate result used by another. Gentzen's cut-elimination results show how to remove such cuts in his systems.
 
-But a particular correspondence must be stated precisely; “proofs are programs” is a slogan until the types, logic, and translation are named.
+Proof rules justify conclusions from assumptions. Establishing that the assumptions describe a real jar or printer is a further task.
 
-## Sources
+</details>
 
-- Gerhard Gentzen, foundational papers on natural deduction and sequent calculus, 1934–35.
-- Stanford Encyclopedia of Philosophy, “Natural Deduction Systems in Logic.”
-- Stanford Encyclopedia of Philosophy, “Proof Theory.”
+## Connections and sources
+
+Gerhard Gentzen developed both natural deduction and sequent calculi in 1934–35. They organize proofs differently. Particular logic/type correspondences also connect proof normalization with computation; see [Relations](../../RELATIONS.md).
+
+The jar and printer examples are original illustrations of valid and invalid inference. See [References](../../REFERENCES.md#proof-calculi) for Gentzen and later expositions.
+
+[Home](../../README.md) · [Logic family](../../PANTHEON.md#4-logic-and-formal-reasoning) · [Next: types and constructions](../types/calculus-of-constructions.md)

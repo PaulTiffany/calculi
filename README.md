@@ -2,185 +2,56 @@
 
 *Uncovering the pyramid.*
 
-A pedagogy-first atlas of calculi: what each calculus takes as primitive, what it lets us do, and what becomes expressible as the formal world grows richer.
+A beginner's atlas of mathematical rulebooks. Learn what each calculus works with, try one of its moves, and use the idea somewhere new.
 
-**Open educational resource:** original pedagogical material in this repository is licensed [CC BY 4.0](LICENSE.md). Source works retain their own rights and are attributed through lesson-local sources, the [Attribution Ledger](ATTRIBUTION.md), and the [References](REFERENCES.md).
+## Start with things you know
 
-## The pyramid
+No calculus is required. Start with counting, simple multiplication, and curiosity.
 
-A calculus is a disciplined way of transforming or reasoning about something.
+1. [Things Change](start/01-things-change.md) — tell a rate from a total.
+2. [What Calculus Does](start/02-what-calculus-does.md) — connect small changes to a total, even when the rate varies.
+3. [Why Are There Many Calculi?](start/03-why-many-calculi.md) — choose a rulebook by the question you want to answer.
 
-The pedagogical pyramid asks a simple question:
+After these pages, you should be able to explain **what calculus does and why there is more than one kind**, using your own example.
 
-> **What must become expressible before the next kind of calculus makes sense?**
+## The pyramid: build understanding, then branch
 
-```mermaid
-flowchart BT
-    A["Quantity & change<br/>differential · integral · finite difference · variational · stochastic · fractional"] --> B["Geometry & fields<br/>vector · tensor · exterior · Ricci"]
-    B --> C["Logic & symbolic rules<br/>propositional · predicate · combinatory · λ"]
-    C --> D["Proof & types<br/>natural deduction · sequents · System F · CoC · CIC"]
-    D --> E["Interaction & concurrency<br/>CCS · CSP · ACP · π · join · ambient · spi · ψ · ρ"]
-    E --> F["Actions, events & data<br/>situation · event · fluent · relational"]
-    F --> G["Distinction & observation<br/>indications · distinction graphs · Fuzzy"]
-```
+The foundation is familiar experience. Each layer adds a question we can ask more carefully. Choose a route that interests you; the layers are a teaching frame, not a prerequisite chain or historical family tree.
 
-This is a **teaching order**, not a single historical family tree. Historical relationships are sourced where they matter.
+| Layer | A question to explore | Where to go |
+|---|---|---|
+| Quantity and change | How fast? How much? Which path? | [Classical](lessons/01-classical-calculus.md), [variational](tracks/change/variational-calculus.md), [stochastic](tracks/change/stochastic-calculus.md) |
+| Geometry and fields | What changes across space or a surface? | [Vector, tensor, exterior, and Ricci calculus](PANTHEON.md#2-geometry-and-fields) |
+| Logic, symbols, and computation | What follows? What does this instruction do? | [Logic map](PANTHEON.md#4-logic-and-formal-reasoning), [λ-calculus](lessons/02-lambda.md) |
+| Proof and types | Which steps fit together into a proof? | [Sequents](tracks/proof/sequent-calculus.md), [Calculus of Constructions](tracks/types/calculus-of-constructions.md) |
+| Interaction | Who can communicate? Can instructions themselves be passed? | [π-calculus](lessons/03-pi.md), then [ρ-calculus](lessons/04-rho.md) |
+| Actions and data | What stays true after an event? Which records match? | [Action calculi](tracks/action/situation-event-fluent.md), [relational calculus](PANTHEON.md#8-data-and-relations) |
+| Distinction and observation | What can be separated, noticed, or recovered? | [Indications](lessons/05-indications.md), [distinction graphs](lessons/06-distinction-graphs.md), [Fuzzy Calculus](lessons/07-fuzzy.md) |
 
-## Start here — no calculus required
+The **[Pantheon of Calculi](PANTHEON.md)** also covers finite differences, fractional calculus, operators, and other major families. Linked entries lead to lessons; other entries are short introductions to topics for future study.
 
-The first three pages assume no prior calculus and target roughly an **8th-grade reading level**.
+Prefer a guided tour? Follow the **Next** links from [classical calculus](lessons/01-classical-calculus.md). Each lesson states what it assumes. Formal notation is in optional sections.
 
-1. [Things Change](start/01-things-change.md)
-2. [What Calculus Does](start/02-what-calculus-does.md)
-3. [Why Are There Many Calculi?](start/03-why-many-calculi.md)
+## Make the idea travel
 
-If those make sense, enter the pyramid:
+Use this rhythm: **read an example → predict → check why → try a new setting**.
 
-4. [Classical calculus — local change and accumulation](lessons/01-classical-calculus.md)
-5. [λ-calculus — abstraction, application, substitution](lessons/02-lambda.md)
-6. [π-calculus — communication that changes connectivity](lessons/03-pi.md)
-7. [ρ-calculus — reflection in a process world](lessons/04-rho.md)
-8. [Calculus of indications — distinction as operation](lessons/05-indications.md)
-9. [Distinction graphs — distinguishability relative to an observer](lessons/06-distinction-graphs.md)
-10. [Fuzzy Calculus — bounded observation and residual recovery](lessons/07-fuzzy.md)
-11. [Comparing calculi](lessons/08-comparison.md)
+- [Try It Somewhere New](PRACTICE.md): short challenges with explained answers, plus a reusable activity for a learner or teacher.
+- [Comparing Calculi](lessons/08-comparison.md): compare the objects, moves, and results of two rulebooks.
+- [What Makes a Calculus Formal?](lessons/00-what-is-a-calculus.md): an optional bridge from everyday examples to precise rules.
 
-Optional bridge: [What makes a calculus formal?](lessons/00-what-is-a-calculus.md)
+You can speak, sketch, or write your answers. The text and tables stand on their own; videos are optional. See [Media and Learning Modes](MEDIA.md).
 
-The core path is intentionally short. It is a guided tour, not the whole pantheon. For the wider map, see **[The Pantheon of Calculi](PANTHEON.md)**.
+## Sources and reuse
 
-## Learn in more than one mode
+Original teaching material is **[CC BY 4.0](LICENSE.md)**. You may copy and adapt it with attribution. Cited works retain their own rights.
 
-Core lessons use a lean rhythm:
+Lessons name their sources and identify invented examples and analogies. Use [References](REFERENCES.md) for reading, [Attribution](ATTRIBUTION.md) for provenance, and [Relations](RELATIONS.md) for formal connections between calculi.
 
-**Read → See → Do → Check → Watch (optional)**
-
-The text remains complete on its own. Diagrams, exercises, and external media change cognitive mode rather than carry essential claims. See [MEDIA.md](MEDIA.md).
-
-## Major families
-
-The fuller pantheon is grouped by the kind of thing being transformed.
-
-### Quantity and change
-
-- differential and integral calculus
-- multivariable and vector calculus
-- finite-difference calculus
-- [calculus of variations](tracks/change/variational-calculus.md)
-- [stochastic calculus](tracks/change/stochastic-calculus.md)
-- fractional calculus
-
-### Geometry and fields
-
-- tensor calculus
-- exterior calculus
-- Ricci calculus
-- differential geometry
-
-### Logic, symbols, and computation
-
-- propositional calculus
-- predicate calculus
-- combinatory logic
-- λ-calculus — [core lesson](lessons/02-lambda.md)
-- typed λ-calculi, System F, and differential λ-calculus
-
-### Proof and types
-
-- natural deduction
-- [sequent calculus](tracks/proof/sequent-calculus.md)
-- [Calculus of Constructions](tracks/types/calculus-of-constructions.md)
-- Calculus of Inductive Constructions
-
-### Interaction and concurrency
-
-- CCS, CSP, ACP
-- π-calculus — [core lesson](lessons/03-pi.md)
-- join calculus, ambient calculus
-- stochastic π, spi, applied π
-- ψ-calculi
-- ρ-calculus — [core lesson](lessons/04-rho.md)
-
-### Actions, events, and data
-
-- [situation, event, and fluent calculi](tracks/action/situation-event-fluent.md)
-- relational calculus
-
-### Operators and advanced mathematical calculi
-
-- functional calculus
-- Malliavin calculus
-- operational calculus
-- umbral calculus
-- calculus of fractions
-- Goodwillie calculus
-
-### Distinction and observation
-
-- calculus of indications — [core lesson](lessons/05-indications.md)
-- distinction graphs — [core lesson](lessons/06-distinction-graphs.md)
-- Fuzzy Calculus — [core lesson](lessons/07-fuzzy.md)
-
-For plain-language one-line explanations of these, see [PANTHEON.md](PANTHEON.md).
-
-## Reading level
-
-The main path is written so an interested 8th-grade reader can follow the **idea** before meeting the formal notation. Technical terms are introduced only when they earn their keep. Equations may deepen a lesson, but the plain-language explanation must stand on its own.
-
-## One teaching frame
-
-Every lesson should answer seven questions:
-
-1. **Need** — what problem made this calculus useful?
-2. **World** — what sort of things exist inside it?
-3. **Primitive** — what does it assume before anything else?
-4. **Move** — what is the characteristic operation or rewrite?
-5. **Toy example** — what happens in the smallest useful case?
-6. **Boundary** — what does the calculus not give us for free?
-7. **Relations** — what does it inherit, encode, extend, or resemble?
-
-## The recurring layers
-
-| Layer | Question |
-|---|---|
-| **Objects** | What exists? |
-| **Distinctions** | What differences matter? |
-| **Operations** | What can happen? |
-| **Composition** | How do moves combine? |
-| **Observation** | What counts as the same outcome? |
-| **Boundary** | What is not native here? |
-
-Different calculi answer these differently. That is the point.
-
-## Source discipline
-
-The atlas is synthetic, but not anonymous.
-
-- originators and primary sources are named;
-- modern corrections stay visible;
-- encodings are not treated as identities;
-- pedagogical analogies are labeled as analogies;
-- original examples are distinguished from source claims.
-
-See [ATTRIBUTION.md](ATTRIBUTION.md), [RELATIONS.md](RELATIONS.md), and [REFERENCES.md](REFERENCES.md).
-
-## Repository guides
-
-- [Pantheon of Calculi](PANTHEON.md)
-- [Media and learning modes](MEDIA.md)
-- [Relation Ledger](RELATIONS.md)
-- [Attribution Ledger](ATTRIBUTION.md)
-- [Glossary](GLOSSARY.md)
-- [References](REFERENCES.md)
-- [Contributing](CONTRIBUTING.md)
-- [Citation metadata](CITATION.cff)
-
-## License
-
-Except where otherwise noted, original pedagogical material in this repository is licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
-
-Third-party works cited or discussed here are not relicensed by this repository.
+**Teaching or contributing?** Keep the main explanation near an 8th-grade reading level. See [Contributing](CONTRIBUTING.md) for the shared lesson frame. Terms are collected in the [Glossary](GLOSSARY.md).
 
 Preferred credit:
 
 > Paul Carver Tiffany III, *Calculi: A Pedagogy-First Atlas of Calculi*, 2026, https://github.com/PaulTiffany/calculi, CC BY 4.0.
+
+[Citation metadata](CITATION.cff)

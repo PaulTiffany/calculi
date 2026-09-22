@@ -21,13 +21,14 @@ Teach the calculus, name the people and sources that made it possible, and disti
 | [Things Change](start/01-things-change.md) | original pedagogical introduction using everyday examples |
 | [What Calculus Does](start/02-what-calculus-does.md) | original pedagogical explanation of standard derivative/integral ideas |
 | [Why Are There Many Calculi?](start/03-why-many-calculi.md) | comparative pedagogical synthesis |
+| [Try It Somewhere New](PRACTICE.md) | original transfer challenges, explanations, and teaching prompts |
 
 ## Core lesson attribution
 
 | Lesson | Main lineage |
 |---|---|
 | [00 — What Makes a Calculus Formal?](lessons/00-what-is-a-calculus.md) | comparative pedagogical synthesis |
-| [01 — Classical Calculus](lessons/01-classical-calculus.md) | Newton/Leibniz tradition; modern analysis |
+| [01 — Classical Calculus](lessons/01-classical-calculus.md) | Newton/Leibniz tradition; modern analysis, including Strang–Herman (OpenStax) |
 | [02 — λ-Calculus](lessons/02-lambda.md) | Alonzo Church and subsequent λ-calculus literature |
 | [03 — π-Calculus](lessons/03-pi.md) | Robin Milner, Joachim Parrow, David Walker |
 | [04 — ρ-Calculus](lessons/04-rho.md) | Meredith/Radestock; later analysis including Lybech |
@@ -44,7 +45,7 @@ Teach the calculus, name the people and sources that made it possible, and disti
 | [Stochastic Calculus](tracks/change/stochastic-calculus.md) | Itô tradition and modern stochastic integration |
 | [Sequent Calculus](tracks/proof/sequent-calculus.md) | Gerhard Gentzen and proof theory |
 | [Calculus of Constructions](tracks/types/calculus-of-constructions.md) | Thierry Coquand and Gérard Huet |
-| [Situation / Event / Fluent Calculi](tracks/action/situation-event-fluent.md) | McCarthy/Hayes; Kowalski/Sergot; later fluent-calculus literature |
+| [Situation / Event / Fluent Calculi](tracks/action/situation-event-fluent.md) | McCarthy/Hayes; Kowalski/Sergot; Thielscher |
 
 ## Pedagogical reconstruction
 

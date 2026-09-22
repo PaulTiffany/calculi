@@ -4,10 +4,10 @@ The atlas should feel **layered**, not merely long.
 
 Every core lesson may use up to five modes:
 
-1. **Read** — the compact formal explanation.
+1. **Read** — the idea in plain language, with notation added only when needed.
 2. **See** — one diagram, graph, or spatial representation.
-3. **Do** — one worked or interactive exercise.
-4. **Check** — one collapsible answer, misconception test, or retrieval prompt.
+3. **Do** — follow a worked example, then predict a small variation.
+4. **Check** — reveal the reasoning, then carry the rule into a different setting.
 5. **Watch / listen** — at most one optional external item when it materially improves intuition.
 
 ## Constraint: one of each, not a gallery
@@ -15,7 +15,7 @@ Every core lesson may use up to five modes:
 A core lesson should generally contain:
 
 - one visual;
-- one activity;
+- one compact activity sequence, with a new setting to try;
 - one optional media item;
 - one misconception;
 - one forward question.
@@ -31,8 +31,8 @@ Prefer formats GitHub can render and version directly:
 - Mermaid diagrams;
 - Markdown tables;
 - equations;
-- small ASCII diagrams;
-- collapsible \`<details>\` exercises.
+- small plots when numbers or trends matter;
+- collapsible `<details>` exercises.
 
 These are searchable, diffable, accessible to text-based tools, and easy to preserve.
 
@@ -67,28 +67,31 @@ Original diagrams created for this atlas are covered by the repository's CC BY 4
 
 A mature lesson can look like:
 
-> **In one sentence**  
+> **In one sentence**\
 > What the calculus changes.
 
-**Read** — native explanation.
+**Read** — plain-language explanation and one worked example.
 
 **See** — one visual.
 
-**Do** — one small operation.
+**Do** — predict one small operation before revealing its answer.
 
 <details>
 <summary>Check your answer</summary>
 
-A compact explanation.
+A compact explanation of why the answer follows.
 
 </details>
 
-> **Do not confuse**  
-> One neighboring concept that looks similar but is formally different.
+**Try it somewhere else** — change the objects or the setting. Ask which rule still applies and which assumption matters.
+
+**Optional notation** — use a separate details block for formulas and deeper results.
 
 **Watch — optional** — one attributed external resource.
 
-> **What the next layer notices**  
-> One question this calculus leaves open.
+> **Next question**\
+> One useful route onward, with a link.
 
 The structure is a rhythm, not a mandatory visual template. Variation between lessons is encouraged when the subject calls for it.
+
+The [practice page](PRACTICE.md) can be used aloud, on paper, or on screen. These are ways to vary the activity; no learner needs to be assigned a fixed learning style.

@@ -1,102 +1,78 @@
-# 05 — Calculus of Indications: Distinction as Operation
+# 05 — Calculus of Indications: Working with a Mark
 
-## Need
+**Start with:** recognizing whether marks are beside or inside one another.\
+**By the end:** use two rules and explain why arrangement matters.
 
-What if we begin not with numbers, functions, or processes, but with the act of making a distinction?
+## The idea
 
-G. Spencer-Brown's *Laws of Form* develops a formal system around marking a boundary and reasoning with marked and unmarked states.
+G. Spencer-Brown's *Laws of Form* begins with making a **distinction**. A mark indicates a boundary. The formalism develops rules for marked and unmarked forms.
 
-This tradition is often called the **calculus of indications**.
+For this lesson, we write the mark as a pair of parentheses. **()** is one empty mark. **(())** is a mark inside another mark. This is a text stand-in for the source's graphical notation.
 
-## World
+## Two rules to see and use
 
-The world begins with a distinction between a marked side and an unmarked side.
+These are the elementary rules for empty forms:
 
-Rather than assuming a rich pre-existing vocabulary of objects, the formalism asks what can be generated from the act of distinction itself.
+| Arrangement | Rule | Result |
+|---|---|---|
+| **()()** — two empty marks side by side | **Calling:** a repeated indication has the value of one | **()** |
+| **(())** — one empty mark inside another | **Crossing:** the two nested marks have the unmarked value | Blank space |
 
-## Primitive
+Blank space is the unmarked form. It is not the numeral zero.
 
-The primitive operation is introduced through **drawing a distinction**.
+The rules depend on arrangement. Two marks beside one another and two nested marks have different values.
 
-A mark indicates that a distinction has been made.
+## A worked example
 
-Spencer-Brown then develops an arithmetic and algebra of forms governed by transformation laws.
+Start with **() (())**.
 
-## Two famous laws
+The nested part **(())** has the unmarked value by crossing. The other **()** remains. The result is **()**.
 
-Terminology varies across expositions, but two central simplifications are traditionally associated with:
+We changed a formal expression by a rule. We did not count the ink or erase a physical boundary.
 
-- **calling** — repeated indication can collapse;
-- **crossing** — crossing a boundary twice can cancel back toward the unmarked state.
+## Try it
 
-The exact graphical notation is best learned from *Laws of Form* itself.
+Simplify **() (()) ()**. Name the rule you use at each step.
 
-The pedagogical point is that formal calculation can arise from **boundary operations** rather than from arithmetic quantity.
+<details>
+<summary>Check your reasoning</summary>
 
-## Why it belongs in this atlas
+Crossing removes the nested pair's contribution, leaving **() ()**. Calling gives **()**.
 
-Classical calculus asks:
+Both rules were needed: first nesting, then repetition.
 
-> How does a quantity change?
+</details>
 
-λ-calculus asks:
+## Try it somewhere else
 
-> How does an application reduce?
+Write the same expressions on separate cards. Move the cards farther apart without changing which marks are inside which.
 
-π-calculus asks:
+Should that spacing change the value? Now redraw the two side-by-side empty marks as one nested inside the other. Should that change it?
 
-> How do processes interact?
+<details>
+<summary>Check and connect</summary>
 
-The calculus of indications asks:
+Spacing alone does not change these forms' arrangement. The same rules still apply.
 
-> **What follows once a distinction is made?**
+Changing side-by-side marks to nested marks does change the relevant structure: calling gives a mark, while crossing gives the unmarked value.
 
-That makes it an important comparison point for later distinction-centered formalisms.
+You carried the rules across a new physical presentation by preserving the arrangement that matters.
 
-## Self-reference and re-entry
+</details>
 
-Later parts of *Laws of Form* investigate re-entry of a form into itself.
+<details>
+<summary>Optional depth — forms and re-entry</summary>
 
-This is one reason the work became influential beyond mathematical logic, including cybernetics and theories of observation.
+Spencer-Brown develops an arithmetic and an algebra of forms beyond these two empty examples. Later parts of *Laws of Form* investigate **re-entry**, where a form enters into itself.
 
-But historical influence must be documented case by case. Similar language about boundaries is not enough to infer descent.
+The two rules above provide a starting operation. They do not, on their own, specify how a sensor or person distinguishes physical objects. [Distinction graphs](06-distinction-graphs.md) make that a separate formal question.
 
-## Boundary
+Historical influence and formal translations need their own sources; the shared word “distinction” does not establish either relationship.
 
-A distinction calculus does not automatically specify:
-
-- a particular observer;
-- what that observer can resolve;
-- a metric of perceptual similarity;
-- dynamics of changing observational resolution;
-- differential/integral operators.
-
-Those require additional structure.
-
-This boundary is especially important when we move next to distinction graphs.
-
-## Checkpoint
-
-Explain the conceptual difference between:
-
-\[
-\text{a number changing}
-\]
-
-and
-
-\[
-\text{a distinction being drawn}.
-\]
-
-Then ask:
-
-> Could there be a distinction without an observer?
-
-Do not answer yet. Carry the question into the next lessons.
+</details>
 
 ## Sources
 
-- G. Spencer-Brown, *Laws of Form*, Allen & Unwin, 1969.
+The text notation and exercises are teaching reconstructions. The source is G. Spencer-Brown, *Laws of Form* (1969), especially the primary arithmetic. Louis H. Kauffman's [*Laws of Form: An Exploration in Mathematics and Foundations*](https://homepages.math.uic.edu/~kauffman/Laws.pdf) provides diagrams and further discussion. See [References](../REFERENCES.md#calculus-of-indications).
 
-See [../REFERENCES.md](../REFERENCES.md).
+[← ρ-calculus](04-rho.md) · [Home](../README.md) · [Next: distinction graphs →](06-distinction-graphs.md)

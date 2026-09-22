@@ -1,102 +1,78 @@
-# 04 — ρ-Calculus: Reflection in a Process World
+# 04 — ρ-Calculus: Instructions That Can Be Passed Around
 
-## Need
+**Start with:** [processes, names, and messages](03-pi.md).\
+**By the end:** distinguish a process, a name made from its description, and the use of that description as behavior.
 
-The π-calculus gives us mobile communication through names.
+## The idea
 
-A further question is:
+A recipe can be written on a card, handed to someone, and followed later. Holding the card and cooking the meal are different activities.
 
-> What if process structure itself can participate in naming and reflection?
+This is an analogy for **reflection**: a formal system can treat descriptions of its own processes as things it can work with.
 
-The **ρ-calculus** (Reflective Higher-Order Calculus), associated with Meredith and Radestock, explores that direction.
+In **ρ-calculus**, pronounced “rho calculus,” names are made by **quoting processes**. Such names can participate in communication. A **drop** operation lets a process represented by a name become behavior.
 
-## World
+## Follow the roles
 
-Like π-calculus, ρ-calculus is a world of concurrent processes and communication.
+| Role in the calculus | Recipe-card analogy |
+|---|---|
+| A process $P$ | Instructions for doing something |
+| Its quoted name $@P$ | Those instructions represented on a card |
+| Communication involving that name | Passing the card |
+| Dropping a received quoted process | Using the represented instructions as behavior |
 
-But names are **structured** rather than merely assumed as an inexhaustible stock of atomic identifiers.
+The card is a teaching aid. In the formal calculus, quoting is a precise construction of a name from process syntax.
 
-The calculus includes reflective operations commonly described using quote/lift and drop-like mechanisms: processes may be represented in names, and represented processes may re-enter process behavior.
+## Try it
 
-## Primitive intuition
+Suppose a process sends a quoted description of another process. The receiver keeps the name for later.
 
-In a non-reflective process calculus we might have a process \(P\) and a name \(x\).
+Has the described process necessarily run just because its name was received? What additional use of the name would bring its behavior into play?
 
-Reflection invites a relation of the form
-\[
-P \mapsto @P,
-\]
-where a representation of process \(P\) may serve in name position, together with an operation that can turn suitable named structure back into behavior.
+<details>
+<summary>Check your reasoning</summary>
 
-Exact syntax depends on the presentation.
+Receiving a name does not by itself run the process it represents. The receiver's behavior must use the name through the calculus's drop mechanism.
 
-The important lesson is conceptual:
+The useful distinction is between **having a representation** and **using it as behavior**.
 
-> the boundary between “program” and “name of program” becomes operational.
+</details>
 
-## Why this matters
+## Try it somewhere else
 
-Reflection makes self-reference and metaprogramming native in a way that ordinary name passing does not.
+A music player receives a stored set of playback instructions. It can keep the instructions or use them to play a tune.
 
-Modern analyses emphasize unusual features of ρ including:
+Which parts resemble the card example? What would we need to specify before claiming a formal model?
 
-- structured names;
-- runtime generation of free names;
-- lack of the ordinary π-calculus scoping operator for fresh names.
+<details>
+<summary>Check and connect</summary>
 
-These differences complicate apparently simple claims about translating π into ρ.
+Stored instructions resemble a representation; using them to control playback resembles bringing represented instructions into behavior.
 
-## An important pedagogical correction
+To build a formal model, we would need to specify the processes, how their quoted names are formed, and the communication and drop rules. Merely sending an ordinary file is not enough to establish an encoding in ρ-calculus.
 
-A common slogan is:
+</details>
 
-> “ρ is just π plus reflection.”
+<details>
+<summary>Optional depth — structured names and translation results</summary>
 
-That is useful intuition but poor scholarship if treated as a theorem.
+Meredith and Radestock's reflective higher-order calculus makes names from quoted processes, instead of starting with an independent stock of atomic names. This ties naming to process structure.
 
-Meredith and Radestock proposed an encoding of an asynchronous fragment of π into ρ. Later work identified errors in that encoding and supplied a new correctness proof under carefully stated encodability criteria.
+The language differs from ordinary π-calculus in more than one operator. Features include structured names, runtime generation of free names, and the absence of the ordinary π restriction operator.
 
-So this atlas records the relationship as:
+Meredith and Radestock proposed an encoding of an asynchronous π fragment. Lybech's later analysis identifies errors in that encoding and gives a corrected encoding with stated preservation criteria. It also proves a separation in the reverse direction under its chosen criteria.
 
-- **historical / structural relation:** very strong;
-- **formal encoding:** available for specified fragments under specified criteria;
-- **identity:** not claimed.
+An **encoding** is a formal translation. Its claim depends on the source fragment, target language, and behavior it preserves. See [Relations](../RELATIONS.md).
 
-## Separation matters too
+</details>
 
-Recent work also gives a separation result showing that, under the chosen encodability criteria, ρ cannot be encoded back into π.
+## A question to carry forward
 
-That kind of result is more informative than saying one calculus “feels more expressive.”
+Which matters for your task: sending an address, sending a representation of a process, or bringing represented behavior into play?
 
-## Boundary
-
-Reflection does not automatically give us observer-relative perception, finite measurement resolution, thermodynamic irreversibility, or a differential/integral theory.
-
-Those require additional primitives.
-
-## Bridge toward distinction
-
-Reflection asks:
-
-> What happens when a system can operate on representations of its own processes?
-
-Distinction-based systems ask a different question:
-
-> What happens when making or failing to make a distinction is itself primitive?
-
-The themes can interact, but neither should be silently collapsed into the other.
-
-## Checkpoint
-
-1. Why are structured names conceptually different from a stock of atomic names?
-2. What is gained by making quote/drop-like reflection operational?
-3. Why is “π can be encoded into ρ” a stronger claim than “ρ resembles π”?
-4. Why should an encoding theorem always name the fragment and preservation criterion?
+Naming those roles makes this idea useful beyond a particular notation. Questions about which differences can be noticed lead to the later lessons on distinction and observation.
 
 ## Sources
 
-- Stian Lybech, “Encodability and Separation for a Reflective Higher-Order Calculus,” 2022.
-- Stian Lybech, “The Reflective Higher-Order Calculus: Encodability, Typability and Separation,” 2024.
-- Meredith and Stay, “Name-Free Combinators for Concurrency,” 2017.
+The recipe and music examples are original analogies. See Meredith and Radestock, *A Reflective Higher-order Calculus* (2005), and Lybech, [*Encodability and Separation for a Reflective Higher-Order Calculus*](https://arxiv.org/abs/2209.02356) (2022), with its 2024 journal development. Full records are in [References](../REFERENCES.md#ρ-calculus-and-reflective-process-calculi).
 
-See [../REFERENCES.md](../REFERENCES.md).
+[← π-calculus](03-pi.md) · [Home](../README.md) · [Next: calculus of indications →](05-indications.md)

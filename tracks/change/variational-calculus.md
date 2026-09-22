@@ -1,88 +1,63 @@
-# Track — Calculus of Variations: Change the Whole Path
+# Track — Calculus of Variations: Choose a Whole Path
 
-## Need
+**Start with:** [rates and functions](../../lessons/01-classical-calculus.md).\
+**By the end:** explain how choosing a path differs from choosing one number.
 
-Ordinary calculus often asks what happens when a number changes.
+## The idea
 
-Calculus of variations asks a different question:
+Lay a loose string between two fixed points on a flat table. You can bend it into many routes.
 
-> **What happens when the thing we vary is an entire function or path?**
+If the only goal is the shortest length, and nothing blocks the way, a straight route wins. We are comparing **whole paths**.
 
-This is the natural formal world for problems such as finding shortest paths, least-action trajectories, and extrema of functionals.
+A **functional** assigns a number to a function or path. Path length is one example. Calculus of variations studies how that score changes when we vary the whole candidate.
 
-## World
+## Try it somewhere else
 
-Instead of a function
-\[
-f(x)
-\]
-whose output is a number, consider a **functional**
-\[
-J[y],
-\]
-whose input is itself a function \(y\).
+You are laying a cable across a flat floor. The endpoints stay fixed, but a cabinet blocks the straight route.
 
-A classical form is
-\[
-J[y]=\int_{a}^{b}L(x,y(x),y'(x))\,dx.
-\]
+Can you keep the old answer? What changed: the goal, the allowed paths, or both?
 
-The object being optimized is therefore not one point \(x\), but an entire candidate curve \(y\).
+<details>
+<summary>Check your reasoning</summary>
 
-## Primitive move — variation
+The straight route is no longer allowed. If the goal remains shortest length, the goal is unchanged but the set of allowed paths has changed.
 
-Perturb the candidate path:
-\[
-y(x)\mapsto y(x)+\varepsilon \eta(x),
-\]
-where \(\eta\) is an allowed variation.
+The “shortest path is straight” answer depended on an unobstructed setting. A new constraint changes the problem.
 
-Then ask how \(J[y]\) responds as \(\varepsilon\to0\).
+</details>
 
-The first variation plays a role analogous to a derivative, but now in a space of functions.
+<details>
+<summary>Optional notation — variation and the Euler–Lagrange equation</summary>
 
-## Characteristic equation
+A common functional is
 
-For the classical unconstrained problem, stationary paths satisfy the Euler–Lagrange equation:
-\[
+$$
+J[y]=\int_a^b L(x,y(x),y'(x))\,dx.
+$$
+
+Its input is a function $y$; its output is a number. Vary the input by
+
+$$
+y(x)\mapsto y(x)+\varepsilon\eta(x),
+$$
+
+where $\eta$ is an allowed change of shape. With fixed endpoints, require $\eta(a)=\eta(b)=0$.
+
+Under the usual smoothness assumptions, a stationary path satisfies
+
+$$
 \frac{\partial L}{\partial y}
--
-\frac{d}{dx}
-\frac{\partial L}{\partial y'}
-=0.
-\]
+-\frac{d}{dx}\frac{\partial L}{\partial y'}=0.
+$$
 
-The crucial conceptual jump is:
+“Stationary” means the first variation vanishes. Further work is needed to establish a minimum, maximum, or neither, and to handle constraints.
 
-> a derivative-like operation now acts on a functional by varying its function-valued argument.
+</details>
 
-## Toy example
+## Connection and sources
 
-The shortest path between two points in the Euclidean plane is a straight line.
+This extends classical calculus by varying a function-valued input. The string and cable examples are original teaching illustrations.
 
-One can express path length as a functional and derive the condition satisfied by an extremizing curve.
+See I. M. Gel'fand and S. V. Fomin, *Calculus of Variations* (1963), and Gilbert Strang's [“Calculus of Variations,” MIT OpenCourseWare](https://ocw.mit.edu/courses/18-086-mathematical-methods-for-engineers-ii-spring-2006/e94c05947ed036cd6ad0150102087062_am72.pdf).
 
-The familiar geometric answer emerges from a calculus over whole paths.
-
-## Boundary
-
-Calculus of variations does not by itself make probability, communication, proof, or observation primitive.
-
-It is still an analytic calculus of change—but the object of change has moved up a level.
-
-## Relation to classical calculus
-
-**Extension/refinement.**
-
-Classical derivatives are essential ingredients, but the optimization object is now a function or trajectory.
-
-## Pedagogical bridge
-
-This track teaches an important lesson for the entire atlas:
-
-> changing the **type of object being transformed** can create a genuinely new calculus even when familiar derivative ideas remain inside it.
-
-## Sources
-
-- Encyclopedia of Mathematics, “Variational calculus.”
-- I. M. Gel'fand and S. V. Fomin, *Calculus of Variations*.
+[Home](../../README.md) · [Change family](../../PANTHEON.md#1-quantity-motion-and-change) · [Try stochastic calculus](stochastic-calculus.md)

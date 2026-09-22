@@ -1,138 +1,108 @@
-# 07 — Fuzzy Calculus: Bounded Observation and Residual Recovery
+# 07 — Fuzzy Calculus: Change Through Bounded Observation
 
-## In one sentence
+**Start with:** [rates and reconstruction](01-classical-calculus.md). [Distinction graphs](06-distinction-graphs.md) provide another useful entry.\
+**By the end:** explain why rebuilding an observed record may leave details of its source unresolved.
 
-Fuzzy Calculus asks what happens to differentiation and integration when they are performed through a **bounded observational interface** rather than from an ideal view from nowhere.
+## The idea
 
-## Need
+In Paul Tiffany's **Fuzzy Calculus**, the act and limits of observation enter the rules for change and reconstruction.
 
-Classical calculus usually treats the quantity being differentiated or integrated as directly available.
+A record may retain some distinctions and lose others. The question is: what change can be observed, what can be recovered, and what mismatch remains?
 
-But an observer may have finite resolution, a bounded domain, a perceptual kernel, and observer-relative derivations.
+A **residue** records a specified mismatch. It can have structure even when nothing random happens.
 
-If access is filtered, the derivative available to the observer need not be identical to an ideal derivative. The mismatch can itself become mathematical data.
+## A worked example of limited access
 
-## World
+A recorder stores only the average of each pair of readings.
 
-A *Principia Symbolica* formulation equips a bounded observer \(O\) with structures such as
+| Original pair | Recorded average |
+|---|---|
+| 0, 2 | 1 |
+| 1, 1 | 1 |
 
-\[
-(K_O,\delta_O,\mathcal B_O),
-\]
+The record is the same for two different pairs.
 
-where \(K_O\) is an observer kernel, \(\delta_O\) an observer-relative derivation, and \(\mathcal B_O\) a bounded perceptual domain.
+Suppose our rebuilding rule repeats the average twice. From the record 1, it produces **1, 1**.
 
-A related kernel action is
+- For the original **0, 2**, the mismatch “rebuilt minus original” is **+1, −1**.
+- For the original **1, 1**, the mismatch is **0, 0**.
 
-\[
-\mathcal K_O[X](x)=\int_M K_O(x-y)X(y)\,d\mu(y).
-\]
+We can calculate those mismatches because this table shows the originals. Someone given only the average cannot know which mismatch occurred.
 
-The observer therefore acts on a filtered or projected field.
+This is an original, discrete teaching example of lost distinctions. It illustrates a recovery question; it does not implement the full Fuzzy Calculus.
 
-## Primitive
+## Try it
 
-The primitive concern is not uncertainty in the abstract, but **bounded access to change**.
-
-The calculus asks:
-
-> What derivative is realizable for this observer?
-
-## Move I — Differentiate
-
-\[
-f\mapsto\widetilde D_O f.
-\]
-
-## Move II — Integrate
-
-\[
-g\mapsto\widetilde I_O g.
-\]
-
-Now ask whether integration exactly reconstructs what differentiation removed.
-
-A residual formulation has the shape
-
-\[
-\widetilde I_O\widetilde D_O f=f+R_O[f],
-\]
-
-where \(R_O\) records the recovery defect.
-
-## See it
-
-```mermaid
-flowchart LR
-    A["field f"] --> B["bounded observation Π_O f"]
-    B --> C["observer derivative D̃_O"]
-    C --> D["observer integral Ĩ_O"]
-    D --> E["reconstruction + residue R_O"]
-```
-
-The point is not that every observation produces a large error. The point is that **failure of exact recovery is represented instead of discarded**.
-
-## Fuzzy FTC and Stokes
-
-The AGI-26 companion materials include a reduced curve-local **Fuzzy Fundamental Theorem of Calculus** and an **Observer-Relative Stokes** result with bulk and boundary residues.
-
-The associated geometric language includes data such as
-
-\[
-(E,h_O,\nabla_O),
-\]
-
-together with kernel scale, connection, and observer-relative curvature.
-
-This extends the familiar local/global question:
-
-> How are local change and accumulated change related when the observation process itself is bounded?
-
-## Do it
-
-Imagine a sharp step signal viewed through a smoothing kernel.
-
-1. The underlying signal changes abruptly.
-2. The observed signal changes gradually across the kernel width.
-3. Differentiate the observed signal.
-4. Integrate that derivative back.
-
-What information might fail to return exactly?
+Find another pair whose average is 1. Could any rule given only that average always recover the exact original pair?
 
 <details>
 <summary>Check your reasoning</summary>
 
-The observer may recover the smoothed transition rather than the original infinitely sharp step.
+**−1, 3** is another pair.
 
-The difference between the original and the recoverable reconstruction is the kind of structure a residue term is meant to track.
+No single answer based only on the average can be correct for all these originals. Exact recovery would need more observations or assumptions that restrict which originals are possible.
 
-This is a pedagogical example, not the full theorem.
+A residue can name what is missing without making that missing information available.
 
 </details>
 
-> **Do not confuse:** observer-relative residue with generic random noise. A residue can be systematic and structured even in a deterministic observation model.
+## Try it somewhere else
 
-## Boundary
+A recorder keeps only the total rainfall for each day. Can you tell whether rain fell steadily or in one short shower?
 
-Fuzzy Calculus does not by itself supply a complete theory of cognition, identity, or agency.
+What extra record would help? Would hourly totals answer every question about minute-by-minute rain?
 
-Its native question is narrower: **how bounded observation changes the calculus of local change, accumulation, transport, and recovery**.
+<details>
+<summary>Check and connect</summary>
 
-## Relations
+A daily total leaves the timing unresolved. Hourly totals give finer detail, but different patterns within an hour may still share the same total.
 
-Useful neighboring formalisms include classical differential and integral calculus, convolution and signal-processing mathematics, differential geometry and holonomy, stochastic and fuzzy mathematics, and observer-relative distinction formalisms.
+Ask which distinctions each observation retains. A finer record can answer more questions without answering every possible question.
 
-These relations are worth comparing, but none should be assumed to be an identity.
+</details>
 
-## What the next layer notices
+<details>
+<summary>Optional depth — the native calculus and its sources</summary>
 
-If observation alters what can be reconstructed, then repeated observation and transport can accumulate history.
+Book IV of *Principia Symbolica* includes a bounded-observer construction with kernel, derivation, and domain:
 
-That makes path dependence, curvature, and holonomy natural next questions.
+$$
+(K_O,\delta_O,\mathcal B_O).
+$$
+
+Its observer-kernel convolution uses
+
+$$
+\mathcal K_O[X](x)=\int_M K_O(x-y)X(y)\,d\mu(y),
+$$
+
+with $x-y$ interpreted in a local chart or suitable ambient group structure. This describes how observation acts on a field.
+
+The Book IV Fuzzy Fundamental Theorem states an integral-of-derivative relation of the form
+
+$$
+\int_O^\gamma D_O f
+= f(\gamma(b))-f(\gamma(a))+H_O(\gamma,f).
+$$
+
+Here $\gamma$ is a path, $a,b$ its endpoint parameters, and $H_O$ the construction's path-dependent correction. Its definitions and assumptions belong to the source theorem.
+
+The AGI-26 Figure 2 companion develops a reduced, curve-local FFTC and an Observer-Relative Stokes theorem with bulk and boundary residues. Its bundle, connection, and regularity assumptions specify that geometric setting.
+
+**Recovering which object?** If $g$ is a sufficiently smooth observed field, ordinary calculus can still give
+
+$$
+g(x)=g(a)+\int_a^x g'(t)\,dt.
+$$
+
+This recovers $g$. Recovering the field from which $g$ was observed is another question. The averaging example illustrates why those targets must be named separately.
+
+</details>
 
 ## Sources
 
-- Paul Carver Tiffany III, *Principia Symbolica*, especially the bounded-observer and observer-kernel constructions.
-- Paul Carver Tiffany III, *The Hypothesis Surface: An Operational Epistemology for Autonomous Research*, AGI-26 supplementary materials, especially the FFTC / Observer-Relative Stokes companion.
+Paul Carver Tiffany III, *Principia Symbolica*, Book IV: **Bounded Observer**, **Observer-Kernel Convolution**, and **Fuzzy Fundamental Theorem of Calculus**. Read the [source chapter](https://github.com/PaulTiffany/Principia-Symbolica/blob/main/src/book4.tex) or the [structured atlas](https://paultiffany.github.io/Principia-Symbolica/atlas/).
 
-See [../REFERENCES.md](../REFERENCES.md).
+For the geometric development, see the [Figure 2 companion](https://github.com/PaulTiffany/hypothesis-surface-agi26/blob/master/supplementary/fig2_companion_fftc.tex). Full references are in [References](../REFERENCES.md#fuzzy-calculus--bounded-observer-geometry).
+
+[← Distinction graphs](06-distinction-graphs.md) · [Home](../README.md) · [Next: compare and reuse →](08-comparison.md)
