@@ -1,191 +1,138 @@
 # 07 — Fuzzy Calculus: Bounded Observation and Residual Recovery
 
-## Status
+## In one sentence
 
-**Fuzzy Calculus is an active research program by Paul Carver Tiffany III.**
-
-This lesson presents the documented construction conservatively. It does not claim that observer-relative distinction, boundary mathematics, or fuzzy mathematics originated here.
-
-The comparison target is narrower:
-
-> What calculus results when differentiation and integration are performed through a bounded observational interface, so exact recovery may leave structured residue?
+Fuzzy Calculus asks what happens to differentiation and integration when they are performed through a **bounded observational interface** rather than from an ideal view from nowhere.
 
 ## Need
 
-Classical calculus often idealizes access to the quantity being differentiated or integrated.
+Classical calculus usually treats the quantity being differentiated or integrated as directly available.
 
-But an actual observer may have:
+But an observer may have finite resolution, a bounded domain, a perceptual kernel, and observer-relative derivations.
 
-- finite resolution;
-- a bounded domain;
-- a perceptual kernel;
-- observer-relative derivations.
-
-Then the operation available to the observer need not be identical to an ideal view-from-nowhere derivative.
-
-The mismatch itself can contain information.
+If access is filtered, the derivative available to the observer need not be identical to an ideal derivative. The mismatch can itself become mathematical data.
 
 ## World
 
-A documented *Principia Symbolica* formulation gives a bounded observer \(O\) structures including:
+A *Principia Symbolica* formulation equips a bounded observer \(O\) with structures such as
+
 \[
 (K_O,\delta_O,\mathcal B_O),
 \]
-where:
 
-- \(K_O\) is an observer kernel;
-- \(\delta_O\) is an observer-relative derivation;
-- \(\mathcal B_O\) is a bounded perceptual domain.
+where \(K_O\) is an observer kernel, \(\delta_O\) an observer-relative derivation, and \(\mathcal B_O\) a bounded perceptual domain.
 
-A related observer-kernel convolution is:
+A related kernel action is
+
 \[
-\mathcal K_O[X](x)
-=
-\int_M K_O(x-y)X(y)\,d\mu(y).
+\mathcal K_O[X](x)=\int_M K_O(x-y)X(y)\,d\mu(y).
 \]
 
-The observer therefore accesses a filtered / projected field rather than an unqualified global field.
+The observer therefore acts on a filtered or projected field.
 
-## Primitive question
+## Primitive
 
-Classical calculus asks:
+The primitive concern is not uncertainty in the abstract, but **bounded access to change**.
 
-> What is \(df\)?
+The calculus asks:
 
-Fuzzy Calculus asks:
+> What derivative is realizable for this observer?
 
-> **What derivative is realizable for this bounded observer, and what is lost when we later try to reconstruct from it?**
+## Move I — Differentiate
 
-That shifts observer limitation from “measurement error added after the mathematics” into the formal object itself.
-
-## Move I — Observer-relative differentiation
-
-Schematically:
 \[
 f\mapsto\widetilde D_O f.
 \]
 
-The tilde matters: this is not asserted to be an omniscient derivative. It is a derivative available through the observer's bounded interface.
+## Move II — Integrate
 
-## Move II — Observer-relative integration
-
-Likewise:
 \[
 g\mapsto\widetilde I_O g.
 \]
 
-The central question is whether integration perfectly inverts differentiation.
+Now ask whether integration exactly reconstructs what differentiation removed.
 
-In the fuzzy formulation, generally we track a defect:
+A residual formulation has the shape
+
 \[
-\widetilde I_O\widetilde D_O f
-=
-f + R_O[f]
+\widetilde I_O\widetilde D_O f=f+R_O[f],
 \]
-or an equivalent residue formulation appropriate to the formal context.
 
-The residue \(R_O\) is not merely swept away. It becomes part of the calculus.
+where \(R_O\) records the recovery defect.
 
-## Fuzzy Fundamental Theorem of Calculus
+## See it
 
-The AGI-26 companion materials contain a reduced, curve-local **Fuzzy Fundamental Theorem of Calculus** and an **Observer-Relative Stokes** result with bulk and boundary residues.
+```mermaid
+flowchart LR
+    A["field f"] --> B["bounded observation Π_O f"]
+    B --> C["observer derivative D̃_O"]
+    C --> D["observer integral Ĩ_O"]
+    D --> E["reconstruction + residue R_O"]
+```
 
-The associated bundle formalism includes observer-relative data such as:
+The point is not that every observation produces a large error. The point is that **failure of exact recovery is represented instead of discarded**.
+
+## Fuzzy FTC and Stokes
+
+The AGI-26 companion materials include a reduced curve-local **Fuzzy Fundamental Theorem of Calculus** and an **Observer-Relative Stokes** result with bulk and boundary residues.
+
+The associated geometric language includes data such as
+
 \[
 (E,h_O,\nabla_O),
 \]
-kernel scale \(s_O\), connection \(A_O\), and curvature \(\kappa_O\).
 
-The pedagogical theme is:
+together with kernel scale, connection, and observer-relative curvature.
 
-> local change and accumulation still interact, but bounded observation can leave a structured recovery defect.
+This extends the familiar local/global question:
 
-## Curvature and path dependence
+> How are local change and accumulated change related when the observation process itself is bounded?
 
-*Principia Symbolica* also defines observer-dependent symbolic curvature using observer-specific operators.
+## Do it
 
-The larger research program connects curvature to failures of path-independent transport.
+Imagine a sharp step signal viewed through a smoothing kernel.
 
-This makes **holonomy** a natural question:
+1. The underlying signal changes abruptly.
+2. The observed signal changes gradually across the kernel width.
+3. Differentiate the observed signal.
+4. Integrate that derivative back.
 
-> if information is transported around a loop of transformations, does it return unchanged?
+What information might fail to return exactly?
 
-When it does not, the mismatch is geometric data rather than merely an implementation bug.
+<details>
+<summary>Check your reasoning</summary>
 
-## Relation to distinction graphs
+The observer may recover the smoothed transition rather than the original infinitely sharp step.
 
-This is the most important comparison in the current atlas.
+The difference between the original and the recoverable reconstruction is the kind of structure a residue term is meant to track.
 
-Goertzel's published distinction graph begins schematically with:
-\[
-O\longrightarrow D_O.
-\]
+This is a pedagogical example, not the full theorem.
 
-Given an observer, build the observer-relative indistinguishability structure.
+</details>
 
-Fuzzy Calculus emphasizes additional generative structure around the observer interface:
-\[
-K_O,\delta_O,\mathcal B_O
-\longrightarrow
-\text{observer-relative differentiation / integration / residue}.
-\]
-
-A useful research question is whether an induced equivalence
-\[
-x\sim_O y
-\quad\Longleftrightarrow\quad
-\Pi_O(x)=\Pi_O(y)
-\]
-recovers a distinction graph as a **derived observable** of an observer projection.
-
-That is a proposed bridge to investigate, not an established identity of formalisms.
-
-## A deeper open issue: does the observer come first?
-
-*Principia Symbolica* also contains a stronger ontological program in which stable observerhood is intended to emerge from prior differentiation/reflection dynamics.
-
-That claim must be evaluated on its own formal assumptions.
-
-It differs from merely saying:
-
-> “all information is observer-relative.”
-
-The key research question is:
-
-> **Can observerhood itself be derived rather than assumed?**
-
-This atlas will keep that question separate from the already-established existence of observer-relative distinction formalisms.
+> **Do not confuse:** observer-relative residue with generic random noise. A residue can be systematic and structured even in a deterministic observation model.
 
 ## Boundary
 
-Fuzzy Calculus should not claim priority for:
+Fuzzy Calculus does not by itself supply a complete theory of cognition, identity, or agency.
 
-- distinction as a mathematical primitive;
-- observer-relative information in general;
-- fuzzy sets or fuzzy logic;
-- all bounded-observer mathematics.
+Its native question is narrower: **how bounded observation changes the calculus of local change, accumulation, transport, and recovery**.
 
-Its identifiable contribution must be stated through its specific operators, assumptions, residue theorems, geometric structures, and dated artifacts.
+## Relations
 
-## Checkpoint
+Useful neighboring formalisms include classical differential and integral calculus, convolution and signal-processing mathematics, differential geometry and holonomy, stochastic and fuzzy mathematics, and observer-relative distinction formalisms.
 
-Compare:
-\[
-x\sim_O y
-\]
-with
-\[
-\widetilde I_O\widetilde D_O f=f+R_O[f].
-\]
+These relations are worth comparing, but none should be assumed to be an identity.
 
-What question does each equation answer?
+## What the next layer notices
 
-Why might the first be derivable from a projection while the second requires additional calculus structure?
+If observation alters what can be reconstructed, then repeated observation and transport can accumulate history.
+
+That makes path dependence, curvature, and holonomy natural next questions.
 
 ## Sources
 
-- Paul Carver Tiffany III, *Principia Symbolica*, Book IV atlas.
+- Paul Carver Tiffany III, *Principia Symbolica*, especially the bounded-observer and observer-kernel constructions.
 - Paul Carver Tiffany III, *The Hypothesis Surface: An Operational Epistemology for Autonomous Research*, AGI-26 supplementary materials, especially the FFTC / Observer-Relative Stokes companion.
-- Ben Goertzel, “Distinction Graphs and Graphtropy,” 2019, for the explicit antecedent on observer-relative distinguishability.
 
 See [../REFERENCES.md](../REFERENCES.md).
