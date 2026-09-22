@@ -2,6 +2,19 @@
 
 Contributions are welcome when they improve the atlas without flattening the distinctions among calculi.
 
+## Readability
+
+The main learning path targets roughly an **8th-grade reading level** for the plain-language explanation.
+
+- explain the idea before the notation;
+- define a technical term when it first appears;
+- prefer short sentences and concrete examples;
+- keep one main idea per paragraph;
+- equations may add precision, but the prose must still explain what they mean;
+- do not make prior calculus knowledge a hidden prerequisite.
+
+Advanced tracks may become more technical, but they should keep a plain-language entry point.
+
 ## Required lesson structure
 
 New substantive lessons should address:
