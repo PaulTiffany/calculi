@@ -1,24 +1,21 @@
 # Relation Ledger
 
-Every edge in the Calculi cosmology should eventually appear here.
+This ledger records cross-calculus relations that are useful for teaching.
 
-| From | To | Relation type | Status | Evidence / caution |
-|---|---|---|---|---|
-| CCS / process algebra | π-calculus | historical influence; extension/refinement | established | Milner–Parrow–Walker explicitly position π as extending the process-algebra tradition with mobility |
-| λ-calculus | π-calculus | formal encoding | established, formulation-dependent | Milner tutorial and subsequent process-calculus literature |
-| π-calculus | ρ-calculus | historical/structural relation; formal encoding for specified fragment | established with caveat | earlier encoding had errors; Lybech gives corrected analysis/encoding |
-| ρ-calculus | π-calculus | formal encoding | separation result under specified criteria | do not write as an unconditional absolute impossibility |
-| calculus of indications | distinction-centered formalisms | historical/structural comparison | case-by-case | influence must be sourced for each descendant |
-| distinction graph | Dynamic Distinction Graph | extension/refinement | established | Goertzel 2019 |
-| distinction graphs | Fuzzy Calculus | structural analogy | established as comparison only | both are observer-relative; primitives and operators differ |
-| bounded observer projection | distinction graph | conjectured bridge | open | prove whether projection-induced equivalence satisfies intended graph semantics |
-| Fuzzy Calculus | d-calculus | unknown | deferred | d-calculus not yet publicly specified enough for faithful mapping |
+| From | To | Relation | Note |
+|---|---|---|---|
+| classical calculus | calculus of variations | extension / refinement | the object of variation becomes an entire function or path |
+| classical calculus | stochastic calculus | extension / refinement | integration and change are adapted to stochastic paths |
+| λ-calculus | typed λ-calculi | extension / refinement | types constrain admissible terms and applications |
+| λ-calculus | π-calculus | formal encoding | specified λ-computations can be represented using communicating processes |
+| CCS / process algebra | π-calculus | historical influence / extension | mobility and name-passing enlarge the process-algebra picture |
+| π-calculus | ρ-calculus | historical / formal relation | reflective structured names change the process world; encoding results require precise criteria |
+| natural deduction / sequent calculus | typed λ traditions | proof-theoretic correspondence | Curry–Howard-style correspondences depend on the chosen logic and type system |
+| calculus of indications | distinction-centered formalisms | historical / structural comparison | source the specific influence when claiming ancestry |
+| distinction graph | Dynamic Distinction Graph | extension / refinement | Goertzel 2019 adds dynamic/causal structure |
 
-## Rule
+## Rule of thumb
 
-No new arrow goes into the main README map until:
+When drawing an arrow, say what kind of arrow it is: historical influence, formal encoding, extension or refinement, proof-theoretic correspondence, or structural analogy.
 
-1. it appears here;
-2. the relation type is named;
-3. evidence is supplied;
-4. limitations are stated.
+That is enough rigor for a pedagogical atlas without turning every lesson into a provenance dispute.
