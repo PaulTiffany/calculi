@@ -12,7 +12,26 @@ A calculus becomes easier to understand when we ask:
 
 Some calculi make **change** primary. Some make **substitution**, **proof**, **communication**, **action**, **distinction**, or **observation** primary.
 
-The word *calculus* is therefore used here in its broad mathematical sense: a disciplined system of objects, operations, and rules for transforming or reasoning about them.
+The word *calculus* is used here in its broad mathematical sense: a disciplined system of objects, operations, and rules for transforming or reasoning about them.
+
+## Start here
+
+The first reading path is deliberately comparative:
+
+1. [What is a calculus?](lessons/00-what-is-a-calculus.md)
+2. [Classical calculus — local change and accumulation](lessons/01-classical-calculus.md)
+3. [λ-calculus — abstraction, application, substitution](lessons/02-lambda.md)
+4. [π-calculus — communication that changes connectivity](lessons/03-pi.md)
+5. [ρ-calculus — reflection in a process world](lessons/04-rho.md)
+6. [Calculus of indications — distinction as operation](lessons/05-indications.md)
+7. [Distinction graphs — distinguishability relative to an observer](lessons/06-distinction-graphs.md)
+8. [Fuzzy Calculus — bounded observation and residual recovery](lessons/07-fuzzy.md)
+9. [Comparing calculi without flattening them](lessons/08-comparison.md)
+10. [Frontier: Goertzel's d-calculus](lessons/09-frontier-d-calculus.md)
+
+The path is **pedagogical**, not a claim of historical descent.
+
+Each lesson ends by identifying what its calculus does *not* give us for free. That boundary motivates comparison with the next formal world.
 
 ## Constellations
 
@@ -32,99 +51,53 @@ This is a cosmology, not a single ladder.
 | **Advanced mathematical calculi** | What happens when “calculus” is generalized to new mathematical objects? | Malliavin calculus; functional calculus; umbral calculus; calculus of fractions; Goodwillie calculus |
 | **Frontier / incomplete public specification** | What new calculi are being proposed now? | Goertzel's d-calculus |
 
-Not every item above will receive equal depth immediately. The repository will distinguish a **core learning path** from **expansion tracks**.
-
-## Core learning path
-
-The first pass should let a motivated reader understand why very different things are all called a *calculus*.
-
-### I. What does "calculus" mean?
-
-1. [What is a calculus?](lessons/00-what-is-a-calculus.md)
-2. **Classical calculus** — local change and accumulation
-3. **Calculus of variations** — optimizing whole paths rather than single values
-4. **Stochastic calculus** — change when trajectories are noisy
-
-### II. Computation becomes an object
-
-5. **Combinatory logic** — computation without bound variables
-6. [λ-calculus — substitution and computation](lessons/01-lambda.md)
-7. **Typed λ-calculi and System F** — computation constrained by types
-8. **Sequent calculus and natural deduction** — proof as formal transformation
-9. **Calculus of constructions** — proofs and programs under one typed language
-
-### III. From functions to interacting processes
-
-10. **CCS / CSP / ACP** — early process-algebra perspectives
-11. [π-calculus — communication and mobility](lessons/02-pi.md)
-12. **Join calculus** — synchronization by reaction patterns
-13. **Ambient calculus** — computation with movement and location
-14. **spi / applied π-calculus** — cryptographic and adversarial interaction
-15. [ρ-calculus — reflection and quoted processes](lessons/03-rho.md)
-16. **ψ-calculi** — a parametric family of mobile process calculi
-
-### IV. Worlds that change because actions occur
-
-17. **Situation calculus**
-18. **Event calculus**
-19. **Fluent calculus**
-20. **Relational calculus**
-
-### V. Distinction becomes mathematical
-
-21. [Calculus of indications — distinction as operation](lessons/04-indications.md)
-22. [Distinction graphs — distinction relative to an observer](lessons/05-distinction-graphs.md)
-23. [Fuzzy Calculus — bounded observation and residual calculus](lessons/06-fuzzy.md)
-24. [Comparing calculi without flattening them](lessons/07-comparison.md)
-25. [Frontier: Goertzel's d-calculus](lessons/08-frontier-d-calculus.md)
-
 ## Expansion tracks
 
-Once the core path is stable, separate tracks can deepen particular meanings of *calculus*.
+The main lessons establish comparison vocabulary. These tracks deepen individual constellations.
 
-### Change beyond Newton and Leibniz
+### Change beyond elementary calculus
 
-- tensor calculus
-- fractional calculus
-- stochastic differential calculus
-- Malliavin calculus
-- functional calculus
+- [Calculus of variations — change the whole path](tracks/change/variational-calculus.md)
+- [Stochastic calculus — change along noisy paths](tracks/change/stochastic-calculus.md)
+- fractional calculus — planned
+- tensor calculus — planned
+- Malliavin calculus — planned
+- functional calculus — planned
 
-### Computation and type theory
+### Proof and type theory
 
-- simply typed λ-calculus
-- linear λ-calculus
-- differential λ-calculus
-- System F
-- calculus of constructions
-- calculus of inductive constructions
+- [Sequent calculus — proof as a calculus](tracks/proof/sequent-calculus.md)
+- [Calculus of Constructions — types, terms, and proofs](tracks/types/calculus-of-constructions.md)
+- natural deduction — planned
+- simply typed λ-calculus — planned
+- System F — planned
+- Calculus of Inductive Constructions — planned
+- differential λ-calculus — planned
 
 ### Process calculi
 
-- CCS
-- CSP
-- ACP
-- π-calculus
-- higher-order π-calculus
-- join calculus
-- ambient calculus
-- stochastic π-calculus
-- spi calculus
-- applied π-calculus
-- ρ-calculus
-- ψ-calculi
+- CCS — planned
+- CSP — planned
+- ACP — planned
+- π-calculus — [core lesson](lessons/03-pi.md)
+- higher-order π-calculus — planned
+- join calculus — planned
+- ambient calculus — planned
+- stochastic π-calculus — planned
+- spi calculus — planned
+- applied π-calculus — planned
+- ρ-calculus — [core lesson](lessons/04-rho.md)
+- ψ-calculi — planned
 
 ### Logic of action and time
 
-- situation calculus
-- event calculus
-- fluent calculus
+- [Situation, event, and fluent calculi — reasoning about change in worlds](tracks/action/situation-event-fluent.md)
 
-### Structural and categorical uses of "calculus"
+### Structural and categorical uses of “calculus”
 
-- calculus of fractions
-- Goodwillie calculus
-- umbral calculus
+- calculus of fractions — planned
+- Goodwillie calculus — planned
+- umbral calculus — planned
 
 ## One teaching frame for every lesson
 
@@ -138,18 +111,16 @@ Every lesson should answer the same seven questions:
 6. **Boundary** — what does the calculus *not* give us for free?
 7. **Relations** — what is historically inherited, formally encoded, or merely analogous to another calculus?
 
-This lets a reader compare Newtonian differentiation, β-reduction, π-calculus communication, sequent rules, and observer-relative distinction without pretending they are the same operation.
+This lets a reader compare Newtonian differentiation, β-reduction, sequent rules, π-calculus communication, and observer-relative distinction without pretending they are the same operation.
 
 ## A map, not a ladder
 
-A rough map:
-
-```text
+\`\`\`text
 CHANGE / ACCUMULATION
 classical calculus
-   ├── variations
-   ├── stochastic
-   ├── fractional
+   ├── calculus of variations
+   ├── stochastic calculus
+   ├── fractional calculus
    └── tensor / functional / Malliavin ...
 
 FORMAL TRANSFORMATION
@@ -184,10 +155,13 @@ calculus of indications
              └── Fuzzy Calculus
 
 FRONTIER
-Goertzel d-calculus — comparison deferred until public primitives and laws are available
-```
+Goertzel d-calculus
+   └── comparison deferred until public primitives and laws are available
+\`\`\`
 
-The lines above do **not** all mean the same thing. In this repository every edge must be labeled as one of:
+The lines above do **not** all mean the same thing.
+
+Every edge must be labeled in the [Relation Ledger](RELATIONS.md) as one of:
 
 - **historical influence**
 - **formal encoding**
@@ -195,9 +169,9 @@ The lines above do **not** all mean the same thing. In this repository every edg
 - **structural analogy**
 - **conjectured bridge**
 
-If we cannot support an edge, we do not draw it.
+If we cannot support an edge, we do not draw it as fact.
 
-## Why "cosmology"?
+## Why “cosmology”?
 
 A genealogy asks:
 
@@ -207,7 +181,7 @@ A cosmology asks:
 
 > **What kind of world must exist for this calculus to make sense?**
 
-In classical calculus, quantities vary continuously enough for local change and accumulation to be related. In λ-calculus, the world is organized around abstraction, application, and substitution. In π-calculus, around interacting processes and names. In ρ-calculus, process structure can participate in naming and reflection. In distinction-based systems, what can and cannot be told apart becomes central. In Fuzzy Calculus, observation is bounded and failure of exact recovery is itself mathematical data.
+In classical calculus, quantities vary enough for local change and accumulation to be related. In λ-calculus, the world is organized around abstraction, application, and substitution. In π-calculus, around interacting processes and names. In ρ-calculus, process structure can participate in naming and reflection. In distinction-based systems, what can and cannot be told apart becomes central. In Fuzzy Calculus, observation is bounded and failure of exact recovery is itself mathematical data.
 
 The teaching goal is to learn each calculus by learning the world it assumes.
 
@@ -221,10 +195,13 @@ The teaching goal is to learn each calculus by learning the world it assumes.
 6. Unpublished or incompletely specified systems stay in the **frontier** section until their primitives and laws are public.
 7. Fuzzy Calculus is presented alongside its antecedents, not as if observer-relative distinction began with it.
 8. Where scholars disagree about lineage or interpretation, the disagreement stays visible.
+9. A slogan never outranks the theorem it summarizes.
 
-## Sources
+## Repository guides
 
-See [REFERENCES.md](REFERENCES.md). Primary or near-primary sources are preferred whenever possible.
+- [Relation Ledger](RELATIONS.md) — every cross-calculus edge and its evidentiary status
+- [Glossary](GLOSSARY.md) — shared vocabulary without pretending definitions transfer unchanged between traditions
+- [References](REFERENCES.md) — working primary-source bibliography
 
 ## License
 
