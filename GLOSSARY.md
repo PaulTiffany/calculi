@@ -1,16 +1,35 @@
 # Glossary
 
+## Starting words
+
+| Word | Plain-language meaning |
+|---|---|
+| rate | change in one quantity per unit change in another, such as liters per minute |
+| total | an amount accumulated over the interval or collection being considered |
+| function | a rule assigning an output to each allowed input |
+| limit | the value approached as inputs or approximations approach a specified condition |
+| derivative | a local rate of change, defined by a limit when it exists |
+| integral | an accumulation defined by a specified integration rule; in elementary calculus, a limit of sums |
+| functional | a rule whose input is a function and whose output is a number |
+| assumption | something taken as given for a particular argument or model |
+| model | a chosen representation of a situation, with objects and rules |
+| primitive | a starting ingredient of a formal system |
+| type | a classification used to constrain which expressions can be formed or combined |
+| fluent | a property whose truth or value can depend on time or situation |
+
+The lesson using a term supplies its exact context. [Return to the learning routes](README.md).
+
 ## abstraction
-In λ-calculus, construction of a function-like term such as \(\lambda x.M\).
+In λ-calculus, construction of a function-like term such as $\lambda x.M$.
 
 ## application
-Applying one λ-term to another, written \(MN\).
+Applying one λ-term to another, written $MN$.
 
 ## β-reduction
 The core λ-calculus rewrite:
-\[
+$$
 (\lambda x.M)N\to M[x:=N].
-\]
+$$
 
 ## bisimulation
 A behavioral equivalence used in process calculi: roughly, related processes can match one another's observable transitions according to the chosen definition.
@@ -59,9 +78,9 @@ Reflective Higher-Order Calculus: a π-like reflective process calculus with str
 
 ## sequent
 An inferential object typically written
-\[
+$$
 \Gamma\vdash\Delta.
-\]
+$$
 
 ## structural analogy
 A similarity of formal pattern without a claim of ancestry or encoding.

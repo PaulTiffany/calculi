@@ -1,78 +1,66 @@
-# Track — Calculus of Constructions: Types, Terms, and Proofs
+# Track — Calculus of Constructions: When Instructions Fit
 
-## Need
+**Start with:** [instructions with inputs](../../lessons/02-lambda.md); [proofs](../proof/sequent-calculus.md) help too.\
+**By the end:** explain how types check that pieces fit, then connect a requested proof to a construction.
 
-Can we build a formal language expressive enough to represent:
+## The idea
 
-- programs;
-- propositions;
-- proofs;
-- mathematical constructions;
+A **type** describes what kind of input or result an expression has.
 
-inside one typed framework?
+Suppose one instruction takes a date and produces a written label. Another takes a written label and produces a printed card. Their input and output types fit, so we can compose them in that order.
 
-The **Calculus of Constructions (CoC)**, introduced by Thierry Coquand and Gérard Huet, is a landmark answer.
+A third instruction expects a photograph. We cannot feed it the written label without a suitable conversion.
 
-## World
+This is a teaching analogy for typed computation.
 
-The world is a typed λ-calculus with rich forms of dependency and abstraction.
+## Try it somewhere else
 
-Terms can depend on terms, and types can participate in higher-order structure.
+A sensor produces a temperature. A calculator expects a length.
 
-Under propositions-as-types interpretations, proving a proposition corresponds to constructing a term of the appropriate type.
+Both may be stored as numbers. Would checking only “is this a number?” catch the mismatch? What type information would help?
 
-## Primitive intuition
+<details>
+<summary>Check your reasoning</summary>
 
-Untyped λ-calculus asks whether an application reduces.
+Checking only for a number would not catch it. Types that distinguish temperature from length could.
 
-Typed calculi add another question first:
+A type system checks the distinctions it has been designed to represent. Choosing those distinctions is part of modeling the task.
 
-> **Is this expression even well-formed at this type?**
+</details>
 
-A judgment might have the form
-\[
-\Gamma\vdash t:A,
-\]
-read as: under context \(\Gamma\), term \(t\) has type \(A\).
+## Where proofs enter
 
-## Characteristic move
+The **Calculus of Constructions (CoC)**, introduced by Thierry Coquand and Gérard Huet, combines typed computation with a language for formal proof.
 
-The calculus combines λ-style reduction with typing rules.
+In a propositions-as-types interpretation, a proposition is represented by a type. To prove it, construct a term of that type. CoC supports dependencies that go beyond simple input/output labels.
 
-So computation and proof checking become tightly coupled.
+<details>
+<summary>Optional notation — a construction and its type</summary>
 
-## Why “construction”?
+A judgment
 
-The central idea is constructive:
+$$
+\Gamma\vdash t:A
+$$
 
-> to establish a proposition, construct an inhabitant of the corresponding type.
+says that, under assumptions $\Gamma$, term $t$ has type $A$.
 
-This creates a bridge between programming-language semantics and formal proof.
+For example,
 
-## Descendants and implementations
+$$
+\lambda x:A.x
+$$
 
-The Calculus of Inductive Constructions extends this family with inductive definitions and underlies the theory of systems such as Coq.
+takes an input of type $A$ and returns it unchanged. It has type $A\to A$. Under propositions-as-types, it also expresses a proof that $A$ implies $A$.
 
-The historical and implementation details deserve their own later lesson.
+CoC combines λ-style reduction with typing rules and dependent products. The later **Calculus of Inductive Constructions** adds inductive definitions; it underlies systems such as Coq.
 
-## Boundary
+A checked construction proves the formal statement expressed by its type. Whether that statement captures the intended outside-world requirement remains a modeling question.
 
-A proof calculus can certify derivations inside its formal system.
-
-It does not by itself guarantee that a chosen formal specification captures everything we care about in the outside world.
-
-That distinction becomes crucial when formal verification is used for AI or safety systems.
-
-## Relation to λ-calculus
-
-**Extension/refinement.**
-
-The λ-calculus ancestry is direct, but typing and dependency substantially change the formal world.
-
-## Relation to sequent calculus
-
-There are profound proof-theoretic correspondences, but this atlas will introduce them through explicit Curry–Howard mappings rather than by saying all proof calculi are interchangeable.
+</details>
 
 ## Sources
 
-- Thierry Coquand and Gérard Huet, “The Calculus of Constructions,” *Information and Computation* 76(2–3):95–120, 1988. DOI: 10.1016/0890-5401(88)90005-3.
+The label and sensor examples are original analogies. See Thierry Coquand and Gérard Huet, *The Calculus of Constructions*, **Information and Computation** 76(2–3):95–120 (1988), [DOI: 10.1016/0890-5401(88)90005-3](https://doi.org/10.1016/0890-5401(88)90005-3).
+
+[Home](../../README.md) · [Computation family](../../PANTHEON.md#5-computation-and-programs) · [Compare calculi](../../lessons/08-comparison.md)

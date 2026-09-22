@@ -1,100 +1,94 @@
 # 08 — Comparing Calculi
 
-The purpose of the pyramid is not to reveal one secret master calculus. It is to make comparison easier.
+**Start with:** any two lessons.\
+**By the end:** compare their objects and moves, then explain which question each helps answer.
 
-## Compare the world first
+## Begin with a question
 
-| Calculus | Native world |
-|---|---|
-| classical | varying quantities |
-| variational | paths and functionals |
-| stochastic | random processes and filtrations |
-| λ | terms, abstraction, application |
-| sequent | formulas in inferential contexts |
-| π | processes and names |
-| ρ | reflective process/name structure |
-| indications | marked and unmarked forms |
-| distinction graphs | observer-relative distinguishability |
-| Fuzzy | bounded observational geometry |
+The same situation can support several models. Comparing calculi starts with what you want to find out.
 
-## Compare the move
+A garden has a tank, a valve, and a timer. Compare these questions:
 
-| Calculus | Characteristic move |
-|---|---|
-| classical | differentiate / integrate |
-| variational | vary a path or function |
-| stochastic | integrate along stochastic processes |
-| λ | β-reduce |
-| sequent | infer by a rule |
-| π | communicate / transition |
-| ρ | communicate with reflective naming structure |
-| indications | mark / simplify forms |
-| distinction graph | construct or update indistinguishability |
-| Fuzzy | observer-relative differentiate / integrate and track residue |
+| Compare | Classical calculus | Event calculus |
+|---|---|---|
+| Question | How much water entered the tank? | Is the valve open after the timer fires? |
+| Objects | Flow rate and water amount over time | Events, times, and facts that may change |
+| Move | Integrate the rate over an interval | Apply rules for event effects and persistence |
+| Result | An amount, such as 8 liters | Whether a fact holds at a time |
+| What else is needed? | Rate history; starting amount and outflow if asking for water now | Which events open or close the valve, and what holds initially |
+| What counts as the same answer? | Equal amounts in the chosen units | The same truth value for the queried fact |
 
-## Compare what counts as “the same”
+This is an original comparison of modeling roles. It does not assert a formal translation between the calculi.
 
-Different calculi use different notions of sameness: numerical equality, normal form, α/β/η equivalence, logical derivability, bisimulation, graph equivalence, or observer-visible equivalence.
+## Try it
 
-This is often where apparently similar calculi sharply diverge.
+The valve is open. Is that enough to conclude that 8 liters entered?
 
-## Compare translations
+<details>
+<summary>Check your reasoning</summary>
 
-Suppose
+No. You would also need information about flow and duration. An open valve might even have an empty supply.
 
-\[
-T:A\to B.
-\]
+The event model answers one question. A quantity model answers another. Connecting them requires assumptions about how valve state affects flow.
 
-Ask:
+</details>
 
-1. What does \(T\) preserve?
-2. What does it forget?
-3. Does it preserve composition?
-4. Does it preserve observable behavior?
-5. Can the original object be reconstructed?
+## Make your own comparison
 
-A translation is interesting precisely because two calculi need not be identical.
-
-## Three useful examples
-
-### λ and π
-
-λ-computation can be represented using communicating processes under explicit encodings.
-
-That does not erase the difference between **application** and **interaction** as native primitives.
-
-### π and ρ
-
-ρ-calculus is closely related to π-calculus but adds reflective structure.
-
-The encoding history itself is instructive: exact formal claims matter more than slogans like “π plus reflection.”
-
-### Classical and stochastic calculus
-
-Both speak of change and integration, but stochastic path structure alters the valid rules.
-
-The same familiar word—“integral”—can therefore name operations living in significantly different formal worlds.
-
-## Exercise — climb the pyramid
-
-Pick any two calculi in the repository and fill in:
+Choose two lessons and use a new setting: a library, a game, a workshop, or a music player.
 
 | Question | Calculus A | Calculus B |
 |---|---|---|
-| What exists? | | |
-| What differences matter? | | |
-| What can happen? | | |
-| How do moves compose? | | |
+| What am I trying to find out? | | |
+| What are the objects? | | |
+| What rule can I use? | | |
+| What is one worked step? | | |
 | What counts as the same result? | | |
-| What is not native? | | |
+| What information or assumption is still needed? | | |
 
-If the comparison is still interesting after filling this out, it is probably worth formalizing.
+A good comparison shows one actual move in each model. Naming two calculi is only the start.
 
-## Final lesson
+<details>
+<summary>Optional depth — compare native operations</summary>
 
-A calculus is not just notation.
+| Calculus | Objects brought into focus | Characteristic move |
+|---|---|---|
+| classical | varying quantities | differentiate or integrate |
+| variational | whole functions or paths | vary a candidate and evaluate a functional |
+| stochastic | random processes and available information | stochastic integration |
+| λ | terms with binding and application | β-reduction |
+| sequent | assumptions and possible conclusions | apply an inference rule |
+| π | processes and names | communicate a name |
+| ρ | processes and quoted process names | communicate and use reflective structure |
+| indications | marked and unmarked forms | simplify by laws of forms |
+| distinction graphs | pairwise indistinguishability | construct or update edges |
+| Fuzzy | fields and bounded observation | observer-relative differentiation, integration, and residue accounting |
 
-It is a choice about what exists, what may change, what may compose, what may be observed, and what may count as equivalent.
+“Same result” also varies: numerical equality, equality of forms, logical derivability, or a specified equivalence of process behavior. State the criterion.
 
-The pyramid is a way to see those choices.
+</details>
+
+<details>
+<summary>Optional depth — when a comparison becomes a translation</summary>
+
+For a proposed translation $T:A\to B$, ask:
+
+1. What objects and operations does it map?
+2. Which results or observations does it preserve?
+3. Does doing two moves and then translating agree with translating and doing the corresponding moves?
+4. What does it forget?
+5. Under what conditions could the original be reconstructed?
+
+For example, λ→π encodings give explicit ways to represent computation by communication. π→ρ encoding claims need a specified fragment and correctness criteria; the [ρ lesson](04-rho.md) points to the corrected result.
+
+A shared teaching example establishes a comparison. An encoding theorem establishes a stronger, precisely scoped claim.
+
+</details>
+
+## Take it further
+
+Use [Try It Somewhere New](../PRACTICE.md) to check whether you can carry an idea beyond the story that introduced it.
+
+The aim is to say: **“Here is my question, here is a suitable rule, and here is why it applies.”**
+
+[← Fuzzy Calculus](07-fuzzy.md) · [Home](../README.md) · [Practice →](../PRACTICE.md) · [Browse the pantheon](../PANTHEON.md)

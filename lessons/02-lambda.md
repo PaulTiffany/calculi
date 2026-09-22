@@ -1,190 +1,109 @@
-# 02 — λ-Calculus: Computation as Abstraction and Application
+# 02 — λ-Calculus: Instructions with Inputs
 
-## Need
+**Start with:** the idea of an instruction with an input. No derivatives are needed.\
+**By the end:** carry out a small substitution and recognize the same rule with different inputs.
 
-How little machinery is required to express computation with functions?
+## The idea
 
-The untyped λ-calculus answers with an extraordinarily small language.
+Imagine an instruction that says:
 
-## World
+> Take two inputs. Return the first.
 
-The world contains **terms**.
+Give it **tea**, then **cake**. It returns **tea**. Give it **red**, then **blue**. It returns **red**.
 
-A term is:
+The objects changed; the instruction stayed the same. This is an analogy for an operation we can write precisely in **λ-calculus**, pronounced “lambda calculus.”
 
-1. a variable \(x\);
-2. an application \(MN\);
-3. an abstraction \(\lambda x.M\).
+## Three useful words
 
-Functions are not a separate species from values. A function is itself a term and can be passed as an argument.
+- **Abstraction:** make an instruction with an input slot.
+- **Application:** give an input to that instruction.
+- **Substitution:** put the input where its slot is used.
 
-## Primitive
+In λ-calculus, expressions are called **terms**. A term can be a variable, an application, or an abstraction. Instructions can themselves be inputs.
 
-The two characteristic constructions are:
+## See one move at a time
 
-- **abstraction** — \(\lambda x.M\);
-- **application** — \(MN\).
+Here $a$ and $b$ are distinct variable names standing for inputs.
 
-The central operational idea is substitution.
+| Expression | Read it as |
+|---|---|
+| $\lambda x.\lambda y.x$ | Take an input called $x$, then one called $y$; return $x$ |
+| $(\lambda x.\lambda y.x)\,a$ | Fill the first slot with $a$ |
+| $\lambda y.a$ | The remaining instruction takes an input and returns $a$ |
+| $(\lambda y.a)\,b$ | Fill the remaining slot with $b$ |
+| $a$ | The result |
 
-## Move — β-reduction
+The symbol **λ** introduces an input slot. The dot starts the body of the instruction. This substitution step is called **β-reduction**, pronounced “beta reduction.”
 
-\[
-(\lambda x.M)N \to_\beta M[x:=N].
-\]
+## Try it
 
-Read this as:
+Change the instruction to “take two inputs; return the second.” In notation, use $\lambda x.\lambda y.y$.
 
-> apply the abstraction \(\lambda x.M\) to \(N\), replacing free occurrences of \(x\) in \(M\) by \(N\).
-
-### Toy example
-
-\[
-(\lambda x.x)\,a \to_\beta a.
-\]
-
-A slightly richer example:
-\[
-(\lambda x.\lambda y.x)\,a\,b
-\]
-reduces to
-\[
-a.
-\]
-
-## Why variable binding matters
-
-Substitution must avoid accidentally turning a free variable into a bound one.
-
-That leads to:
-
-- free and bound variables;
-- α-conversion;
-- capture-avoiding substitution.
-
-These are part of the calculus's formal control over meaning.
-
-## Computation as rewriting
-
-In this world, computation is a sequence:
-\[
-M_0\to_\beta M_1\to_\beta M_2\to_\beta\cdots.
-\]
-
-A term in **normal form** has no β-redex left to reduce.
-
-Some terms have no normal form.
-
-## A famous self-application
-
-Define
-\[
-\Omega=(\lambda x.xx)(\lambda x.xx).
-\]
-
-Then
-\[
-\Omega\to_\beta\Omega.
-\]
-
-The calculus can express nontermination without adding a special loop operator.
-
-## Why λ matters
-
-The λ-calculus became foundational for computability, functional programming, programming-language semantics, and type theory.
-
-Typed descendants constrain which applications are allowed and make new properties provable.
-
-## Boundary
-
-Plain λ-calculus does not make concurrency primitive.
-
-An expression can encode many things, but the native picture is application/reduction, not multiple independently evolving processes that exchange communication links.
-
-That motivates process calculi.
-
-## Relation to π-calculus
-
-Milner and others showed that λ-style computation can be represented using communicating processes.
-
-But
-\[
-\lambda \not= \pi.
-\]
-
-An encoding tells us that selected computational behavior can be represented across calculi. It does not erase the difference in primitives.
-
-## Checkpoint
-
-Reduce:
-\[
-(\lambda f.\lambda x.f(fx))(\lambda y.y)
-\]
-far enough to see what it does.
-
-Then answer:
-
-1. What is abstraction?
-2. What is application?
-3. What is β-reduction?
-4. Why is substitution not trivial string replacement?
-5. Why does the existence of a λ→π encoding not make the calculi identical?
-
-## Sources
-
-- Stanford Encyclopedia of Philosophy, “The Lambda Calculus.”
-- Robin Milner, *The Polyadic π-Calculus: A Tutorial*.
-
-See [../REFERENCES.md](../REFERENCES.md).
-
----
-
-## See it
-
-```mermaid
-flowchart LR
-    A["(λx.x) a"] -->|"β-reduction"| B["a"]
-```
-
-The visual point is not “movement through space.” A redex is replaced by the result of capture-avoiding substitution.
-
-## Do it
-
-Reduce:
-
-\[
-(\lambda x.\lambda y.x)\;p\;q.
-\]
+Give it $p$, then $q$. What remains after each step?
 
 <details>
-<summary>Check your answer</summary>
+<summary>Check your reasoning</summary>
 
-First:
+First, $(\lambda x.\lambda y.y)\,p$ becomes $\lambda y.y$. The first input is unused.
 
-\[
-(\lambda x.\lambda y.x)\;p
-\to_\beta
-\lambda y.p.
-\]
+Then $(\lambda y.y)\,q$ becomes $q$. The second input is returned.
 
-Then:
-
-\[
-(\lambda y.p)\;q
-\to_\beta
-p.
-\]
-
-The term keeps the first argument and ignores the second.
+Compare this with the table: the location of the used slot determines the result.
 
 </details>
 
-> **Do not confuse:** β-reduction is a rewrite by substitution. It is not differentiation, even though both can be written as transformations.
+## Try it somewhere else
 
-## Watch — optional
+A label maker uses the instruction “take a heading, then a note; return the heading.” You change the note but keep the heading. Does the result change? What if you swap the order of the inputs?
 
-Computerphile / Graham Hutton, **“Lambda Calculus”** — a compact visual introduction to abstraction, application, and reduction:
+<details>
+<summary>Check and connect</summary>
 
-https://www.youtube.com/watch?v=eis11j_iGMs
+Changing the unused note leaves the result unchanged. Swapping the inputs makes the note arrive in the first slot, so it is returned instead.
 
-> **What the next layer notices:** what if computation is not one expression reducing, but several processes interacting at once?
+This is the same first-input rule in a new setting. The label maker is a teaching analogy; the formal calculation concerns terms and substitution.
+
+</details>
+
+<details>
+<summary>Optional notation — binding, safe substitution, and loops</summary>
+
+The general rule is
+
+$$
+(\lambda x.M)N\to_\beta M[x:=N].
+$$
+
+Here $M[x:=N]$ means replace the **free** occurrences of $x$ in $M$ by $N$. An occurrence is **bound** when it belongs to an enclosing input declaration for that variable.
+
+Substitution must preserve these relationships. In $(\lambda x.\lambda y.x)y$, the incoming $y$ must remain free. First rename the inner slot to a fresh name $z$:
+
+$$
+(\lambda x.\lambda z.x)y\to_\beta\lambda z.y.
+$$
+
+Renaming a bound slot consistently is **α-conversion**. Producing $\lambda y.y$ instead would change the meaning.
+
+A **normal form** has no β-reduction left to perform. Not every term reaches one. For example,
+
+$$
+\Omega=(\lambda x.xx)(\lambda x.xx)\to_\beta\Omega.
+$$
+
+This term repeats its own reduction.
+
+</details>
+
+## What this model brings into focus
+
+The native move is applying and rewriting terms. [Typed calculi](../tracks/types/calculus-of-constructions.md) add rules about which terms fit together. [Process calculi](03-pi.md) put communication at the center.
+
+There are formal encodings of λ-computation in communicating processes; [Relations](../RELATIONS.md) records that connection.
+
+## Sources and optional viewing
+
+Alonzo Church originated λ-calculus. The everyday examples here are original analogies. For the rules, see Frank Pfenning's [“The λ-Calculus,” CMU lecture notes](https://www.cs.cmu.edu/~fp/courses/15814-f25/lectures/01-lambda.pdf), especially §§2–5, and [References](../REFERENCES.md#λ-calculus).
+
+**Watch:** Computerphile / Graham Hutton, [“Lambda Calculus”](https://www.youtube.com/watch?v=eis11j_iGMs), for another explanation of inputs and substitution.
+
+[← Classical calculus](01-classical-calculus.md) · [Home](../README.md) · [Next: π-calculus →](03-pi.md)

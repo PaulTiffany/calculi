@@ -1,84 +1,66 @@
-# Track — Stochastic Calculus: Change Along Noisy Paths
+# Track — Stochastic Calculus: Change with Randomness
 
-## Need
+**Start with:** [rates and accumulation](../../lessons/01-classical-calculus.md).\
+**By the end:** distinguish a possible path from an average over possible paths.
 
-Classical calculus behaves beautifully for sufficiently regular trajectories.
+## The idea
 
-But many important processes are random and extremely irregular.
+Some models include random change. A **stochastic process** describes random quantities through time.
 
-Brownian motion, for example, is continuous but almost surely nowhere classically differentiable.
+Try this small model: begin at 0. Toss a fair coin twice. Move up 1 for heads and down 1 for tails. Assume the tosses are independent.
 
-So how can we integrate and reason about change along such paths?
+| Tosses | Position after the first toss | Final position |
+|---|---|---|
+| Heads, heads | 1 | 2 |
+| Heads, tails | 1 | 0 |
+| Tails, heads | −1 | 0 |
+| Tails, tails | −1 | −2 |
 
-That is the domain of **stochastic calculus**.
+The four equally likely outcomes average to 0. Yet half the paths finish elsewhere.
 
-## World
+## Try it somewhere else
 
-A basic world contains:
+A toy model gives a day's change in a reservoir as either +1 or −1 unit, equally likely. Can “the average change is zero” mean that the water level stays fixed every day?
 
-- a probability space;
-- a filtration representing information available through time;
-- stochastic processes;
-- random paths such as Brownian motion.
+<details>
+<summary>Check your reasoning</summary>
 
-The information structure matters: an integrand may be required to depend only on information available up to the current time.
+No. Each day changes by one unit in this model. Zero describes the average across possibilities.
 
-## Primitive move — stochastic integration
+A particular path and its average answer different questions. Real reservoirs would also need rules for limits and other flows.
 
-A central object is an integral such as
-\[
-\int_0^t H_s\,dX_s,
-\]
-where \(X\) is a stochastic process or semimartingale and \(H\) is a suitable predictable process.
+</details>
 
-This is not generally an ordinary Riemann or Riemann–Stieltjes integral.
+## From steps to continuous time
 
-The definition is built to survive the roughness of stochastic trajectories.
+Coin tosses give a **discrete** model: change happens in steps. Stochastic calculus also works with continuous-time processes such as Brownian motion. Its paths are so rough that ordinary pointwise derivatives are unavailable, and integration needs a different construction.
 
-## Why ordinary rules change
+<details>
+<summary>Optional notation — why an extra term appears</summary>
 
-For Itô calculus, the familiar chain rule acquires an additional second-order term.
+A stochastic integral can have the form
 
-Schematically, for an Itô process \(X_t\),
-\[
-df(X_t)
-=
-f'(X_t)\,dX_t
-+
-\frac12 f''(X_t)\,(dX_t)^2,
-\]
-with the stochastic bookkeeping giving the quadratic-variation contribution.
+$$
+\int_0^t H_s\,dX_s.
+$$
 
-The deeper point is not the mnemonic notation.
+Its definition depends on the process and information conditions. A **filtration** records the information available through time.
 
-It is:
+For an Itô process $dX_t=a_t\,dt+b_t\,dW_t$ and a twice continuously differentiable function $f$, Itô's formula gives
 
-> the geometry of the path changes the valid calculus rules.
+$$
+df(X_t)=\left(a_t f'(X_t)+\tfrac12 b_t^2f''(X_t)\right)dt
++b_t f'(X_t)\,dW_t.
+$$
 
-## Boundary
+Here $W_t$ is Brownian motion. The second-derivative term comes from quadratic variation, a property of these paths. The coin-toss activity motivates random paths; it is not a derivation of this formula.
 
-Stochastic calculus makes uncertainty and filtration mathematically explicit, but it does not automatically make the observer an ontological primitive or explain what distinctions an observer can make.
+</details>
 
-Probability-relative and observer-relative are not synonyms.
+## Connection and sources
 
-## Relation to classical calculus
+Stochastic calculus adapts integration to random processes with stated path and information assumptions. The toy examples are original.
 
-**Extension/refinement.**
+See Ioannis Karatzas and Steven E. Shreve, *Brownian Motion and Stochastic Calculus* (1988), and [References](../../REFERENCES.md#stochastic-calculus).
 
-Stochastic calculus recovers ordinary-looking operations in a new path regime, but alters the rules to account for stochastic variation.
-
-## Why this belongs near Fuzzy Calculus
-
-Only as a **structural comparison**:
-
-- stochastic calculus changes calculus because paths are rough/random;
-- Fuzzy Calculus changes calculus because access is observer-bounded.
-
-The reasons for the correction terms differ.
-
-That is exactly the sort of distinction this atlas is built to preserve.
-
-## Sources
-
-- Encyclopedia of Mathematics, “Stochastic integral.”
-- Karatzas and Shreve, *Brownian Motion and Stochastic Calculus*.
+[Home](../../README.md) · [Change family](../../PANTHEON.md#1-quantity-motion-and-change) · [Compare calculi](../../lessons/08-comparison.md)

@@ -1,170 +1,91 @@
-# 06 — Distinction Graphs: Distinguishability Relative to an Observer
+# 06 — Distinction Graphs: What Can Be Told Apart?
 
-## Need
+**Start with:** comparing pairs of things.\
+**By the end:** draw a graph from an observation rule and explain what each line means.
 
-A bare distinction tells us that something has been separated.
+## The idea
 
-But real observers may fail to tell different things apart.
+Two items can differ even when a particular person or device cannot tell them apart.
 
-Ben Goertzel's **distinction graphs** formalize this explicitly.
+Ben Goertzel's **distinction graph** records this. Each item becomes a **node**, drawn as a point or box. Join two nodes with a line, called an **edge**, when the chosen observer **cannot distinguish that pair**.
 
-## World
+## A worked example
 
-Take a collection of items and a particular observer \(O\).
+For an invented device, suppose temperatures less than 2 degrees apart cannot be distinguished in a pairwise comparison.
 
-Construct a graph whose nodes are the items.
-
-Two nodes are connected when the observer **cannot distinguish them**.
-
-Schematically:
-\[
-x\sim_O y
-\quad\Longleftrightarrow\quad
-O\text{ does not distinguish }x\text{ from }y.
-\]
-
-The graph represents an observer-relative pattern of indistinguishability.
-
-## Primitive
-
-The published 2019 construction begins with:
-
-1. items;
-2. a particular observer;
-3. the observer's capacity to distinguish them.
-
-That ordering matters.
-
-The observer is not derived by the basic definition. Distinguishability is indexed to an observer.
-
-## Move
-
-The central construction is graph formation from observational indistinguishability.
-
-Goertzel defines **graphtropy** from the connection structure and relates special cases to logical entropy.
-
-He also develops probabilistic and quantum variants.
-
-## Toy example
-
-Suppose three tones have frequencies:
-
-- \(A=440\) Hz;
-- \(B=441\) Hz;
-- \(C=600\) Hz.
-
-Imagine observer \(O\) cannot distinguish \(A\) from \(B\), but can distinguish both from \(C\).
-
-Then the distinction graph contains an edge between \(A\) and \(B\), but not between those nodes and \(C\).
-
-A sharper observer \(O'\) might distinguish all three.
-
-So:
-\[
-G_O\neq G_{O'}.
-\]
-
-The informational structure depends on the observer.
-
-## Dynamic Distinction Graphs
-
-The 2019 paper goes further and introduces **Dynamic Distinction Graphs (DDGs)** by adding causal-implication structure.
-
-This permits distinction-centered models with dynamics and provides machinery for modeling observers within the formalism.
-
-That is an important expansion beyond a static graph.
-
-## Relation to the calculus of indications
-
-The relation is conceptually strong:
-
-- both make distinction foundational;
-- distinction graphs explicitly index indistinguishability to an observer.
-
-But they are not the same formalism.
-
-The graph construction adds combinatorial and observer-relative structure not present merely in the act of marking a form.
-
-## Boundary
-
-The basic distinction-graph definition does not itself supply:
-
-- a derivation of the observer from pre-observational dynamics;
-- a differential operator;
-- an integral operator;
-- an FTC-like recovery defect;
-- geometric connection or holonomy.
-
-Those are separate constructions.
-
-This is where comparison with Fuzzy Calculus becomes precise rather than rhetorical.
-
-## Checkpoint
-
-Given four colors and an observer who confuses red/orange and blue/purple, draw the corresponding indistinguishability graph.
-
-Then imagine an observer with finer resolution.
-
-What changed?
-
-- the colors?
-- the observer?
-- the graph?
-- the relation we call information?
-
-The distinction-graph framework forces that question into the formal object.
-
-## Sources
-
-- Ben Goertzel, “Distinction Graphs and Graphtropy: A Formalized Phenomenological Layer Underlying Classical and Quantum Entropy, Observational Semantics and Cognitive Computation,” 2019, arXiv:1902.00741.
-
-See [../REFERENCES.md](../REFERENCES.md).
-
----
-
-## See it
-
-For the tone example above, observer \(O\) cannot distinguish \(A\) from \(B\):
+| Pair | Difference | Draw an edge? |
+|---|---|---|
+| A: 20° and B: 21° | 1 degree | Yes |
+| B: 21° and C: 22° | 1 degree | Yes |
+| A: 20° and C: 22° | 2 degrees | No |
 
 ```mermaid
 graph LR
-    A["A: 440 Hz"] --- B["B: 441 Hz"]
-    C["C: 600 Hz"]
+    A["A: 20°"] --- B["B: 21°"]
+    B --- C["C: 22°"]
 ```
 
-For a sharper observer \(O'\), the edge can disappear:
+The graph has A–B and B–C edges, but no A–C edge. Following a path through B does not add a direct edge between A and C. Each pair must be checked.
 
-```mermaid
-graph LR
-    A2["A: 440 Hz"]
-    B2["B: 441 Hz"]
-    C2["C: 600 Hz"]
-```
+This rule describes a toy device, not a claim about human temperature perception.
 
-The physical tones did not have to change. The observer-relative indistinguishability relation did.
+## Try it
 
-## Do it
+A second device can distinguish any pair at least 1 degree apart. Use the same three temperatures.
 
-Suppose an observer sees four colors: red, orange, blue, and purple. It cannot distinguish red from orange or blue from purple.
-
-How many indistinguishability edges are required in the simplest graph?
+Which edges remain? Did the temperatures have to change?
 
 <details>
-<summary>Check your answer</summary>
+<summary>Check your reasoning</summary>
 
-Two:
+No edges remain between these three nodes. Every pair differs by at least 1 degree.
 
-- red — orange;
-- blue — purple.
-
-A more elaborate model could assign probabilities or changing relations, but the simplest static graph needs only those two edges.
+The temperatures stayed fixed. The observation rule changed, so the graph changed.
 
 </details>
 
-> **Do not confuse:** an observer-relative distinction graph does not by itself imply that the underlying items are identical. It represents what a specified observer can or cannot distinguish.
+## Try it somewhere else
 
-## Media note
+A reader confuses labels A and B. Another test shows that the reader confuses B and C.
 
-No external video is required here. The original 2019 paper is more important than adding a generic explainer, and the two small graphs above expose the central construction directly.
+Must the reader also confuse A and C? What would you check?
 
-> **What the next layer notices:** what determines the observer's resolution in the first place, and what happens when bounded observation participates in differentiation and reconstruction?
+<details>
+<summary>Check and connect</summary>
+
+It does not follow from those two results alone. Test A against C.
+
+The temperature example showed why: pairwise confusion need not carry along a chain. A graph lets us record that pattern without forcing all three items into one group.
+
+</details>
+
+<details>
+<summary>Optional notation and extensions</summary>
+
+For items $x,y$ and observer $O$, an edge records
+
+$$
+x\sim_O y
+\quad\Longleftrightarrow\quad
+O\text{ cannot distinguish }x\text{ and }y.
+$$
+
+Here $\sim_O$ records pairwise indistinguishability; it need not be a transitive equivalence relation. The toy graph above is an example.
+
+The basic construction starts with items and a specified observer. Goertzel's 2019 paper also introduces **graphtropy**, a measure based on the graph's pair structure, and **Dynamic Distinction Graphs**, which add causal implications. It explores probabilistic and quantum versions too.
+
+A static graph records distinctions under the chosen conditions. Predictions about how they change need further rules and observations.
+
+</details>
+
+## A question to carry forward
+
+Which differences survive an observation? If you use its record to rebuild something, which details could remain unavailable?
+
+That question prepares the next lesson on bounded observation and recovery.
+
+## Sources
+
+The device and label examples are original. The graph definition and its extensions come from Ben Goertzel, [*Distinction Graphs and Graphtropy*](https://arxiv.org/abs/1902.00741) (2019); §3.1 discusses nontransitive indistinguishability. See [References](../REFERENCES.md#distinction-graphs).
+
+[← Indications](05-indications.md) · [Home](../README.md) · [Next: Fuzzy Calculus →](07-fuzzy.md)

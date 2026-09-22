@@ -1,70 +1,55 @@
 # 02 — What Calculus Does
 
-Ordinary calculus gives us careful rules for talking about change.
+**Start with:** [rates and totals](01-things-change.md).\
+**By the end:** explain why changing rates need more care than one multiplication.
 
-You can think of it as a mathematical rulebook for two jobs:
+## What if the tap slows down?
 
-1. finding **how fast something is changing**;
-2. finding **how much change has added up**.
+A tap fills an empty bucket. Nothing spills or drains away.
 
-## Two important words
+| Part of the fill | Steady rate during that part | Time | Water added |
+|---|---|---|---|
+| First part | 3 liters per minute | 2 minutes | 6 liters |
+| Second part | 1 liter per minute | 2 minutes | 2 liters |
+| Whole fill | Rate changes | 4 minutes | **8 liters** |
 
-You may hear two words in school or science.
+Multiply within each part, then add the parts. Using the final rate for all four minutes would miss the faster start.
 
-### Derivative
+## Where calculus enters
 
-A **derivative** is a precise way to ask:
+Real rates can change all the time. We can split the time into short pieces, estimate the water added in each piece, and add them.
 
-> How fast is this changing right here?
+Ordinary calculus makes this careful: under suitable conditions, the sums approach a definite value as the pieces get smaller. An **integral** gives that accumulated change.
 
-A speedometer is a good everyday picture of this idea.
+We can also work the other way. Compare two nearby water amounts and divide the difference by the elapsed time. That gives an average rate. As the interval shrinks, the rate may approach a definite value. A **derivative** gives that rate at a moment.
 
-### Integral
+The value an estimate approaches is called a **limit**. Smaller pieces are useful because we study what they approach, not because we divide by zero.
 
-An **integral** is a precise way to ask:
+## Try it somewhere else
 
-> How much has built up from all these little changes?
+A walker travels 2 kilometers in the first hour and 4 in the second.
 
-An odometer is a good everyday picture of this idea.
+1. How far did the walker travel?
+2. What was the average speed over both hours?
+3. Do these two totals tell us the speed at every moment?
 
-## Why this is surprising
+<details>
+<summary>Check your reasoning</summary>
 
-The two jobs are connected.
+1. **6 kilometers:** add the two distances.
+2. **3 kilometers per hour:** divide 6 kilometers by 2 hours.
+3. **No.** The walker could have sped up, slowed down, or paused within either hour.
 
-If you know how fast a car was moving during a trip, you can work out how far it traveled.
+Average speed describes an interval. Speed at a moment needs more information.
 
-If you know how the total distance changes over time, you can work back toward its speed.
+</details>
 
-Calculus makes that connection exact.
+## What must we keep track of?
 
-## See it
+An integral of the filling rate tells us how much water was **added**. To know the amount now, we also need the starting amount. Water leaving the bucket must be counted too.
 
-```mermaid
-flowchart LR
-    A["Change right now"] <-->|"calculus connects them"| B["Change added up"]
-```
+> Derivatives ask about local rates. Integrals add up change. Calculus connects the two under stated conditions.
 
-## A tiny example
+*Examples are original. The [classical lesson](../lessons/01-classical-calculus.md) gives the formulas and sources.*
 
-Suppose a bathtub is filling.
-
-You might ask:
-
-- How fast is water flowing in right now?
-- How much water has entered after ten minutes?
-
-Those are different questions, but they describe the same changing system.
-
-## Why people needed calculus
-
-Without calculus, many problems about motion, growth, curves, waves, heat, and forces are hard to describe.
-
-Calculus gave people a common language for them.
-
-It became one of the main tools of science and engineering.
-
-## One sentence to remember
-
-> **Ordinary calculus connects change right now with change added up over time or space.**
-
-[Next: Why are there many calculi? →](03-why-many-calculi.md)
+[← Previous](01-things-change.md) · [Home](../README.md) · [Next: Why many calculi? →](03-why-many-calculi.md)

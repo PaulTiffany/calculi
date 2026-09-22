@@ -1,94 +1,63 @@
 # 03 — Why Are There Many Calculi?
 
-Now we can ask the bigger question.
+**Start with:** [rates and accumulated change](02-what-calculus-does.md).\
+**By the end:** choose a kind of calculus from the question being asked.
 
-If calculus is about change, why are there so many things called a **calculus**?
+In school, **calculus** usually means derivatives and integrals. More broadly, **a calculus** is a precise rulebook for working with certain objects. **Calculi** is the plural.
 
-Because numbers are not the only things that can change by rules.
+Some rulebooks work with numbers. Others work with instructions, proofs, messages, or distinctions.
 
-## Different things can change in different ways
+## One kitchen, several questions
 
-A number can rise or fall.
+| Question | What we work with | A useful rulebook |
+|---|---|---|
+| How fast is the soup cooling? | Temperature over time | Differential calculus |
+| How much water entered the pot? | Flow rate over time | Integral calculus |
+| What happens when we fill an input slot in an instruction? | Expressions with inputs | λ-calculus, pronounced “lambda calculus” |
+| How can one cook pass another a new contact address? | Processes and communication names | π-calculus, pronounced “pi calculus” |
+| If every sealed jar is labeled, and this jar is sealed, what follows? | Statements and assumptions | A logical calculus |
+| What remains true after we open a cupboard? | Actions and changing facts | Situation or event calculus |
 
-A computer instruction can be replaced by another instruction.
+These are teaching examples. A kitchen is not itself a formal calculus. To build a model, we must choose the objects and the rules precisely.
 
-A proof can move from one valid step to the next.
+## Why several tools?
 
-Two computer programs can send messages to each other.
+Different questions call attention to different parts of the same situation. Even within ordinary calculus, a changing number, a whole path, and a random path can call for different methods.
 
-A system can refer to a description of itself.
+Some calculi overlap or can represent one another. Their rules still need to be learned in the setting where they apply.
 
-An observer can tell some things apart and fail to tell other things apart.
+Our pyramid starts with familiar questions and opens into several routes. You do not have to learn every family before exploring one.
 
-Each kind of change needs its own rules.
+## Try it somewhere else
 
-That is why mathematics has more than one calculus.
+A garden has a watering system. You want to know:
 
-## The pyramid
+1. How much water reached a bed during the morning?
+2. What stays true after a timer opens a valve?
+3. Which of two nearly identical labels a camera can tell apart?
 
-```mermaid
-flowchart BT
-    A["Amounts change"] --> B["Shapes and fields change"]
-    B --> C["Symbols and logic transform"]
-    C --> D["Proofs and programs transform"]
-    D --> E["Things interact"]
-    E --> F["Actions change worlds"]
-    F --> G["Distinctions and observations change"]
-```
-
-Later, we give these layers names.
-
-| What changes? | Some calculi you will meet |
-|---|---|
-| amounts and motion | differential, integral, vector, stochastic calculus |
-| shapes and fields | tensor and exterior calculus |
-| logical statements | propositional and predicate calculus |
-| symbolic expressions and programs | λ-calculus and typed λ-calculi |
-| proofs | natural deduction and sequent calculus |
-| communicating processes | CCS, CSP, π-calculus |
-| actions and events | situation and event calculus |
-| data relationships | relational calculus |
-| distinctions and observation | calculus of indications, distinction graphs, Fuzzy Calculus |
-
-You do **not** need to understand those names yet.
-
-The important idea is simpler:
-
-> **A calculus is a rulebook for working with a certain kind of change or transformation.**
-
-## Why one calculus is not enough
-
-A speedometer cannot explain how two computer programs exchange messages.
-
-A rule for proving a theorem does not tell you how water flows into a tank.
-
-A tool is useful because it fits the job.
-
-Calculi are like that.
-
-## Do it
-
-Match the situation to the kind of change:
-
-1. A car speeds up.
-2. Two computers exchange a new address.
-3. A proof gains a new valid step.
-4. Two colors look the same to one person but different to another.
+For each question, name the **thing being studied** before choosing a rulebook.
 
 <details>
-<summary>Check your answer</summary>
+<summary>Check your reasoning</summary>
 
-1. changing quantity;
-2. interacting processes;
-3. proof transformation;
-4. observer-relative distinction.
+1. A changing water flow and its total: **integral calculus**.
+2. An event and the facts it changes or leaves in place: **action/event calculi**.
+3. Pairs of labels and the camera's ability to distinguish them: **distinction graphs**.
+
+The setting stayed the same. The question changed, so the useful model changed. More than one model may be needed for the whole system.
 
 </details>
 
-## One sentence to remember
+## Choose your route
 
-> **There are many calculi because there are many kinds of things that can change according to rules.**
+- Keep exploring change: [classical calculus](../lessons/01-classical-calculus.md).
+- Explore instructions: [λ-calculus](../lessons/02-lambda.md).
+- Explore reasoning: [sequent calculus](../tracks/proof/sequent-calculus.md).
+- Browse other questions: [the pantheon](../PANTHEON.md).
 
-[See the wider pantheon →](../PANTHEON.md)
+> Choose by the question, the objects, and the allowed moves—not just by a familiar word.
 
-[Next: enter the calculus lessons →](../lessons/01-classical-calculus.md)
+*This page is an original teaching comparison. Sources for the calculi are linked from their lessons and [References](../REFERENCES.md).*
+
+[← Previous](02-what-calculus-does.md) · [Home](../README.md) · [Next in the guided tour →](../lessons/01-classical-calculus.md)

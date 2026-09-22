@@ -1,167 +1,106 @@
 # 01 — Classical Calculus: Local Change and Accumulation
 
-## Need
+**Start with:** [rates, totals, and limits](../start/02-what-calculus-does.md).\
+**By the end:** explain a rate, add up change, and say why the starting amount matters.
 
-How can we reason rigorously about quantities that vary?
+## The idea
 
-Classical differential and integral calculus gives two complementary operations:
+A **function** is a rule that assigns an output to an input. For a filling tank, the input could be time and the output the amount of water.
 
-- **differentiation** — local change;
-- **integration** — accumulation.
+Classical calculus studies how such quantities vary. Its two main moves are:
 
-Their deep connection is expressed by the Fundamental Theorem of Calculus.
+- **differentiate:** find the local rate of change;
+- **integrate:** add up change across an interval.
 
-## World
+## A worked example
 
-The beginner's world is a line or region on which quantities vary continuously enough for limits, derivatives, and integrals to make sense.
+A tank starts with **5 liters**. Water enters steadily at **2 liters per minute** for 3 minutes. None leaves.
 
-A simple inhabitant is a function:
-\[
-f:\mathbb{R}\to\mathbb{R}.
-\]
+| What do we want? | Reasoning | Answer |
+|---|---|---|
+| Rate of change | Each minute adds 2 liters | 2 liters per minute |
+| Water added | 2 liters per minute × 3 minutes | 6 liters |
+| Water now | Starting amount + water added | **11 liters** |
 
-## Primitive
+The integral of the rate gives the **6 liters added**. The starting amount is needed to get 11.
 
-At an elementary level we need variables, functions, arithmetic structure, and a notion of nearness or limit.
+For a rate that varies, we add contributions from smaller pieces, as in the [beginner example](../start/02-what-calculus-does.md). Limits let us make this precise.
 
-More advanced formulations make the assumptions precise using topology, measure theory, manifolds, differential forms, or functional analysis.
+## Try it somewhere else
 
-## Move I — Differentiate
+A box holds 7 meters of ribbon. A machine feeds in ribbon at 3 meters per minute for 2 minutes.
 
-For a function \(f\), the derivative at \(x\) is
-\[
-f'(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h},
-\]
-when the limit exists.
-
-The derivative records how \(f\) responds to infinitesimal displacement.
-
-### Toy example
-
-For
-\[
-f(x)=x^2,
-\]
-we get
-\[
-f'(x)=2x.
-\]
-
-At \(x=3\), the local rate of change is \(6\).
-
-## Move II — Integrate
-
-For a suitable function,
-\[
-\int_a^b f(x)\,dx
-\]
-accumulates \(f\) across an interval.
-
-For \(f(x)=2x\),
-\[
-\int_0^3 2x\,dx=9.
-\]
-
-## The remarkable bridge
-
-If
-\[
-F(x)=\int_a^x f(t)\,dt,
-\]
-then under standard regularity conditions,
-\[
-F'(x)=f(x).
-\]
-
-Conversely,
-\[
-\int_a^b f'(x)\,dx=f(b)-f(a).
-\]
-
-Local change and global accumulation are linked.
-
-This local/global duality will become one of our comparison motifs, but we will never assume that another calculus has an analogue automatically.
-
-## Beyond one dimension
-
-On manifolds, differential forms and Stokes' theorem give a far-reaching generalization:
-\[
-\int_M d\omega=\int_{\partial M}\omega.
-\]
-
-The slogan is:
-
-> the accumulation of local change over a region is expressed on its boundary.
-
-Again, this is a theorem inside a particular mathematical setting, not a universal law for everything called a calculus.
-
-## Boundary
-
-Classical calculus does not by itself tell us how concurrent processes communicate, how proofs transform, how names acquire scope, what an observer can resolve, or how measurement limitations alter differentiation.
-
-Those require additional formal worlds.
-
-## Relations
-
-Classical calculus is historically and mathematically connected to differential geometry, tensor calculus, calculus of variations, stochastic calculus, functional analysis, and fractional calculus.
-
-Its relation to λ-calculus or π-calculus is mostly **structural analogy** unless an explicit encoding or semantic construction is supplied.
-
-## Checkpoint
-
-Explain in your own words:
-
-1. derivative;
-2. integral;
-3. Fundamental Theorem of Calculus;
-4. why \(d/dx\) and β-reduction are not the same operation;
-5. why Stokes' theorem makes boundaries mathematically important.
-
----
-
-## See it
-
-```mermaid
-flowchart LR
-    A["f(x)=x²"] -->|"differentiate"| B["f'(x)=2x"]
-    B -->|"integrate from 0 to x"| C["x²"]
-```
-
-The diagram is intentionally simple: local change and accumulation can recover one another under the usual hypotheses.
-
-## Do it
-
-Start with
-
-\[
-f(x)=x^3.
-\]
-
-Differentiate it, then integrate the derivative from \(0\) to \(x\).
+1. How much ribbon is added? How much is in the box?
+2. A second box starts empty and receives ribbon at the same rate. Does knowing the rate tell you which box you have?
 
 <details>
-<summary>Check your answer</summary>
+<summary>Check your reasoning</summary>
 
-\[
-f'(x)=3x^2
-\]
+1. **6 meters are added; 13 meters are in the first box.**
+2. **No.** Both amounts grow at the same rate. The second box ends with 6 meters.
 
-and
-
-\[
-\int_0^x 3t^2\,dt=x^3.
-\]
-
-In this example the chosen lower bound makes the recovery exact without an extra constant.
+A rate records change. It does not record the starting amount. The water and ribbon examples share this structure even though their units differ.
 
 </details>
 
-> **Do not confuse:** the Fundamental Theorem connects derivative and integral under specific regularity assumptions. It is not a generic law saying that every formal transformation has an inverse.
+## The connection
 
-## Watch — optional
+The **Fundamental Theorem of Calculus** connects differentiation and integration. With suitable assumptions, adding up a quantity's rate of change gives its final value minus its starting value.
 
-3Blue1Brown, **“The essence of calculus”** — a geometric visual introduction to derivatives, integrals, and why the Fundamental Theorem links them:
+<details>
+<summary>Optional notation — derivative, integral, and the theorem</summary>
 
-https://www.youtube.com/watch?v=WUvTyaaNkzM
+Let $f(x)=x^2$, where $x^2$ means $x$ multiplied by itself. The derivative is defined by
 
-> **What the next layer notices:** what if the thing being transformed is not a number-valued function, but an expression that can itself represent computation?
+$$
+f'(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h},
+$$
+
+when that limit exists. The fraction is the change in output divided by a nonzero change in input.
+
+Here it simplifies to $2x+h$, so the limit is $f'(x)=2x$. At $x=3$, the local rate is 6.
+
+Integrating this derivative from 0 to 3 gives
+
+$$
+\int_0^3 2x\,dx=9.
+$$
+
+If we use $F(x)=5+x^2$ instead, its derivative is still $2x$. The integral gives $F(3)-F(0)=14-5=9$, not 14.
+
+A standard form of the theorem says: if $f$ is continuous on $[a,b]$ and $F(x)=\int_a^x f(t)\,dt$, then $F'(x)=f(x)$ in the interior. If $F'=f$ on the interval, then
+
+$$
+\int_a^b f(x)\,dx=F(b)-F(a).
+$$
+
+The assumptions specify where these rules apply.
+
+</details>
+
+<details>
+<summary>Further connection — surfaces and boundaries</summary>
+
+For a suitable oriented manifold $M$ and differential form $\omega$, Stokes' theorem relates an integral over a region to one over its boundary:
+
+$$
+\int_M d\omega=\int_{\partial M}\omega.
+$$
+
+Differential forms describe quantities that can be integrated over curves, surfaces, and higher-dimensional regions. Explore [geometry and fields](../PANTHEON.md#2-geometry-and-fields) when you want this wider setting.
+
+</details>
+
+## Where to go next
+
+For change across space, explore [vector calculus](../PANTHEON.md#2-geometry-and-fields). For choosing a whole path, try [variations](../tracks/change/variational-calculus.md). For random paths, try [stochastic calculus](../tracks/change/stochastic-calculus.md).
+
+Each adds structure and assumptions to the questions we can ask.
+
+## Sources and optional viewing
+
+The examples are original. For the standard theorem, see Gilbert Strang and Edwin “Jed” Herman, [*Calculus Volume 1*, §5.3, OpenStax](https://openstax.org/books/calculus-volume-1/pages/5-3-the-fundamental-theorem-of-calculus). Further sources are in [References](../REFERENCES.md#classical-calculus-and-analysis).
+
+**Watch:** 3Blue1Brown's [“The essence of calculus”](https://www.youtube.com/watch?v=WUvTyaaNkzM) offers geometric pictures of rates and areas. The lesson above is complete without the video.
+
+[← Foundation](../start/03-why-many-calculi.md) · [Home](../README.md) · [Next: λ-calculus →](02-lambda.md)
