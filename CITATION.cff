@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this pedagogical atlas, please cite it as below."
+title: "Calculi: A Pedagogy-First Atlas of Calculi"
+type: software
+authors:
+  - family-names: "Tiffany"
+    given-names: "Paul Carver"
+    name-suffix: "III"
+repository-code: "https://github.com/PaulTiffany/calculi"
+url: "https://github.com/PaulTiffany/calculi"
+license: "CC-BY-4.0"
+date-released: "2026-09-22"
+year: 2026
