@@ -6,6 +6,20 @@ This is a working bibliography for the pedagogical atlas. Primary or near-primar
 
 For the first teaching pass, standard modern analysis texts may be used for limits, differentiation, integration, and the Fundamental Theorem of Calculus. A later bibliography pass will separate historical Newton/Leibniz sources from modern rigorous treatments.
 
+## Calculus of variations
+
+- Encyclopedia of Mathematics. “Variational calculus.”  
+  https://encyclopediaofmath.org/wiki/Variational_calculus
+- Encyclopedia of Mathematics. “Variation.”  
+  https://encyclopediaofmath.org/wiki/Variation
+- Gel'fand, I. M.; Fomin, S. V. *Calculus of Variations*. Prentice-Hall, 1963.
+
+## Stochastic calculus
+
+- Encyclopedia of Mathematics. “Stochastic integral.”  
+  https://encyclopediaofmath.org/wiki/Stochastic_integral
+- Karatzas, Ioannis; Shreve, Steven E. *Brownian Motion and Stochastic Calculus*. Springer, 1988.
+
 ## λ-calculus
 
 - Church, Alonzo. Foundational papers on λ-definability and effective calculability.
@@ -20,6 +34,10 @@ For the first teaching pass, standard modern analysis texts may be used for limi
 - Stanford Encyclopedia of Philosophy. “Proof Theory.”  
   https://plato.stanford.edu/entries/proof-theory/
 
+## Calculus of Constructions
+
+- Coquand, Thierry; Huet, Gérard. “The Calculus of Constructions.” *Information and Computation* 76(2–3):95–120, 1988. DOI: 10.1016/0890-5401(88)90005-3.
+
 ## π-calculus
 
 - Milner, Robin; Parrow, Joachim; Walker, David. “A Calculus of Mobile Processes, I.” *Information and Computation* 100(1):1–40, 1992. DOI: 10.1016/0890-5401(92)90008-4.
@@ -32,6 +50,15 @@ For the first teaching pass, standard modern analysis texts may be used for limi
 - Lybech, Stian. “The Reflective Higher-Order Calculus: Encodability, Typability and Separation.” *Information and Computation* 297 (2024), 105138. DOI: 10.1016/j.ic.2024.105138.
 - Meredith, Lucius Gregory; Stay, Michael. “Name-Free Combinators for Concurrency.” arXiv:1703.07054, 2017.
 - Meredith and Radestock's earlier ρ-calculus work should be added directly once the preferred primary bibliographic record is pinned down.
+
+## Situation, event, and fluent calculi
+
+- McCarthy, John; Hayes, Patrick J. “Some Philosophical Problems from the Standpoint of Artificial Intelligence.” In *Machine Intelligence 4*, 1969.
+- Stanford Encyclopedia of Philosophy. “Logic-Based Artificial Intelligence.”  
+  https://plato.stanford.edu/entries/logic-ai/
+- Kowalski, Robert; Sergot, Marek. Foundational event-calculus work, 1986. A later bibliography pass should pin the preferred primary bibliographic record before making detailed historical claims.
+- McCarthy, John. “Actions and Other Events in Situation Calculus.”  
+  https://www-formal.stanford.edu/jmc/sitcalc.pdf
 
 ## Calculus of indications
 
