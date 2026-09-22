@@ -25,17 +25,26 @@ flowchart BT
 
 This is a **teaching order**, not a single historical family tree. Historical relationships are sourced where they matter.
 
-## Start here
+## Start here — no calculus required
 
-1. [What is a calculus?](lessons/00-what-is-a-calculus.md)
-2. [Classical calculus — local change and accumulation](lessons/01-classical-calculus.md)
-3. [λ-calculus — abstraction, application, substitution](lessons/02-lambda.md)
-4. [π-calculus — communication that changes connectivity](lessons/03-pi.md)
-5. [ρ-calculus — reflection in a process world](lessons/04-rho.md)
-6. [Calculus of indications — distinction as operation](lessons/05-indications.md)
-7. [Distinction graphs — distinguishability relative to an observer](lessons/06-distinction-graphs.md)
-8. [Fuzzy Calculus — bounded observation and residual recovery](lessons/07-fuzzy.md)
-9. [Comparing calculi](lessons/08-comparison.md)
+The first three pages assume no prior calculus and target roughly an **8th-grade reading level**.
+
+1. [Things Change](start/01-things-change.md)
+2. [What Calculus Does](start/02-what-calculus-does.md)
+3. [Why Are There Many Calculi?](start/03-why-many-calculi.md)
+
+If those make sense, enter the pyramid:
+
+4. [Classical calculus — local change and accumulation](lessons/01-classical-calculus.md)
+5. [λ-calculus — abstraction, application, substitution](lessons/02-lambda.md)
+6. [π-calculus — communication that changes connectivity](lessons/03-pi.md)
+7. [ρ-calculus — reflection in a process world](lessons/04-rho.md)
+8. [Calculus of indications — distinction as operation](lessons/05-indications.md)
+9. [Distinction graphs — distinguishability relative to an observer](lessons/06-distinction-graphs.md)
+10. [Fuzzy Calculus — bounded observation and residual recovery](lessons/07-fuzzy.md)
+11. [Comparing calculi](lessons/08-comparison.md)
+
+Optional bridge: [What makes a calculus formal?](lessons/00-what-is-a-calculus.md)
 
 The core path is intentionally short. Expansion tracks fill out the pyramid without bloating it.
 
@@ -100,6 +109,10 @@ The text remains complete on its own. Diagrams, exercises, and external media ch
 - calculus of fractions — planned
 - Goodwillie calculus — planned
 - umbral calculus — planned
+
+## Reading level
+
+The main path is written so an interested 8th-grade reader can follow the **idea** before meeting the formal notation. Technical terms are introduced only when they earn their keep. Equations may deepen a lesson, but the plain-language explanation must stand on its own.
 
 ## One teaching frame
 
