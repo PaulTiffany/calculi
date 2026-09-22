@@ -1,5 +1,7 @@
 # Calculi
 
+*Uncovering the pyramid.*
+
 A pedagogy-first atlas of calculi: what each calculus takes as primitive, what it lets us do, what problem it was built to solve, and what is lost or gained when we move between them.
 
 **Open educational resource:** original pedagogical material in this repository is licensed [CC BY 4.0](LICENSE.md). Source works retain their own rights and are attributed through lesson-local sources, the [Attribution Ledger](ATTRIBUTION.md), and the [References](REFERENCES.md).
@@ -34,6 +36,21 @@ The first reading path is deliberately comparative:
 The path is **pedagogical**, not a claim of historical descent.
 
 Each lesson ends by identifying what its calculus does *not* give us for free. That boundary motivates comparison with the next formal world.
+
+### Learn in more than one mode
+
+Core lessons are being shaped around a lean rhythm: **Read → See → Do → Check → Watch (optional)**. The lesson must remain complete as text; diagrams and external media deepen intuition rather than carry essential claims. See [MEDIA.md](MEDIA.md).
+
+```mermaid
+flowchart BT
+    A[Objects: what exists?] --> B[Distinctions: what differences matter?]
+    B --> C[Operations: what can happen?]
+    C --> D[Composition: how do moves combine?]
+    D --> E[Observation: what counts as the same outcome?]
+    E --> F[Boundary: what is not native here?]
+```
+
+This is the pedagogical **pyramid** we keep uncovering. It is a comparison scaffold, not a claim that every calculus was historically built in this order.
 
 ## Constellations
 
@@ -207,6 +224,7 @@ The teaching goal is to learn each calculus by learning the world it assumes.
 - [References](REFERENCES.md) — working primary-source bibliography
 - [Contributing](CONTRIBUTING.md) — source, relation-label, and licensing requirements for additions
 - [Citation metadata](CITATION.cff) — preferred repository citation
+- [Media and learning modes](MEDIA.md) — visual, interactive, and external-media policy
 
 ## License and attribution
 
