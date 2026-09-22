@@ -136,3 +136,55 @@ Then answer:
 - Robin Milner, *The Polyadic π-Calculus: A Tutorial*.
 
 See [../REFERENCES.md](../REFERENCES.md).
+
+---
+
+## See it
+
+```mermaid
+flowchart LR
+    A["(λx.x) a"] -->|"β-reduction"| B["a"]
+```
+
+The visual point is not “movement through space.” A redex is replaced by the result of capture-avoiding substitution.
+
+## Do it
+
+Reduce:
+
+\[
+(\lambda x.\lambda y.x)\;p\;q.
+\]
+
+<details>
+<summary>Check your answer</summary>
+
+First:
+
+\[
+(\lambda x.\lambda y.x)\;p
+\to_\beta
+\lambda y.p.
+\]
+
+Then:
+
+\[
+(\lambda y.p)\;q
+\to_\beta
+p.
+\]
+
+The term keeps the first argument and ignores the second.
+
+</details>
+
+> **Do not confuse:** β-reduction is a rewrite by substitution. It is not differentiation, even though both can be written as transformations.
+
+## Watch — optional
+
+Computerphile / Graham Hutton, **“Lambda Calculus”** — a compact visual introduction to abstraction, application, and reduction:
+
+https://www.youtube.com/watch?v=eis11j_iGMs
+
+> **What the next layer notices:** what if computation is not one expression reducing, but several processes interacting at once?
