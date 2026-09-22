@@ -8,11 +8,19 @@ The original explanatory text is licensed under [CC BY 4.0](LICENSE.md). Source 
 
 Teach the calculus, name the people and sources that made it possible, and distinguish source claims from pedagogical reconstruction.
 
+## Beginner foundation
+
+| Page | Main lineage |
+|---|---|
+| [Things Change](start/01-things-change.md) | original pedagogical introduction using everyday examples |
+| [What Calculus Does](start/02-what-calculus-does.md) | original pedagogical explanation of standard derivative/integral ideas |
+| [Why Are There Many Calculi?](start/03-why-many-calculi.md) | comparative pedagogical synthesis |
+
 ## Core lesson attribution
 
 | Lesson | Main lineage |
 |---|---|
-| [00 — What Is a Calculus?](lessons/00-what-is-a-calculus.md) | comparative pedagogical synthesis |
+| [00 — What Makes a Calculus Formal?](lessons/00-what-is-a-calculus.md) | comparative pedagogical synthesis |
 | [01 — Classical Calculus](lessons/01-classical-calculus.md) | Newton/Leibniz tradition; modern analysis |
 | [02 — λ-Calculus](lessons/02-lambda.md) | Alonzo Church and subsequent λ-calculus literature |
 | [03 — π-Calculus](lessons/03-pi.md) | Robin Milner, Joachim Parrow, David Walker |
