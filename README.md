@@ -2,6 +2,8 @@
 
 A pedagogy-first atlas of calculi: what each calculus takes as primitive, what it lets us do, what problem it was built to solve, and what is lost or gained when we move between them.
 
+**Open educational resource:** original pedagogical material in this repository is licensed [CC BY 4.0](LICENSE.md). Source works retain their own rights and are attributed through lesson-local sources, the [Attribution Ledger](ATTRIBUTION.md), and the [References](REFERENCES.md).
+
 This repository is **not** a claim that all calculi form one historical lineage. Some are directly related by extension or encoding; some share only a structural analogy. We keep those relations separate.
 
 ## The guiding idea
@@ -115,7 +117,7 @@ This lets a reader compare Newtonian differentiation, β-reduction, sequent rule
 
 ## A map, not a ladder
 
-\`\`\`text
+```text
 CHANGE / ACCUMULATION
 classical calculus
    ├── calculus of variations
@@ -157,7 +159,7 @@ calculus of indications
 FRONTIER
 Goertzel d-calculus
    └── comparison deferred until public primitives and laws are available
-\`\`\`
+```
 
 The lines above do **not** all mean the same thing.
 
@@ -200,9 +202,22 @@ The teaching goal is to learn each calculus by learning the world it assumes.
 ## Repository guides
 
 - [Relation Ledger](RELATIONS.md) — every cross-calculus edge and its evidentiary status
+- [Attribution Ledger](ATTRIBUTION.md) — source lineage for every core lesson and expansion track
 - [Glossary](GLOSSARY.md) — shared vocabulary without pretending definitions transfer unchanged between traditions
 - [References](REFERENCES.md) — working primary-source bibliography
+- [Contributing](CONTRIBUTING.md) — source, relation-label, and licensing requirements for additions
+- [Citation metadata](CITATION.cff) — preferred repository citation
 
-## License
+## License and attribution
 
-Educational material in this repository is intended to remain open and citable. License metadata will be added explicitly before a tagged release.
+Except where otherwise noted, original pedagogical text, diagrams, tables, and other original educational material in this repository are licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
+
+This license permits sharing and adaptation, including commercial use, with attribution. Third-party works cited or discussed here are **not** relicensed by this repository.
+
+- [License](LICENSE.md)
+- [Attribution and source provenance](ATTRIBUTION.md)
+- [Full references](REFERENCES.md)
+
+Preferred credit:
+
+> Paul Carver Tiffany III, *Calculi: A Pedagogy-First Atlas of Calculi*, 2026, https://github.com/PaulTiffany/calculi, CC BY 4.0.
