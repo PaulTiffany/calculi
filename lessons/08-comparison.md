@@ -1,150 +1,100 @@
-# 08 — Comparing Calculi Without Flattening Them
+# 08 — Comparing Calculi
 
-A cosmology becomes dangerous when every formalism is forced into one story.
+The purpose of the pyramid is not to reveal one secret master calculus. It is to make comparison easier.
 
-This lesson gives us a disciplined comparison method.
+## Compare the world first
 
-## 1. Compare primitives first
-
-Ask what must exist before any rule can run.
-
-| Calculus | Primitive emphasis |
+| Calculus | Native world |
 |---|---|
-| classical | varying quantities / local structure |
-| λ | variables, abstraction, application |
+| classical | varying quantities |
+| variational | paths and functionals |
+| stochastic | random processes and filtrations |
+| λ | terms, abstraction, application |
 | sequent | formulas in inferential contexts |
 | π | processes and names |
 | ρ | reflective process/name structure |
-| indications | distinction / mark |
-| distinction graphs | observer-indexed indistinguishability |
-| Fuzzy | bounded observer interface and observer-relative differential structure |
+| indications | marked and unmarked forms |
+| distinction graphs | observer-relative distinguishability |
+| Fuzzy | bounded observational geometry |
 
-Two systems that use similar arrows may still begin from different primitives.
+## Compare the move
 
-## 2. Compare characteristic moves
-
-| Calculus | Move |
+| Calculus | Characteristic move |
 |---|---|
 | classical | differentiate / integrate |
+| variational | vary a path or function |
+| stochastic | integrate along stochastic processes |
 | λ | β-reduce |
 | sequent | infer by a rule |
 | π | communicate / transition |
 | ρ | communicate with reflective naming structure |
 | indications | mark / simplify forms |
-| distinction graph | construct/update indistinguishability relations |
-| Fuzzy | differentiate/integrate through bounded observation and track residue |
+| distinction graph | construct or update indistinguishability |
+| Fuzzy | observer-relative differentiate / integrate and track residue |
 
-## 3. Compare observables
+## Compare what counts as “the same”
 
-A calculus needs some account of when two formal objects count as equivalent.
+Different calculi use different notions of sameness: numerical equality, normal form, α/β/η equivalence, logical derivability, bisimulation, graph equivalence, or observer-visible equivalence.
 
-Examples include:
+This is often where apparently similar calculi sharply diverge.
 
-- same numerical value;
-- α/β/η relations;
-- logical derivability;
-- bisimulation;
-- same marked/unmarked form;
-- same distinction structure;
-- same observer-visible projection.
-
-When moving between calculi, ask which equivalence is preserved.
-
-## 4. Compare loss
-
-Every translation deserves a loss ledger.
+## Compare translations
 
 Suppose
+
 \[
 T:A\to B.
 \]
 
 Ask:
 
-1. Is \(T\) injective?
-2. Is it surjective?
-3. Does it preserve reduction?
-4. Does it preserve observations?
-5. Does it preserve composition?
-6. Can \(A\) be reconstructed?
-7. What structure disappears?
+1. What does \(T\) preserve?
+2. What does it forget?
+3. Does it preserve composition?
+4. Does it preserve observable behavior?
+5. Can the original object be reconstructed?
 
-This turns “these look similar” into a research program.
+A translation is interesting precisely because two calculi need not be identical.
 
-## 5. Example: λ and π
+## Three useful examples
 
-There are encodings of λ-style computation into π-calculus.
+### λ and π
 
-So a valid statement is:
+λ-computation can be represented using communicating processes under explicit encodings.
 
-> specified λ-computations can be represented by communicating π-processes under an explicit translation.
+That does not erase the difference between **application** and **interaction** as native primitives.
 
-An invalid leap is:
+### π and ρ
 
-> therefore λ-calculus and π-calculus are the same calculus.
+ρ-calculus is closely related to π-calculus but adds reflective structure.
 
-The encoding tells us something deep precisely because their primitive pictures differ.
+The encoding history itself is instructive: exact formal claims matter more than slogans like “π plus reflection.”
 
-## 6. Example: π and ρ
+### Classical and stochastic calculus
 
-ρ is π-like and reflective.
+Both speak of change and integration, but stochastic path structure alters the valid rules.
 
-But the encoding history is subtle: later work found errors in an earlier encoding and repaired the result under carefully stated criteria.
+The same familiar word—“integral”—can therefore name operations living in significantly different formal worlds.
 
-Lesson:
+## Exercise — climb the pyramid
 
-> **Never teach the slogan where the theorem has conditions.**
+Pick any two calculi in the repository and fill in:
 
-## 7. Example: distinction graphs and Fuzzy Calculus
+| Question | Calculus A | Calculus B |
+|---|---|---|
+| What exists? | | |
+| What differences matter? | | |
+| What can happen? | | |
+| How do moves compose? | | |
+| What counts as the same result? | | |
+| What is not native? | | |
 
-Potential relation:
-\[
-\text{bounded observer projection}
-\longrightarrow
-\text{induced indistinguishability relation}.
-\]
+If the comparison is still interesting after filling this out, it is probably worth formalizing.
 
-If formally established, that would be a bridge from an observational geometry to a distinction graph.
+## Final lesson
 
-But the reverse direction may lose:
+A calculus is not just notation.
 
-- kernel shape;
-- resolution scale;
-- differential structure;
-- curvature;
-- path information;
-- residue.
+It is a choice about what exists, what may change, what may compose, what may be observed, and what may count as equivalent.
 
-That would make the graph a quotient or shadow of richer structure.
-
-At present this is a comparison program, not a theorem of this repository.
-
-## 8. Five labels
-
-Use only:
-
-- **historical influence**
-- **formal encoding**
-- **extension/refinement**
-- **structural analogy**
-- **conjectured bridge**
-
-If a statement does not fit one of these, rewrite it until it does.
-
-## Exercise — classify the arrow
-
-Classify each statement before researching whether it is true:
-
-1. “π developed from the process-algebra tradition including CCS.”
-2. “λ-computation can be encoded using π-processes.”
-3. “ρ is basically π plus reflection.”
-4. “Distinction graphs and Fuzzy Calculus both foreground observer-relative structure.”
-5. “A bounded observer projection induces the exact graph structure of Goertzel 2019.”
-
-Suggested categories:
-
-- (1) historical influence / extension;
-- (2) formal encoding;
-- (3) oversimplified; needs replacement;
-- (4) structural analogy;
-- (5) conjectured bridge until proved.
+The pyramid is a way to see those choices.
