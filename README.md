@@ -2,25 +2,30 @@
 
 *Uncovering the pyramid.*
 
-A pedagogy-first atlas of calculi: what each calculus takes as primitive, what it lets us do, what problem it was built to solve, and what is lost or gained when we move between them.
+A pedagogy-first atlas of calculi: what each calculus takes as primitive, what it lets us do, and what becomes expressible as the formal world grows richer.
 
 **Open educational resource:** original pedagogical material in this repository is licensed [CC BY 4.0](LICENSE.md). Source works retain their own rights and are attributed through lesson-local sources, the [Attribution Ledger](ATTRIBUTION.md), and the [References](REFERENCES.md).
 
-This repository is **not** a claim that all calculi form one historical lineage. Some are directly related by extension or encoding; some share only a structural analogy. We keep those relations separate.
+## The pyramid
 
-## The guiding idea
+A calculus is a disciplined way of transforming or reasoning about something.
 
-A calculus becomes easier to understand when we ask:
+The pedagogical pyramid asks a simple question:
 
-> **What kind of world does this calculus make expressible?**
+> **What must become expressible before the next kind of calculus makes sense?**
 
-Some calculi make **change** primary. Some make **substitution**, **proof**, **communication**, **action**, **distinction**, or **observation** primary.
+```mermaid
+flowchart BT
+    A["Quantity & change<br/>differential · integral · variational · stochastic"] --> B["Symbolic transformation<br/>logic · combinators · λ"]
+    B --> C["Proof & types<br/>sequents · typed λ · CoC"]
+    C --> D["Interaction<br/>CCS · CSP · ACP · π"]
+    D --> E["Reflection & mobility<br/>higher-order · ρ · ambient · ψ"]
+    E --> F["Distinction & observation<br/>indications · distinction graphs · Fuzzy"]
+```
 
-The word *calculus* is used here in its broad mathematical sense: a disciplined system of objects, operations, and rules for transforming or reasoning about them.
+This is a **teaching order**, not a single historical family tree. Historical relationships are sourced where they matter.
 
 ## Start here
-
-The first reading path is deliberately comparative:
 
 1. [What is a calculus?](lessons/00-what-is-a-calculus.md)
 2. [Classical calculus — local change and accumulation](lessons/01-classical-calculus.md)
@@ -30,51 +35,21 @@ The first reading path is deliberately comparative:
 6. [Calculus of indications — distinction as operation](lessons/05-indications.md)
 7. [Distinction graphs — distinguishability relative to an observer](lessons/06-distinction-graphs.md)
 8. [Fuzzy Calculus — bounded observation and residual recovery](lessons/07-fuzzy.md)
-9. [Comparing calculi without flattening them](lessons/08-comparison.md)
-10. [Frontier: Goertzel's d-calculus](lessons/09-frontier-d-calculus.md)
+9. [Comparing calculi](lessons/08-comparison.md)
 
-The path is **pedagogical**, not a claim of historical descent.
+The core path is intentionally short. Expansion tracks fill out the pyramid without bloating it.
 
-Each lesson ends by identifying what its calculus does *not* give us for free. That boundary motivates comparison with the next formal world.
+## Learn in more than one mode
 
-### Learn in more than one mode
+Core lessons use a lean rhythm:
 
-Core lessons are being shaped around a lean rhythm: **Read → See → Do → Check → Watch (optional)**. The lesson must remain complete as text; diagrams and external media deepen intuition rather than carry essential claims. See [MEDIA.md](MEDIA.md).
+**Read → See → Do → Check → Watch (optional)**
 
-```mermaid
-flowchart BT
-    A[Objects: what exists?] --> B[Distinctions: what differences matter?]
-    B --> C[Operations: what can happen?]
-    C --> D[Composition: how do moves combine?]
-    D --> E[Observation: what counts as the same outcome?]
-    E --> F[Boundary: what is not native here?]
-```
-
-This is the pedagogical **pyramid** we keep uncovering. It is a comparison scaffold, not a claim that every calculus was historically built in this order.
-
-## Constellations
-
-This is a cosmology, not a single ladder.
-
-| Constellation | Central question | Representative calculi |
-|---|---|---|
-| **Change and quantity** | How does something vary, accumulate, fluctuate, or optimize? | differential & integral calculus; calculus of variations; stochastic calculus; fractional calculus; tensor calculus |
-| **Functions and computation** | How can computation be reduced to application, abstraction, and substitution? | combinatory logic; λ-calculus; typed λ-calculi; System F; differential λ-calculus |
-| **Proof and types** | How can derivation itself be made formal? | natural deduction; sequent calculus; calculus of constructions; calculus of inductive constructions |
-| **Interaction and concurrency** | How do independent processes synchronize, communicate, move, or rewrite one another? | CCS; CSP; ACP; π-calculus; join calculus; ambient calculus; stochastic π-calculus |
-| **Security and distributed interaction** | How do names, channels, identities, and adversaries affect interaction? | spi calculus; applied π-calculus |
-| **Reflection and higher-order process** | What changes when processes can represent, quote, or manipulate processes? | higher-order process calculi; ρ-calculus; ψ-calculi |
-| **Action and evolving worlds** | How do actions change a world through time? | situation calculus; event calculus; fluent calculus |
-| **Relations and data** | How can queries and relations be expressed declaratively? | relational calculus |
-| **Distinction and observation** | What follows from drawing a distinction, and from limits on distinguishability? | calculus of indications; distinction graphs; Fuzzy Calculus |
-| **Advanced mathematical calculi** | What happens when “calculus” is generalized to new mathematical objects? | Malliavin calculus; functional calculus; umbral calculus; calculus of fractions; Goodwillie calculus |
-| **Frontier / incomplete public specification** | What new calculi are being proposed now? | Goertzel's d-calculus |
+The text remains complete on its own. Diagrams, exercises, and external media change cognitive mode rather than carry essential claims. See [MEDIA.md](MEDIA.md).
 
 ## Expansion tracks
 
-The main lessons establish comparison vocabulary. These tracks deepen individual constellations.
-
-### Change beyond elementary calculus
+### Quantity and change
 
 - [Calculus of variations — change the whole path](tracks/change/variational-calculus.md)
 - [Stochastic calculus — change along noisy paths](tracks/change/stochastic-calculus.md)
@@ -108,9 +83,17 @@ The main lessons establish comparison vocabulary. These tracks deepen individual
 - ρ-calculus — [core lesson](lessons/04-rho.md)
 - ψ-calculi — planned
 
-### Logic of action and time
+### Action and evolving worlds
 
-- [Situation, event, and fluent calculi — reasoning about change in worlds](tracks/action/situation-event-fluent.md)
+- [Situation, event, and fluent calculi](tracks/action/situation-event-fluent.md)
+- relational calculus — planned
+
+### Distinction and observation
+
+- calculus of indications — [core lesson](lessons/05-indications.md)
+- distinction graphs — [core lesson](lessons/06-distinction-graphs.md)
+- Fuzzy Calculus — [core lesson](lessons/07-fuzzy.md)
+- new distinction-centered calculi — add when enough formal material exists to teach them
 
 ### Structural and categorical uses of “calculus”
 
@@ -118,123 +101,58 @@ The main lessons establish comparison vocabulary. These tracks deepen individual
 - Goodwillie calculus — planned
 - umbral calculus — planned
 
-## One teaching frame for every lesson
+## One teaching frame
 
-Every lesson should answer the same seven questions:
+Every lesson should answer seven questions:
 
 1. **Need** — what problem made this calculus useful?
 2. **World** — what sort of things exist inside it?
 3. **Primitive** — what does it assume before anything else?
 4. **Move** — what is the characteristic operation or rewrite?
 5. **Toy example** — what happens in the smallest useful case?
-6. **Boundary** — what does the calculus *not* give us for free?
-7. **Relations** — what is historically inherited, formally encoded, or merely analogous to another calculus?
+6. **Boundary** — what does the calculus not give us for free?
+7. **Relations** — what does it inherit, encode, extend, or resemble?
 
-This lets a reader compare Newtonian differentiation, β-reduction, sequent rules, π-calculus communication, and observer-relative distinction without pretending they are the same operation.
+## The recurring layers
 
-## A map, not a ladder
+| Layer | Question |
+|---|---|
+| **Objects** | What exists? |
+| **Distinctions** | What differences matter? |
+| **Operations** | What can happen? |
+| **Composition** | How do moves combine? |
+| **Observation** | What counts as the same outcome? |
+| **Boundary** | What is not native here? |
 
-```text
-CHANGE / ACCUMULATION
-classical calculus
-   ├── calculus of variations
-   ├── stochastic calculus
-   ├── fractional calculus
-   └── tensor / functional / Malliavin ...
+Different calculi answer these differently. That is the point.
 
-FORMAL TRANSFORMATION
-combinatory logic
-   └── λ-calculus
-        ├── typed λ / System F
-        ├── differential λ
-        └── proofs-as-programs
-             ├── natural deduction / sequents
-             └── Calculus of Constructions / CIC
+## Source discipline
 
-INTERACTION
-CCS / CSP / ACP
-   └── π-calculus
-        ├── join / ambient
-        ├── spi / applied π
-        ├── stochastic π
-        ├── higher-order process calculi
-        ├── ρ-calculus
-        └── ψ-calculi
+The atlas is synthetic, but not anonymous.
 
-ACTION / WORLD CHANGE
-situation calculus
-   ├── event calculus
-   └── fluent calculus
+- originators and primary sources are named;
+- modern corrections stay visible;
+- encodings are not treated as identities;
+- pedagogical analogies are labeled as analogies;
+- original examples are distinguished from source claims.
 
-DISTINCTION / OBSERVATION
-calculus of indications
-   └── observer-relative distinction
-        ├── distinction graphs
-        └── bounded differentiation / observation
-             └── Fuzzy Calculus
-
-FRONTIER
-Goertzel d-calculus
-   └── comparison deferred until public primitives and laws are available
-```
-
-The lines above do **not** all mean the same thing.
-
-Every edge must be labeled in the [Relation Ledger](RELATIONS.md) as one of:
-
-- **historical influence**
-- **formal encoding**
-- **extension/refinement**
-- **structural analogy**
-- **conjectured bridge**
-
-If we cannot support an edge, we do not draw it as fact.
-
-## Why “cosmology”?
-
-A genealogy asks:
-
-> What descended from what?
-
-A cosmology asks:
-
-> **What kind of world must exist for this calculus to make sense?**
-
-In classical calculus, quantities vary enough for local change and accumulation to be related. In λ-calculus, the world is organized around abstraction, application, and substitution. In π-calculus, around interacting processes and names. In ρ-calculus, process structure can participate in naming and reflection. In distinction-based systems, what can and cannot be told apart becomes central. In Fuzzy Calculus, observation is bounded and failure of exact recovery is itself mathematical data.
-
-The teaching goal is to learn each calculus by learning the world it assumes.
-
-## Epistemic rules
-
-1. Historical claims require sources.
-2. An encoding is not an identity.
-3. Similar notation is not evidence of ancestry.
-4. A structural analogy is not a historical influence.
-5. A later calculus can generalize an earlier object without retroactively originating it.
-6. Unpublished or incompletely specified systems stay in the **frontier** section until their primitives and laws are public.
-7. Fuzzy Calculus is presented alongside its antecedents, not as if observer-relative distinction began with it.
-8. Where scholars disagree about lineage or interpretation, the disagreement stays visible.
-9. A slogan never outranks the theorem it summarizes.
+See [ATTRIBUTION.md](ATTRIBUTION.md), [RELATIONS.md](RELATIONS.md), and [REFERENCES.md](REFERENCES.md).
 
 ## Repository guides
 
-- [Relation Ledger](RELATIONS.md) — every cross-calculus edge and its evidentiary status
-- [Attribution Ledger](ATTRIBUTION.md) — source lineage for every core lesson and expansion track
-- [Glossary](GLOSSARY.md) — shared vocabulary without pretending definitions transfer unchanged between traditions
-- [References](REFERENCES.md) — working primary-source bibliography
-- [Contributing](CONTRIBUTING.md) — source, relation-label, and licensing requirements for additions
-- [Citation metadata](CITATION.cff) — preferred repository citation
-- [Media and learning modes](MEDIA.md) — visual, interactive, and external-media policy
+- [Media and learning modes](MEDIA.md)
+- [Relation Ledger](RELATIONS.md)
+- [Attribution Ledger](ATTRIBUTION.md)
+- [Glossary](GLOSSARY.md)
+- [References](REFERENCES.md)
+- [Contributing](CONTRIBUTING.md)
+- [Citation metadata](CITATION.cff)
 
-## License and attribution
+## License
 
-Except where otherwise noted, original pedagogical text, diagrams, tables, and other original educational material in this repository are licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
+Except where otherwise noted, original pedagogical material in this repository is licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
 
-This license permits sharing and adaptation, including commercial use, with attribution. Third-party works cited or discussed here are **not** relicensed by this repository.
-
-- [License](LICENSE.md)
-- [Attribution and source provenance](ATTRIBUTION.md)
-- [Full references](REFERENCES.md)
+Third-party works cited or discussed here are not relicensed by this repository.
 
 Preferred credit:
 
