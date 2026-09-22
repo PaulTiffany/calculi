@@ -16,11 +16,12 @@ The pedagogical pyramid asks a simple question:
 
 ```mermaid
 flowchart BT
-    A["Quantity & change<br/>differential · integral · variational · stochastic"] --> B["Symbolic transformation<br/>logic · combinators · λ"]
-    B --> C["Proof & types<br/>sequents · typed λ · CoC"]
-    C --> D["Interaction<br/>CCS · CSP · ACP · π"]
-    D --> E["Reflection & mobility<br/>higher-order · ρ · ambient · ψ"]
-    E --> F["Distinction & observation<br/>indications · distinction graphs · Fuzzy"]
+    A["Quantity & change<br/>differential · integral · finite difference · variational · stochastic · fractional"] --> B["Geometry & fields<br/>vector · tensor · exterior · Ricci"]
+    B --> C["Logic & symbolic rules<br/>propositional · predicate · combinatory · λ"]
+    C --> D["Proof & types<br/>natural deduction · sequents · System F · CoC · CIC"]
+    D --> E["Interaction & concurrency<br/>CCS · CSP · ACP · π · join · ambient · spi · ψ · ρ"]
+    E --> F["Actions, events & data<br/>situation · event · fluent · relational"]
+    F --> G["Distinction & observation<br/>indications · distinction graphs · Fuzzy"]
 ```
 
 This is a **teaching order**, not a single historical family tree. Historical relationships are sourced where they matter.
@@ -46,7 +47,7 @@ If those make sense, enter the pyramid:
 
 Optional bridge: [What makes a calculus formal?](lessons/00-what-is-a-calculus.md)
 
-The core path is intentionally short. Expansion tracks fill out the pyramid without bloating it.
+The core path is intentionally short. It is a guided tour, not the whole pantheon. For the wider map, see **[The Pantheon of Calculi](PANTHEON.md)**.
 
 ## Learn in more than one mode
 
@@ -56,60 +57,71 @@ Core lessons use a lean rhythm:
 
 The text remains complete on its own. Diagrams, exercises, and external media change cognitive mode rather than carry essential claims. See [MEDIA.md](MEDIA.md).
 
-## Expansion tracks
+## Major families
+
+The fuller pantheon is grouped by the kind of thing being transformed.
 
 ### Quantity and change
 
-- [Calculus of variations — change the whole path](tracks/change/variational-calculus.md)
-- [Stochastic calculus — change along noisy paths](tracks/change/stochastic-calculus.md)
-- fractional calculus — planned
-- tensor calculus — planned
-- Malliavin calculus — planned
-- functional calculus — planned
+- differential and integral calculus
+- multivariable and vector calculus
+- finite-difference calculus
+- [calculus of variations](tracks/change/variational-calculus.md)
+- [stochastic calculus](tracks/change/stochastic-calculus.md)
+- fractional calculus
 
-### Proof and type theory
+### Geometry and fields
 
-- [Sequent calculus — proof as a calculus](tracks/proof/sequent-calculus.md)
-- [Calculus of Constructions — types, terms, and proofs](tracks/types/calculus-of-constructions.md)
-- natural deduction — planned
-- simply typed λ-calculus — planned
-- System F — planned
-- Calculus of Inductive Constructions — planned
-- differential λ-calculus — planned
+- tensor calculus
+- exterior calculus
+- Ricci calculus
+- differential geometry
 
-### Process calculi
+### Logic, symbols, and computation
 
-- CCS — planned
-- CSP — planned
-- ACP — planned
+- propositional calculus
+- predicate calculus
+- combinatory logic
+- λ-calculus — [core lesson](lessons/02-lambda.md)
+- typed λ-calculi, System F, and differential λ-calculus
+
+### Proof and types
+
+- natural deduction
+- [sequent calculus](tracks/proof/sequent-calculus.md)
+- [Calculus of Constructions](tracks/types/calculus-of-constructions.md)
+- Calculus of Inductive Constructions
+
+### Interaction and concurrency
+
+- CCS, CSP, ACP
 - π-calculus — [core lesson](lessons/03-pi.md)
-- higher-order π-calculus — planned
-- join calculus — planned
-- ambient calculus — planned
-- stochastic π-calculus — planned
-- spi calculus — planned
-- applied π-calculus — planned
+- join calculus, ambient calculus
+- stochastic π, spi, applied π
+- ψ-calculi
 - ρ-calculus — [core lesson](lessons/04-rho.md)
-- ψ-calculi — planned
 
-### Action and evolving worlds
+### Actions, events, and data
 
-- [Situation, event, and fluent calculi](tracks/action/situation-event-fluent.md)
-- relational calculus — planned
+- [situation, event, and fluent calculi](tracks/action/situation-event-fluent.md)
+- relational calculus
+
+### Operators and advanced mathematical calculi
+
+- functional calculus
+- Malliavin calculus
+- operational calculus
+- umbral calculus
+- calculus of fractions
+- Goodwillie calculus
 
 ### Distinction and observation
 
 - calculus of indications — [core lesson](lessons/05-indications.md)
 - distinction graphs — [core lesson](lessons/06-distinction-graphs.md)
 - Fuzzy Calculus — [core lesson](lessons/07-fuzzy.md)
-- new distinction-centered calculi — add when enough formal material exists to teach them
 
-### Structural and categorical uses of “calculus”
-
-- calculus of fractions — planned
-- Goodwillie calculus — planned
-- umbral calculus — planned
-
+For plain-language one-line explanations of these, see [PANTHEON.md](PANTHEON.md).
 ## Reading level
 
 The main path is written so an interested 8th-grade reader can follow the **idea** before meeting the formal notation. Technical terms are introduced only when they earn their keep. Equations may deepen a lesson, but the plain-language explanation must stand on its own.
@@ -153,6 +165,7 @@ See [ATTRIBUTION.md](ATTRIBUTION.md), [RELATIONS.md](RELATIONS.md), and [REFEREN
 
 ## Repository guides
 
+- [Pantheon of Calculi](PANTHEON.md)
 - [Media and learning modes](MEDIA.md)
 - [Relation Ledger](RELATIONS.md)
 - [Attribution Ledger](ATTRIBUTION.md)
