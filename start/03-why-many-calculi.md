@@ -28,24 +28,27 @@ That is why mathematics has more than one calculus.
 
 ```mermaid
 flowchart BT
-    A["Amounts change"] --> B["Symbols transform"]
-    B --> C["Proofs transform"]
-    C --> D["Things interact"]
-    D --> E["Systems reflect"]
-    E --> F["Distinctions and observations change"]
+    A["Amounts change"] --> B["Shapes and fields change"]
+    B --> C["Symbols and logic transform"]
+    C --> D["Proofs and programs transform"]
+    D --> E["Things interact"]
+    E --> F["Actions change worlds"]
+    F --> G["Distinctions and observations change"]
 ```
 
 Later, we give these layers names.
 
-| What changes? | One calculus you will meet |
+| What changes? | Some calculi you will meet |
 |---|---|
-| amounts and motion | ordinary calculus |
-| symbolic expressions | λ-calculus |
-| proofs | sequent calculus |
-| communicating processes | π-calculus |
-| reflective processes | ρ-calculus |
-| distinctions | calculus of indications / distinction graphs |
-| bounded observation | Fuzzy Calculus |
+| amounts and motion | differential, integral, vector, stochastic calculus |
+| shapes and fields | tensor and exterior calculus |
+| logical statements | propositional and predicate calculus |
+| symbolic expressions and programs | λ-calculus and typed λ-calculi |
+| proofs | natural deduction and sequent calculus |
+| communicating processes | CCS, CSP, π-calculus |
+| actions and events | situation and event calculus |
+| data relationships | relational calculus |
+| distinctions and observation | calculus of indications, distinction graphs, Fuzzy Calculus |
 
 You do **not** need to understand those names yet.
 
@@ -85,5 +88,7 @@ Match the situation to the kind of change:
 ## One sentence to remember
 
 > **There are many calculi because there are many kinds of things that can change according to rules.**
+
+[See the wider pantheon →](../PANTHEON.md)
 
 [Next: enter the calculus lessons →](../lessons/01-classical-calculus.md)
