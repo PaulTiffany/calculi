@@ -122,6 +122,7 @@ The fuller pantheon is grouped by the kind of thing being transformed.
 - Fuzzy Calculus — [core lesson](lessons/07-fuzzy.md)
 
 For plain-language one-line explanations of these, see [PANTHEON.md](PANTHEON.md).
+
 ## Reading level
 
 The main path is written so an interested 8th-grade reader can follow the **idea** before meeting the formal notation. Technical terms are introduced only when they earn their keep. Equations may deepen a lesson, but the plain-language explanation must stand on its own.
