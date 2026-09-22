@@ -116,3 +116,52 @@ Explain in your own words:
 3. Fundamental Theorem of Calculus;
 4. why \(d/dx\) and β-reduction are not the same operation;
 5. why Stokes' theorem makes boundaries mathematically important.
+
+---
+
+## See it
+
+```mermaid
+flowchart LR
+    A["f(x)=x²"] -->|"differentiate"| B["f'(x)=2x"]
+    B -->|"integrate from 0 to x"| C["x²"]
+```
+
+The diagram is intentionally simple: local change and accumulation can recover one another under the usual hypotheses.
+
+## Do it
+
+Start with
+
+\[
+f(x)=x^3.
+\]
+
+Differentiate it, then integrate the derivative from \(0\) to \(x\).
+
+<details>
+<summary>Check your answer</summary>
+
+\[
+f'(x)=3x^2
+\]
+
+and
+
+\[
+\int_0^x 3t^2\,dt=x^3.
+\]
+
+In this example the chosen lower bound makes the recovery exact without an extra constant.
+
+</details>
+
+> **Do not confuse:** the Fundamental Theorem connects derivative and integral under specific regularity assumptions. It is not a generic law saying that every formal transformation has an inverse.
+
+## Watch — optional
+
+3Blue1Brown, **“The essence of calculus”** — a geometric visual introduction to derivatives, integrals, and why the Fundamental Theorem links them:
+
+https://www.youtube.com/watch?v=WUvTyaaNkzM
+
+> **What the next layer notices:** what if the thing being transformed is not a number-valued function, but an expression that can itself represent computation?
