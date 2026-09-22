@@ -20,6 +20,30 @@ For the first teaching pass, standard modern analysis texts may be used for limi
   https://encyclopediaofmath.org/wiki/Stochastic_integral
 - Karatzas, Ioannis; Shreve, Steven E. *Brownian Motion and Stochastic Calculus*. Springer, 1988.
 
+## Geometry and field calculi
+
+- Ricci-Curbastro, Gregorio; Levi-Civita, Tullio. Foundational work on the absolute differential calculus / tensor calculus, 1900.
+- Cartan, Élie. Foundational work on differential forms and exterior calculus.
+- Standard modern texts on vector calculus, tensor analysis, differential forms, and differential geometry should be preferred for beginner exposition.
+
+## Logic and formal reasoning
+
+- Frege, Gottlob. *Begriffsschrift*, 1879 — foundational predicate-logic lineage.
+- Gentzen, Gerhard. Foundational work on natural deduction and sequent calculi, 1934–35.
+- Stanford Encyclopedia of Philosophy. “Classical Logic.”
+
+## Process algebra and concurrency
+
+- Milner, Robin. *A Calculus of Communicating Systems*. Springer LNCS 92, 1980.
+- Hoare, C. A. R. “Communicating Sequential Processes.” *Communications of the ACM* 21(8), 1978.
+- Bergstra, J. A.; Klop, J. W. “Process Algebra for Synchronous Communication.” *Information and Control* 60, 1984.
+- Cardelli, Luca; Gordon, Andrew D. “Mobile Ambients.” 1998.
+- Abadi, Martín; Gordon, Andrew D. “A Calculus for Cryptographic Protocols: The Spi Calculus.” *Information and Computation* 148(1), 1999.
+
+## Data and relations
+
+- Codd, E. F. “A Relational Model of Data for Large Shared Data Banks.” *Communications of the ACM* 13(6), 1970.
+
 ## λ-calculus
 
 - Church, Alonzo. Foundational papers on λ-definability and effective calculability.
@@ -76,10 +100,6 @@ For the first teaching pass, standard modern analysis texts may be used for limi
 - Tiffany III, Paul Carver. *The Hypothesis Surface: An Operational Epistemology for Autonomous Research*, AGI-26 supplementary materials. The Figure 2 companion contains a reduced curve-local Fuzzy Fundamental Theorem of Calculus and Observer-Relative Stokes with bulk and boundary residues.  
   https://paultiffany.github.io/hypothesis-surface-agi26/
 
-## Frontier: d-calculus
-
-- Goertzel, Ben. “Navier-Stokes Blows Up (the internet): Theorem Proving, Conjecturing and the Road to AGI.” *Eurykosmotron*, 2026-09-09. Publicly mentions “distinction calculus or d-calculus” while deferring explanation to later work.  
-  https://bengoertzel.substack.com/p/navier-stokes-blows-up-the-internet
 
 ## Bibliography discipline
 
