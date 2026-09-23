@@ -15,6 +15,12 @@ A third instruction expects a photograph. We cannot feed it the written label wi
 
 This is a teaching analogy for typed computation.
 
+<!-- visual:diagram-types-fit -->
+<img src="../../assets/diagrams/types-fit.svg" width="640" alt="An instruction from date to text can connect to one from text to printed card. A photograph does not fit an input that specifically requires text.">
+
+*A date can become a written label, then a printed card. The next input must be the right kind.*
+<!-- /visual:diagram-types-fit -->
+
 ## Try it somewhere else
 
 A sensor produces a temperature. A calculator expects a length.

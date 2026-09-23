@@ -44,6 +44,14 @@ Vary the headings to suit the subject. Do not force every calculus into a shared
 
 Tables and diagrams should help reasoning. Media and new software are optional; the lesson must work as text. See [Media and Learning Modes](MEDIA.md).
 
+## Extend the visual language
+
+Use the existing Jo and Sam reference for new scene illustrations. Keep the cast, props, and palette recognizable, while letting each subject ask its own kind of question.
+
+Put exact counts, rules, and arrows in an editable diagram. The [asset guide](assets/README.md) explains how to change the SVG source and regenerate it without an image service. Use a new generation call when a new setting earns one; an existing illustration can serve several related lessons.
+
+Add alternative text and a caption that helps the reader reason. Keep colors backed by labels or shapes. Check that the image agrees with the prose, does not reveal a practice answer early, and remains readable when narrowed for a phone.
+
 ## Preserve mathematical distinctions
 
 Watch for common traps:
@@ -73,7 +81,7 @@ For a claimed connection, state its kind: theorem, extension, application, histo
 
 Read the main lesson with optional sections closed. Can someone do the activity using only the information already explained?
 
-Check calculations, units, inference direction, assumptions, internal links, collapsible answers, and mathematical notation. For GitHub math use dollar-delimited inline equations and double-dollar display blocks.
+Check calculations, units, inference direction, assumptions, internal links, image paths, collapsible answers, and mathematical notation. Render changed diagrams and inspect their labels and arrows. For GitHub math use dollar-delimited inline equations and double-dollar display blocks.
 
 When possible, ask a new reader to explain the idea and change one rule. A readability score alone cannot establish understanding.
 

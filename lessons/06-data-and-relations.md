@@ -3,6 +3,12 @@
 **You need:** [AND, OR, and “at least one”](04-logic-and-proof.md).\
 **Your goal:** describe which records belong in an answer without specifying how a computer must find them.
 
+<!-- visual:art-library -->
+<img src="../assets/illustrations/library.webp" width="400" alt="Jo reads a gardening book while Sam sorts books on a return trolley in their community library.">
+
+*The same library, a different question: which books meet our conditions?*
+<!-- /visual:art-library -->
+
 ## Find a book
 
 A library stores this small table. Each row has its own ID.
@@ -17,6 +23,12 @@ A library stores this small table. Each row has its own ID.
 Ask: **Which books are about gardening AND available?**
 
 Check both conditions for each row. The answer contains B1 and B4.
+
+<!-- visual:diagram-book-query -->
+<img src="../assets/diagrams/book-query.svg" width="640" alt="Books B1 and B4 match gardening AND available. B2 is available but astronomy; B3 is gardening but unavailable.">
+
+*“Garden” means gardening; “Ready” means available. Both conditions must hold.*
+<!-- /visual:diagram-book-query -->
 
 **Predict:** change AND to OR. Which rows now qualify?
 

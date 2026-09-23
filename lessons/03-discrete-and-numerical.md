@@ -3,6 +3,12 @@
 **You need:** addition and subtraction; [rates and totals](01-classical-calculus.md) help with the last example.\
 **Your goal:** recover change from a sequence and tell an exact discrete answer from an estimate.
 
+<!-- visual:art-library -->
+<img src="../assets/illustrations/library.webp" width="400" alt="Jo reads a gardening book while Sam sorts books on a return trolley in their community library.">
+
+*At the library, we begin by counting the books.*
+<!-- /visual:art-library -->
+
 ## Count the books
 
 A little library records its number of books at the end of each day.
@@ -13,6 +19,12 @@ A little library records its number of books at the end of each day.
 | Tuesday | 11 | +3 |
 | Wednesday | 9 | −2 |
 | Thursday | 14 | +5 |
+
+<!-- visual:diagram-book-counts -->
+<img src="../assets/diagrams/book-counts.svg" width="640" alt="Monday has eight books, Tuesday eleven, Wednesday nine, Thursday fourteen. The changes are plus three, minus two, and plus five.">
+
+*Each small book stands for one book in the daily count.*
+<!-- /visual:diagram-book-counts -->
 
 Subtract neighboring counts to find each **difference**. Add the differences to recover the total change:
 

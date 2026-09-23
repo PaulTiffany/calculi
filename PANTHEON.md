@@ -8,6 +8,12 @@ Some names identify broad subjects. Others identify a specific language, a proof
 
 **New here?** Read the [welcome](START.md), or choose a question below. Each core lesson supplies an everyday example. Optional tracks go deeper; source links may require much more mathematics.
 
+<!-- visual:diagram-field-habitats -->
+<img src="assets/diagrams/field-habitats.svg" width="640" alt="Eight unranked tiles name rates, space, steps, proof, programs, data, interaction, and chance. They are entry points, not a ladder.">
+
+*These are places to begin exploring. The tiles are not ranks or prerequisites.*
+<!-- /visual:diagram-field-habitats -->
+
 ## 1. Rates, totals, and best choices
 
 **Everyday question:** How much water enters? How sensitive is an answer to an input? Which choice works best?

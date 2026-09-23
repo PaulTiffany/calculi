@@ -2,6 +2,12 @@
 
 Use this page when a word blocks your reading. The lesson supplies its precise context. You do not need to memorize the table.
 
+<!-- visual:diagram-field-habitats -->
+<img src="assets/diagrams/field-habitats.svg" width="640" alt="Eight unranked tiles name rates, space, steps, proof, programs, data, interaction, and chance. They are entry points, not a ladder.">
+
+*Use the pictures as signposts. The definitions below supply the meanings.*
+<!-- /visual:diagram-field-habitats -->
+
 ## Starting words
 
 | Word | Plain-language meaning |

@@ -3,6 +3,12 @@
 **You need:** simple subtraction and [if–then reasoning](04-logic-and-proof.md).\
 **Your goal:** distinguish running an instruction, checking its type, and proving a promise about it.
 
+<!-- visual:art-workshop -->
+<img src="../assets/illustrations/workshop.webp" width="400" alt="Jo stands by a printer and Sam holds scissors at their workshop table. A recipe card rests nearby.">
+
+*At the workshop, a plan can be followed, checked, and connected to another plan.*
+<!-- /visual:art-workshop -->
+
 ## What does the instruction do?
 
 Imagine a rule called **keep the second**. Give it two inputs, and it returns the second one.
@@ -12,6 +18,12 @@ Imagine a rule called **keep the second**. Give it two inputs, and it returns th
 | red, blue | blue |
 | cat, dog | dog |
 | 4, 9 | 9 |
+
+<!-- visual:diagram-keep-second -->
+<img src="../assets/diagrams/keep-second.svg" width="640" alt="The inputs are red first and blue second. The rule returns blue. Changing the selected input position changes the result.">
+
+*The rule follows a position, not a favorite color.*
+<!-- /visual:diagram-keep-second -->
 
 The objects change, but the rule stays the same.
 
@@ -53,6 +65,12 @@ What must be true beforehand? There must be **at least one ticket left**.
 | 4 | 3 | Yes |
 | 1 | 0 | Yes |
 | 0 | −1 | No |
+
+<!-- visual:diagram-ticket-contract -->
+<img src="../assets/diagrams/ticket-contract.svg" width="640" alt="Four tickets become three when one is sold. A nonnegative count after selling requires at least one ticket beforehand.">
+
+*This little contract connects a starting condition to a promised result.*
+<!-- /visual:diagram-ticket-contract -->
 
 A condition required beforehand is a **precondition**. A condition promised afterward is a **postcondition**.
 

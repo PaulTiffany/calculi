@@ -31,6 +31,12 @@ The direction of the implication matters.
 
 </details>
 
+<!-- visual:diagram-sealed-and-labeled -->
+<img src="../../assets/diagrams/sealed-and-labeled.svg" width="640" alt="Both a sealed labeled jar and an open labeled jar obey the one-way rule. Seeing a label alone therefore does not establish that a jar is sealed.">
+
+*Both pictures obey “if sealed, then labeled.” A label alone does not settle whether the jar is sealed.*
+<!-- /visual:diagram-sealed-and-labeled -->
+
 ## Try it somewhere else
 
 “If the printer is out of paper, its warning light is on.” You see the light.

@@ -21,11 +21,7 @@ For an invented device, suppose temperatures less than 2 degrees apart cannot be
 | B: 21° and C: 22° | 1 degree | Yes |
 | A: 20° and C: 22° | 2 degrees | No |
 
-```mermaid
-graph LR
-    A["A: 20°"] --- B["B: 21°"]
-    B --- C["C: 22°"]
-```
+<img src="../../assets/diagrams/pairwise-distinctions.svg" width="640" alt="The observer cannot distinguish 20 from 21 degrees or 21 from 22, so those pairs have edges. There is no edge between 20 and 22 degrees.">
 
 The graph has A–B and B–C edges, but no A–C edge. Following a path through B does not add a direct edge between A and C. Each pair must be checked.
 

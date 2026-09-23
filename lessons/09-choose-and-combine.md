@@ -3,6 +3,12 @@
 **You need:** a few of the earlier lessons; keep the [field map](../PANTHEON.md) open if useful.\
 **Your goal:** choose a tool by its question and explain an assumption that connects two models.
 
+<!-- visual:art-delivery -->
+<img src="../assets/illustrations/delivery.webp" width="400" alt="Jo checks a clipboard while Sam carries a grocery crate toward their delivery van.">
+
+*Garden produce, a book, a record, and a shared task: familiar objects return in a new problem.*
+<!-- /visual:art-delivery -->
+
 ## One delivery service, many questions
 
 A neighborhood group delivers groceries. It has addresses, drivers, vans, orders, and uncertain travel times.
@@ -29,6 +35,12 @@ The same real object may appear differently in each model. A van can be a fuel-c
 Suppose a query selects two undelivered orders. Each needs one crate. The stock record says three crates remain.
 
 The query gives us **two selected orders**. An arithmetic update subtracts two from stock: **3 − 2 = 1**.
+
+<!-- visual:diagram-orders-and-crates -->
+<img src="../assets/diagrams/orders-and-crates.svg" width="640" alt="Two selected orders each need one crate. They require two crates altogether. Starting with three crates leaves one.">
+
+*Turning an order count into a crate count needs a rule connecting the two.*
+<!-- /visual:diagram-orders-and-crates -->
 
 The bridge is an assumption: **each selected order needs exactly one crate**.
 

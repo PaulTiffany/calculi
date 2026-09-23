@@ -13,6 +13,12 @@ If the only goal is the shortest length, and nothing blocks the way, a straight 
 
 A **functional** assigns a number to a function or path. Path length is one example. Calculus of variations studies how that score changes when we vary the whole candidate.
 
+<!-- visual:diagram-path-and-obstacle -->
+<img src="../../assets/diagrams/path-and-obstacle.svg" width="640" alt="Without an obstacle, the straight path connects two points. With a cabinet blocking that route, an allowed path goes around it. The goal can remain shortest length.">
+
+*Keeping the endpoints and goal does not keep the set of allowed paths unchanged.*
+<!-- /visual:diagram-path-and-obstacle -->
+
 ## Try it somewhere else
 
 You are laying a cable across a flat floor. The endpoints stay fixed, but a cabinet blocks the straight route.

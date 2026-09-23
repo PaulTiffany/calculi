@@ -5,6 +5,12 @@ How much water will fill a tank? Which books match a search? Will two machines g
 
 These questions call for different tools. **Calculi** is the plural of **calculus**. This guide introduces the wider world behind that word, from slopes and sums to logic, programs, and causes.
 
+<!-- visual:art-welcome -->
+<img src="assets/illustrations/welcome.webp" width="460" alt="Jo, a tall teal helper with a yellow scarf, and Sam, a round terracotta helper with a teal satchel, explore a book and familiar objects at a community fair.">
+
+*A familiar neighborhood, many kinds of question.*
+<!-- /visual:art-welcome -->
+
 You need simple arithmetic and curiosity. The main lessons aim for an 8th-grade reading level. They explain the ideas before the symbols; harder mathematics stays in optional sections.
 
 ## Take the tour

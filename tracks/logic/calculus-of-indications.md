@@ -20,6 +20,12 @@ These are the elementary rules for empty forms:
 | **()()** — two empty marks side by side | **Calling:** a repeated indication has the value of one | **()** |
 | **(())** — one empty mark inside another | **Crossing:** the two nested marks have the unmarked value | Blank space |
 
+<!-- visual:diagram-marks-and-nesting -->
+<img src="../../assets/diagrams/marks-and-nesting.svg" width="640" alt="In the lesson&#x27;s parentheses notation, two empty marks beside one another simplify to one mark. A mark inside a mark simplifies to the unmarked form, shown as blank space rather than zero.">
+
+*Beside and inside are different arrangements. The blank result is not zero.*
+<!-- /visual:diagram-marks-and-nesting -->
+
 Blank space is the unmarked form. It is not the numeral zero.
 
 The rules depend on arrangement. Two marks beside one another and two nested marks have different values.

@@ -3,6 +3,12 @@
 **You need:** multiplication and the [welcome](../START.md).\
 **Your goal:** tell a rate from a total and explain why the starting amount matters.
 
+<!-- visual:art-garden -->
+<img src="../assets/illustrations/garden.webp" width="400" alt="Jo pours water into a clear container while Sam examines garden edging beside a planter.">
+
+*At the garden, Jo asks how fast the water enters. Sam asks how much there is.*
+<!-- /visual:art-garden -->
+
 ## Fill a tank
 
 A tank starts with **5 liters**. Water enters at **2 liters per minute** for 3 minutes. None leaves.
@@ -12,6 +18,12 @@ A tank starts with **5 liters**. Water enters at **2 liters per minute** for 3 m
 | How fast is the amount growing? | 2 liters each minute | 2 liters per minute |
 | How much enters? | 2 × 3 | 6 liters |
 | How much is there now? | 5 + 6 | **11 liters** |
+
+<!-- visual:diagram-water-total -->
+<img src="../assets/diagrams/water-total.svg" width="640" alt="A tank starts with five liters. Two liters per minute for three minutes adds six liters, leaving eleven liters.">
+
+*The water level records an amount. The incoming flow has a rate.*
+<!-- /visual:diagram-water-total -->
 
 The rate and the amount have different units. “Liters per minute” tells us how fast. “Liters” tells us how much.
 

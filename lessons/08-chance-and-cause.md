@@ -3,11 +3,23 @@
 **You need:** simple fractions and [the difference between rules and assumptions](04-logic-and-proof.md).\
 **Your goal:** distinguish uncertain outcomes, random paths, and the effects of interventions.
 
+<!-- visual:art-chance -->
+<img src="../assets/illustrations/chance.webp" width="400" alt="Jo holds a cloth bag while Sam flips a coin above the table.">
+
+*Jo and Sam can know the possible outcomes without knowing which will happen.*
+<!-- /visual:art-chance -->
+
 ## What might we pick?
 
 A bag holds two red beads and three blue beads. Suppose each bead is equally likely to be picked.
 
 The chance of red is **2 out of 5**. We write this as 2/5, or 40%.
+
+<!-- visual:diagram-bead-chance -->
+<img src="../assets/diagrams/bead-chance.svg" width="640" alt="Two red and three blue beads are equally likely to be picked, giving two red chances out of five.">
+
+*Letters as well as colors identify the red and blue beads.*
+<!-- /visual:diagram-bead-chance -->
 
 This is a **probability model**. It states the possible outcomes and assigns chances to them. The answer depends on our equal-chance assumption.
 
@@ -57,6 +69,12 @@ But switching on a sprinkler does not make the weather hot.
 |---|---|
 | We observe the sprinkler running | We learn something that may be evidence of hot weather |
 | We force the sprinkler on | We change the sprinkler setting; this does not itself change the weather |
+
+<!-- visual:diagram-observe-or-set -->
+<img src="../assets/diagrams/observe-or-set.svg" width="640" alt="In the observation model, heat affects both sprinklers and drink buying. Under an intervention setting sprinklers, heat still affects drink buying, but no longer determines the sprinkler setting.">
+
+*The arrows state the assumed causes. Setting the sprinkler changes one part of that model.*
+<!-- /visual:diagram-observe-or-set -->
 
 A **causal model** states which things affect which others. An **intervention** means setting something, rather than just observing its value.
 

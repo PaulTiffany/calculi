@@ -18,6 +18,12 @@ Try this small model: begin at 0. Toss a fair coin twice. Move up 1 for heads an
 | Tails, heads | −1 | 0 |
 | Tails, tails | −1 | −2 |
 
+<!-- visual:diagram-random-paths -->
+<img src="../../assets/diagrams/random-paths.svg" width="640" alt="Two fair independent coin tosses make four equally likely paths. Their final positions are plus two, zero, zero, and minus two.">
+
+*H means heads; T means tails. Follow one branch at each toss.*
+<!-- /visual:diagram-random-paths -->
+
 The four equally likely outcomes average to 0. Yet half the paths finish elsewhere.
 
 Their **squared** final positions are 4, 0, 0, and 4, which average to 2. Squaring the average position instead gives zero. The order of these operations matters.

@@ -3,6 +3,12 @@
 **You need:** the idea of a [rate](01-classical-calculus.md) and area of a rectangle.\
 **Your goal:** compare directions, then explain what “best” means in an optimization problem.
 
+<!-- visual:art-garden -->
+<img src="../assets/illustrations/garden.webp" width="400" alt="Jo pours water into a clear container while Sam examines garden edging beside a planter.">
+
+*Back at the garden, a new question: how do direction and shape affect the answer?*
+<!-- /visual:art-garden -->
+
 ## A hill has more than one slope
 
 On a small patch of an imaginary hill:
@@ -51,6 +57,12 @@ You have 16 meters of fence for a rectangular garden. All four sides need fencin
 | 2 m | 6 m | 16 m | 12 square meters |
 | 3 m | 5 m | 16 m | 15 square meters |
 | 4 m | 4 m | 16 m | 16 square meters |
+
+<!-- visual:diagram-garden-area -->
+<img src="../assets/diagrams/garden-area.svg" width="640" alt="A three-by-five rectangle encloses fifteen square meters. A four-by-four square encloses sixteen. Both use sixteen meters of fence.">
+
+*The same length of fence can enclose different areas.*
+<!-- /visual:diagram-garden-area -->
 
 The square wins among these choices. But checking four rows does not prove it beats every rectangle, including ones with fractional side lengths.
 

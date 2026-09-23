@@ -25,6 +25,12 @@ The rule says what follows from membership. It does not say that membership is t
 
 </details>
 
+<!-- visual:diagram-badge-logic -->
+<img src="../assets/diagrams/badge-logic.svg" width="640" alt="All club members have badges. Jo is shown inside the members group, itself inside badge holders. A possible guest also has a badge, outside the members group.">
+
+*The outer group includes everyone with a badge. The members fit inside it, but they need not fill it.*
+<!-- /visual:diagram-badge-logic -->
+
 ## Two kinds of language
 
 **Propositional calculus** reasons with whole statements and words such as AND, OR, NOT, and IF–THEN.

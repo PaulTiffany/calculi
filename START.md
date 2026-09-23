@@ -1,6 +1,6 @@
 # Welcome to the World of Calculi
 
-Imagine three people at a community fair.
+Imagine a community fair. Jo and Sam are helping out. Different people ask different questions.
 
 - One asks how much water will fill a pool.
 - One asks which visitors booked a table.
@@ -9,6 +9,12 @@ Imagine three people at a community fair.
 They all want to reason carefully. But water amounts, booking records, and messages need different kinds of rules.
 
 That is the world we are going to explore.
+
+<!-- visual:art-welcome -->
+<img src="assets/illustrations/welcome.webp" width="400" alt="Jo, a tall teal helper with a yellow scarf, and Sam, a round terracotta helper with a teal satchel, explore a book and familiar objects at a community fair.">
+
+*Jo wears the yellow scarf; Sam carries the satchel. They return in different settings as we ask new questions.*
+<!-- /visual:art-welcome -->
 
 ## One word, several uses
 
@@ -43,6 +49,12 @@ You have done more than list a few results. You have found a reason that applies
 This is an invented miniature system for practice. It is not a new named calculus.
 
 </details>
+
+<!-- visual:diagram-add-two -->
+<img src="assets/diagrams/add-two.svg" width="640" alt="Starting from three, adding two gives five, seven, then nine. All four counts are odd.">
+
+*Same move, new count. What stays the same?*
+<!-- /visual:diagram-add-two -->
 
 Notice four parts of the example:
 

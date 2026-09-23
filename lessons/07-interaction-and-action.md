@@ -3,6 +3,12 @@
 **You need:** following a sequence of actions; [logic](04-logic-and-proof.md) helps.\
 **Your goal:** spot a coordination problem and state what an action changes or leaves alone.
 
+<!-- visual:art-workshop -->
+<img src="../assets/illustrations/workshop.webp" width="400" alt="Jo stands by a printer and Sam holds scissors at their workshop table. A recipe card rests nearby.">
+
+*The same workshop, a different question: can the helpers coordinate their steps?*
+<!-- /visual:art-workshop -->
+
 ## Two people, one stuck project
 
 Jo and Sam are making posters. Each needs the printer and the scissors.
@@ -11,6 +17,12 @@ Jo and Sam are making posters. Each needs the printer and the scissors.
 |---|---|---|
 | Jo | Printer | Scissors |
 | Sam | Scissors | Printer |
+
+<!-- visual:diagram-circular-wait -->
+<img src="../assets/diagrams/circular-wait.svg" width="640" alt="Jo holds the printer and waits for Sam&#x27;s scissors. Sam holds the scissors and waits for Jo&#x27;s printer. Their waiting forms a loop.">
+
+*Each person is holding the tool the other needs.*
+<!-- /visual:diagram-circular-wait -->
 
 Suppose each refuses to release a tool until they have both.
 
@@ -55,6 +67,12 @@ Suppose a finished poster is in a closed cupboard. Jo opens the door.
 |---|---|---|
 | Door is open | False | True |
 | Poster is inside | True | True |
+
+<!-- visual:diagram-cupboard-poster -->
+<img src="../assets/diagrams/cupboard-poster.svg" width="640" alt="Opening the cupboard changes its door from closed to open. The poster remains inside in both states.">
+
+*We show the inside in both pictures so you can track the poster.*
+<!-- /visual:diagram-cupboard-poster -->
 
 Our model says opening changes the door, while the poster stays put.
 

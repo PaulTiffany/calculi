@@ -31,6 +31,12 @@ Suppose our rebuilding rule repeats the average twice. From the record 1, it pro
 
 We can calculate those mismatches because this table shows the originals. Someone given only the average cannot know which mismatch occurred.
 
+<!-- visual:diagram-average-and-rebuild -->
+<img src="../../assets/diagrams/average-and-rebuild.svg" width="640" alt="The pairs zero and two, and one and one, both average to one. Repeating that average rebuilds one and one; the record alone cannot identify which original pair was used.">
+
+*The toy example shows why the record and the original must be named separately.*
+<!-- /visual:diagram-average-and-rebuild -->
+
 This is an original, discrete teaching example of lost distinctions. It illustrates a recovery question; it does not implement the full Fuzzy Calculus.
 
 ## Try it

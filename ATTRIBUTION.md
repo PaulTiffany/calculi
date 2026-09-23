@@ -50,6 +50,16 @@ The near-8th-grade target is a writing goal. It is not a claim that the material
 
 Full bibliographic records are in [References](REFERENCES.md).
 
+## Visual material
+
+The six Jo and Sam scene illustrations in `assets/illustrations/` were generated with OpenAI's image-generation tool on September 23, 2026, for this guide. The welcome image established the character and style reference for the five later scenes. The exact prompts are preserved in [the prompt record](assets/illustrations/prompts.json). The tool did not expose a specific model version or an itemized generation cost.
+
+The illustrations were encoded as lossless WebP files without changing their decoded pixels. They introduce familiar settings; they are not historical photographs, sourced mathematical figures, or exact quantity diagrams.
+
+The SVG teaching diagrams are original code-authored illustrations of the guide's examples. Their editable source is [the diagram builder](tools/build_visuals.py); their descriptions are in [the diagram manifest](assets/diagrams/manifest.json). No third-party figures were copied for this set.
+
+Original visual material is offered under the repository's CC BY 4.0 terms to the extent applicable. Use the project credit below, identify changes, and retain the AI-generation disclosure when redistributing the scene illustrations. See [the asset guide](assets/README.md) for maintenance details.
+
 ## Reuse
 
 A suitable credit is:

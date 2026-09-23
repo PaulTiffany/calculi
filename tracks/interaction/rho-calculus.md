@@ -24,6 +24,12 @@ In **ρ-calculus**, pronounced “rho calculus,” names are made by **quoting p
 
 The card is a teaching aid. In the formal calculus, quoting is a precise construction of a name from process syntax.
 
+<!-- visual:diagram-recipe-and-action -->
+<img src="../../assets/diagrams/recipe-and-action.svg" width="640" alt="One panel shows a stored recipe card. The other shows using that recipe to bake. Keeping a description does not automatically run its instructions.">
+
+*Having instructions and bringing them into action are different roles. The recipe is an analogy.*
+<!-- /visual:diagram-recipe-and-action -->
+
 ## Try it
 
 Suppose a process sends a quoted description of another process. The receiver keeps the name for later.

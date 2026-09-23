@@ -4,7 +4,19 @@ These challenges use the same ideas in different settings. You can answer aloud,
 
 For each one, give an answer **and a reason**. Then name an assumption. Open the explanation after your first attempt.
 
+<!-- visual:diagram-learning-loop -->
+<img src="assets/diagrams/learning-loop.svg" width="640" alt="Read an example, make a prediction, explain your reasoning, and change one thing. Repeat with the changed problem.">
+
+*Try a prediction before opening an answer. Then change one thing.*
+<!-- /visual:diagram-learning-loop -->
+
 ## 1. Rate and total: seats
+
+<!-- visual:diagram-practice-chairs -->
+<img src="assets/diagrams/practice-chairs.svg" width="640" alt="The practice problem starts with twelve chairs and adds four chairs per minute for three minutes. The final count is left for the reader.">
+
+*Use the given start, rate, and time. Leave the final count for your own calculation.*
+<!-- /visual:diagram-practice-chairs -->
 
 A hall starts with 12 chairs set out. Helpers add 4 chairs per minute for 3 minutes. Nobody removes a chair.
 
@@ -23,6 +35,12 @@ This uses the distinction between input, net change, and starting amount from [l
 
 ## 2. Several inputs: a photograph
 
+<!-- visual:diagram-practice-photo -->
+<img src="assets/diagrams/practice-photo.svg" width="640" alt="A rectangular photograph is three units wide and five units tall. The reader can increase either dimension by one.">
+
+*Change the width or the height while keeping the other fixed.*
+<!-- /visual:diagram-practice-photo -->
+
 A rectangular print is 3 units wide and 5 units tall. Its area is 15 square units.
 
 How much area is added by increasing only its width by one? What if you increase only its height by one? Why do the answers differ?
@@ -39,6 +57,12 @@ The change depends on which input varies and which stays fixed. See [lesson 2](l
 </details>
 
 ## 3. Discrete steps: visitors
+
+<!-- visual:diagram-practice-visitors -->
+<img src="assets/diagrams/practice-visitors.svg" width="640" alt="Four room headcounts are ten, fourteen, thirteen, and eighteen, in that order.">
+
+*These are snapshots. What might happen between them?*
+<!-- /visual:diagram-practice-visitors -->
 
 A room's headcount at four check-ins is 10, 14, 13, and 18.
 
@@ -62,6 +86,8 @@ Does it follow that the shape is a square? Give an example that settles the ques
 <details>
 <summary>Check</summary>
 
+<img src="assets/diagrams/practice-shapes.svg" width="640" alt="A square and a nonsquare rectangle both have four sides. The rectangle is a counterexample to reversing the rule that every square has four sides.">
+
 No. A rectangle with unequal adjacent sides has four sides but is not a square.
 
 One counterexample is enough to show that the reversed rule is false. See [lesson 4](lessons/04-logic-and-proof.md).
@@ -69,6 +95,12 @@ One counterexample is enough to show that the reversed rule is false. See [lesso
 </details>
 
 ## 5. Program guarantees: game points
+
+<!-- visual:diagram-practice-score -->
+<img src="assets/diagrams/practice-score.svg" width="640" alt="An unknown starting score is reduced by three points. The required result is nonnegative. The starting condition is left for the reader.">
+
+*Read the promise backward: what must have been true at the start?*
+<!-- /visual:diagram-practice-score -->
 
 An instruction subtracts three points from a score. You want the resulting score to be at least zero.
 
@@ -94,6 +126,12 @@ If the code subtracts four, the required starting score becomes at least four. A
 | C | Yes | Yes |
 | D | No | No |
 
+<!-- visual:diagram-practice-playlist -->
+<img src="assets/diagrams/practice-playlist.svg" width="640" alt="Song A is short but not a favorite. B is a favorite but not short. C is both. D is neither. No answer selection is marked.">
+
+*The picture gives the records, not the selected answer.*
+<!-- /visual:diagram-practice-playlist -->
+
 Which songs meet both conditions? Which meet at least one? Does this table let you find songs shorter than 2 minutes?
 
 <details>
@@ -106,6 +144,12 @@ The table does not give enough detail for the 2-minute question. A song marked s
 </details>
 
 ## 7. Coordination and effects: a shared kitchen
+
+<!-- visual:diagram-practice-kitchen -->
+<img src="assets/diagrams/practice-kitchen.svg" width="640" alt="One cook holds the bowl and waits for the whisk. The other holds the whisk and waits for the bowl.">
+
+*Compare the earlier printer-and-scissors pattern. The tools have changed.*
+<!-- /visual:diagram-practice-kitchen -->
 
 One cook holds the mixing bowl and waits for the whisk. Another holds the whisk and waits for the bowl. Both refuse to release their tool first.
 
@@ -123,6 +167,12 @@ The timer event does not itself remove the cake. A model needs an action connect
 </details>
 
 ## 8. Chance and cause: two questions
+
+<!-- visual:diagram-token-question -->
+<img src="assets/diagrams/token-question.svg" width="640" alt="One green and three yellow tokens are equally likely to be picked. The image supplies the starting contents only.">
+
+*This is the starting bag. Decide what remains after the stated draw.*
+<!-- /visual:diagram-token-question -->
 
 A bag has one green token and three yellow tokens, each equally likely to be drawn. You draw a yellow token and keep it out. What is the chance of green next?
 

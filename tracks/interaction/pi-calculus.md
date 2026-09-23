@@ -5,6 +5,12 @@
 **Start with:** the idea of sending and receiving a message.\
 **By the end:** explain how a message can change who can communicate.
 
+<!-- visual:art-workshop -->
+<img src="../../assets/illustrations/workshop.webp" width="400" alt="Jo stands by a printer and Sam holds scissors at their workshop table. A recipe card rests nearby.">
+
+*The workshop returns as a place where passing a contact can change who can communicate.*
+<!-- /visual:art-workshop -->
+
 ## The idea
 
 A **process** is something that can act and interact. A **channel** is a route for communication. In **π-calculus**, pronounced “pi calculus,” a channel's name can itself be sent in a message.
@@ -23,6 +29,10 @@ Alice and Bob share a channel named $a$. Alice also knows channel $b$. Bob does 
 |---|---|---|
 | Alice | $a$, $b$ | $a$, $b$ |
 | Bob | $a$ | $a$, $b$ |
+
+<img src="../../assets/diagrams/passing-a-name.svg" width="640" alt="Alice sends name b on a. Bob first knows only a; after receiving the message Bob knows a and b. Alice keeps both names.">
+
+*The message carries a usable name. It does not need to move either process.*
 
 The model assumes that knowing a channel name is enough to use it. Real contact systems may add passwords, permissions, and delivery failures.
 

@@ -16,6 +16,12 @@ In our small model, opening changes the door's state and does not move the cup.
 | Door is closed | True | False |
 | Cup is inside | True | True |
 
+<!-- visual:diagram-cupboard-cup -->
+<img src="../../assets/diagrams/cupboard-cup.svg" width="640" alt="Opening the cupboard changes its door from closed to open. The cup remains inside in both states.">
+
+*We show the inside in both pictures so you can track the cup.*
+<!-- /visual:diagram-cupboard-cup -->
+
 Reasoning needs both kinds of information: **what changes** and **what persists**.
 
 A **fluent** is a property whose truth or value can vary with the situation or time.

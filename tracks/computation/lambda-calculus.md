@@ -15,6 +15,12 @@ Give it **tea**, then **cake**. It returns **tea**. Give it **red**, then **blue
 
 The objects changed; the instruction stayed the same. This is an analogy for an operation we can write precisely in **λ-calculus**, pronounced “lambda calculus.”
 
+<!-- visual:diagram-keep-first -->
+<img src="../../assets/diagrams/keep-first.svg" width="640" alt="The inputs are red first and blue second. The rule returns red. Changing the selected input position changes the result.">
+
+*Compare the core lesson's “keep second.” The inputs stay familiar; the chosen slot changes.*
+<!-- /visual:diagram-keep-first -->
+
 ## Three useful words
 
 - **Abstraction:** make an instruction with an input slot.
