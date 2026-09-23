@@ -110,6 +110,8 @@ Try a [sequent proof](../tracks/proof/sequent-calculus.md). For another particul
 
 A fact can usually be used in several arguments. A token spent on a snack cannot also buy a drink under a one-use rule. [Linear logic](../tracks/proof/linear-logic.md) explores proof rules that track this difference.
 
+You can also ask what different people know from different clues. [Epistemic logic](../tracks/observation/epistemic-logic.md) starts with one card seen through two views, then changes who hears an announcement.
+
 ## Sources
 
 The badge and book puzzles are original. See the Open Logic Project's [proof-systems overview](https://builds.openlogicproject.org/content/first-order-logic/proof-systems/proof-systems.pdf) and [*forall x*, natural deduction](https://forallx.openlogicproject.org/bookml/Ch16.html). [References](../REFERENCES.md#logic-and-formal-reasoning) gives further reading.

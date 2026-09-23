@@ -170,9 +170,9 @@
   {
     "id": "field-habitats",
     "title": "Different questions, different tools",
-    "alt": "Eight unranked tiles name rates, space, steps, proof, programs, data, interaction, and chance. They are entry points, not a ladder.",
+    "alt": "Ten unranked tiles name rates, space, steps, proof, programs, data, interaction, chance, operators, and observation. They are entry points, not a ladder.",
     "width": 640,
-    "height": 515
+    "height": 622
   },
   {
     "id": "learning-loop",
@@ -313,5 +313,68 @@
     "alt": "One of two separate tokens is exchanged for a snack and the other for a drink. Each token supports just one of the two purchases.",
     "width": 640,
     "height": 285
+  },
+  {
+    "id": "epistemic-views",
+    "title": "One card, two views",
+    "alt": "The chosen card A is a red circle. Jo sees only color, leaving A or B possible. Sam sees only shape, leaving A or C possible.",
+    "width": 640,
+    "height": 355
+  },
+  {
+    "id": "epistemic-update",
+    "title": "Everyone hears: “The card is red”",
+    "alt": "After a truthful public announcement of red, Jo still allows A and B. Sam rules out blue card C, leaving only A.",
+    "width": 640,
+    "height": 285
+  },
+  {
+    "id": "rough-groups",
+    "title": "Which crates share a record?",
+    "alt": "Batch A contains ready crates 1 and 2. Batch B contains ready crate 3 and not-ready crate 4. Batch C contains not-ready crates 5 and 6. The scanner reports only the batch letter.",
+    "width": 640,
+    "height": 340
+  },
+  {
+    "id": "rough-bounds",
+    "title": "Definite, possible, and unresolved",
+    "alt": "The upper approximation contains crates 1, 2, 3, and 4. Inside it, the lower approximation contains 1 and 2 and the unresolved boundary contains 3 and 4. Crates 5 and 6 are outside the upper approximation.",
+    "width": 640,
+    "height": 360
+  },
+  {
+    "id": "measurement-dependency",
+    "title": "A measurement guides a later action",
+    "alt": "Qubit 1 carries the input and qubit 2 is prepared. After linking them, qubit 1 is measured. Its ordinary outcome bit controls a correction on qubit 2, which is the output. The dashed path carries the recorded bit.",
+    "width": 640,
+    "height": 410
+  },
+  {
+    "id": "measurement-correction",
+    "title": "Use the recorded bit",
+    "alt": "With bit zero the target state is left alone. With bit one the output is X of the target and a further X returns the target. This uses X squared equals the identity.",
+    "width": 640,
+    "height": 315
+  },
+  {
+    "id": "behavior-branches",
+    "title": "Same sequences, different choices",
+    "alt": "Machine A accepts payment then offers both tea and coffee. Machine B has two payment transitions, one to tea-only and one to coffee-only. Both allow pay-tea and pay-coffee traces, but B can commit to one drink during payment.",
+    "width": 640,
+    "height": 575
+  },
+  {
+    "id": "do-intervention",
+    "title": "Set watering; keep its effects",
+    "alt": "The observational graph has weather affecting watering and growth, and watering affecting growth. Setting watering removes the incoming weather-to-watering arrow while retaining the other arrows. The crossed dashed line marks the removed arrow.",
+    "width": 640,
+    "height": 390
+  },
+  {
+    "id": "do-adjustment",
+    "title": "Compare the same weather mix",
+    "alt": "The observed watered and unwatered groups have success rates 50 and 70 percent and different weather mixes. Adjusting both to half mild and half hot gives intervention rates 65 and 55 percent under the stated model.",
+    "width": 640,
+    "height": 390
   }
 ]

@@ -103,6 +103,10 @@ A courier sends “I am outside.” The recipient's phone receives the message.
 
 The [action-calculi track](../tracks/action/situation-event-fluent.md) explains persistence more closely. The [pi](../tracks/interaction/pi-calculus.md) and [rho](../tracks/interaction/rho-calculus.md) tracks explore two particular process languages. They are optional branches, not stages every calculus must pass through.
 
+## Compare two systems
+
+Two machines may allow the same finished sequences while offering different choices along the way. [Observational equivalence](../tracks/observation/observational-equivalence.md) explores that difference with two drink machines.
+
 ## Sources
 
 The poster and courier examples are original. See C. A. R. Hoare's [*Communicating Sequential Processes*](https://www.cs.ox.ac.uk/ucs/hoarebook.pdf), Milner's [pi-calculus tutorial](https://www.lfcs.inf.ed.ac.uk/reports/91/ECS-LFCS-91-180/), and the [action-calculus sources](../REFERENCES.md#situation-event-and-fluent-calculi).

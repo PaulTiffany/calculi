@@ -9,7 +9,7 @@ Some names identify broad subjects. Others identify a specific language, a proof
 **New here?** Read the [welcome](START.md), or choose a question below. Each core lesson supplies an everyday example. Optional tracks go deeper; source links may require much more mathematics.
 
 <!-- visual:diagram-field-habitats -->
-<img src="assets/diagrams/field-habitats.svg" width="640" alt="Eight unranked tiles name rates, space, steps, proof, programs, data, interaction, and chance. They are entry points, not a ladder.">
+<img src="assets/diagrams/field-habitats.svg" width="640" alt="Ten unranked tiles name rates, space, steps, proof, programs, data, interaction, chance, operators, and observation. They are entry points, not a ladder.">
 
 *These are places to begin exploring. The tiles are not ranks or prerequisites.*
 <!-- /visual:diagram-field-habitats -->
@@ -73,7 +73,7 @@ A discrete answer can be exact for a discrete question. Approximation is a diffe
 | Propositional calculus | Connect whole statements with logical operations | A basic logic language |
 | Predicate calculus | Express claims about objects, properties, all, and some | A richer logic language |
 | Natural deduction / sequent calculus | State allowed steps and organize proofs | Proof methods used with several logics |
-| Modal and intuitionistic logics | Change what can be expressed or which reasoning rules are used | Different logic families with their own proof calculi |
+| Modal and intuitionistic logics | Change what can be expressed or which reasoning rules are used | Different logic families with their own proof calculi; [epistemic logic](tracks/observation/epistemic-logic.md) gives one modal entry point |
 | Linear logic | Track the use of assumptions, including consumable resources | An established logic with several proof presentations |
 | Calculus of indications | Manipulate distinctions using marks and rules | Spencer-Brown's particular symbolic system from *Laws of Form* |
 
@@ -128,7 +128,7 @@ The connection to logic is direct: a query states conditions that answers must s
 | Situation, event, and fluent calculi | Represent action effects and persistence | Related formalisms in knowledge representation |
 
 **Learn:** [Messages and Events](lessons/07-interaction-and-action.md).\
-**Explore:** [Pi](tracks/interaction/pi-calculus.md), [rho](tracks/interaction/rho-calculus.md), or [action calculi](tracks/action/situation-event-fluent.md).
+**Explore:** [Pi](tracks/interaction/pi-calculus.md), [rho](tracks/interaction/rho-calculus.md), or [action calculi](tracks/action/situation-event-fluent.md). [Observational equivalence](tracks/observation/observational-equivalence.md) asks when systems behave alike under a chosen comparison.
 
 Process languages and action formalisms can describe parts of the same system. Their questions and rules differ. This grouping does not claim they share one ancestry.
 
@@ -141,10 +141,10 @@ Process languages and action formalisms can describe parts of the same system. T
 | Probability theory | Assign and combine probabilities; condition on information | A broad mathematical subject |
 | Stochastic calculus | Integrate and reason about suitable random processes | An advanced area, with distinct conventions such as Itô and Stratonovich |
 | Malliavin calculus | Study variation of random functionals | A specialist branch of stochastic analysis |
-| Do-calculus | Transform causal queries under stated graphical conditions | Pearl's rules for causal inference |
+| [Do-calculus](tracks/observation/do-calculus.md) | Transform causal queries under stated graphical conditions | Pearl's rules for causal inference |
 
 **Learn:** [Chance and Cause](lessons/08-chance-and-cause.md).\
-**Explore:** [Stochastic calculus](tracks/change/stochastic-calculus.md) and [probability and causal sources](REFERENCES.md#probability-and-causal-inference).
+**Explore:** [Stochastic calculus](tracks/change/stochastic-calculus.md), [do-calculus](tracks/observation/do-calculus.md), and [probability and causal sources](REFERENCES.md#probability-and-causal-inference).
 
 Probability, stochastic calculus, and causal inference are different subjects. One is not a synonym for the next.
 
@@ -165,18 +165,26 @@ A matrix is an array of numbers with rules for combining such arrays. An operato
 
 There are still other uses in algebra, category theory, and topology. This guide offers a representative set of entry points, not an exhaustive census.
 
-## Source-specific research explorations
+## 10. Observation, knowledge, and measurement
 
-These pages let readers examine particular proposals. They do not define a final habitat through which every other subject must pass.
+**Everyday question:** What does a record let us distinguish? What can we learn, test, change, or reconstruct from it?
 
-| Track | What it explores | How to read it |
+This route crosses logic, data analysis, programming, and physics. “Observation” is our organizing theme. Each subject specifies its own objects and operations.
+
+| Subject or framework | What it explores | Place in the landscape |
 |---|---|---|
-| [Distinction graphs](tracks/observation/distinction-graphs.md) | Pairwise indistinguishability for a chosen observer | Goertzel's research formalism; a graph representation is not automatically a calculus |
-| [Tiffany's Fuzzy Calculus](tracks/observation/tiffany-fuzzy-calculus.md) | Change and reconstruction through bounded observation | The particular framework in Tiffany's *Principia Symbolica* and related materials |
+| [Epistemic and dynamic epistemic logic](tracks/observation/epistemic-logic.md) | What different agents know, and how observations or messages change it | Established logic families with formal semantics and proof systems |
+| [Rough-set theory](tracks/observation/rough-sets.md) | Definite and possible classification from limited distinctions | Pawlak's approach to approximation and data analysis, with many extensions |
+| [Observational equivalence and bisimulation](tracks/observation/observational-equivalence.md) | Whether permitted interactions can distinguish systems | Behavioral comparisons used with process calculi and programming languages |
+| [Measurement calculus](tracks/observation/measurement-calculus.md) | Programs driven by quantum measurements and recorded outcomes | Danos, Kashefi, and Panangaden's formal calculus for measurement-based computation |
+| [Do-calculus](tracks/observation/do-calculus.md) | When observations and causal assumptions determine intervention effects | A causal calculus; also belongs in the chance-and-cause habitat |
+| [Relational quantum mechanics](REFERENCES.md#relational-quantum-mechanics) | Physical descriptions relative to interacting systems | Rovelli's interpretation of quantum mechanics; a neighboring physical account |
+| [Distinction graphs](tracks/observation/distinction-graphs.md) | Pairwise indistinguishability and graph-based information measures | Goertzel's specified graph formalism and its extensions |
+| [Tiffany's Fuzzy Calculus](tracks/observation/tiffany-fuzzy-calculus.md) | Change and reconstruction through bounded observation | The framework developed in *Principia Symbolica* and related materials |
 
-The second track uses the author's name because “fuzzy” also occurs in other mathematical literatures. Its definitions belong to its cited sources.
+**Begin with a small question:** compare two views of a card in [epistemic logic](tracks/observation/epistemic-logic.md), or sort crates by incomplete labels in [rough sets](tracks/observation/rough-sets.md).
 
-These placements describe scope and provenance. Optional does not mean unimportant, and research-specific does not mean disproven.
+Then choose a different operation: [test a machine's behavior](tracks/observation/observational-equivalence.md), [use a measurement result in a program](tracks/observation/measurement-calculus.md), [set a garden's watering rule](tracks/observation/do-calculus.md), [record pairwise distinctions](tracks/observation/distinction-graphs.md), or [study reconstruction through observation](tracks/observation/tiffany-fuzzy-calculus.md).
 
 ## Read the map critically
 

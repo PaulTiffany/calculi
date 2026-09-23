@@ -3,7 +3,7 @@
 Use this page when a word blocks your reading. The lesson supplies its precise context. You do not need to memorize the table.
 
 <!-- visual:diagram-field-habitats -->
-<img src="assets/diagrams/field-habitats.svg" width="640" alt="Eight unranked tiles name rates, space, steps, proof, programs, data, interaction, and chance. They are entry points, not a ladder.">
+<img src="assets/diagrams/field-habitats.svg" width="640" alt="Ten unranked tiles name rates, space, steps, proof, programs, data, interaction, chance, operators, and observation. They are entry points, not a ladder.">
 
 *Use the pictures as signposts. The definitions below supply the meanings.*
 <!-- /visual:diagram-field-habitats -->
@@ -78,6 +78,25 @@ Use this page when a word blocks your reading. The lesson supplies its precise c
 | random walk | A path built from random steps |
 | causal model | A model stating how variables affect one another |
 | intervention | Setting a variable through an action rather than merely observing its value |
+| confounding | A shared causal influence that can make an observed comparison differ from an intervention effect |
+| identification | Determining a causal quantity uniquely from the available distribution and stated assumptions |
+| back-door adjustment | Combining within-group observational probabilities when a chosen set of variables satisfies the causal graph's back-door criterion |
+
+## Observation and information
+
+| Word | Plain-language meaning in the linked tracks |
+|---|---|
+| epistemic | Concerning knowledge; [epistemic logic](tracks/observation/epistemic-logic.md) models who knows what |
+| possible world | One complete possibility considered in a logical model |
+| public announcement | In the elementary model, a truthful message everyone receives, with its public delivery understood by everyone |
+| indiscernibility | Inability to tell objects apart using the specified observations |
+| equivalence class | A group of objects treated as equivalent under a specified equivalence relation |
+| lower approximation | In [rough sets](tracks/observation/rough-sets.md), objects whose whole recorded group lies in the target set |
+| upper approximation | Objects whose recorded group contains at least one target member |
+| rough-set boundary | The upper approximation with the lower approximation removed; membership unresolved by the available distinctions |
+| trace | A sequence of visible actions in a process model |
+| qubit | A unit of quantum information, with a quantum state |
+| measurement pattern | A program specifying quantum inputs, outputs, commands, and dependencies on recorded outcomes |
 
 ## Words found in optional tracks
 

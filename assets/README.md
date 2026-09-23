@@ -53,6 +53,8 @@ Keep the essential facts in the prose too. Labels and shapes must support color 
 
 The same books appear in counting and querying lessons. The same waiting-loop layout appears with workshop tools and kitchen tools. These repetitions give the reader something stable while the question or setting changes.
 
+The observation and causal tracks reuse the fair, delivery, workshop, and garden scenes. Their new diagrams show separate views of a card, rough-set groups and boundaries, branching behavior, quantum command dependencies, and causal adjustment. This expansion adds no generated raster assets.
+
 ## Provenance and reuse
 
 The scene illustrations were AI-generated for the guide. The SVG diagrams were authored as code for its teaching examples. See [Attribution](../ATTRIBUTION.md) for the generation record, project credit, and applicable [CC BY 4.0 terms](../LICENSE.md).

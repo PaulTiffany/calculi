@@ -1,6 +1,6 @@
 # Track — Tiffany's Fuzzy Calculus: Change Through Bounded Observation
 
-**Place in the field:** The particular research framework in Paul Tiffany's Principia Symbolica and related materials. This page uses those sources' definitions; it is not a survey of fuzzy logic.
+**Place in the field:** The observation framework developed in Paul Tiffany's *Principia Symbolica* and related materials. Its definitions specify the observation, change, and reconstruction operations studied here.
 
 **Start with:** [rates and reconstruction](../../lessons/01-classical-calculus.md).\
 **By the end:** explain why rebuilding an observed record may leave details of its source unresolved.
@@ -113,4 +113,4 @@ Paul Carver Tiffany III, *Principia Symbolica*, Book IV: **Bounded Observer**, *
 
 For the geometric development, see the [Figure 2 companion](https://github.com/PaulTiffany/hypothesis-surface-agi26/blob/master/supplementary/fig2_companion_fftc.tex). Full references are in [References](../../REFERENCES.md#fuzzy-calculus--bounded-observer-geometry).
 
-[← Choosing a model](../../lessons/09-choose-and-combine.md) · [Home](../../README.md) · [Field map](../../PANTHEON.md#source-specific-research-explorations)
+[← Choosing a model](../../lessons/09-choose-and-combine.md) · [Rough sets](rough-sets.md) · [Observation route](../../PANTHEON.md#10-observation-knowledge-and-measurement)

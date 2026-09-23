@@ -346,8 +346,8 @@ def jars():
     d.save()
 
 def field_tiles():
-    names=[("Rates","water"),("Space","garden"),("Steps","books"),("Proof","badge"),("Programs","rule"),("Data","records"),("Interaction","messages"),("Chance","coin")]
-    d=Drawing("field-habitats","Different questions, different tools","Eight unranked tiles name rates, space, steps, proof, programs, data, interaction, and chance. They are entry points, not a ladder.",515)
+    names=[("Rates","water"),("Space","garden"),("Steps","books"),("Proof","badge"),("Programs","rule"),("Data","records"),("Interaction","messages"),("Chance","coin"),("Operators","rule"),("Observation","observe")]
+    d=Drawing("field-habitats","Different questions, different tools","Ten unranked tiles name rates, space, steps, proof, programs, data, interaction, chance, operators, and observation. They are entry points, not a ladder.",622)
     for i,(label,kind) in enumerate(names):
         x=22+(i%2)*310;y=69+(i//2)*107
         d.rect(x,y,286,91,PALE if i%2==0 else "#fff1ce","none",18,0)
@@ -364,6 +364,9 @@ def field_tiles():
         elif kind=="rule":
             d.rect(x+20,y+21,54,49,"white",INK,8,2)
             d.text(x+47,y+55,"f",29,anchor="middle",weight="700")
+        elif kind=="observe":
+            d.path(f"M{x+16},{y+44} Q{x+45},{y+10} {x+76},{y+44} Q{x+45},{y+78} {x+16},{y+44} Z",fill="white",sw=2)
+            d.circle(x+46,y+44,12,BLUE,INK,2)
         elif kind=="messages":
             d.rect(x+16,y+20,44,32,"white",INK,7,2)
             d.rect(x+37,y+44,44,30,BLUE,INK,7,2)
@@ -599,6 +602,133 @@ def linear_pictures():
         d.label(518,y,result,173,col)
     d.save()
 
+def epistemic_pictures():
+    d=Drawing("epistemic-views","One card, two views","The chosen card A is a red circle. Jo sees only color, leaving A or B possible. Sam sees only shape, leaving A or C possible.",355)
+    for x,name,col,shape in [(80,"A",RUST,"circle"),(240,"B",RUST,"triangle"),(400,"C",BLUE,"circle"),(560,"D",BLUE,"triangle")]:
+        d.rect(x-61,75,122,127,"white",INK if name=="A" else "#a8babc",12,4 if name=="A" else 2)
+        d.text(x,105,name,26,anchor="middle",weight="700")
+        if shape=="circle":d.circle(x,139,16,col,INK,2)
+        else:d.path(f"M{x},{122} L{x-18},{154} L{x+18},{154} Z",fill=col,sw=2)
+        d.text(x,183,"red" if col==RUST else "blue",22,anchor="middle")
+    d.text(320,235,"Chosen card: A",24,anchor="middle",weight="700")
+    d.text(320,283,"Jo sees red: A or B",25,anchor="middle")
+    d.text(320,326,"Sam sees circle: A or C",25,anchor="middle")
+    d.save()
+    d=Drawing("epistemic-update","Everyone hears: “The card is red”","After a truthful public announcement of red, Jo still allows A and B. Sam rules out blue card C, leaving only A.",285)
+    d.text(212,90,"Before",23,anchor="middle",weight="700")
+    d.text(511,90,"After",23,anchor="middle",weight="700")
+    for y,name,before,after in [(141,"Jo","A or B","A or B"),(225,"Sam","A or C","A")]:
+        d.text(37,y+7,name,25,weight="700")
+        d.label(212,y,before,158)
+        d.line(304,y-4,415,y-4,True)
+        d.label(511,y,after,158,GOLD if after=="A" else PALE)
+    d.save()
+
+def rough_pictures():
+    d=Drawing("rough-groups","Which crates share a record?","Batch A contains ready crates 1 and 2. Batch B contains ready crate 3 and not-ready crate 4. Batch C contains not-ready crates 5 and 6. The scanner reports only the batch letter.",340)
+    for x,name,nums in [(25,"A",[1,2]),(235,"B",[3,4]),(445,"C",[5,6])]:
+        d.rect(x,75,170,212,"white","#a8babc",14,2)
+        d.text(x+85,109,"Batch "+name,25,anchor="middle",weight="700")
+        for y,n in zip([164,239],nums):
+            d.number(x+43,y,n,PALE if n<=3 else "#f5ddd5",r=24)
+            d.text(x+112,y+7,"ready" if n<=3 else "not",23,anchor="middle")
+    d.text(320,322,"Target: ready crates 1, 2, 3.",24,anchor="middle")
+    d.save()
+    d=Drawing("rough-bounds","Definite, possible, and unresolved","The upper approximation contains crates 1, 2, 3, and 4. Inside it, the lower approximation contains 1 and 2 and the unresolved boundary contains 3 and 4. Crates 5 and 6 are outside the upper approximation.",360)
+    d.rect(24,74,415,229,"#fff1ce",INK,16,2)
+    d.text(232,107,"Upper: possibly ready",23,anchor="middle",weight="700")
+    d.rect(43,127,179,155,PALE,TEAL,12,2)
+    d.text(132,162,"Lower",24,anchor="middle",weight="700")
+    d.text(132,190,"definitely ready",21,anchor="middle")
+    d.text(330,162,"Boundary",24,anchor="middle",weight="700")
+    d.text(330,190,"unresolved",21,anchor="middle")
+    for x,n,col in [(89,1,PALE),(176,2,PALE),(287,3,GOLD),(374,4,GOLD),(495,5,"#f5ddd5"),(579,6,"#f5ddd5")]:d.number(x,239,n,col,r=24)
+    d.text(535,156,"Outside",23,anchor="middle",weight="700")
+    d.text(535,185,"the upper set",21,anchor="middle")
+    d.text(320,337,"The boundary is part of the upper set.",23,anchor="middle")
+    d.save()
+
+def measurement_pictures():
+    d=Drawing("measurement-dependency","A measurement guides a later action","Qubit 1 carries the input and qubit 2 is prepared. After linking them, qubit 1 is measured. Its ordinary outcome bit controls a correction on qubit 2, which is the output. The dashed path carries the recorded bit.",410)
+    d.text(78,102,"Qubit 1",23,anchor="middle",weight="700")
+    d.text(78,137,"input",22,anchor="middle")
+    d.text(78,255,"Qubit 2",23,anchor="middle",weight="700")
+    d.text(78,290,"prepare",22,anchor="middle")
+    d.line(138,130,331,130,True)
+    d.line(138,283,464,283,True)
+    d.line(224,130,224,283)
+    d.circle(224,130,7,TEAL,INK,2);d.circle(224,283,7,TEAL,INK,2)
+    d.text(224,91,"Link",23,anchor="middle",weight="700")
+    d.rect(335,101,126,58,PALE,INK,12,2)
+    d.text(398,138,"Measure",23,anchor="middle")
+    d.path("M462,130 H547 V249",TEAL,arrow=True,dash=True)
+    d.text(490,196,"record bit",21,anchor="middle")
+    d.rect(468,252,142,62,"#fff1ce",INK,12,2)
+    d.text(539,291,"Correct",24,anchor="middle")
+    d.text(539,347,"output qubit 2",22,anchor="middle")
+    d.text(320,387,"Dashed path: an ordinary recorded bit.",22,anchor="middle")
+    d.save()
+    d=Drawing("measurement-correction","Use the recorded bit","With bit zero the target state is left alone. With bit one the output is X of the target and a further X returns the target. This uses X squared equals the identity.",315)
+    d.text(49,91,"Bit",21,anchor="middle",weight="700")
+    for y,n,before,action in [(133,0,"target","leave alone"),(231,1,"X(target)","apply X")]:
+        d.number(49,y,n,GOLD,r=23)
+        d.label(179,y,before,155)
+        d.line(268,y-4,442,y-4,True)
+        d.text(355,y-20,action,22,anchor="middle")
+        d.label(536,y,"target",151)
+    d.text(320,293,"X² = I: two X operations cancel.",23,anchor="middle")
+    d.save()
+
+def behavior_picture():
+    d=Drawing("behavior-branches","Same sequences, different choices","Machine A accepts payment then offers both tea and coffee. Machine B has two payment transitions, one to tea-only and one to coffee-only. Both allow pay-tea and pay-coffee traces, but B can commit to one drink during payment.",575)
+    for x,name in [(153,"Machine A"),(489,"Machine B")]:
+        d.text(x,88,name,25,anchor="middle",weight="700")
+        d.label(x,135,"start",110)
+    d.line(153,161,153,227,True);d.text(185,204,"pay",23)
+    d.label(153,261,"Both available",245)
+    d.line(129,289,74,405,True);d.text(68,350,"tea",23,anchor="middle")
+    d.line(177,289,230,405,True);d.text(238,350,"coffee",23,anchor="middle")
+    for x in [74,230,409,563]:
+        d.circle(x,435,27,"white",INK,2);d.text(x,443,"stop",19,anchor="middle")
+    d.line(463,162,415,227,True);d.text(410,198,"pay",23,anchor="middle")
+    d.line(513,162,558,227,True);d.text(561,198,"pay",23,anchor="middle")
+    d.label(409,261,"Tea only",128)
+    d.label(563,261,"Coffee only",141)
+    d.line(409,290,409,405,True);d.text(375,356,"tea",23,anchor="middle")
+    d.line(563,290,563,405,True);d.text(606,356,"coffee",20,anchor="middle")
+    d.text(153,500,"Choose after paying",22,anchor="middle")
+    d.text(489,500,"Commits during payment",21,anchor="middle")
+    d.text(320,549,"Which choices survive the payment step?",23,anchor="middle")
+    d.save()
+
+def do_pictures():
+    d=Drawing("do-intervention","Set watering; keep its effects","The observational graph has weather affecting watering and growth, and watering affecting growth. Setting watering removes the incoming weather-to-watering arrow while retaining the other arrows. The crossed dashed line marks the removed arrow.",390)
+    d.line(320,62,320,335,stroke="#ccd8d4")
+    for offset,title in [(0,"Observed choices"),(320,"do(watering)")]:
+        d.text(162+offset,90,title,24,anchor="middle",weight="700")
+        d.label(162+offset,143,"Weather",142)
+        d.label(70+offset,282,"Watering",116)
+        d.label(252+offset,282,"Growth",112)
+        d.line(186+offset,171,241+offset,248,True)
+        d.line(134+offset,278,188+offset,278,True)
+        if offset==0:d.line(138,171,78,248,True)
+        else:
+            d.line(458,171,398,248,stroke="#a8babc",dash=True)
+            d.line(418,196,440,218,stroke=RUST);d.line(440,196,418,218,stroke=RUST)
+    d.text(320,358,"Incoming cause removed; outgoing cause kept.",22,anchor="middle")
+    d.save()
+    d=Drawing("do-adjustment","Compare the same weather mix","The observed watered and unwatered groups have success rates 50 and 70 percent and different weather mixes. Adjusting both to half mild and half hot gives intervention rates 65 and 55 percent under the stated model.",390)
+    for x,title,vals,note in [(34,"Observed groups",[50,70],"Different weather mixes"),(355,"Interventions",[65,55],"Half mild, half hot")]:
+        d.text(x+126,88,title,24,anchor="middle",weight="700")
+        for y,label,n,col in [(137,"Water",vals[0],TEAL),(234,"No water",vals[1],RUST)]:
+            d.text(x,y-12,label,23)
+            d.rect(x,y,220,28,"#e8ebe6","none",5,0)
+            d.rect(x,y,2.2*n,28,col,"none",5,0)
+            d.text(x+2.2*n+8,y+23,f"{n}%",23,weight="700")
+        d.text(x+126,304,note,21,anchor="middle")
+    d.text(320,366,"Model assumptions justify this adjustment.",23,anchor="middle")
+    d.save()
+
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
     counters(); water(); gardens(); books(); badges(); selector(); selector(True)
@@ -607,6 +737,8 @@ def main():
     averages(); types(); jars(); field_tiles(); practice(); practice_pictures(); name_passing()
     tensor_pictures(); exterior_pictures(); complex_pictures()
     fractional_picture(); operator_pictures(); linear_pictures()
+    epistemic_pictures(); rough_pictures(); measurement_pictures()
+    behavior_picture(); do_pictures()
     (OUT/"manifest.json").write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n")
     print(f"Built {len(manifest)} SVG diagrams.")
 if __name__ == "__main__":

@@ -33,9 +33,9 @@ This order is a reading route. It is not a ranking or a claim that each subject 
 
 ## Explore the wider habitat
 
-The **[Field Map](PANTHEON.md)** places these lessons among a larger set of subjects. Its optional tracks let you explore geometry, analysis, operators, logic, computation, and particular research proposals.
+The **[Field Map](PANTHEON.md)** places these lessons among a larger set of subjects. Its optional tracks let you explore geometry, analysis, operators, logic, computation, observation, and causal inference.
 
-Six more doors now have their own small examples:
+Choose a question for a longer visit:
 
 | Try this question | Explore |
 |---|---|
@@ -45,6 +45,11 @@ Six more doors now have their own small examples:
 | Can earlier changes still affect a calculation? | [Fractional calculus](tracks/change/fractional-calculus.md) |
 | What does it mean to square an action? | [Functional calculus](tracks/operators/functional-calculus.md) |
 | Can we use the same resource twice? | [Linear logic](tracks/proof/linear-logic.md) |
+| Who learns what when a card is revealed? | [Epistemic logic](tracks/observation/epistemic-logic.md) |
+| What can an incomplete label tell us for sure? | [Rough sets](tracks/observation/rough-sets.md) |
+| Can an interaction tell two machines apart? | [Observational equivalence](tracks/observation/observational-equivalence.md) |
+| How can measurements drive a computation? | [Measurement calculus](tracks/observation/measurement-calculus.md) |
+| What would happen if we changed the decision? | [Do-calculus](tracks/observation/do-calculus.md) |
 
 The map groups tools by their jobs. Some appear in several habitats. It distinguishes a whole subject, a specific formal system, and a proposed research framework.
 

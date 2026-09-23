@@ -261,6 +261,65 @@ No. You can use the instructions again, but you still have only **two vouchers**
 
 </details>
 
+## Observation and intervention trails
+
+### 15. Knowing that someone knows
+
+A book is in one of two closed boxes. Jo has privately seen which box holds it. Sam has no clue about the location, but knows Jo looked. Jo publicly says, “I know which box.” Does Sam now know the location?
+
+<details>
+<summary>Check</summary>
+
+No. Jo could truthfully say that with the book in either box. Both locations remain possible for Sam. Knowing that someone has an answer need not give you the answer's content. See [epistemic logic](tracks/observation/epistemic-logic.md).
+
+</details>
+
+### 16. Find the unresolved group
+
+A scanner groups parcels 1 and 2 under label A, parcels 3 and 4 under B, and parcel 5 under C. The inspected fragile parcels are **1, 3, and 4**. Using only the group labels, which parcels lie in the lower approximation, upper approximation, and boundary of the fragile set?
+
+<details>
+<summary>Check</summary>
+
+The lower approximation is **3, 4**: their whole B group is fragile. The upper approximation is **1, 2, 3, 4**: both A and B meet the fragile set. The boundary is **1, 2**, where the shared label leaves the answer unresolved. See [rough sets](tracks/observation/rough-sets.md).
+
+</details>
+
+### 17. What does the test record?
+
+One machine lets you pay and then choose tea or coffee. Another commits to one drink while accepting payment. A test records only the set of possible completed sequences, with no timing, failed requests, or further interaction. Would it distinguish the machines? What stronger comparison caught their difference in the lesson?
+
+<details>
+<summary>Check</summary>
+
+That trace-only test sees the same two sequences: **pay–tea** and **pay–coffee**. The step-by-step comparison also checks the choices that remain after each payment. The committed machine can lose an option that the other retains. See [observational equivalence](tracks/observation/observational-equivalence.md).
+
+</details>
+
+### 18. Combine two correction instructions
+
+Suppose an output needs an X operation for each recorded 1 in two bits. Two X operations cancel. What is the combined correction for bits **1, 1**? What about **1, 0**?
+
+<details>
+<summary>Check</summary>
+
+For **1, 1**, applying X twice is the identity, so the combined correction can be omitted. For **1, 0**, apply X once. The bit records must be available before choosing between those instructions. See [measurement calculus](tracks/observation/measurement-calculus.md).
+
+</details>
+
+### 19. Change the causal graph
+
+In a new garden model, watering changes soil moisture, and soil moisture changes growth. Suppose that is the entire causal route from watering to growth. A gardener proposes holding soil moisture fixed when comparing watering choices. Would that preserve the total effect we wanted to measure?
+
+<details>
+<summary>Check</summary>
+
+No. Holding moisture fixed blocks the very route through which watering affects growth in this model. Moisture comes after watering on that route. Weather in the original example was a shared cause that came before watering.
+
+The position of a variable matters; “adjust for everything” is not a general rule. See [do-calculus](tracks/observation/do-calculus.md).
+
+</details>
+
 ## A reusable activity for learners and teachers
 
 Choose one problem above. Have one person change a number, object, condition, or rule. Ask the other person:

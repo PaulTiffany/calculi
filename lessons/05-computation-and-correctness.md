@@ -130,6 +130,8 @@ Try [lambda substitution](../tracks/computation/lambda-calculus.md), then [the C
 
 [Functional calculus](../tracks/operators/functional-calculus.md) applies functions to matrices or suitable operators. A sound box that swaps two values gives us a tiny example: what does it mean to square the swapping action? This subject has a different meaning from functional programming.
 
+For a quantum example of instructions depending on earlier results, visit [measurement calculus](../tracks/observation/measurement-calculus.md). A recorded bit tells a later step which correction to apply.
+
 ## Sources
 
 The examples are original. See Frank Pfenning's [lambda-calculus lecture](https://www.cs.cmu.edu/~fp/courses/15814-f25/lectures/01-lambda.pdf), Carnegie Mellon's [Hoare-logic notes](https://www.cs.cmu.edu/~aldrich/courses/17-355-19sp/notes/notes11-hoare-logic.pdf), and Edsger Dijkstra's [EWD472](https://www.cs.utexas.edu/~EWD/transcriptions/EWD04xx/EWD472.html) for predicate transformers and program derivation.
