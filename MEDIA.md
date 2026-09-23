@@ -18,9 +18,11 @@ The books are counted in [lesson 3](lessons/03-discrete-and-numerical.md) and se
 
 Continuity is a memory aid. It does not mean that the mathematical subjects all have the same objects or rules.
 
+The map scene supports two deliberately different questions: [change coordinates](tracks/geometry/tensor-calculus.md) while keeping an arrow fixed, or [turn the arrow](tracks/change/complex-calculus.md) while keeping the coordinates fixed. The familiar picture gives readers a chance to notice the difference.
+
 ## Give each picture a job
 
-The guide uses six generated illustrations for familiar settings and a larger set of original SVG diagrams for precise examples. In the diagrams, counts, labels, arrows, and connections are part of the explanation. The scene illustrations do not supply numerical evidence.
+The guide uses nine generated illustrations for familiar settings and a larger set of original SVG diagrams for precise examples. In the diagrams, counts, labels, arrows, and connections are part of the explanation. The scene illustrations do not supply numerical evidence.
 
 Place a visual beside the passage it explains. Let the caption ask a useful question or point out a relationship. For a prediction exercise, show the starting information and keep the answer inside the answer reveal.
 

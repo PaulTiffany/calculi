@@ -11,7 +11,7 @@ The pictures help readers recognize a setting, see a rule, and carry an idea int
 
 Keep scenes uncluttered and understandable at a small size. Use familiar expressions and simple shapes without making the people seem foolish or helpless. The characters connect the visits; each mathematical subject still gets its own explanation.
 
-## The six scene illustrations
+## The nine scene illustrations
 
 | File | Teaching role |
 |---|---|
@@ -21,10 +21,13 @@ Keep scenes uncluttered and understandable at a small size. Use familiar express
 | [workshop.webp](illustrations/workshop.webp) | Discuss instructions, tools, and coordination |
 | [chance.webp](illustrations/chance.webp) | Introduce uncertain outcomes |
 | [delivery.webp](illustrations/delivery.webp) | Combine records, quantities, and actions |
+| [maps.webp](illustrations/maps.webp) | Compare changing coordinates with turning an arrow |
+| [materials.webp](illustrations/materials.webp) | Ask how earlier changes can affect a material |
+| [sound.webp](illustrations/sound.webp) | Explore an operator that acts on two channel values |
 
-These are 1536 × 1024 lossless WebP assets, about 6.6 MB in total. Lesson embeds usually display them at 400 pixels wide. They contain no mathematical labels or quantities that must be counted.
+These are 1536 × 1024 lossless WebP assets, about 9.9 MB in total. Lesson embeds usually display them at 400 pixels wide. They contain no mathematical labels or quantities that must be counted.
 
-The first set used six image-generation calls: one reference scene followed by five scenes made with that reference. Reusing these assets across pages keeps the number of generation calls down. No price or cheaper-model claim is implied; this interface exposed neither a model selector nor itemized costs.
+The first set used six image-generation calls: one reference scene followed by five scenes made with that reference. A later expansion used three more calls with the same reference. Reusing these assets across pages keeps the number of generation calls down. No price or cheaper-model claim is implied; this interface exposed neither a model selector nor itemized costs.
 
 The [prompt record](illustrations/prompts.json) stores each request and its reference, where used. To add a scene, supply `welcome.webp` as the visual reference and describe only the new setting and activity. Keep letters, formulas, counted objects, and exact relationships out of the illustration. Review the result before embedding it. Generation is not deterministic, so keeping a prompt does not guarantee identical pixels.
 

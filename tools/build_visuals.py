@@ -455,12 +455,158 @@ def name_passing():
     d.text(320,228,"on a",19,anchor="middle")
     d.save()
 
+def tensor_pictures():
+    d=Drawing("tensor-coordinates","Same arrow, different coordinates","The same northeast arrow has components three east and two north, or two north and minus three west. Only the coordinate directions change.",375)
+    for x,label,pair in [(100,"East, north","(3, 2)"),(430,"North, west","(2, −3)")]:
+        d.text(x+60,79,label,25,anchor="middle",weight="700")
+        d.line(x,246,x,120,True,stroke="#87999f")
+        d.text(x,108,"N",22,anchor="middle")
+        if x==100:
+            d.line(x,246,x+150,246,True,stroke="#87999f");d.text(x+162,254,"E",22)
+        else:
+            d.line(x,246,x-103,246,True,stroke="#87999f");d.text(x-122,254,"W",22,anchor="middle")
+        d.line(x,246,x+90,186,True,stroke=TEAL)
+        d.circle(x,246,4,INK,INK,1)
+        d.text(x,276,"gate",22,anchor="middle")
+        d.text(x+101,181,"tree",22)
+        d.text(x+60,318,pair,28,anchor="middle",weight="700")
+    d.text(320,354,"North stays upward in both pictures.",23,anchor="middle")
+    d.save()
+    d=Drawing("tensor-stretch","One stretch, two descriptions","The same linear map doubles east-west lengths and leaves north-south lengths unchanged. In east-north coordinates the diagonal factors are two and one; in north-west coordinates they are one and two.",290)
+    for x,title,lines in [(24,"East, north",[("East","×2"),("North","×1")]),(334,"North, west",[("North","×1"),("West","×2")])]:
+        d.rect(x,77,282,155,"white","#b3c8c6",15,2)
+        d.text(x+141,107,title,25,anchor="middle",weight="700")
+        for j,(direction,factor) in enumerate(lines):
+            yy=156+j*55
+            d.text(x+28,yy,direction,25)
+            d.label(x+220,yy-7,factor,70,PALE if factor=="×2" else "#fff1ce")
+    d.text(320,269,"The east–west stretch is still twice as large.",23,anchor="middle")
+    d.save()
+
+def exterior_pictures():
+    d=Drawing("exterior-boundaries","Shared edges cancel","Two adjacent unit squares are traced counterclockwise. The shared edge is traversed up and down. These opposite traversals cancel, leaving six outside unit edges.",340)
+    d.text(147,88,"Two loops",25,anchor="middle",weight="700")
+    for x,col in [(57,TEAL),(147,RUST)]:
+        d.rect(x,116,90,90,PALE if col==TEAL else "#fff1ce","#a7b8b7",0,2)
+        d.line(x+16,206,x+72,206,True,stroke=col)
+        d.line(x+72,116,x+16,116,True,stroke=col)
+    d.line(57,132,57,190,True,stroke=TEAL)
+    d.line(237,190,237,132,True,stroke=RUST)
+    d.line(141,190,141,132,True,stroke=TEAL)
+    d.line(153,132,153,190,True,stroke=RUST)
+    d.text(94,170,"A",27,anchor="middle");d.text(197,170,"B",27,anchor="middle")
+    d.line(265,163,363,163,True)
+    d.text(489,88,"One boundary",25,anchor="middle",weight="700")
+    d.rect(391,113,196,98,PALE,TEAL,0,3)
+    for args in [(411,211,470,211),(509,211,568,211),(568,113,509,113),(470,113,411,113),(391,128,391,196),(587,196,587,128)]:
+        d.line(*args,True,stroke=TEAL)
+    d.line(489,111,489,118,stroke=INK);d.line(489,206,489,213,stroke=INK)
+    d.text(147,253,"Opposite shared steps",21,anchor="middle")
+    d.text(489,253,"6 unit edges",24,anchor="middle")
+    d.text(320,310,"Shared reading: +3 + (−3) = 0",25,anchor="middle")
+    d.save()
+    d=Drawing("exterior-hole","Which edges form the boundary?","Eight square tiles fill a three-by-three grid except for the missing center tile. No perimeter totals or walking directions are supplied.",350)
+    for row in range(3):
+        for col in range(3):
+            if (row,col)!=(1,1):
+                d.rect(212+72*col,82+72*row,72,72,PALE,"#819b99",0,2)
+    d.text(320,198,"gap",23,anchor="middle")
+    d.text(320,328,"Every tile side is 1 unit.",23,anchor="middle")
+    d.save()
+
+def complex_pictures():
+    d=Drawing("complex-turn","Turn the arrow; keep the axes","In fixed real and imaginary axes, multiplying three plus two i by i rotates the arrow counterclockwise by a quarter turn to minus two plus three i.",390)
+    d.line(106,245,543,245,True,stroke="#87999f")
+    d.line(315,327,315,83,True,stroke="#87999f")
+    d.text(552,253,"real",22)
+    d.text(328,91,"imaginary",22)
+    d.text(300,271,"0",22,anchor="middle")
+    d.line(315,245,405,185,True,stroke=TEAL)
+    d.line(315,245,255,155,True,stroke=RUST)
+    d.path("M405,185 A108.167,108.167 0 0 0 255,155",INK,sw=2,arrow=True,dash=True)
+    d.circle(405,185,4,TEAL,TEAL,1);d.circle(255,155,4,RUST,RUST,1)
+    d.text(476,154,"Before",23,anchor="middle")
+    d.text(476,189,"3 + 2i",27,anchor="middle",weight="700")
+    d.text(178,121,"After",23,anchor="middle")
+    d.text(178,156,"−2 + 3i",27,anchor="middle",weight="700")
+    d.text(320,369,"Multiplying by i makes a quarter-turn.",23,anchor="middle")
+    d.save()
+    d=Drawing("complex-contour","Go around a point without touching it","A counterclockwise circular contour surrounds zero. The example function one divided by z is undefined at zero, but the circle itself avoids zero.",340)
+    d.circle(178,189,86,"white",TEAL,4)
+    d.path("M264,189 A86,86 0 0 0 178,103",TEAL,sw=4,arrow=True)
+    d.circle(178,189,7,RUST,INK,2)
+    d.text(178,226,"0",25,anchor="middle")
+    d.text(438,120,"Example: 1 / z",26,anchor="middle",weight="700")
+    d.text(438,178,"Undefined at 0",24,anchor="middle")
+    d.text(438,230,"Path avoids 0",24,anchor="middle")
+    d.text(320,316,"The path still surrounds the excluded point.",23,anchor="middle")
+    d.save()
+
+def fractional_picture():
+    d=Drawing("fractional-history","A small weighted-history model","Record A has changes four, zero, zero; record B has zero, four, zero. Weighting those intervals by one-quarter, one-half, and one gives scores one and two. These teaching weights do not define a fractional derivative.",390)
+    for x,title,weight in [(167,"Oldest","× 1/4"),(311,"Middle","× 1/2"),(455,"Newest","× 1")]:
+        d.text(x,86,title,23,anchor="middle",weight="700")
+        d.text(x,120,weight,24,anchor="middle")
+    d.text(584,120,"Score",23,anchor="middle",weight="700")
+    for y,name,nums,score in [(183,"A",[4,0,0],1),(257,"B",[0,4,0],2)]:
+        d.text(48,y+8,name,28,anchor="middle",weight="700")
+        for x,n in zip([167,311,455],nums):d.number(x,y,n,r=25)
+        d.line(497,y,541,y,True)
+        d.number(584,y,score,GOLD,r=25)
+    d.text(320,328,"Multiply by the weights, then add.",24,anchor="middle",weight="700")
+    d.text(320,366,"Toy score, not a fractional derivative.",22,anchor="middle")
+    d.save()
+
+def operator_pictures():
+    d=Drawing("operator-swap","What does the action do twice?","The swap operator A sends the pair two, five to five, two. A second application returns two, five. Two swaps act as the identity on every pair.",290)
+    for x,title,nums in [(91,"Start",[2,5]),(319,"One swap",[5,2]),(547,"Two swaps",[2,5])]:
+        d.text(x,89,title,24,anchor="middle",weight="700")
+        for dx,n in zip([-34,34],nums):d.number(x+dx,164,n,PALE if n==2 else GOLD,r=25)
+    for x in [160,388]:
+        d.line(x,164,x+92,164,True)
+        d.text(x+46,144,"A",25,anchor="middle")
+    d.text(320,256,"A² = I: two swaps leave the input unchanged.",23,anchor="middle")
+    d.save()
+    d=Drawing("operator-square","Two different meanings of “square”","Matrix multiplication squares the swap matrix to give the identity matrix. Squaring each entry separately leaves the swap matrix unchanged.",430)
+    def matrix(x,y,rows):
+        d.path(f"M{x+10},{y} H{x} V{y+84} H{x+10}")
+        d.path(f"M{x+100},{y} H{x+110} V{y+84} H{x+100}")
+        for row in range(2):
+            for col in range(2):d.text(x+32+46*col,y+31+43*row,rows[row][col],28,anchor="middle",weight="700")
+    matrix(270,75,[[0,1],[1,0]])
+    d.text(240,124,"A =",25,anchor="middle")
+    d.line(304,173,183,215,True);d.line(351,173,472,215,True)
+    d.text(169,246,"Compose A with A",23,anchor="middle",weight="700")
+    d.text(477,246,"Square each entry",23,anchor="middle",weight="700")
+    matrix(114,266,[[1,0],[0,1]]);matrix(422,266,[[0,1],[1,0]])
+    d.text(169,382,"No swap",24,anchor="middle")
+    d.text(477,382,"One swap",24,anchor="middle")
+    d.save()
+
+def linear_pictures():
+    d=Drawing("linear-token","One token, two possible choices","A single token can be exchanged for one snack or for one drink. The two branches show alternatives; each purchase consumes the token.",325)
+    d.label(112,166,"1 token",147,"#fff1ce")
+    d.line(201,154,384,109,True);d.line(201,175,384,226,True)
+    d.text(294,181,"OR",26,anchor="middle",weight="700")
+    d.label(500,110,"snack",172)
+    d.label(500,229,"drink",172,BLUE)
+    d.text(320,297,"Each exchange consumes the token.",24,anchor="middle")
+    d.save()
+    d=Drawing("linear-two-tokens","Allocate a resource to each task","One of two separate tokens is exchanged for a snack and the other for a drink. Each token supports just one of the two purchases.",285)
+    for y,number,result,col in [(112,1,"snack",PALE),(207,2,"drink",BLUE)]:
+        d.label(115,y,f"token {number}",159,"#fff1ce")
+        d.line(214,y-5,402,y-5,True)
+        d.label(518,y,result,173,col)
+    d.save()
+
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
     counters(); water(); gardens(); books(); badges(); selector(); selector(True)
     tickets(); query(); deadlock(); cupboard(); cupboard(True); beads(); beads(True)
     cause(); crates(); paths(); walks(); recipe(); indications(); distinctions()
     averages(); types(); jars(); field_tiles(); practice(); practice_pictures(); name_passing()
+    tensor_pictures(); exterior_pictures(); complex_pictures()
+    fractional_picture(); operator_pictures(); linear_pictures()
     (OUT/"manifest.json").write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n")
     print(f"Built {len(manifest)} SVG diagrams.")
 if __name__ == "__main__":

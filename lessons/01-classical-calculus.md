@@ -110,6 +110,10 @@ These are precise claims with assumptions, not rules for every possible function
 
 Rates need not involve time. A hillside has a slope even while it stays still. Derivatives also help search for the best size or setting. Both ideas appear in the next lesson.
 
+## Keep exploring
+
+[Complex calculus](../tracks/change/complex-calculus.md) gives numbers a second direction and studies functions of them. [Fractional calculus](../tracks/change/fractional-calculus.md) asks what an in-between order of differentiation or integration can mean. Each begins with a small visual example.
+
 ## Sources
 
 The tank and ribbon problems are original. For the mathematics, see OpenStax, *Calculus Volume 1*: [derivatives](https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative) and [the Fundamental Theorem](https://openstax.org/books/calculus-volume-1/pages/5-3-the-fundamental-theorem-of-calculus). See also *Volume 2*, [differential equations](https://openstax.org/books/calculus-volume-2/pages/4-1-basics-of-differential-equations).

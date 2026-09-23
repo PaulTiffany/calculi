@@ -15,6 +15,9 @@ The [core lessons](README.md#take-the-tour) are the plain-language entry route. 
 | Data | *Database System Concepts*, query-language chapter | Safety and expressive power |
 | Communication and actions | The everyday track examples, followed by the linked tutorials | Original process and action papers |
 | Chance and cause | MIT's introductory probability course | Stochastic integration and Pearl's do-calculus |
+| New directions and boundaries | The tensor and exterior tracks, then Peeters and Sjamaar | Tensor fields, differential forms, and manifolds |
+| Complex numbers and operators | MIT's 18.04 notes and Higham's matrix-function introduction | Contour integration, residues, and operator calculi |
+| Memory and resource use | The fractional and linear-logic tracks | Mainardi–Gorenflo's fractional operators; Pfenning's proof rules |
 
 “Introductory” in a university source can still mean demanding for a new reader. The small examples in this guide are not a substitute for all that background.
 
@@ -35,6 +38,11 @@ These support modern formulations, not historical priority claims.
 - MIT, 18.330. [Numerical analysis notes, April 2014](https://math.mit.edu/icg/resources/teaching/18.330/18.330-Apr-2014.pdf). Derivatives as differences, integrals as sums, and numerical methods.
 
 The finite-sum cancellation identity in lesson 3 is also shown directly; it needs no claim about historical priority.
+
+## Complex analysis and residue calculus
+
+- MIT. [18.04, *Complex Analysis with Applications*, course notes](https://math.mit.edu/~dunkel/Teach/18.04_2019S/notes/1804_Main.pdf). Complex multiplication, complex derivatives (§4.5), contour integration, Laurent series, and the residue theorem.
+- Cheng, Hung. [*Lecture 2: Complex Analysis*](https://math.mit.edu/classes/18.305/WWW_2004_HungCheng/second1.pdf), MIT 18.305, 2004. Complex integration and the Cauchy residue theorem.
 
 ## Calculus of variations
 
@@ -63,6 +71,9 @@ The finite-sum cancellation identity in lesson 3 is also shown directly; it need
 
 ## Geometry and field calculi
 
+- Peeters, Kasper. [*Introduction to Tensor Calculus*](https://www.maths.dur.ac.uk/users/kasper.peeters/pdf/tensor_en.pdf), Durham University lecture notes. Tensor components, transformation rules, and derivatives.
+- Tong, David. [*General Relativity*, §2](https://www.davidtong.org/teaching/general-relativity/grhtml/S2). §2.3 develops tensors and tensor fields; §2.4 develops differential forms and Stokes' theorem. This is advanced reading.
+- Sjamaar, Reyer. [*Manifolds and Differential Forms*](https://pi.math.cornell.edu/~sjamaar/manifolds/manifold.pdf), revised 2017. Chapters 2, 5, and 9 explain forms, boundaries, and Stokes' theorem in Euclidean space and on manifolds.
 - Ricci-Curbastro, Gregorio; Levi-Civita, Tullio. Foundational work on the absolute differential calculus / tensor calculus, 1900.
 - Strang, Gilbert; Herman, Edwin “Jed.” *Calculus Volume 3*, OpenStax. [§4.6, Directional Derivatives and the Gradient](https://openstax.org/books/calculus-volume-3/pages/4-6-directional-derivatives-and-the-gradient), [§6.1, Vector Fields](https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields), and [§6.7, Stokes' Theorem](https://openstax.org/books/calculus-volume-3/pages/6-7-stokes-theorem).
 - Spivak, Michael. *Calculus on Manifolds*. W. A. Benjamin, 1965. An advanced treatment of differential forms, integration, and Stokes' theorem.
@@ -71,7 +82,10 @@ Tensor, Ricci, and exterior methods overlap within differential geometry. This g
 
 ## Operators and fractional extensions
 
+- Higham, Nicholas J. [“What Is a Matrix Function?”](https://nhigham.com/2020/06/09/what-is-a-matrix-function/), June 9, 2020. Definitions of matrix functions and their distinction from entrywise evaluation.
 - Higham, Nicholas J. [“Functions of Matrices”](https://eprints.maths.manchester.ac.uk/2109/), in *Handbook of Linear Algebra*, CRC Press, 2014. Matrix functions provide an entry to functional-calculus ideas.
+- Mainardi, Francesco; Gorenflo, Rudolf. [“Time-fractional derivatives in relaxation processes: a tutorial survey”](https://arxiv.org/abs/0801.4914). *Fractional Calculus and Applied Analysis* 10(3):269–308, 2007; arXiv version 2008. §1 gives Riemann–Liouville and Caputo definitions; later sections treat relaxation and viscoelasticity.
+- Gorenflo, Rudolf; Mainardi, Francesco. [“Fractional Calculus: Integral and Differential Equations of Fractional Order”](https://arxiv.org/abs/0805.3823), arXiv version 2008 of their earlier book chapter. Fractional integration, differentiation, and differential equations.
 - Strang, Gilbert. [*Differential Equations and Linear Algebra* materials](https://math.mit.edu/~gs/dela/), especially Fourier and Laplace transforms; see also his [“Nice Functions”](https://math.mit.edu/~gs/dela/nice_functions.pdf) for a concrete transform calculation.
 - Mainardi, Francesco. [*An Introduction to Fractional Calculus*](https://www.dam.brown.edu/fractional_calculus/home.htm), Brown University short course, with [lecture materials](https://www.dam.brown.edu/fractional_calculus/lecture.htm). These develop specific fractional integral and derivative definitions.
 
@@ -83,6 +97,13 @@ Tensor, Ricci, and exterior methods overlap within differential geometry. This g
 - Frege, Gottlob. *Begriffsschrift*, 1879 — foundational predicate-logic lineage.
 - Gentzen, Gerhard. Foundational work on natural deduction and sequent calculi, 1934–35.
 - Stanford Encyclopedia of Philosophy. “Classical Logic.”
+
+## Linear logic and resources
+
+- Girard, Jean-Yves. “Linear Logic.” *Theoretical Computer Science* 50(1):1–101, 1987. DOI: 10.1016/0304-3975(87)90045-4.
+- Pfenning, Frank. [*Linear Logic*](https://www.cs.cmu.edu/~fp/courses/15816-f01/handouts/linear.pdf), lecture notes, draft January 26, 2002. Linear hypotheses, simultaneous conjunction, linear implication, and unrestricted resources. The notes emphasize intuitionistic linear logic.
+
+The token-stall example uses a small resource interpretation. It does not define all of linear logic, and linear and affine assumptions have different discard rules.
 
 ## Program logic and correctness
 

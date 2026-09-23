@@ -187,6 +187,80 @@ Under the stated causal model, opening an umbrella does not cause a wet pavement
 
 </details>
 
+## Six more trails to try
+
+These follow the optional tracks. You can choose one without completing them all.
+
+### 9. Describe the same movement
+
+A movement is (4, 3) in east–north coordinates. Describe it using north–west coordinates, with the same starting point and unit. Did the movement itself change?
+
+<details>
+<summary>Check</summary>
+
+It is **(3, −4)**: three north and four opposite west. The movement stays the same. Only its description changes. See [tensor calculus](tracks/geometry/tensor-calculus.md).
+
+</details>
+
+### 10. Combine boundaries
+
+Three unit-square plots form one straight row. Trace each plot counterclockwise and cancel shared edges traversed in opposite directions. How many outside unit edges remain?
+
+<details>
+<summary>Check</summary>
+
+**Eight.** The combined rectangle is three units long and one unit wide. Its outside has $3+1+3+1=8$ unit edges. The two shared edges each appeared twice in the original twelve traversals. See [exterior calculus](tracks/geometry/exterior-calculus.md).
+
+</details>
+
+### 11. Turn the movement
+
+Start with an arrow pointing two units right. Keep the axes fixed. Multiply its complex number by i three times, making a counterclockwise quarter-turn each time. Where does it end?
+
+<details>
+<summary>Check</summary>
+
+It points **two units down**, or $-2i$. The successive directions are up, left, then down. This changes the arrow itself. See [complex calculus](tracks/change/complex-calculus.md).
+
+</details>
+
+### 12. Compare histories
+
+Use the fractional track's **toy score**, with oldest-to-newest weights 1/4, 1/2, and 1. One record has changes (2, 2, 0); another has (0, 0, 4). Starting from zero, do they end at the same value? Do they receive the same score?
+
+<details>
+<summary>Check</summary>
+
+Both finish at **4**. Their scores differ: $2/4+2/2+0=1.5$ and $0+0+4=4$.
+
+That is a calculation in the stated weighted model. Calling it a fractional derivative would require a different, precise definition. See [fractional calculus](tracks/change/fractional-calculus.md).
+
+</details>
+
+### 13. Repeat a new operator
+
+An operator C changes the sign of both numbers in a pair. What do C² and C³ do to (2, −5)? Here powers mean repeated application.
+
+<details>
+<summary>Check</summary>
+
+The first application gives (−2, 5). **C² returns (2, −5)**. **C³ gives (−2, 5)** again.
+
+Two sign changes act as the identity, just as two swaps did, although one sign change and one swap are different operations. See [functional calculus](tracks/operators/functional-calculus.md).
+
+</details>
+
+### 14. Count uses of a resource
+
+You have two ride vouchers. Each ride consumes one voucher. The instruction sheet can be read any number of times. Can reading it three times give you three rides under these rules?
+
+<details>
+<summary>Check</summary>
+
+No. You can use the instructions again, but you still have only **two vouchers**. A third ride requires another voucher or a changed rule. See [linear logic](tracks/proof/linear-logic.md).
+
+</details>
+
 ## A reusable activity for learners and teachers
 
 Choose one problem above. Have one person change a number, object, condition, or rule. Ask the other person:

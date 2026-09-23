@@ -28,6 +28,12 @@ The tank, hill, garden, counts, badge puzzles, ticket counter, data tables, post
 |---|---|
 | [Variations](tracks/change/variational-calculus.md) | Euler–Lagrange tradition; Gel'fand–Fomin and Strang |
 | [Stochastic calculus](tracks/change/stochastic-calculus.md) | Itô/Stratonovich traditions; modern stochastic integration |
+| [Complex calculus](tracks/change/complex-calculus.md) | Complex analysis, contour integration, and residues; MIT course notes |
+| [Fractional calculus](tracks/change/fractional-calculus.md) | Riemann–Liouville and Caputo operators; Mainardi–Gorenflo; the finite weighted score is an original analogy |
+| [Tensor calculus](tracks/geometry/tensor-calculus.md) | Tensor components and transformation laws; Peeters and Tong |
+| [Exterior calculus](tracks/geometry/exterior-calculus.md) | Differential forms and Stokes' theorem; Sjamaar and Tong |
+| [Functional calculus](tracks/operators/functional-calculus.md) | Functions of matrices and operators; Higham |
+| [Linear logic](tracks/proof/linear-logic.md) | Girard's logic; Pfenning's presentation of linear and reusable assumptions |
 | [Lambda calculus](tracks/computation/lambda-calculus.md) | Church and subsequent lambda-calculus literature |
 | [Sequent calculus](tracks/proof/sequent-calculus.md) | Gentzen and proof theory |
 | [Calculus of Constructions](tracks/types/calculus-of-constructions.md) | Coquand and Huet; later inductive extensions |
@@ -39,6 +45,8 @@ The tank, hill, garden, counts, badge puzzles, ticket counter, data tables, post
 | [Tiffany's Fuzzy Calculus](tracks/observation/tiffany-fuzzy-calculus.md) | The named framework in Tiffany's *Principia Symbolica* and related materials |
 
 These tracks have different standing and scope: some introduce established advanced subjects; others examine particular symbolic systems or research frameworks. Their shared location under “tracks” only means that they are optional reading.
+
+The map-coordinate, stretching, garden-boundary, robot-turning, weighted-history, sound-box, and token-stall activities are original teaching examples. The arithmetic and diagrams illustrate entry ideas; they do not replace the cited formal definitions or proofs.
 
 ## Reconstruction and evidence
 
@@ -52,7 +60,7 @@ Full bibliographic records are in [References](REFERENCES.md).
 
 ## Visual material
 
-The six Jo and Sam scene illustrations in `assets/illustrations/` were generated with OpenAI's image-generation tool on September 23, 2026, for this guide. The welcome image established the character and style reference for the five later scenes. The exact prompts are preserved in [the prompt record](assets/illustrations/prompts.json). The tool did not expose a specific model version or an itemized generation cost.
+The nine Jo and Sam scene illustrations in `assets/illustrations/` were generated with OpenAI's image-generation tool on September 23, 2026, for this guide. The welcome image established the character and style reference for the eight later scenes. The first set contained six scenes; the expansion added maps, materials, and sound. The exact prompts are preserved in [the prompt record](assets/illustrations/prompts.json). The tool did not expose a specific model version or an itemized generation cost.
 
 The illustrations were encoded as lossless WebP files without changing their decoded pixels. They introduce familiar settings; they are not historical photographs, sourced mathematical figures, or exact quantity diagrams.
 

@@ -106,7 +106,7 @@ For the hill, a simple height model is $h(x,y)=100+0.2x+0.1y$, with distances in
 
 ## Other doors into geometry
 
-**Tensor** methods handle quantities with more complex direction and coordinate rules. **Exterior calculus** organizes integration over curves, surfaces, and regions. These methods overlap; they are not levels in a single ladder.
+[**Tensor calculus**](../tracks/geometry/tensor-calculus.md) starts by describing the same arrow in different coordinates. [**Exterior calculus**](../tracks/geometry/exterior-calculus.md) begins with two garden plots and the edge they share. These methods overlap; they are not levels in a single ladder.
 
 To choose an entire path or shape, explore [the calculus of variations](../tracks/change/variational-calculus.md).
 

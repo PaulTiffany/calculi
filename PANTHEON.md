@@ -22,12 +22,13 @@ Some names identify broad subjects. Others identify a specific language, a proof
 |---|---|---|
 | Differential calculus | Find local rates and sensitivity | A central part of introductory calculus |
 | Integral calculus | Accumulate quantities over intervals or regions | A central part of introductory calculus |
+| Complex-variable calculus / complex analysis | Differentiate complex functions and integrate along contours | A major branch of analysis, including residue calculus |
 | Differential equations | Find functions obeying rules that involve their rates | A broad neighboring subject built with calculus |
 | Calculus of variations | Vary a whole function, path, or shape | An established advanced area |
 | Fractional calculus | Extend derivatives and integrals to noninteger orders | A family of advanced definitions and methods |
 
 **Learn:** [Rates and totals](lessons/01-classical-calculus.md), then the garden example in [space and shape](lessons/02-space-and-shape.md).\
-**Explore:** [Variations](tracks/change/variational-calculus.md). For fractional calculus, see [Mainardi's course](https://www.dam.brown.edu/fractional_calculus/home.htm).
+**Explore:** [Variations](tracks/change/variational-calculus.md), [complex calculus](tracks/change/complex-calculus.md), or [fractional calculus](tracks/change/fractional-calculus.md).
 
 “Best” requires a goal and constraints. A stationary point is a candidate, not automatically the winner.
 
@@ -44,9 +45,9 @@ Some names identify broad subjects. Others identify a specific language, a proof
 | Differential geometry | Study curves, surfaces, and more general spaces | A field that uses several of these tools |
 
 **Learn:** [Slopes, Shapes, and Space](lessons/02-space-and-shape.md).\
-**Explore:** [Geometry sources](REFERENCES.md#geometry-and-field-calculi).
+**Explore:** [Tensor calculus](tracks/geometry/tensor-calculus.md) and [exterior calculus](tracks/geometry/exterior-calculus.md), with [geometry sources](REFERENCES.md#geometry-and-field-calculi).
 
-Complex analysis, which studies functions of complex numbers, is another major neighboring field. These areas are not all separate “species” at the same level. A fixed shape can be studied with calculus even when nothing moves.
+These areas overlap with [complex analysis](tracks/change/complex-calculus.md) and are not all separate “species” at the same level. A fixed shape can be studied with calculus even when nothing moves.
 
 ## 3. Steps, sums, and approximation
 
@@ -72,11 +73,12 @@ A discrete answer can be exact for a discrete question. Approximation is a diffe
 | Propositional calculus | Connect whole statements with logical operations | A basic logic language |
 | Predicate calculus | Express claims about objects, properties, all, and some | A richer logic language |
 | Natural deduction / sequent calculus | State allowed steps and organize proofs | Proof methods used with several logics |
-| Modal, intuitionistic, and linear logics | Change what can be expressed or which reasoning rules are used | Different logic families with their own proof calculi |
+| Modal and intuitionistic logics | Change what can be expressed or which reasoning rules are used | Different logic families with their own proof calculi |
+| Linear logic | Track the use of assumptions, including consumable resources | An established logic with several proof presentations |
 | Calculus of indications | Manipulate distinctions using marks and rules | Spencer-Brown's particular symbolic system from *Laws of Form* |
 
 **Learn:** [What Follows from What?](lessons/04-logic-and-proof.md).\
-**Explore:** [Sequents](tracks/proof/sequent-calculus.md) or [indications](tracks/logic/calculus-of-indications.md).
+**Explore:** [Sequents](tracks/proof/sequent-calculus.md), [linear logic](tracks/proof/linear-logic.md), or [indications](tracks/logic/calculus-of-indications.md).
 
 Choosing a language and choosing a proof presentation are different decisions. The calculus of indications is one particular symbolic system to explore.
 
@@ -146,16 +148,18 @@ Process languages and action formalisms can describe parts of the same system. T
 
 Probability, stochastic calculus, and causal inference are different subjects. One is not a synonym for the next.
 
-## Further habitats
+## 9. Operators and transforms
 
-Some important uses of the word fit less neatly into the everyday route.
+**Everyday question:** What happens when an entire action becomes the input to another mathematical rule?
 
 | Name | A first orientation | Starting source |
 |---|---|---|
 | Functional calculus | Apply functions to matrices or operators | [Higham, *Functions of Matrices*](https://eprints.maths.manchester.ac.uk/2109/) |
 | Operational calculus | Use operators and transforms to turn some differential problems into algebra | [Strang's differential-equations materials](https://math.mit.edu/~gs/dela/) |
 
-A matrix is an array of numbers with rules for combining such arrays. An operator acts on objects such as functions. These subjects need more background than the main tour.
+A matrix is an array of numbers with rules for combining such arrays. An operator acts on objects such as functions. The full theories need more background, but a two-channel sound box gives us a small place to begin.
+
+**Explore:** [Functional calculus](tracks/operators/functional-calculus.md): apply a function to an action.
 
 **Functional calculus is not another name for functional programming.** Similar names need not mean similar objects or rules.
 

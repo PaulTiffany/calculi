@@ -236,5 +236,82 @@
     "alt": "Before the message, Alice knows a and b, and Bob knows a. Alice sends b on a. Afterward Bob knows both a and b; Alice keeps both names.",
     "width": 640,
     "height": 330
+  },
+  {
+    "id": "tensor-coordinates",
+    "title": "Same arrow, different coordinates",
+    "alt": "The same northeast arrow has components three east and two north, or two north and minus three west. Only the coordinate directions change.",
+    "width": 640,
+    "height": 375
+  },
+  {
+    "id": "tensor-stretch",
+    "title": "One stretch, two descriptions",
+    "alt": "The same linear map doubles east-west lengths and leaves north-south lengths unchanged. In east-north coordinates the diagonal factors are two and one; in north-west coordinates they are one and two.",
+    "width": 640,
+    "height": 290
+  },
+  {
+    "id": "exterior-boundaries",
+    "title": "Shared edges cancel",
+    "alt": "Two adjacent unit squares are traced counterclockwise. The shared edge is traversed up and down. These opposite traversals cancel, leaving six outside unit edges.",
+    "width": 640,
+    "height": 340
+  },
+  {
+    "id": "exterior-hole",
+    "title": "Which edges form the boundary?",
+    "alt": "Eight square tiles fill a three-by-three grid except for the missing center tile. No perimeter totals or walking directions are supplied.",
+    "width": 640,
+    "height": 350
+  },
+  {
+    "id": "complex-turn",
+    "title": "Turn the arrow; keep the axes",
+    "alt": "In fixed real and imaginary axes, multiplying three plus two i by i rotates the arrow counterclockwise by a quarter turn to minus two plus three i.",
+    "width": 640,
+    "height": 390
+  },
+  {
+    "id": "complex-contour",
+    "title": "Go around a point without touching it",
+    "alt": "A counterclockwise circular contour surrounds zero. The example function one divided by z is undefined at zero, but the circle itself avoids zero.",
+    "width": 640,
+    "height": 340
+  },
+  {
+    "id": "fractional-history",
+    "title": "A small weighted-history model",
+    "alt": "Record A has changes four, zero, zero; record B has zero, four, zero. Weighting those intervals by one-quarter, one-half, and one gives scores one and two. These teaching weights do not define a fractional derivative.",
+    "width": 640,
+    "height": 390
+  },
+  {
+    "id": "operator-swap",
+    "title": "What does the action do twice?",
+    "alt": "The swap operator A sends the pair two, five to five, two. A second application returns two, five. Two swaps act as the identity on every pair.",
+    "width": 640,
+    "height": 290
+  },
+  {
+    "id": "operator-square",
+    "title": "Two different meanings of “square”",
+    "alt": "Matrix multiplication squares the swap matrix to give the identity matrix. Squaring each entry separately leaves the swap matrix unchanged.",
+    "width": 640,
+    "height": 430
+  },
+  {
+    "id": "linear-token",
+    "title": "One token, two possible choices",
+    "alt": "A single token can be exchanged for one snack or for one drink. The two branches show alternatives; each purchase consumes the token.",
+    "width": 640,
+    "height": 325
+  },
+  {
+    "id": "linear-two-tokens",
+    "title": "Allocate a resource to each task",
+    "alt": "One of two separate tokens is exchanged for a snack and the other for a drink. Each token supports just one of the two purchases.",
+    "width": 640,
+    "height": 285
   }
 ]

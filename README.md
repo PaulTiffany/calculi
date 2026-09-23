@@ -33,7 +33,18 @@ This order is a reading route. It is not a ranking or a claim that each subject 
 
 ## Explore the wider habitat
 
-The **[Field Map](PANTHEON.md)** places these lessons among a larger set of subjects. It includes optional tracks on variations, stochastic calculus, lambda calculus, proof, types, processes, actions, and particular research proposals.
+The **[Field Map](PANTHEON.md)** places these lessons among a larger set of subjects. Its optional tracks let you explore geometry, analysis, operators, logic, computation, and particular research proposals.
+
+Six more doors now have their own small examples:
+
+| Try this question | Explore |
+|---|---|
+| Did the thing move, or did our coordinates change? | [Tensor calculus](tracks/geometry/tensor-calculus.md) |
+| Why do shared edges disappear from a combined boundary? | [Exterior calculus](tracks/geometry/exterior-calculus.md) |
+| How can multiplication turn an arrow? | [Complex calculus](tracks/change/complex-calculus.md) |
+| Can earlier changes still affect a calculation? | [Fractional calculus](tracks/change/fractional-calculus.md) |
+| What does it mean to square an action? | [Functional calculus](tracks/operators/functional-calculus.md) |
+| Can we use the same resource twice? | [Linear logic](tracks/proof/linear-logic.md) |
 
 The map groups tools by their jobs. Some appear in several habitats. It distinguishes a whole subject, a specific formal system, and a proposed research framework.
 
@@ -51,7 +62,7 @@ The examples and teaching route are original educational work. Lessons link to s
 
 Original material is **[CC BY 4.0](LICENSE.md)**. You may copy and adapt it with credit. Cited works retain their own rights.
 
-Teaching or contributing? See [Contributing](CONTRIBUTING.md) and [Media and Learning Modes](MEDIA.md).
+Teaching or contributing? See [Contributing](CONTRIBUTING.md) and [Pictures and Learning Modes](MEDIA.md).
 
 Preferred credit:
 

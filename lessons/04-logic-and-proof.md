@@ -106,6 +106,10 @@ Classical, intuitionistic, modal, and linear logics make different choices about
 
 Try a [sequent proof](../tracks/proof/sequent-calculus.md). For another particular symbolic system, see [the calculus of indications](../tracks/logic/calculus-of-indications.md).
 
+## When assumptions act like resources
+
+A fact can usually be used in several arguments. A token spent on a snack cannot also buy a drink under a one-use rule. [Linear logic](../tracks/proof/linear-logic.md) explores proof rules that track this difference.
+
 ## Sources
 
 The badge and book puzzles are original. See the Open Logic Project's [proof-systems overview](https://builds.openlogicproject.org/content/first-order-logic/proof-systems/proof-systems.pdf) and [*forall x*, natural deduction](https://forallx.openlogicproject.org/bookml/Ch16.html). [References](../REFERENCES.md#logic-and-formal-reasoning) gives further reading.

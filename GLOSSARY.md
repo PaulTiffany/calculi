@@ -83,6 +83,17 @@ Use this page when a word blocks your reading. The lesson supplies its precise c
 
 | Word | Meaning in the relevant track |
 |---|---|
+| coordinates / components | Numbers describing a point or quantity relative to chosen directions and units |
+| basis | A set of independent directions used to describe vectors; each vector has a unique combination of them |
+| tensor | A multilinear mathematical object; its component descriptions obey specified transformation rules when a basis changes |
+| differential form | An alternating covariant tensor field, suited to integration over oriented paths, surfaces, or higher-dimensional regions |
+| orientation | A consistent choice of direction or sign for a path or region |
+| complex number | A number of the form $a+bi$, where $a$ and $b$ are real and $i^2=-1$ |
+| contour | A path used for integration, here in the complex plane |
+| fractional order | A possibly noninteger order of integration or differentiation, within a specified definition |
+| operator | A map acting on mathematical objects such as vectors or functions |
+| identity operator | The operator that returns each input unchanged |
+| linear assumption | An assumption whose use must be accounted for under linear proof rules, without free duplication or discarding |
 | abstraction | In lambda calculus, forming an expression with a named input |
 | application | Applying one lambda term to another |
 | reduction | A rewrite using the chosen system's rules |
@@ -93,7 +104,8 @@ Use this page when a word blocks your reading. The lesson supplies its precise c
 | encoding | A formal translation with stated properties it preserves |
 | distinction graph | Goertzel's graph recording pairwise indistinguishability for a chosen observer |
 | bounded observer | A source-specific construction in Tiffany's observation framework; its exact components belong to that source |
-| residue | In the Tiffany track, a specified mismatch in observation, reconstruction, or transport; the word has other meanings elsewhere |
+| residue in complex analysis | The coefficient of $(z-a)^{-1}$ in a function's local Laurent expansion about an isolated singularity $a$ |
+| residue in the Tiffany track | A specified mismatch in observation, reconstruction, or transport; it is a different source-specific use of the word |
 | holonomy | The effect of transporting something around a closed loop; a precise use requires a specified transport rule |
 
 A familiar word can have different technical meanings in different fields. Always check the local definition.
