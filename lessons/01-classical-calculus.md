@@ -1,106 +1,121 @@
-# 01 — Classical Calculus: Local Change and Accumulation
+# 1 — How Fast? How Much?
 
-**Start with:** [rates, totals, and limits](../start/02-what-calculus-does.md).\
-**By the end:** explain a rate, add up change, and say why the starting amount matters.
+**You need:** multiplication and the [welcome](../START.md).\
+**Your goal:** tell a rate from a total and explain why the starting amount matters.
 
-## The idea
+<!-- visual:art-garden -->
+<img src="../assets/illustrations/garden.webp" width="400" alt="Jo pours water into a clear container while Sam examines garden edging beside a planter.">
 
-A **function** is a rule that assigns an output to an input. For a filling tank, the input could be time and the output the amount of water.
+*At the garden, Jo asks how fast the water enters. Sam asks how much there is.*
+<!-- /visual:art-garden -->
 
-Classical calculus studies how such quantities vary. Its two main moves are:
+## Fill a tank
 
-- **differentiate:** find the local rate of change;
-- **integrate:** add up change across an interval.
+A tank starts with **5 liters**. Water enters at **2 liters per minute** for 3 minutes. None leaves.
 
-## A worked example
-
-A tank starts with **5 liters**. Water enters steadily at **2 liters per minute** for 3 minutes. None leaves.
-
-| What do we want? | Reasoning | Answer |
+| Question | Calculation | Answer |
 |---|---|---|
-| Rate of change | Each minute adds 2 liters | 2 liters per minute |
-| Water added | 2 liters per minute × 3 minutes | 6 liters |
-| Water now | Starting amount + water added | **11 liters** |
+| How fast is the amount growing? | 2 liters each minute | 2 liters per minute |
+| How much enters? | 2 × 3 | 6 liters |
+| How much is there now? | 5 + 6 | **11 liters** |
 
-The integral of the rate gives the **6 liters added**. The starting amount is needed to get 11.
+<!-- visual:diagram-water-total -->
+<img src="../assets/diagrams/water-total.svg" width="640" alt="A tank starts with five liters. Two liters per minute for three minutes adds six liters, leaving eleven liters.">
 
-For a rate that varies, we add contributions from smaller pieces, as in the [beginner example](../start/02-what-calculus-does.md). Limits let us make this precise.
+*The water level records an amount. The incoming flow has a rate.*
+<!-- /visual:diagram-water-total -->
 
-## Try it somewhere else
+The rate and the amount have different units. “Liters per minute” tells us how fast. “Liters” tells us how much.
 
-A box holds 7 meters of ribbon. A machine feeds in ribbon at 3 meters per minute for 2 minutes.
+**Predict:** if the tank started empty, would its rate change? What would its final amount be?
 
-1. How much ribbon is added? How much is in the box?
-2. A second box starts empty and receives ribbon at the same rate. Does knowing the rate tell you which box you have?
+<details>
+<summary>Check</summary>
+
+The rate would still be 2 liters per minute. The final amount would be 6 liters.
+
+A rate does not tell us the starting amount.
+
+</details>
+
+## What if the rate varies?
+
+Suppose 2 liters enter during the first minute and 4 during the second. Add the contributions: **6 liters enter**.
+
+For a smoothly changing flow, we can split time into short pieces. On each piece, use a rate to estimate the amount entering. Add the pieces. With suitable assumptions, smaller pieces approach a definite total.
+
+That approaching value is a **limit**. Limits make the idea of “smaller and smaller pieces” precise.
+
+**Integral calculus** develops ways to find such accumulations. A familiar picture is adding thin strips to find an area.
+
+Now turn the question around. Suppose we know the tank's amount at each time. Comparing nearby times gives an average rate. Taking a suitable limit gives the rate at a particular moment: a **derivative**. **Differential calculus** studies these local rates.
+
+## Why the two belong together
+
+Under suitable conditions, adding up a quantity's rate of change gives its final amount minus its starting amount. This link is part of the **Fundamental Theorem of Calculus**.
+
+It also explains why knowing the total change lets us recover the final amount only when we know where we started.
+
+A **function** gives an output for each allowed input—for example, the water amount at each time.
+
+Sometimes we know a rule for the rate before we know the whole function. For example, a tank's outflow might depend on how much water it holds. An equation linking a quantity to its rate is a **differential equation**. Solving it finds a function that obeys that rule.
+
+## Try it with ribbon
+
+A box holds 7 meters of ribbon. A machine adds 3 meters per minute for 2 minutes.
+
+How much is added? How much is in the box? What assumption would fail if ribbon also left the box?
 
 <details>
 <summary>Check your reasoning</summary>
 
-1. **6 meters are added; 13 meters are in the first box.**
-2. **No.** Both amounts grow at the same rate. The second box ends with 6 meters.
+Six meters are added; the box holds 13 meters.
 
-A rate records change. It does not record the starting amount. The water and ribbon examples share this structure even though their units differ.
+We assumed no ribbon leaves. If some leaves, we need the **net rate**: rate in minus rate out.
 
 </details>
 
-## The connection
-
-The **Fundamental Theorem of Calculus** connects differentiation and integration. With suitable assumptions, adding up a quantity's rate of change gives its final value minus its starting value.
-
 <details>
-<summary>Optional notation — derivative, integral, and the theorem</summary>
+<summary>Optional notation — a local rate and an accumulated change</summary>
 
-Let $f(x)=x^2$, where $x^2$ means $x$ multiplied by itself. The derivative is defined by
+Let $f(x)=x^2$, meaning $x$ multiplied by itself. Its derivative is
 
 $$
-f'(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h},
+f'(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}.
 $$
 
-when that limit exists. The fraction is the change in output divided by a nonzero change in input.
+The fraction compares output change with a nonzero input change. Here it simplifies to $2x+h$, whose limit is $2x$.
 
-Here it simplifies to $2x+h$, so the limit is $f'(x)=2x$. At $x=3$, the local rate is 6.
-
-Integrating this derivative from 0 to 3 gives
+At $x=3$, the local rate is 6. Adding this derivative from 0 to 3 gives
 
 $$
 \int_0^3 2x\,dx=9.
 $$
 
-If we use $F(x)=5+x^2$ instead, its derivative is still $2x$. The integral gives $F(3)-F(0)=14-5=9$, not 14.
+The integral sign asks us to accumulate over the stated interval. The answer equals $f(3)-f(0)$.
 
-A standard form of the theorem says: if $f$ is continuous on $[a,b]$ and $F(x)=\int_a^x f(t)\,dt$, then $F'(x)=f(x)$ in the interior. If $F'=f$ on the interval, then
+For $F(x)=5+x^2$, the derivative is still $2x$. The same integral gives $F(3)-F(0)=14-5=9$.
+
+A standard theorem says that if $f$ is continuous on $[a,b]$ and $F'=f$, then
 
 $$
 \int_a^b f(x)\,dx=F(b)-F(a).
 $$
 
-The assumptions specify where these rules apply.
+These are precise claims with assumptions, not rules for every possible function.
 
 </details>
 
-<details>
-<summary>Further connection — surfaces and boundaries</summary>
+## More questions this opens
 
-For a suitable oriented manifold $M$ and differential form $\omega$, Stokes' theorem relates an integral over a region to one over its boundary:
+Rates need not involve time. A hillside has a slope even while it stays still. Derivatives also help search for the best size or setting. Both ideas appear in the next lesson.
 
-$$
-\int_M d\omega=\int_{\partial M}\omega.
-$$
+## Keep exploring
 
-Differential forms describe quantities that can be integrated over curves, surfaces, and higher-dimensional regions. Explore [geometry and fields](../PANTHEON.md#2-geometry-and-fields) when you want this wider setting.
+[Complex calculus](../tracks/change/complex-calculus.md) gives numbers a second direction and studies functions of them. [Fractional calculus](../tracks/change/fractional-calculus.md) asks what an in-between order of differentiation or integration can mean. Each begins with a small visual example.
 
-</details>
+## Sources
 
-## Where to go next
+The tank and ribbon problems are original. For the mathematics, see OpenStax, *Calculus Volume 1*: [derivatives](https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative) and [the Fundamental Theorem](https://openstax.org/books/calculus-volume-1/pages/5-3-the-fundamental-theorem-of-calculus). See also *Volume 2*, [differential equations](https://openstax.org/books/calculus-volume-2/pages/4-1-basics-of-differential-equations).
 
-For change across space, explore [vector calculus](../PANTHEON.md#2-geometry-and-fields). For choosing a whole path, try [variations](../tracks/change/variational-calculus.md). For random paths, try [stochastic calculus](../tracks/change/stochastic-calculus.md).
-
-Each adds structure and assumptions to the questions we can ask.
-
-## Sources and optional viewing
-
-The examples are original. For the standard theorem, see Gilbert Strang and Edwin “Jed” Herman, [*Calculus Volume 1*, §5.3, OpenStax](https://openstax.org/books/calculus-volume-1/pages/5-3-the-fundamental-theorem-of-calculus). Further sources are in [References](../REFERENCES.md#classical-calculus-and-analysis).
-
-**Watch:** 3Blue1Brown's [“The essence of calculus”](https://www.youtube.com/watch?v=WUvTyaaNkzM) offers geometric pictures of rates and areas. The lesson above is complete without the video.
-
-[← Foundation](../start/03-why-many-calculi.md) · [Home](../README.md) · [Next: λ-calculus →](02-lambda.md)
+[← Welcome](../START.md) · [Home](../README.md) · [Next: Space and shape →](02-space-and-shape.md)

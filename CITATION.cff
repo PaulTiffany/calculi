@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this pedagogical atlas, please cite it as below."
-title: "Calculi: A Pedagogy-First Atlas of Calculi"
+title: "Calculi: A Field Guide to Mathematical Ways of Thinking"
 type: software
 authors:
   - family-names: "Tiffany"
@@ -9,5 +9,4 @@ authors:
 repository-code: "https://github.com/PaulTiffany/calculi"
 url: "https://github.com/PaulTiffany/calculi"
 license: "CC-BY-4.0"
-date-released: "2026-09-22"
 year: 2026

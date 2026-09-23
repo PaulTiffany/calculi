@@ -1,57 +1,71 @@
 # Calculi
+*A field guide to mathematical ways of thinking.*
 
-*Uncovering the pyramid.*
+How much water will fill a tank? Which books match a search? Will two machines get stuck waiting for each other?
 
-A beginner's atlas of mathematical rulebooks. Learn what each calculus works with, try one of its moves, and use the idea somewhere new.
+These questions call for different tools. **Calculi** is the plural of **calculus**. This guide introduces the wider world behind that word, from slopes and sums to logic, programs, and causes.
 
-## Start with things you know
+<!-- visual:art-welcome -->
+<img src="assets/illustrations/welcome.webp" width="460" alt="Jo, a tall teal helper with a yellow scarf, and Sam, a round terracotta helper with a teal satchel, explore a book and familiar objects at a community fair.">
 
-No calculus is required. Start with counting, simple multiplication, and curiosity.
+*A familiar neighborhood, many kinds of question.*
+<!-- /visual:art-welcome -->
 
-1. [Things Change](start/01-things-change.md) — tell a rate from a total.
-2. [What Calculus Does](start/02-what-calculus-does.md) — connect small changes to a total, even when the rate varies.
-3. [Why Are There Many Calculi?](start/03-why-many-calculi.md) — choose a rulebook by the question you want to answer.
+You need simple arithmetic and curiosity. The main lessons aim for an 8th-grade reading level. They explain the ideas before the symbols; harder mathematics stays in optional sections.
 
-After these pages, you should be able to explain **what calculus does and why there is more than one kind**, using your own example.
+## Take the tour
 
-## The pyramid: build understanding, then branch
+Begin with **[Welcome to the World of Calculi](START.md)**. Then try one short lesson at a time.
 
-The foundation is familiar experience. Each layer adds a question we can ask more carefully. Choose a route that interests you; the layers are a teaching frame, not a prerequisite chain or historical family tree.
-
-| Layer | A question to explore | Where to go |
+| Lesson | The question | A place to try it |
 |---|---|---|
-| Quantity and change | How fast? How much? Which path? | [Classical](lessons/01-classical-calculus.md), [variational](tracks/change/variational-calculus.md), [stochastic](tracks/change/stochastic-calculus.md) |
-| Geometry and fields | What changes across space or a surface? | [Vector, tensor, exterior, and Ricci calculus](PANTHEON.md#2-geometry-and-fields) |
-| Logic, symbols, and computation | What follows? What does this instruction do? | [Logic map](PANTHEON.md#4-logic-and-formal-reasoning), [λ-calculus](lessons/02-lambda.md) |
-| Proof and types | Which steps fit together into a proof? | [Sequents](tracks/proof/sequent-calculus.md), [Calculus of Constructions](tracks/types/calculus-of-constructions.md) |
-| Interaction | Who can communicate? Can instructions themselves be passed? | [π-calculus](lessons/03-pi.md), then [ρ-calculus](lessons/04-rho.md) |
-| Actions and data | What stays true after an event? Which records match? | [Action calculi](tracks/action/situation-event-fluent.md), [relational calculus](PANTHEON.md#8-data-and-relations) |
-| Distinction and observation | What can be separated, noticed, or recovered? | [Indications](lessons/05-indications.md), [distinction graphs](lessons/06-distinction-graphs.md), [Fuzzy Calculus](lessons/07-fuzzy.md) |
+| [1. How Fast? How Much?](lessons/01-classical-calculus.md) | How are rates and totals connected? | A filling tank |
+| [2. Slopes, Shapes, and Space](lessons/02-space-and-shape.md) | What varies from place to place? Which size works best? | A hill and a garden |
+| [3. Working in Steps](lessons/03-discrete-and-numerical.md) | What can we learn from a sequence of values? | A daily book count |
+| [4. What Follows from What?](lessons/04-logic-and-proof.md) | Which conclusions follow from our assumptions? | Club badges |
+| [5. Instructions and Guarantees](lessons/05-computation-and-correctness.md) | What does a rule do, and what can we promise about it? | A ticket counter |
+| [6. Asking Questions of Data](lessons/06-data-and-relations.md) | Which records meet our conditions? | A library search |
+| [7. Messages and Events](lessons/07-interaction-and-action.md) | How do separate actors coordinate? What changes after an action? | Two people making posters |
+| [8. Chance and Cause](lessons/08-chance-and-cause.md) | What might happen? What would changing something do? | Beads, random steps, and sprinklers |
+| [9. Choose and Combine](lessons/09-choose-and-combine.md) | Which tools answer this question? | A delivery service |
 
-The **[Pantheon of Calculi](PANTHEON.md)** also covers finite differences, fractional calculus, operators, and other major families. Linked entries lead to lessons; other entries are short introductions to topics for future study.
+This order is a reading route. It is not a ranking or a claim that each subject grows out of the last. After the welcome, you can also pick a question that interests you.
 
-Prefer a guided tour? Follow the **Next** links from [classical calculus](lessons/01-classical-calculus.md). Each lesson states what it assumes. Formal notation is in optional sections.
+## Explore the wider habitat
 
-## Make the idea travel
+The **[Field Map](PANTHEON.md)** places these lessons among a larger set of subjects. Its optional tracks let you explore geometry, analysis, operators, logic, computation, and particular research proposals.
 
-Use this rhythm: **read an example → predict → check why → try a new setting**.
+Six more doors now have their own small examples:
 
-- [Try It Somewhere New](PRACTICE.md): short challenges with explained answers, plus a reusable activity for a learner or teacher.
-- [Comparing Calculi](lessons/08-comparison.md): compare the objects, moves, and results of two rulebooks.
-- [What Makes a Calculus Formal?](lessons/00-what-is-a-calculus.md): an optional bridge from everyday examples to precise rules.
+| Try this question | Explore |
+|---|---|
+| Did the thing move, or did our coordinates change? | [Tensor calculus](tracks/geometry/tensor-calculus.md) |
+| Why do shared edges disappear from a combined boundary? | [Exterior calculus](tracks/geometry/exterior-calculus.md) |
+| How can multiplication turn an arrow? | [Complex calculus](tracks/change/complex-calculus.md) |
+| Can earlier changes still affect a calculation? | [Fractional calculus](tracks/change/fractional-calculus.md) |
+| What does it mean to square an action? | [Functional calculus](tracks/operators/functional-calculus.md) |
+| Can we use the same resource twice? | [Linear logic](tracks/proof/linear-logic.md) |
 
-You can speak, sketch, or write your answers. The text and tables stand on their own; videos are optional. See [Media and Learning Modes](MEDIA.md).
+The map groups tools by their jobs. Some appear in several habitats. It distinguishes a whole subject, a specific formal system, and a proposed research framework.
+
+## Make the idea your own
+
+Read an example, make a prediction, then explain why your answer follows. You can speak, sketch, or write.
+
+**[Try It Somewhere New](PRACTICE.md)** has short challenges in fresh settings, with explained answers. Success means recognizing a useful idea outside the lesson, not memorizing a list of names.
+
+Use the [Glossary](GLOSSARY.md) when a word is unfamiliar. [Connections](RELATIONS.md) explains how tools can relate without being the same.
 
 ## Sources and reuse
 
-Original teaching material is **[CC BY 4.0](LICENSE.md)**. You may copy and adapt it with attribution. Cited works retain their own rights.
+The examples and teaching route are original educational work. Lessons link to sources for the mathematics and distinguish established results from analogies and proposals. See [References](REFERENCES.md) and [Attribution](ATTRIBUTION.md).
 
-Lessons name their sources and identify invented examples and analogies. Use [References](REFERENCES.md) for reading, [Attribution](ATTRIBUTION.md) for provenance, and [Relations](RELATIONS.md) for formal connections between calculi.
+Original material is **[CC BY 4.0](LICENSE.md)**. You may copy and adapt it with credit. Cited works retain their own rights.
 
-**Teaching or contributing?** Keep the main explanation near an 8th-grade reading level. See [Contributing](CONTRIBUTING.md) for the shared lesson frame. Terms are collected in the [Glossary](GLOSSARY.md).
+Teaching or contributing? See [Contributing](CONTRIBUTING.md) and [Pictures and Learning Modes](MEDIA.md).
 
 Preferred credit:
 
-> Paul Carver Tiffany III, *Calculi: A Pedagogy-First Atlas of Calculi*, 2026, https://github.com/PaulTiffany/calculi, CC BY 4.0.
+> Paul Carver Tiffany III, *Calculi: A Field Guide to Mathematical Ways of Thinking*, 2026, https://github.com/PaulTiffany/calculi, CC BY 4.0.
 
 [Citation metadata](CITATION.cff)

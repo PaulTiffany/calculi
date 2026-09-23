@@ -1,110 +1,281 @@
 # Try It Somewhere New
 
-**Start with:** the [three beginner pages](start/01-things-change.md), then whichever linked lessons you want to practice.
+These challenges use the same ideas in different settings. You can answer aloud, on paper, or with a partner.
 
-Pick a challenge. Say, sketch, or write an answer **before** opening the explanation. Each challenge changes the setting so you can check whether the idea travels.
+For each one, give an answer **and a reason**. Then name an assumption. Open the explanation after your first attempt.
 
-## 1. From water to deliveries
+<!-- visual:diagram-learning-loop -->
+<img src="assets/diagrams/learning-loop.svg" width="640" alt="Read an example, make a prediction, explain your reasoning, and change one thing. Repeat with the changed problem.">
 
-A packer finishes 4 parcels per minute for 3 minutes, then 2 per minute for 5 minutes. There were already 6 finished parcels.
+*Try a prediction before opening an answer. Then change one thing.*
+<!-- /visual:diagram-learning-loop -->
 
-How many are ready now? Why can't you multiply the final rate by all 8 minutes?
+## 1. Rate and total: seats
+
+<!-- visual:diagram-practice-chairs -->
+<img src="assets/diagrams/practice-chairs.svg" width="640" alt="The practice problem starts with twelve chairs and adds four chairs per minute for three minutes. The final count is left for the reader.">
+
+*Use the given start, rate, and time. Leave the final count for your own calculation.*
+<!-- /visual:diagram-practice-chairs -->
+
+A hall starts with 12 chairs set out. Helpers add 4 chairs per minute for 3 minutes. Nobody removes a chair.
+
+How many chairs are added? How many are now set out? If two chairs are removed during the work, which answer changes?
 
 <details>
-<summary>Check: rates and totals</summary>
+<summary>Check</summary>
 
-The packer adds $4\times3+2\times5=22$ parcels. Including the starting 6 gives **28**.
+Twelve chairs are added, and 24 are set out at the end.
 
-The final rate does not describe the first three minutes. Split the time wherever the stated rate changes.
+Removing two does not change how many were added. It changes the final total to 22. The net change is then ten.
 
-This is the same accumulation pattern as [filling a tank](lessons/01-classical-calculus.md).
+This uses the distinction between input, net change, and starting amount from [lesson 1](lessons/01-classical-calculus.md).
 
 </details>
 
-## 2. From instructions to a playlist
+## 2. Several inputs: a photograph
 
-An instruction takes two songs and returns the second. It receives Song A, then Song B. What does it return?
+<!-- visual:diagram-practice-photo -->
+<img src="assets/diagrams/practice-photo.svg" width="640" alt="A rectangular photograph is three units wide and five units tall. The reader can increase either dimension by one.">
 
-Now rename them Song X and Song Y, keeping the order. What stayed the same?
+*Change the width or the height while keeping the other fixed.*
+<!-- /visual:diagram-practice-photo -->
+
+A rectangular print is 3 units wide and 5 units tall. Its area is 15 square units.
+
+How much area is added by increasing only its width by one? What if you increase only its height by one? Why do the answers differ?
 
 <details>
-<summary>Check: use the rule, not the labels</summary>
+<summary>Check</summary>
 
-It returns **Song B**, then **Song Y**. The second-input rule stayed the same.
+Increasing width gives $4\times5=20$, adding 5 square units.
 
-In the [λ lesson](lessons/02-lambda.md), that pattern is $\lambda x.\lambda y.y$. The song names are labels in this analogy; playing the music would require more rules.
+Increasing height gives $3\times6=18$, adding 3 square units.
+
+The change depends on which input varies and which stays fixed. See [lesson 2](lessons/02-space-and-shape.md).
 
 </details>
 
-## 3. From jars to a library
+## 3. Discrete steps: visitors
 
-Assume: every reserved book has a label. This book has a label.
+<!-- visual:diagram-practice-visitors -->
+<img src="assets/diagrams/practice-visitors.svg" width="640" alt="Four room headcounts are ten, fourteen, thirteen, and eighteen, in that order.">
 
-Must it be reserved? Explain with a possible counterexample.
+*These are snapshots. What might happen between them?*
+<!-- /visual:diagram-practice-visitors -->
+
+A room's headcount at four check-ins is 10, 14, 13, and 18.
+
+Find the three differences and their sum. Do these counts tell you the total number of people who entered?
 
 <details>
-<summary>Check: which direction does the rule go?</summary>
+<summary>Check</summary>
 
-No. Some unreserved books could have labels too.
+The differences are +4, −1, and +5. Their sum is +8, which is also $18-10$.
 
-The assumption lets us go from **reserved to labeled**. It does not give the reverse direction. See [proof as careful steps](tracks/proof/sequent-calculus.md).
+They do not tell us the total number entering. During one interval, five could enter and one leave, giving a net gain of four. Other combinations give the same net gain. See [lesson 3](lessons/03-discrete-and-numerical.md).
 
 </details>
 
-## 4. From a help desk to a game
+## 4. Logic: shapes
 
-A player tells a teammate, “There is another chat room.” In a second version, the player sends a usable invitation to that room.
+Every square has four sides. This shape has four sides.
 
-Which version changes the teammate's available connections? What assumption makes your answer work?
+Does it follow that the shape is a square? Give an example that settles the question.
 
 <details>
-<summary>Check: information that enables a next move</summary>
+<summary>Check</summary>
 
-The usable invitation can provide a new connection, assuming it grants access to join. Merely saying another room exists does not provide the route.
+<img src="assets/diagrams/practice-shapes.svg" width="640" alt="A square and a nonsquare rectangle both have four sides. The rectangle is a counterexample to reversing the rule that every square has four sides.">
 
-This resembles [π-calculus name passing](lessons/03-pi.md). A full game model would also specify access rules.
+No. A rectangle with unequal adjacent sides has four sides but is not a square.
+
+One counterexample is enough to show that the reversed rule is false. See [lesson 4](lessons/04-logic-and-proof.md).
 
 </details>
 
-## 5. From a garden to a recorded journey
+## 5. Program guarantees: game points
 
-A device records only the total distance of a trip. Two trips both record 10 kilometers.
+<!-- visual:diagram-practice-score -->
+<img src="assets/diagrams/practice-score.svg" width="640" alt="An unknown starting score is reduced by three points. The required result is nonnegative. The starting condition is left for the reader.">
 
-Must their speeds have been the same throughout? Name an extra observation that would help distinguish them.
+*Read the promise backward: what must have been true at the start?*
+<!-- /visual:diagram-practice-score -->
+
+An instruction subtracts three points from a score. You want the resulting score to be at least zero.
+
+What is the least starting score that works? Would “the score is an integer” be enough? Suppose the code actually subtracts four: which part of the argument changes?
 
 <details>
-<summary>Check: same record, different possibilities</summary>
+<summary>Check</summary>
 
-No. One could be steady and the other include stops and bursts of motion. Distances recorded at intermediate times would help.
+Start with at least three points.
 
-Equal totals leave differences unresolved. This connects [rates and totals](start/02-what-calculus-does.md) with the recovery question in [Fuzzy Calculus](lessons/07-fuzzy.md).
+An integer type alone is not enough: one is an integer and would become −2.
 
-This is a comparison of questions, not an identification of their formal operators.
+If the code subtracts four, the required starting score becomes at least four. A proof must match the actual modeled instruction. See [lesson 5](lessons/05-computation-and-correctness.md).
 
 </details>
 
-## Build one of your own
+## 6. Data: a playlist
 
-Choose an activity you know. Fill in:
+| Song | Shorter than 3 minutes? | Marked favorite? |
+|---|---|---|
+| A | Yes | No |
+| B | No | Yes |
+| C | Yes | Yes |
+| D | No | No |
 
-> I want to know _____. My objects are _____.\
-> The rule I can use is _____. Here is one step: _____.\
-> This works if _____. It still leaves _____ unanswered.
+<!-- visual:diagram-practice-playlist -->
+<img src="assets/diagrams/practice-playlist.svg" width="640" alt="Song A is short but not a favorite. B is a favorite but not short. C is both. D is neither. No answer selection is marked.">
 
-Change the objects or the setting and try again. Which part of the reasoning survives? Which assumption must change?
+*The picture gives the records, not the selected answer.*
+<!-- /visual:diagram-practice-playlist -->
 
-## For a learner or teacher
+Which songs meet both conditions? Which meet at least one? Does this table let you find songs shorter than 2 minutes?
 
-Use a short session: explain one example, let the learner try a similar one, then change the setting. Ask for a reason before revealing the answer. Paper and conversation are enough.
+<details>
+<summary>Check</summary>
 
-| If the learner can… | Try next |
-|---|---|
-| Retell the example but cannot do a new one | Change just one input and work through it together |
-| Do a similar problem with a reason | Change the setting and ask what stays the same |
-| Transfer the rule and name an assumption | Find a case where the rule would not apply |
+Both conditions: C. At least one: A, B, and C.
 
-Return later to one challenge without rereading its lesson. Success means explaining the move and its conditions, not remembering a calculus's name.
+The table does not give enough detail for the 2-minute question. A song marked shorter than 3 minutes could last 1 minute or 2½ minutes. See [lesson 6](lessons/06-data-and-relations.md).
 
-*All challenges are original teaching examples. Reuse or adapt with the [repository credit](ATTRIBUTION.md#reuse) and [CC BY 4.0 license](LICENSE.md).*
+</details>
 
-[Home](README.md) · [Compare two calculi](lessons/08-comparison.md) · [Browse the pantheon](PANTHEON.md)
+## 7. Coordination and effects: a shared kitchen
+
+<!-- visual:diagram-practice-kitchen -->
+<img src="assets/diagrams/practice-kitchen.svg" width="640" alt="One cook holds the bowl and waits for the whisk. The other holds the whisk and waits for the bowl.">
+
+*Compare the earlier printer-and-scissors pattern. The tools have changed.*
+<!-- /visual:diagram-practice-kitchen -->
+
+One cook holds the mixing bowl and waits for the whisk. Another holds the whisk and waits for the bowl. Both refuse to release their tool first.
+
+What blocks progress? Suggest a changed rule.
+
+Now a timer rings. Does that event alone establish that someone removed the cake from the oven?
+
+<details>
+<summary>Check</summary>
+
+The cooks are stuck in a circular wait. They could agree to acquire tools in the same order, or one could release a tool so the other can finish.
+
+The timer event does not itself remove the cake. A model needs an action connecting someone hearing the timer to removing the cake. See [lesson 7](lessons/07-interaction-and-action.md).
+
+</details>
+
+## 8. Chance and cause: two questions
+
+<!-- visual:diagram-token-question -->
+<img src="assets/diagrams/token-question.svg" width="640" alt="One green and three yellow tokens are equally likely to be picked. The image supplies the starting contents only.">
+
+*This is the starting bag. Decide what remains after the stated draw.*
+<!-- /visual:diagram-token-question -->
+
+A bag has one green token and three yellow tokens, each equally likely to be drawn. You draw a yellow token and keep it out. What is the chance of green next?
+
+Separately, suppose a model says rain causes both umbrellas to open and pavements to get wet. There is no other causal link in the model. Would opening an umbrella make the pavement wet?
+
+<details>
+<summary>Check</summary>
+
+One green and two yellow tokens remain, so the chance is 1/3.
+
+Under the stated causal model, opening an umbrella does not cause a wet pavement. Observing open umbrellas can be evidence of rain; forcing one open does not make it rain. See [lesson 8](lessons/08-chance-and-cause.md).
+
+</details>
+
+## Six more trails to try
+
+These follow the optional tracks. You can choose one without completing them all.
+
+### 9. Describe the same movement
+
+A movement is (4, 3) in east–north coordinates. Describe it using north–west coordinates, with the same starting point and unit. Did the movement itself change?
+
+<details>
+<summary>Check</summary>
+
+It is **(3, −4)**: three north and four opposite west. The movement stays the same. Only its description changes. See [tensor calculus](tracks/geometry/tensor-calculus.md).
+
+</details>
+
+### 10. Combine boundaries
+
+Three unit-square plots form one straight row. Trace each plot counterclockwise and cancel shared edges traversed in opposite directions. How many outside unit edges remain?
+
+<details>
+<summary>Check</summary>
+
+**Eight.** The combined rectangle is three units long and one unit wide. Its outside has $3+1+3+1=8$ unit edges. The two shared edges each appeared twice in the original twelve traversals. See [exterior calculus](tracks/geometry/exterior-calculus.md).
+
+</details>
+
+### 11. Turn the movement
+
+Start with an arrow pointing two units right. Keep the axes fixed. Multiply its complex number by i three times, making a counterclockwise quarter-turn each time. Where does it end?
+
+<details>
+<summary>Check</summary>
+
+It points **two units down**, or $-2i$. The successive directions are up, left, then down. This changes the arrow itself. See [complex calculus](tracks/change/complex-calculus.md).
+
+</details>
+
+### 12. Compare histories
+
+Use the fractional track's **toy score**, with oldest-to-newest weights 1/4, 1/2, and 1. One record has changes (2, 2, 0); another has (0, 0, 4). Starting from zero, do they end at the same value? Do they receive the same score?
+
+<details>
+<summary>Check</summary>
+
+Both finish at **4**. Their scores differ: $2/4+2/2+0=1.5$ and $0+0+4=4$.
+
+That is a calculation in the stated weighted model. Calling it a fractional derivative would require a different, precise definition. See [fractional calculus](tracks/change/fractional-calculus.md).
+
+</details>
+
+### 13. Repeat a new operator
+
+An operator C changes the sign of both numbers in a pair. What do C² and C³ do to (2, −5)? Here powers mean repeated application.
+
+<details>
+<summary>Check</summary>
+
+The first application gives (−2, 5). **C² returns (2, −5)**. **C³ gives (−2, 5)** again.
+
+Two sign changes act as the identity, just as two swaps did, although one sign change and one swap are different operations. See [functional calculus](tracks/operators/functional-calculus.md).
+
+</details>
+
+### 14. Count uses of a resource
+
+You have two ride vouchers. Each ride consumes one voucher. The instruction sheet can be read any number of times. Can reading it three times give you three rides under these rules?
+
+<details>
+<summary>Check</summary>
+
+No. You can use the instructions again, but you still have only **two vouchers**. A third ride requires another voucher or a changed rule. See [linear logic](tracks/proof/linear-logic.md).
+
+</details>
+
+## A reusable activity for learners and teachers
+
+Choose one problem above. Have one person change a number, object, condition, or rule. Ask the other person:
+
+1. What stays useful from the original reasoning?
+2. What must be recalculated or reconsidered?
+3. What missing information could stop us answering?
+4. Where else could this pattern appear?
+
+Then swap roles. If an answer is mistaken, try a small counterexample before introducing a new technical word.
+
+For a larger task, choose two tools and explain the assumption that connects them. [Lesson 9](lessons/09-choose-and-combine.md) shows how.
+
+The aim is to explain why an idea applies. Speed and symbol recall are not the only signs of understanding.
+
+*All challenges are original teaching examples. Mathematical sources are linked from the corresponding lessons.*
+
+[Home](README.md) · [Field map](PANTHEON.md)

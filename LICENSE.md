@@ -16,7 +16,7 @@ SPDX identifier:
 
 A reasonable attribution is:
 
-> Paul Carver Tiffany III, *Calculi: A Pedagogy-First Atlas of Calculi*, 2026, https://github.com/PaulTiffany/calculi, licensed CC BY 4.0.
+> Paul Carver Tiffany III, *Calculi: A Field Guide to Mathematical Ways of Thinking*, 2026, https://github.com/PaulTiffany/calculi, licensed CC BY 4.0.
 
 If you adapt the material, please indicate that changes were made.
 

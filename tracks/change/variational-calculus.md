@@ -1,5 +1,7 @@
 # Track — Calculus of Variations: Choose a Whole Path
 
+**Place in the field:** An established area for varying whole functions and paths.
+
 **Start with:** [rates and functions](../../lessons/01-classical-calculus.md).\
 **By the end:** explain how choosing a path differs from choosing one number.
 
@@ -10,6 +12,12 @@ Lay a loose string between two fixed points on a flat table. You can bend it int
 If the only goal is the shortest length, and nothing blocks the way, a straight route wins. We are comparing **whole paths**.
 
 A **functional** assigns a number to a function or path. Path length is one example. Calculus of variations studies how that score changes when we vary the whole candidate.
+
+<!-- visual:diagram-path-and-obstacle -->
+<img src="../../assets/diagrams/path-and-obstacle.svg" width="640" alt="Without an obstacle, the straight path connects two points. With a cabinet blocking that route, an allowed path goes around it. The goal can remain shortest length.">
+
+*Keeping the endpoints and goal does not keep the set of allowed paths unchanged.*
+<!-- /visual:diagram-path-and-obstacle -->
 
 ## Try it somewhere else
 
@@ -60,4 +68,4 @@ This extends classical calculus by varying a function-valued input. The string a
 
 See I. M. Gel'fand and S. V. Fomin, *Calculus of Variations* (1963), and Gilbert Strang's [“Calculus of Variations,” MIT OpenCourseWare](https://ocw.mit.edu/courses/18-086-mathematical-methods-for-engineers-ii-spring-2006/e94c05947ed036cd6ad0150102087062_am72.pdf).
 
-[Home](../../README.md) · [Change family](../../PANTHEON.md#1-quantity-motion-and-change) · [Try stochastic calculus](stochastic-calculus.md)
+[← Space and shape](../../lessons/02-space-and-shape.md) · [Home](../../README.md) · [Field map](../../PANTHEON.md#1-rates-totals-and-best-choices)

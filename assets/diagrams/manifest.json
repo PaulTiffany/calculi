@@ -1,0 +1,317 @@
+[
+  {
+    "id": "add-two",
+    "title": "One rule: add two",
+    "alt": "Starting from three, adding two gives five, seven, then nine. All four counts are odd.",
+    "width": 640,
+    "height": 240
+  },
+  {
+    "id": "water-total",
+    "title": "Rate, change, and starting amount",
+    "alt": "A tank starts with five liters. Two liters per minute for three minutes adds six liters, leaving eleven liters.",
+    "width": 640,
+    "height": 310
+  },
+  {
+    "id": "garden-area",
+    "title": "Same fence, different area",
+    "alt": "A three-by-five rectangle encloses fifteen square meters. A four-by-four square encloses sixteen. Both use sixteen meters of fence.",
+    "width": 640,
+    "height": 320
+  },
+  {
+    "id": "book-counts",
+    "title": "The same books, counted each day",
+    "alt": "Monday has eight books, Tuesday eleven, Wednesday nine, Thursday fourteen. The changes are plus three, minus two, and plus five.",
+    "width": 640,
+    "height": 310
+  },
+  {
+    "id": "badge-logic",
+    "title": "A one-way rule",
+    "alt": "All club members have badges. Jo is shown inside the members group, itself inside badge holders. A possible guest also has a badge, outside the members group.",
+    "width": 640,
+    "height": 320
+  },
+  {
+    "id": "keep-second",
+    "title": "Use the second input",
+    "alt": "The inputs are red first and blue second. The rule returns blue. Changing the selected input position changes the result.",
+    "width": 640,
+    "height": 270
+  },
+  {
+    "id": "keep-first",
+    "title": "Use the first input",
+    "alt": "The inputs are red first and blue second. The rule returns red. Changing the selected input position changes the result.",
+    "width": 640,
+    "height": 270
+  },
+  {
+    "id": "ticket-contract",
+    "title": "Sell one ticket",
+    "alt": "Four tickets become three when one is sold. A nonnegative count after selling requires at least one ticket beforehand.",
+    "width": 640,
+    "height": 270
+  },
+  {
+    "id": "book-query",
+    "title": "The same books, selected by a rule",
+    "alt": "Books B1 and B4 match gardening AND available. B2 is available but astronomy; B3 is gardening but unavailable.",
+    "width": 640,
+    "height": 322
+  },
+  {
+    "id": "circular-wait",
+    "title": "Both wait; neither lets go",
+    "alt": "Jo holds the printer and waits for Sam's scissors. Sam holds the scissors and waits for Jo's printer. Their waiting forms a loop.",
+    "width": 640,
+    "height": 350
+  },
+  {
+    "id": "cupboard-cup",
+    "title": "One action, two kinds of fact",
+    "alt": "Opening the cupboard changes its door from closed to open. The cup remains inside in both states.",
+    "width": 640,
+    "height": 330
+  },
+  {
+    "id": "cupboard-poster",
+    "title": "One action, two kinds of fact",
+    "alt": "Opening the cupboard changes its door from closed to open. The poster remains inside in both states.",
+    "width": 640,
+    "height": 330
+  },
+  {
+    "id": "bead-chance",
+    "title": "Pick one bead",
+    "alt": "Two red and three blue beads are equally likely to be picked, giving two red chances out of five.",
+    "width": 640,
+    "height": 260
+  },
+  {
+    "id": "token-question",
+    "title": "Pick one token",
+    "alt": "One green and three yellow tokens are equally likely to be picked. The image supplies the starting contents only.",
+    "width": 640,
+    "height": 260
+  },
+  {
+    "id": "observe-or-set",
+    "title": "Observe a clue; or change a setting",
+    "alt": "In the observation model, heat affects both sprinklers and drink buying. Under an intervention setting sprinklers, heat still affects drink buying, but no longer determines the sprinkler setting.",
+    "width": 640,
+    "height": 360
+  },
+  {
+    "id": "orders-and-crates",
+    "title": "Count orders; then count what they need",
+    "alt": "Two selected orders each need one crate. They require two crates altogether. Starting with three crates leaves one.",
+    "width": 640,
+    "height": 320
+  },
+  {
+    "id": "path-and-obstacle",
+    "title": "A new obstacle changes the choices",
+    "alt": "Without an obstacle, the straight path connects two points. With a cabinet blocking that route, an allowed path goes around it. The goal can remain shortest length.",
+    "width": 640,
+    "height": 350
+  },
+  {
+    "id": "random-paths",
+    "title": "An average is not a path",
+    "alt": "Two fair independent coin tosses make four equally likely paths. Their final positions are plus two, zero, zero, and minus two.",
+    "width": 640,
+    "height": 390
+  },
+  {
+    "id": "recipe-and-action",
+    "title": "A description is not its execution",
+    "alt": "One panel shows a stored recipe card. The other shows using that recipe to bake. Keeping a description does not automatically run its instructions.",
+    "width": 640,
+    "height": 300
+  },
+  {
+    "id": "marks-and-nesting",
+    "title": "Arrangement changes the rule",
+    "alt": "In the lesson's parentheses notation, two empty marks beside one another simplify to one mark. A mark inside a mark simplifies to the unmarked form, shown as blank space rather than zero.",
+    "width": 640,
+    "height": 330
+  },
+  {
+    "id": "pairwise-distinctions",
+    "title": "Check each pair",
+    "alt": "The observer cannot distinguish 20 from 21 degrees or 21 from 22, so those pairs have edges. There is no edge between 20 and 22 degrees.",
+    "width": 640,
+    "height": 315
+  },
+  {
+    "id": "average-and-rebuild",
+    "title": "Same record, different originals",
+    "alt": "The pairs zero and two, and one and one, both average to one. Repeating that average rebuilds one and one; the record alone cannot identify which original pair was used.",
+    "width": 640,
+    "height": 335
+  },
+  {
+    "id": "types-fit",
+    "title": "Check the kind of input",
+    "alt": "An instruction from date to text can connect to one from text to printed card. A photograph does not fit an input that specifically requires text.",
+    "width": 640,
+    "height": 310
+  },
+  {
+    "id": "sealed-and-labeled",
+    "title": "If sealed, then labeled",
+    "alt": "Both a sealed labeled jar and an open labeled jar obey the one-way rule. Seeing a label alone therefore does not establish that a jar is sealed.",
+    "width": 640,
+    "height": 320
+  },
+  {
+    "id": "field-habitats",
+    "title": "Different questions, different tools",
+    "alt": "Eight unranked tiles name rates, space, steps, proof, programs, data, interaction, and chance. They are entry points, not a ladder.",
+    "width": 640,
+    "height": 515
+  },
+  {
+    "id": "learning-loop",
+    "title": "Make the idea travel",
+    "alt": "Read an example, make a prediction, explain your reasoning, and change one thing. Repeat with the changed problem.",
+    "width": 640,
+    "height": 345
+  },
+  {
+    "id": "practice-chairs",
+    "title": "Start, rate, time",
+    "alt": "The practice problem starts with twelve chairs and adds four chairs per minute for three minutes. The final count is left for the reader.",
+    "width": 640,
+    "height": 255
+  },
+  {
+    "id": "practice-photo",
+    "title": "Change one dimension",
+    "alt": "A rectangular photograph is three units wide and five units tall. The reader can increase either dimension by one.",
+    "width": 640,
+    "height": 280
+  },
+  {
+    "id": "practice-visitors",
+    "title": "A sequence of headcounts",
+    "alt": "Four room headcounts are ten, fourteen, thirteen, and eighteen, in that order.",
+    "width": 640,
+    "height": 240
+  },
+  {
+    "id": "practice-shapes",
+    "title": "Four sides; different shapes",
+    "alt": "A square and a nonsquare rectangle both have four sides. The rectangle is a counterexample to reversing the rule that every square has four sides.",
+    "width": 640,
+    "height": 275
+  },
+  {
+    "id": "practice-score",
+    "title": "Work backward from the promise",
+    "alt": "An unknown starting score is reduced by three points. The required result is nonnegative. The starting condition is left for the reader.",
+    "width": 640,
+    "height": 245
+  },
+  {
+    "id": "practice-playlist",
+    "title": "Two conditions, four songs",
+    "alt": "Song A is short but not a favorite. B is a favorite but not short. C is both. D is neither. No answer selection is marked.",
+    "width": 640,
+    "height": 280
+  },
+  {
+    "id": "practice-kitchen",
+    "title": "New tools, the same waiting pattern",
+    "alt": "One cook holds the bowl and waits for the whisk. The other holds the whisk and waits for the bowl.",
+    "width": 640,
+    "height": 320
+  },
+  {
+    "id": "passing-a-name",
+    "title": "Pass a name; gain a connection",
+    "alt": "Before the message, Alice knows a and b, and Bob knows a. Alice sends b on a. Afterward Bob knows both a and b; Alice keeps both names.",
+    "width": 640,
+    "height": 330
+  },
+  {
+    "id": "tensor-coordinates",
+    "title": "Same arrow, different coordinates",
+    "alt": "The same northeast arrow has components three east and two north, or two north and minus three west. Only the coordinate directions change.",
+    "width": 640,
+    "height": 375
+  },
+  {
+    "id": "tensor-stretch",
+    "title": "One stretch, two descriptions",
+    "alt": "The same linear map doubles east-west lengths and leaves north-south lengths unchanged. In east-north coordinates the diagonal factors are two and one; in north-west coordinates they are one and two.",
+    "width": 640,
+    "height": 290
+  },
+  {
+    "id": "exterior-boundaries",
+    "title": "Shared edges cancel",
+    "alt": "Two adjacent unit squares are traced counterclockwise. The shared edge is traversed up and down. These opposite traversals cancel, leaving six outside unit edges.",
+    "width": 640,
+    "height": 340
+  },
+  {
+    "id": "exterior-hole",
+    "title": "Which edges form the boundary?",
+    "alt": "Eight square tiles fill a three-by-three grid except for the missing center tile. No perimeter totals or walking directions are supplied.",
+    "width": 640,
+    "height": 350
+  },
+  {
+    "id": "complex-turn",
+    "title": "Turn the arrow; keep the axes",
+    "alt": "In fixed real and imaginary axes, multiplying three plus two i by i rotates the arrow counterclockwise by a quarter turn to minus two plus three i.",
+    "width": 640,
+    "height": 390
+  },
+  {
+    "id": "complex-contour",
+    "title": "Go around a point without touching it",
+    "alt": "A counterclockwise circular contour surrounds zero. The example function one divided by z is undefined at zero, but the circle itself avoids zero.",
+    "width": 640,
+    "height": 340
+  },
+  {
+    "id": "fractional-history",
+    "title": "A small weighted-history model",
+    "alt": "Record A has changes four, zero, zero; record B has zero, four, zero. Weighting those intervals by one-quarter, one-half, and one gives scores one and two. These teaching weights do not define a fractional derivative.",
+    "width": 640,
+    "height": 390
+  },
+  {
+    "id": "operator-swap",
+    "title": "What does the action do twice?",
+    "alt": "The swap operator A sends the pair two, five to five, two. A second application returns two, five. Two swaps act as the identity on every pair.",
+    "width": 640,
+    "height": 290
+  },
+  {
+    "id": "operator-square",
+    "title": "Two different meanings of “square”",
+    "alt": "Matrix multiplication squares the swap matrix to give the identity matrix. Squaring each entry separately leaves the swap matrix unchanged.",
+    "width": 640,
+    "height": 430
+  },
+  {
+    "id": "linear-token",
+    "title": "One token, two possible choices",
+    "alt": "A single token can be exchanged for one snack or for one drink. The two branches show alternatives; each purchase consumes the token.",
+    "width": 640,
+    "height": 325
+  },
+  {
+    "id": "linear-two-tokens",
+    "title": "Allocate a resource to each task",
+    "alt": "One of two separate tokens is exchanged for a snack and the other for a drink. Each token supports just one of the two purchases.",
+    "width": 640,
+    "height": 285
+  }
+]

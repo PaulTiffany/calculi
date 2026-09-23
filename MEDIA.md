@@ -1,97 +1,64 @@
-# Media and Learning Modes
+# Pictures and Learning Modes
 
-The atlas should feel **layered**, not merely long.
+The guide should work when read alone, discussed aloud, or used on paper. Readers do not need to be assigned a fixed “learning style.”
 
-Every core lesson may use up to five modes:
+## A useful rhythm
 
-1. **Read** — the idea in plain language, with notation added only when needed.
-2. **See** — one diagram, graph, or spatial representation.
-3. **Do** — follow a worked example, then predict a small variation.
-4. **Check** — reveal the reasoning, then carry the rule into a different setting.
-5. **Watch / listen** — at most one optional external item when it materially improves intuition.
+Read a small example. Predict a result. Explain why. Then change the setting or one assumption and reason again.
 
-## Constraint: one of each, not a gallery
+A table helps us compare rows. A picture can make a setting familiar. A diagram can show what changed, what stayed the same, or which things connect.
 
-A core lesson should generally contain:
+The [practice page](PRACTICE.md) supports this rhythm without extra software.
 
-- one visual;
-- one compact activity sequence, with a new setting to try;
-- one optional media item;
-- one misconception;
-- one forward question.
+## Follow familiar objects into new questions
 
-That is enough variation to change cognitive mode without turning the repository into a media archive.
+Jo wears a yellow scarf. Sam carries a teal satchel. They return in the garden, library, workshop, and delivery service. Readers can recognize a setting before tackling a new question.
 
-## Preferred media
+The books are counted in [lesson 3](lessons/03-discrete-and-numerical.md) and selected by a rule in [lesson 6](lessons/06-data-and-relations.md). The workshop introduces both [instructions](lessons/05-computation-and-correctness.md) and [coordination](lessons/07-interaction-and-action.md). The delivery lesson brings records, quantities, and actions together.
 
-### Native first
+Continuity is a memory aid. It does not mean that the mathematical subjects all have the same objects or rules.
 
-Prefer formats GitHub can render and version directly:
+The map scene supports two deliberately different questions: [change coordinates](tracks/geometry/tensor-calculus.md) while keeping an arrow fixed, or [turn the arrow](tracks/change/complex-calculus.md) while keeping the coordinates fixed. The familiar picture gives readers a chance to notice the difference.
 
-- Mermaid diagrams;
-- Markdown tables;
-- equations;
-- small plots when numbers or trends matter;
-- collapsible `<details>` exercises.
+## Give each picture a job
 
-These are searchable, diffable, accessible to text-based tools, and easy to preserve.
+The guide uses nine generated illustrations for familiar settings and a larger set of original SVG diagrams for precise examples. In the diagrams, counts, labels, arrows, and connections are part of the explanation. The scene illustrations do not supply numerical evidence.
 
-### External media second
+Place a visual beside the passage it explains. Let the caption ask a useful question or point out a relationship. For a prediction exercise, show the starting information and keep the answer inside the answer reveal.
 
-Videos, talks, animations, and interactive tools should be:
+Reuse a layout when a changed setting preserves the reasoning. The printer-and-scissors waiting loop becomes the bowl-and-whisk loop in practice. Change the layout when the relationship changes.
 
-- optional rather than required;
-- linked, not copied;
-- attributed to creator and host;
-- chosen because they explain something the lesson itself cannot show as efficiently.
+The [asset guide](assets/README.md) contains the character reference, saved generation prompts, and instructions for rebuilding the diagrams. Updating a count or label requires no image-generation call.
 
-External links may disappear. The lesson must remain complete without them.
+## Use native formats when they help
+
+Prefer formats that GitHub can display and the repository can preserve:
+
+- Markdown tables for exact comparisons;
+- SVG diagrams for small, precise visual examples;
+- locally stored WebP illustrations for recurring people and settings;
+- Mermaid for meaningful relationships or branching;
+- equations accompanied by a plain-language explanation;
+- collapsible answers and optional technical sections.
+
+Keep the main lesson complete when optional sections are closed. Every essential visual needs nearby text that explains its information.
+
+## External media
+
+Link to an outside video, animation, or talk only when it adds something useful. Say who made it and what it helps explain.
+
+Media must remain optional. A reader should still be able to complete the lesson if an external link disappears or video is unavailable.
+
+Do not copy thumbnails, figures, audio, or video merely for decoration. Link to the original unless reuse is permitted and properly attributed.
 
 ## Accessibility
 
-Every non-decorative visual should have a nearby textual explanation.
+Keep tables and diagrams compact enough to follow on a small screen. Use short labels and check the rendered result at a narrow width. Do not use color alone to carry a distinction: the bead diagram includes letters as well as colors.
 
-Do not encode an essential distinction by color alone.
+Every embedded image needs useful alternative text. Describe the information needed to follow the example, including the direction of an arrow when that matters. SVG files also carry a title and description. Essential facts remain in the lesson text.
 
-For video or audio, describe why it is linked so a learner can decide whether it is useful before opening it.
+Introduce a Greek-letter name in words before expecting a reader to pronounce it. Explain a symbol beside its first use. Put dense formal notation in an optional section, rather than requiring it to understand the example.
 
-## Rights
+Original visual material is offered under the repository's CC BY 4.0 terms to the extent applicable. See [Attribution](ATTRIBUTION.md) for generation provenance and credit.
 
-Do not copy third-party thumbnails, figures, screenshots, audio, or video into this repository merely for decoration.
-
-Link to third-party media instead unless its license clearly permits reuse and attribution requirements are satisfied.
-
-Original diagrams created for this atlas are covered by the repository's CC BY 4.0 license unless otherwise noted.
-
-## Lesson rhythm
-
-A mature lesson can look like:
-
-> **In one sentence**\
-> What the calculus changes.
-
-**Read** — plain-language explanation and one worked example.
-
-**See** — one visual.
-
-**Do** — predict one small operation before revealing its answer.
-
-<details>
-<summary>Check your answer</summary>
-
-A compact explanation of why the answer follows.
-
-</details>
-
-**Try it somewhere else** — change the objects or the setting. Ask which rule still applies and which assumption matters.
-
-**Optional notation** — use a separate details block for formulas and deeper results.
-
-**Watch — optional** — one attributed external resource.
-
-> **Next question**\
-> One useful route onward, with a link.
-
-The structure is a rhythm, not a mandatory visual template. Variation between lessons is encouraged when the subject calls for it.
-
-The [practice page](PRACTICE.md) can be used aloud, on paper, or on screen. These are ways to vary the activity; no learner needs to be assigned a fixed learning style.
+[Home](README.md) · [Contributing](CONTRIBUTING.md)

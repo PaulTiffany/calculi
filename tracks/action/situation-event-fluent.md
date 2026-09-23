@@ -1,5 +1,7 @@
 # Track — Situation, Event, and Fluent Calculi: What Changes After an Action?
 
+**Place in the field:** Related action formalisms in knowledge representation. Each uses its own rules for effects and persistence.
+
 **Start with:** statements that can be true or false.\
 **By the end:** describe an action's effects and name an assumption about what stays unchanged.
 
@@ -13,6 +15,12 @@ In our small model, opening changes the door's state and does not move the cup.
 |---|---|---|
 | Door is closed | True | False |
 | Cup is inside | True | True |
+
+<!-- visual:diagram-cupboard-cup -->
+<img src="../../assets/diagrams/cupboard-cup.svg" width="640" alt="Opening the cupboard changes its door from closed to open. The cup remains inside in both states.">
+
+*We show the inside in both pictures so you can track the cup.*
+<!-- /visual:diagram-cupboard-cup -->
 
 Reasoning needs both kinds of information: **what changes** and **what persists**.
 
@@ -68,4 +76,4 @@ Persistence follows from the model's rules and assumptions; it is not simply “
 
 The cupboard and parcel examples are original. See McCarthy and Hayes (1969) for situation-calculus foundations; Kowalski and Sergot, *A Logic-based Calculus of Events* (1986); and Thielscher, [*From Situation Calculus to Fluent Calculus*](https://www.cse.unsw.edu.au/~mit/Papers/AIJ99.pdf) (1999). Full records are in [References](../../REFERENCES.md#situation-event-and-fluent-calculi).
 
-[Home](../../README.md) · [Action family](../../PANTHEON.md#7-actions-events-and-changing-worlds) · [Compare with quantity models](../../lessons/08-comparison.md)
+[← Messages and events](../../lessons/07-interaction-and-action.md) · [Home](../../README.md) · [Field map](../../PANTHEON.md#7-interaction-actions-and-events)
