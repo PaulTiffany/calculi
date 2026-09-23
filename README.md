@@ -45,6 +45,10 @@ Choose a question for a longer visit:
 | Can earlier changes still affect a calculation? | [Fractional calculus](tracks/change/fractional-calculus.md) |
 | What does it mean to square an action? | [Functional calculus](tracks/operators/functional-calculus.md) |
 | Can we use the same resource twice? | [Linear logic](tracks/proof/linear-logic.md) |
+| Can a few rule cards build a new instruction? | [Combinatory logic](tracks/computation/combinatory-logic.md) |
+| Can one recipe work with different types? | [System F](tracks/types/system-f.md) |
+| What must be true before a program starts? | [Hoare logic and predicate transformers](tracks/proof/hoare-logic.md) |
+| When does changing one part leave the rest alone? | [Separation logic](tracks/proof/separation-logic.md) |
 | Who learns what when a card is revealed? | [Epistemic logic](tracks/observation/epistemic-logic.md) |
 | What can an incomplete label tell us for sure? | [Rough sets](tracks/observation/rough-sets.md) |
 | Can an interaction tell two machines apart? | [Observational equivalence](tracks/observation/observational-equivalence.md) |

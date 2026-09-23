@@ -124,7 +124,18 @@ A **partial-correctness** claim says that if the program finishes, its result me
 
 ## Explore further
 
-Try [lambda substitution](../tracks/computation/lambda-calculus.md), then [the Calculus of Constructions](../tracks/types/calculus-of-constructions.md) for a deeper link between types and proofs.
+Choose the question you want to try next:
+
+| Question | Track |
+|---|---|
+| How do named inputs get replaced? | [Lambda calculus](../tracks/computation/lambda-calculus.md) |
+| Can a few fixed rule cards express an instruction? | [Combinatory logic](../tracks/computation/combinatory-logic.md) |
+| How does one recipe work across different types? | [System F](../tracks/types/system-f.md) |
+| How can types express constructions and proofs? | [Calculus of Constructions](../tracks/types/calculus-of-constructions.md) |
+| How do we reason backward from a promise, or prove a loop finishes? | [Hoare logic and predicate transformers](../tracks/proof/hoare-logic.md) |
+| What if two names refer to the same memory cell? | [Separation logic](../tracks/proof/separation-logic.md) |
+
+The workshop route visits combinator cards, a reusable recipe, a credit program, and memory cells. Its [transfer practice](../PRACTICE.md#program-rules-and-guarantees) changes the setting again.
 
 ## A nearby use of the word “function”
 

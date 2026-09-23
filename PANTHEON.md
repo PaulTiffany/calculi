@@ -89,14 +89,16 @@ Choosing a language and choosing a proof presentation are different decisions. T
 | Calculus or method | Main job | Place in the landscape |
 |---|---|---|
 | Lambda calculus | Compute through functions, application, and substitution | A foundational model of computation |
-| Combinatory logic | Express computation without named bound variables | A related foundational formalism |
-| Typed lambda calculi, including System F | Constrain expressions and describe richer forms of functions | A family of typed computation systems |
+| [Combinatory logic](tracks/computation/combinatory-logic.md) | Express computation without named bound variables | A related foundational formalism |
+| Typed lambda calculi, including [System F](tracks/types/system-f.md) | Constrain expressions and describe richer forms of functions | A family of typed computation systems; System F supports abstraction over types |
 | Calculus of Constructions and its inductive extensions | Connect typed constructions and formal proofs | Foundations for dependent type theory and proof assistants |
-| Hoare logic / predicate transformers | Reason about program behavior from conditions | Program-verification methods |
-| Separation logic | Reason locally about separately owned parts of memory | A specialist program logic |
+| [Hoare logic / predicate transformers](tracks/proof/hoare-logic.md) | Reason about program behavior from conditions | Program-verification methods |
+| [Separation logic](tracks/proof/separation-logic.md) | Reason locally about separately owned parts of memory | A specialist program logic |
 
 **Learn:** [Instructions and Guarantees](lessons/05-computation-and-correctness.md).\
-**Explore:** [Lambda calculus](tracks/computation/lambda-calculus.md) and [the Calculus of Constructions](tracks/types/calculus-of-constructions.md). See [program-logic sources](REFERENCES.md#program-logic-and-correctness) for verification branches.
+**Explore:** Begin with [lambda calculus](tracks/computation/lambda-calculus.md), or build a recipe from [combinator cards](tracks/computation/combinatory-logic.md). Reuse a recipe across types in [System F](tracks/types/system-f.md), then explore dependent types in [the Calculus of Constructions](tracks/types/calculus-of-constructions.md).
+
+For guarantees, [Hoare logic and predicate transformers](tracks/proof/hoare-logic.md) work backward from a printing-credit promise. [Separation logic](tracks/proof/separation-logic.md) asks when changing one memory cell leaves the rest alone.
 
 A type check establishes what that type system's rules guarantee. It does not automatically prove every useful property of a program.
 

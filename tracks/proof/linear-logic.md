@@ -98,6 +98,10 @@ The repeated $T$ records two tokens. Replacing the two occurrences with one does
 
 </details>
 
+## A neighboring way to track resources
+
+[Separation logic](separation-logic.md) asks which memory cells a program uses, and when separate cells remain unchanged. Its star connects descriptions of separate memory. The voucher rules here and the memory rules there both account for resources, but belong to different formal systems.
+
 ## Sources
 
 The stall and kitchen examples are original. See Frank Pfenning, [*Linear Logic* notes](https://www.cs.cmu.edu/~fp/courses/15816-f01/handouts/linear.pdf), especially linear hypotheses, simultaneous conjunction, and unrestricted resources. Jean-Yves Girard introduced linear logic in “Linear Logic,” *Theoretical Computer Science* 50(1):1–101, 1987, DOI: 10.1016/0304-3975(87)90045-4.

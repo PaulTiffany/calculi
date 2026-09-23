@@ -58,6 +58,16 @@ Use this page when a word blocks your reading. The lesson supplies its precise c
 | type | A classification that helps govern which expressions may be formed or combined |
 | precondition | A condition required before a program step |
 | postcondition | A condition promised after a program step, under the stated interpretation |
+| weakest precondition | The least restrictive starting condition guaranteeing successful termination with a chosen postcondition, using the convention in the [program-logic track](tracks/proof/hoare-logic.md) |
+| predicate transformer | A rule taking a condition to another condition; weakest preconditions transform desired end conditions into required start conditions |
+| loop invariant | A condition established before a loop and preserved by each complete iteration at its check point |
+| loop variant | A quantity used to prove termination, such as a nonnegative integer that strictly decreases on every iteration |
+| partial / total correctness | Partial correctness promises the stated result if a program finishes; total correctness also requires it to finish |
+| pointer | A value holding a memory address, used to locate a cell |
+| aliasing | Two names or access paths reaching the same object or memory cell |
+| heap | In the memory model, a record of allocated addresses and the values stored at them |
+| separating conjunction | The star in [separation logic](tracks/proof/separation-logic.md): its two assertions hold on disjoint parts of the described memory |
+| frame rule | A rule for extending a local program specification with an unchanged description of separate resources, under its side conditions |
 | relation | In relational databases, a set of tuples with the specified fields |
 | tuple | An ordered collection of values; pictured as a database record |
 | query | A question expressed for a data system to answer |
@@ -117,6 +127,10 @@ Use this page when a word blocks your reading. The lesson supplies its precise c
 | application | Applying one lambda term to another |
 | reduction | A rewrite using the chosen system's rules |
 | normal form | An expression with no further rewrite of the specified kind available |
+| combinator | An expression with no free variables; [combinatory logic](tracks/computation/combinatory-logic.md) uses building blocks such as S and K |
+| bracket abstraction | A method that replaces a named input in an expression by an arrangement of combinators |
+| parametric polymorphism | Reusing a typed definition across type choices; [System F](tracks/types/system-f.md) explicitly abstracts over and applies types |
+| type application | Supplying a type to a type abstraction, such as choosing the value type for the twice recipe |
 | name | In process calculi, an entity used in communication structure; definitions vary |
 | reflection | A system working with representations of its own expressions or processes |
 | bisimulation | A relation matching observable behavior step by step, under a specified definition |
