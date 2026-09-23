@@ -1,4 +1,6 @@
-# 05 — Calculus of Indications: Working with a Mark
+# Track — Calculus of Indications: Working with a Mark
+
+**Place in the field:** A particular symbolic system from Spencer-Brown's 1969 book, Laws of Form.
 
 **Start with:** recognizing whether marks are beside or inside one another.\
 **By the end:** use two rules and explain why arrangement matters.
@@ -65,7 +67,7 @@ You carried the rules across a new physical presentation by preserving the arran
 
 Spencer-Brown develops an arithmetic and an algebra of forms beyond these two empty examples. Later parts of *Laws of Form* investigate **re-entry**, where a form enters into itself.
 
-The two rules above provide a starting operation. They do not, on their own, specify how a sensor or person distinguishes physical objects. [Distinction graphs](06-distinction-graphs.md) make that a separate formal question.
+The two rules above provide a starting operation. They do not, on their own, specify how a sensor or person distinguishes physical objects. [Distinction graphs](../observation/distinction-graphs.md) make that a separate formal question.
 
 Historical influence and formal translations need their own sources; the shared word “distinction” does not establish either relationship.
 
@@ -73,6 +75,6 @@ Historical influence and formal translations need their own sources; the shared 
 
 ## Sources
 
-The text notation and exercises are teaching reconstructions. The source is G. Spencer-Brown, *Laws of Form* (1969), especially the primary arithmetic. Louis H. Kauffman's [*Laws of Form: An Exploration in Mathematics and Foundations*](https://homepages.math.uic.edu/~kauffman/Laws.pdf) provides diagrams and further discussion. See [References](../REFERENCES.md#calculus-of-indications).
+The text notation and exercises are teaching reconstructions. The source is G. Spencer-Brown, *Laws of Form* (1969), especially the primary arithmetic. Louis H. Kauffman's [*Laws of Form: An Exploration in Mathematics and Foundations*](https://homepages.math.uic.edu/~kauffman/Laws.pdf) provides diagrams and further discussion. See [References](../../REFERENCES.md#calculus-of-indications).
 
-[← ρ-calculus](04-rho.md) · [Home](../README.md) · [Next: distinction graphs →](06-distinction-graphs.md)
+[← Logic and proof](../../lessons/04-logic-and-proof.md) · [Home](../../README.md) · [Field map](../../PANTHEON.md#4-claims-logic-and-proof)

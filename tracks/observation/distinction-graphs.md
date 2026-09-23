@@ -1,4 +1,6 @@
-# 06 — Distinction Graphs: What Can Be Told Apart?
+# Track — Distinction Graphs: What Can Be Told Apart?
+
+**Place in the field:** Ben Goertzel's research formalism for observer-dependent distinctions. The graph is a representation; additional rules are needed to describe change.
 
 **Start with:** comparing pairs of things.\
 **By the end:** draw a graph from an observation rule and explain what each line means.
@@ -82,10 +84,10 @@ A static graph records distinctions under the chosen conditions. Predictions abo
 
 Which differences survive an observation? If you use its record to rebuild something, which details could remain unavailable?
 
-That question prepares the next lesson on bounded observation and recovery.
+You can ask it in many settings: measurement, data compression, and reconstruction. A shared question does not make their formal models identical.
 
 ## Sources
 
-The device and label examples are original. The graph definition and its extensions come from Ben Goertzel, [*Distinction Graphs and Graphtropy*](https://arxiv.org/abs/1902.00741) (2019); §3.1 discusses nontransitive indistinguishability. See [References](../REFERENCES.md#distinction-graphs).
+The device and label examples are original. The graph definition and its extensions come from Ben Goertzel, [*Distinction Graphs and Graphtropy*](https://arxiv.org/abs/1902.00741) (2019); §3.1 discusses nontransitive indistinguishability. See [References](../../REFERENCES.md#distinction-graphs).
 
-[← Indications](05-indications.md) · [Home](../README.md) · [Next: Fuzzy Calculus →](07-fuzzy.md)
+[← Choosing a model](../../lessons/09-choose-and-combine.md) · [Home](../../README.md) · [Field map](../../PANTHEON.md#source-specific-research-explorations)

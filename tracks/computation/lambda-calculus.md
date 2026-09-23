@@ -1,4 +1,6 @@
-# 02 — λ-Calculus: Instructions with Inputs
+# Track — Lambda Calculus: Instructions with Inputs
+
+**Place in the field:** A foundational model of computation. No derivatives are needed.
 
 **Start with:** the idea of an instruction with an input. No derivatives are needed.\
 **By the end:** carry out a small substitution and recognize the same rule with different inputs.
@@ -96,14 +98,14 @@ This term repeats its own reduction.
 
 ## What this model brings into focus
 
-The native move is applying and rewriting terms. [Typed calculi](../tracks/types/calculus-of-constructions.md) add rules about which terms fit together. [Process calculi](03-pi.md) put communication at the center.
+The native move is applying and rewriting terms. [Typed calculi](../types/calculus-of-constructions.md) add rules about which terms fit together. [Process calculi](../interaction/pi-calculus.md) put communication at the center.
 
-There are formal encodings of λ-computation in communicating processes; [Relations](../RELATIONS.md) records that connection.
+There are formal encodings of λ-computation in communicating processes; [Relations](../../RELATIONS.md) records that connection.
 
 ## Sources and optional viewing
 
-Alonzo Church originated λ-calculus. The everyday examples here are original analogies. For the rules, see Frank Pfenning's [“The λ-Calculus,” CMU lecture notes](https://www.cs.cmu.edu/~fp/courses/15814-f25/lectures/01-lambda.pdf), especially §§2–5, and [References](../REFERENCES.md#λ-calculus).
+Alonzo Church originated λ-calculus. The everyday examples here are original analogies. For the rules, see Frank Pfenning's [“The λ-Calculus,” CMU lecture notes](https://www.cs.cmu.edu/~fp/courses/15814-f25/lectures/01-lambda.pdf), especially §§2–5, and [References](../../REFERENCES.md#λ-calculus).
 
 **Watch:** Computerphile / Graham Hutton, [“Lambda Calculus”](https://www.youtube.com/watch?v=eis11j_iGMs), for another explanation of inputs and substitution.
 
-[← Classical calculus](01-classical-calculus.md) · [Home](../README.md) · [Next: π-calculus →](03-pi.md)
+[← Instructions and guarantees](../../lessons/05-computation-and-correctness.md) · [Home](../../README.md) · [Field map](../../PANTHEON.md#5-computation-types-and-program-guarantees)

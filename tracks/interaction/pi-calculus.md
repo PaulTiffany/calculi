@@ -1,4 +1,6 @@
-# 03 — π-Calculus: Passing a New Connection
+# Track — Pi Calculus: Passing a New Connection
+
+**Place in the field:** A specific process calculus for changing communication connections.
 
 **Start with:** the idea of sending and receiving a message.\
 **By the end:** explain how a message can change who can communicate.
@@ -91,10 +93,10 @@ The wider language includes restricted names and repeated behavior. Comparing pr
 
 Milner, Parrow, and Walker developed π-calculus within the process-algebra tradition. It extends ideas from CCS with name passing and changing connections.
 
-[λ-calculus](02-lambda.md) foregrounds application. This lesson foregrounds interaction. [ρ-calculus](04-rho.md) next asks how process descriptions can themselves serve as names.
+[λ-calculus](../computation/lambda-calculus.md) foregrounds application. This lesson foregrounds interaction. [ρ-calculus](rho-calculus.md) next asks how process descriptions can themselves serve as names.
 
 ## Sources
 
-The contact stories are original analogies. For the calculus, see Milner, Parrow, and Walker, *A Calculus of Mobile Processes*, I–II (1992), and Robin Milner's [*The Polyadic π-Calculus: A Tutorial*](https://www.lfcs.inf.ed.ac.uk/reports/91/ECS-LFCS-91-180/). Full citations are in [References](../REFERENCES.md#π-calculus).
+The contact stories are original analogies. For the calculus, see Milner, Parrow, and Walker, *A Calculus of Mobile Processes*, I–II (1992), and Robin Milner's [*The Polyadic π-Calculus: A Tutorial*](https://www.lfcs.inf.ed.ac.uk/reports/91/ECS-LFCS-91-180/). Full citations are in [References](../../REFERENCES.md#π-calculus).
 
-[← λ-calculus](02-lambda.md) · [Home](../README.md) · [Next: ρ-calculus →](04-rho.md)
+[← Messages and events](../../lessons/07-interaction-and-action.md) · [Home](../../README.md) · [Field map](../../PANTHEON.md#7-interaction-actions-and-events)

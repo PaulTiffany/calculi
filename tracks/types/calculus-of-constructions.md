@@ -1,6 +1,8 @@
 # Track — Calculus of Constructions: When Instructions Fit
 
-**Start with:** [instructions with inputs](../../lessons/02-lambda.md); [proofs](../proof/sequent-calculus.md) help too.\
+**Place in the field:** A particular dependent type theory connecting computation and formal proof.
+
+**Start with:** [instructions with inputs](../computation/lambda-calculus.md); [proofs](../proof/sequent-calculus.md) help too.\
 **By the end:** explain how types check that pieces fit, then connect a requested proof to a construction.
 
 ## The idea
@@ -53,7 +55,7 @@ $$
 
 takes an input of type $A$ and returns it unchanged. It has type $A\to A$. Under propositions-as-types, it also expresses a proof that $A$ implies $A$.
 
-CoC combines λ-style reduction with typing rules and dependent products. The later **Calculus of Inductive Constructions** adds inductive definitions; it underlies systems such as Coq.
+CoC combines λ-style reduction with typing rules and dependent products. The later **Calculus of Inductive Constructions** adds inductive definitions; it underlies proof assistants such as [Rocq, formerly Coq](https://rocq-prover.org/doc/master/refman/language/core/index.html).
 
 A checked construction proves the formal statement expressed by its type. Whether that statement captures the intended outside-world requirement remains a modeling question.
 
@@ -63,4 +65,4 @@ A checked construction proves the formal statement expressed by its type. Whethe
 
 The label and sensor examples are original analogies. See Thierry Coquand and Gérard Huet, *The Calculus of Constructions*, **Information and Computation** 76(2–3):95–120 (1988), [DOI: 10.1016/0890-5401(88)90005-3](https://doi.org/10.1016/0890-5401(88)90005-3).
 
-[Home](../../README.md) · [Computation family](../../PANTHEON.md#5-computation-and-programs) · [Compare calculi](../../lessons/08-comparison.md)
+[← Instructions and guarantees](../../lessons/05-computation-and-correctness.md) · [Home](../../README.md) · [Field map](../../PANTHEON.md#5-computation-types-and-program-guarantees)

@@ -1,97 +1,86 @@
 # Contributing
 
-Contributions are welcome when they improve the atlas without flattening the distinctions among calculi.
+Help a new reader recognize mathematical tools and use an idea in a fresh setting.
 
-## Readability
+The core is a broad introduction for people who know simple arithmetic. Its selection should reflect the wider mathematical and computing landscape.
 
-The main learning path targets roughly an **8th-grade reading level** for the plain-language explanation.
+## Choose what earns a core lesson
 
-- explain the idea before the notation;
-- define a technical term when it first appears;
-- prefer short sentences and concrete examples;
-- keep one main idea per paragraph;
-- equations may add precision, but the prose must still explain what they mean;
-- do not make prior calculus knowledge a hidden prerequisite.
+A new core topic should add a useful kind of question or fill a serious gap in understanding. Adding more names from one research tradition does not by itself make the guide more representative.
 
-Advanced tracks may become more technical, but they should keep a plain-language entry point.
+Before changing the main route, ask:
 
-## Make learning observable
+- What can a beginner do after this lesson?
+- Does a similar lesson already teach that job?
+- Which other major subjects would receive less attention?
+- Is this a broad subject, a particular formal system, or an author's proposal?
+- Would its place in the route imply a ranking or ancestry we cannot support?
 
-Keep the lesson compact by replacing repetition with practice:
+Keep specialist material available as optional tracks within the appropriate subject family. Do not make one author's framework the implied destination of the tour.
 
-- state what the reader needs and one thing they should be able to do afterward;
-- show one worked example before asking for an independent answer;
-- include a small variation, then a different setting that uses the same idea;
-- hide answers in a details block and explain **why**, including a likely wrong turn;
-- name one assumption or limit the learner can check;
-- make the main explanation complete before optional formal notation;
-- define symbols where they first appear and use GitHub's supported math delimiters;
-- link back to Home and to a useful next page.
+## Write for an eighth-grade reader
 
-The [practice page](PRACTICE.md) supplies a reusable teaching activity. New lessons should not require new tooling or media to be useful.
+Start with an ordinary question and a tiny example. Introduce the technical name after the reader sees its job.
 
-## Required lesson structure
+Use short sentences, familiar words, and one main idea per paragraph. Define a technical term at first use. Explain units and assumptions.
 
-New substantive lessons should address these questions in plain language. Headings may vary:
+Keep difficult notation in a separate, optional section. The main explanation and activity should make sense with that section closed.
 
-1. **Need**
-2. **World**
-3. **Primitive** — the starting ingredients
-4. **Move**
-5. **Toy example**
-6. **Boundary**
-7. **Relations**
+A readable page can still contain a hard idea. Simplify the language without replacing a precise claim with a misleading slogan.
 
-## Source requirements
+## Build a useful lesson
 
-Every new calculus or substantive historical/formal claim must include appropriate source attribution.
+A core lesson should contain:
 
-Prefer, in order:
+1. What the reader needs and one practical learning goal.
+2. A concrete question and worked example.
+3. A prediction the reader can attempt.
+4. An explained answer, including a likely wrong turn.
+5. A changed setting or assumption that tests transfer.
+6. A clear boundary on what the example establishes.
+7. Sources and useful navigation.
 
-1. original paper, monograph, technical report, or official specification;
-2. authoritative later correction or refinement;
-3. high-quality scholarly reference work for orientation.
+Vary the headings to suit the subject. Do not force every calculus into a shared technical template before readers understand it.
 
-Do not use a tertiary summary as the sole source for a formal or priority claim when a primary source is available.
+Tables and diagrams should help reasoning. Media and new software are optional; the lesson must work as text. See [Media and Learning Modes](MEDIA.md).
 
-## Relation labels
+## Preserve mathematical distinctions
 
-Every claimed cross-calculus relation must be marked as one of:
+Watch for common traps:
 
-- **historical influence**
-- **formal encoding**
-- **extension/refinement**
-- **proof-theoretic correspondence**
-- **structural analogy**
-- **conjectured bridge**
+- a rate versus an amount, and a local derivative versus a finite-step difference;
+- a stationary point versus an optimum;
+- a logic language versus a proof presentation;
+- a type check versus a particular behavioral guarantee;
+- a data record versus the real thing it describes;
+- communication versus an action's effects;
+- probability versus stochastic calculus versus causal inference;
+- an analogy versus a formal translation.
 
-Add or update the corresponding entry in [RELATIONS.md](RELATIONS.md).
+The [field map](PANTHEON.md) deliberately includes neighboring subjects that are not all called calculi. Label their role instead of stretching a definition to fit them.
 
-## Corrections and disputes
+## Use sources that support the claim
 
-If later scholarship corrects an earlier theorem, encoding, historical story, or interpretation, preserve the correction visibly. Do not teach the older slogan as if the caveat did not exist.
+Prefer original papers, monographs, official specifications, and author or university teaching materials. Use later corrections when they matter. Scholarly reference works can provide orientation.
 
-## Original interpretation
+Each substantive formal claim needs an appropriate source. A historical claim needs evidence of history, not just a modern similarity.
 
-Original synthesis is welcome, but label it.
+Mark invented examples and analogies as teaching reconstructions. Identify author-specific terminology. A common name does not establish that different sources use the same definition.
 
-Examples:
+For a claimed connection, state its kind: theorem, extension, application, historical influence, encoding, analogy, or proposed bridge. Update [Connections](RELATIONS.md) and [References](REFERENCES.md) as needed.
 
-- “Pedagogical reconstruction”
-- “Structural analogy”
-- “Proposed bridge”
-- “Open question”
+## Check the result
 
-The goal is for a reader to be able to tell what comes from a source and what comes from this atlas.
+Read the main lesson with optional sections closed. Can someone do the activity using only the information already explained?
+
+Check calculations, units, inference direction, assumptions, internal links, collapsible answers, and mathematical notation. For GitHub math use dollar-delimited inline equations and double-dollar display blocks.
+
+When possible, ask a new reader to explain the idea and change one rule. A readability score alone cannot establish understanding.
 
 ## Licensing
 
-By contributing original material to this repository, you agree that your contribution may be distributed under **CC BY 4.0**, unless a contribution is clearly marked otherwise and accepted on that basis.
+By contributing original material, you agree that it may be distributed under **CC BY 4.0**, unless explicitly marked otherwise and accepted on that basis.
 
-Do not contribute third-party text, images, or other material unless its license or legal status is compatible with inclusion and its attribution requirements are satisfied.
+Do not copy third-party text or images without a compatible legal basis and attribution. See [License](LICENSE.md) and [Attribution](ATTRIBUTION.md).
 
-See [LICENSE.md](LICENSE.md) and [ATTRIBUTION.md](ATTRIBUTION.md).
-
-## Before submitting
-
-Read the main path with the optional sections closed. Can the reader do the activity using only what has been explained? Check the answer, units, assumptions, relative links, and equation rendering. Ask a new reader to explain the idea in another setting when possible; a readability score alone does not establish understanding.
+[Home](README.md)

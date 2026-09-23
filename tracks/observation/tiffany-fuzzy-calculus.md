@@ -1,6 +1,8 @@
-# 07 — Fuzzy Calculus: Change Through Bounded Observation
+# Track — Tiffany's Fuzzy Calculus: Change Through Bounded Observation
 
-**Start with:** [rates and reconstruction](01-classical-calculus.md). [Distinction graphs](06-distinction-graphs.md) provide another useful entry.\
+**Place in the field:** The particular research framework in Paul Tiffany's Principia Symbolica and related materials. This page uses those sources' definitions; it is not a survey of fuzzy logic.
+
+**Start with:** [rates and reconstruction](../../lessons/01-classical-calculus.md).\
 **By the end:** explain why rebuilding an observed record may leave details of its source unresolved.
 
 ## The idea
@@ -103,6 +105,6 @@ This recovers $g$. Recovering the field from which $g$ was observed is another q
 
 Paul Carver Tiffany III, *Principia Symbolica*, Book IV: **Bounded Observer**, **Observer-Kernel Convolution**, and **Fuzzy Fundamental Theorem of Calculus**. Read the [source chapter](https://github.com/PaulTiffany/Principia-Symbolica/blob/main/src/book4.tex) or the [structured atlas](https://paultiffany.github.io/Principia-Symbolica/atlas/).
 
-For the geometric development, see the [Figure 2 companion](https://github.com/PaulTiffany/hypothesis-surface-agi26/blob/master/supplementary/fig2_companion_fftc.tex). Full references are in [References](../REFERENCES.md#fuzzy-calculus--bounded-observer-geometry).
+For the geometric development, see the [Figure 2 companion](https://github.com/PaulTiffany/hypothesis-surface-agi26/blob/master/supplementary/fig2_companion_fftc.tex). Full references are in [References](../../REFERENCES.md#fuzzy-calculus--bounded-observer-geometry).
 
-[← Distinction graphs](06-distinction-graphs.md) · [Home](../README.md) · [Next: compare and reuse →](08-comparison.md)
+[← Choosing a model](../../lessons/09-choose-and-combine.md) · [Home](../../README.md) · [Field map](../../PANTHEON.md#source-specific-research-explorations)

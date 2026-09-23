@@ -1,6 +1,8 @@
 # Track — Sequent Calculus: Proof as Careful Steps
 
-**Start with:** reading an “if … then …” statement.\
+**Place in the field:** A proof method used with several logics, rather than a new subject matter for logic.
+
+**Start with:** [claims and proof rules](../../lessons/04-logic-and-proof.md).\
 **By the end:** distinguish what follows from assumptions from what merely sounds plausible.
 
 ## A worked example
@@ -75,4 +77,4 @@ Gerhard Gentzen developed both natural deduction and sequent calculi in 1934–3
 
 The jar and printer examples are original illustrations of valid and invalid inference. See [References](../../REFERENCES.md#proof-calculi) for Gentzen and later expositions.
 
-[Home](../../README.md) · [Logic family](../../PANTHEON.md#4-logic-and-formal-reasoning) · [Next: types and constructions](../types/calculus-of-constructions.md)
+[← Logic and proof](../../lessons/04-logic-and-proof.md) · [Home](../../README.md) · [Field map](../../PANTHEON.md#4-claims-logic-and-proof)

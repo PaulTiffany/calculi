@@ -1,97 +1,40 @@
 # Media and Learning Modes
 
-The atlas should feel **layered**, not merely long.
+The guide should work when read alone, discussed aloud, or used on paper. Readers do not need to be assigned a fixed “learning style.”
 
-Every core lesson may use up to five modes:
+## A useful rhythm
 
-1. **Read** — the idea in plain language, with notation added only when needed.
-2. **See** — one diagram, graph, or spatial representation.
-3. **Do** — follow a worked example, then predict a small variation.
-4. **Check** — reveal the reasoning, then carry the rule into a different setting.
-5. **Watch / listen** — at most one optional external item when it materially improves intuition.
+Read a small example. Predict a result. Explain why. Then change the setting or one assumption and reason again.
 
-## Constraint: one of each, not a gallery
+A table can make this easier when rows must be compared. A diagram can help when connections, locations, or event order matter. Neither is required merely to decorate a page.
 
-A core lesson should generally contain:
+The [practice page](PRACTICE.md) supports this rhythm without extra software.
 
-- one visual;
-- one compact activity sequence, with a new setting to try;
-- one optional media item;
-- one misconception;
-- one forward question.
+## Use native formats when they help
 
-That is enough variation to change cognitive mode without turning the repository into a media archive.
+Prefer formats that GitHub can display and the repository can preserve:
 
-## Preferred media
+- Markdown tables for exact comparisons;
+- Mermaid for meaningful relationships or branching;
+- equations accompanied by a plain-language explanation;
+- collapsible answers and optional technical sections.
 
-### Native first
+Keep the main lesson complete when optional sections are closed. Every essential visual needs nearby text that explains its information.
 
-Prefer formats GitHub can render and version directly:
+## External media
 
-- Mermaid diagrams;
-- Markdown tables;
-- equations;
-- small plots when numbers or trends matter;
-- collapsible `<details>` exercises.
+Link to an outside video, animation, or talk only when it adds something useful. Say who made it and what it helps explain.
 
-These are searchable, diffable, accessible to text-based tools, and easy to preserve.
+Media must remain optional. A reader should still be able to complete the lesson if an external link disappears or video is unavailable.
 
-### External media second
-
-Videos, talks, animations, and interactive tools should be:
-
-- optional rather than required;
-- linked, not copied;
-- attributed to creator and host;
-- chosen because they explain something the lesson itself cannot show as efficiently.
-
-External links may disappear. The lesson must remain complete without them.
+Do not copy thumbnails, figures, audio, or video merely for decoration. Link to the original unless reuse is permitted and properly attributed.
 
 ## Accessibility
 
-Every non-decorative visual should have a nearby textual explanation.
+Keep tables compact enough to follow on a small screen. Do not use color alone to carry a distinction.
 
-Do not encode an essential distinction by color alone.
+Introduce a Greek-letter name in words before expecting a reader to pronounce it. Explain a symbol beside its first use. Put dense formal notation in an optional section, rather than requiring it to understand the example.
 
-For video or audio, describe why it is linked so a learner can decide whether it is useful before opening it.
+Original teaching diagrams have the repository's CC BY 4.0 license unless marked otherwise.
 
-## Rights
-
-Do not copy third-party thumbnails, figures, screenshots, audio, or video into this repository merely for decoration.
-
-Link to third-party media instead unless its license clearly permits reuse and attribution requirements are satisfied.
-
-Original diagrams created for this atlas are covered by the repository's CC BY 4.0 license unless otherwise noted.
-
-## Lesson rhythm
-
-A mature lesson can look like:
-
-> **In one sentence**\
-> What the calculus changes.
-
-**Read** — plain-language explanation and one worked example.
-
-**See** — one visual.
-
-**Do** — predict one small operation before revealing its answer.
-
-<details>
-<summary>Check your answer</summary>
-
-A compact explanation of why the answer follows.
-
-</details>
-
-**Try it somewhere else** — change the objects or the setting. Ask which rule still applies and which assumption matters.
-
-**Optional notation** — use a separate details block for formulas and deeper results.
-
-**Watch — optional** — one attributed external resource.
-
-> **Next question**\
-> One useful route onward, with a link.
-
-The structure is a rhythm, not a mandatory visual template. Variation between lessons is encouraged when the subject calls for it.
-
-The [practice page](PRACTICE.md) can be used aloud, on paper, or on screen. These are ways to vary the activity; no learner needs to be assigned a fixed learning style.
+[Home](README.md) · [Contributing](CONTRIBUTING.md)

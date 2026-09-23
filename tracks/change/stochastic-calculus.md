@@ -1,6 +1,8 @@
 # Track — Stochastic Calculus: Change with Randomness
 
-**Start with:** [rates and accumulation](../../lessons/01-classical-calculus.md).\
+**Place in the field:** An established advanced area of probability and analysis. The main chance lesson supplies the entry ideas.
+
+**Start with:** [chance and random paths](../../lessons/08-chance-and-cause.md), plus [rates and accumulation](../../lessons/01-classical-calculus.md).\
 **By the end:** distinguish a possible path from an average over possible paths.
 
 ## The idea
@@ -17,6 +19,8 @@ Try this small model: begin at 0. Toss a fair coin twice. Move up 1 for heads an
 | Tails, tails | −1 | −2 |
 
 The four equally likely outcomes average to 0. Yet half the paths finish elsewhere.
+
+Their **squared** final positions are 4, 0, 0, and 4, which average to 2. Squaring the average position instead gives zero. The order of these operations matters.
 
 ## Try it somewhere else
 
@@ -57,10 +61,16 @@ Here $W_t$ is Brownian motion. The second-derivative term comes from quadratic v
 
 </details>
 
+## Different integration rules
+
+Two common definitions are the **Itô** and **Stratonovich** integrals. They use different sampling conventions when limits of sums are formed, so their values can differ. Their change-of-variable rules differ too. Stratonovich uses an ordinary-looking chain rule under the appropriate assumptions; Itô includes a correction term.
+
+One is not merely a more accurate spelling of the other. The model and its assumptions determine which formulation is appropriate.
+
 ## Connection and sources
 
 Stochastic calculus adapts integration to random processes with stated path and information assumptions. The toy examples are original.
 
-See Ioannis Karatzas and Steven E. Shreve, *Brownian Motion and Stochastic Calculus* (1988), and [References](../../REFERENCES.md#stochastic-calculus).
+See Ioannis Karatzas and Steven E. Shreve, *Brownian Motion and Stochastic Calculus* (1988), Varadhan's [stochastic-integration notes](https://math.nyu.edu/~varadhan/fall06/fall06.3.pdf), and [References](../../REFERENCES.md#stochastic-calculus).
 
-[Home](../../README.md) · [Change family](../../PANTHEON.md#1-quantity-motion-and-change) · [Compare calculi](../../lessons/08-comparison.md)
+[← Chance and cause](../../lessons/08-chance-and-cause.md) · [Home](../../README.md) · [Field map](../../PANTHEON.md#8-chance-random-paths-and-causes)

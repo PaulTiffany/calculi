@@ -1,6 +1,8 @@
-# 04 — ρ-Calculus: Instructions That Can Be Passed Around
+# Track — Rho Calculus: Instructions That Can Be Passed Around
 
-**Start with:** [processes, names, and messages](03-pi.md).\
+**Place in the field:** A specialist reflective process calculus. Start with the pi track before exploring its differences.
+
+**Start with:** [processes, names, and messages](pi-calculus.md).\
 **By the end:** distinguish a process, a name made from its description, and the use of that description as behavior.
 
 ## The idea
@@ -61,7 +63,7 @@ The language differs from ordinary π-calculus in more than one operator. Featur
 
 Meredith and Radestock proposed an encoding of an asynchronous π fragment. Lybech's later analysis identifies errors in that encoding and gives a corrected encoding with stated preservation criteria. It also proves a separation in the reverse direction under its chosen criteria.
 
-An **encoding** is a formal translation. Its claim depends on the source fragment, target language, and behavior it preserves. See [Relations](../RELATIONS.md).
+An **encoding** is a formal translation. Its claim depends on the source fragment, target language, and behavior it preserves. See [Relations](../../RELATIONS.md).
 
 </details>
 
@@ -69,10 +71,10 @@ An **encoding** is a formal translation. Its claim depends on the source fragmen
 
 Which matters for your task: sending an address, sending a representation of a process, or bringing represented behavior into play?
 
-Naming those roles makes this idea useful beyond a particular notation. Questions about which differences can be noticed lead to the later lessons on distinction and observation.
+Naming those roles makes this idea useful beyond a particular notation. Compare them with the communication example in the [core interaction lesson](../../lessons/07-interaction-and-action.md).
 
 ## Sources
 
-The recipe and music examples are original analogies. See Meredith and Radestock, *A Reflective Higher-order Calculus* (2005), and Lybech, [*Encodability and Separation for a Reflective Higher-Order Calculus*](https://arxiv.org/abs/2209.02356) (2022), with its 2024 journal development. Full records are in [References](../REFERENCES.md#ρ-calculus-and-reflective-process-calculi).
+The recipe and music examples are original analogies. See Meredith and Radestock, *A Reflective Higher-order Calculus* (2005), and Lybech, [*Encodability and Separation for a Reflective Higher-Order Calculus*](https://arxiv.org/abs/2209.02356) (2022), with its 2024 journal development. Full records are in [References](../../REFERENCES.md#ρ-calculus-and-reflective-process-calculi).
 
-[← π-calculus](03-pi.md) · [Home](../README.md) · [Next: calculus of indications →](05-indications.md)
+[← Messages and events](../../lessons/07-interaction-and-action.md) · [Home](../../README.md) · [Field map](../../PANTHEON.md#7-interaction-actions-and-events)
