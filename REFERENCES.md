@@ -18,6 +18,8 @@ The [core lessons](README.md#take-the-tour) are the plain-language entry route. 
 | New directions and boundaries | The tensor and exterior tracks, then Peeters and Sjamaar | Tensor fields, differential forms, and manifolds |
 | Complex numbers and operators | MIT's 18.04 notes and Higham's matrix-function introduction | Contour integration, residues, and operator calculi |
 | Memory and resource use | The fractional and linear-logic tracks | Mainardi–Gorenflo's fractional operators; Pfenning's proof rules |
+| Observation and knowledge | The card and crate tracks, then Open Logic and Pawlak | Dynamic epistemic models, rough approximations, and behavioral equivalence |
+| Measurements and interventions | The measurement-calculus and do-calculus tracks | Danos–Kashefi–Panangaden's patterns; Pearl's identification rules |
 
 “Introductory” in a university source can still mean demanding for a new reader. The small examples in this guide are not a substitute for all that background.
 
@@ -68,6 +70,7 @@ The finite-sum cancellation identity in lesson 3 is also shown directly; it need
 
 - Tsitsiklis, John; Jaillet, Patrick. [*Introduction to Probability*](https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/pages/part-i-the-fundamentals/), MIT OpenCourseWare, 2018. Course using Bertsekas and Tsitsiklis, *Introduction to Probability*, 2nd ed. (2008), with author-supplied summary material.
 - Pearl, Judea. [*The Do-Calculus Revisited*](https://ftp.cs.ucla.edu/pub/stat_ser/r402.pdf), 2012. Causal-effect identification and the role of graphical assumptions. This is technical reading, not a beginner exercise book.
+- Pearl, Judea. [“Causal Diagrams for Empirical Research”](https://ftp.cs.ucla.edu/pub/stat_ser/R218-B.pdf), *Biometrika*, 1995. See §3.1 for the back-door criterion and adjustment formula. The [do-calculus track](tracks/observation/do-calculus.md) supplies an original numerical example.
 
 ## Geometry and field calculi
 
@@ -184,6 +187,33 @@ The token-stall example uses a small resource interpretation. It does not define
 
 - Spencer-Brown, G. *Laws of Form*. London: Allen & Unwin, 1969. ISBN 0-04-510028-4.
 
+## Epistemic and dynamic epistemic logic
+
+- Open Logic Project. [*Public Announcement Logic*](https://builds.openlogicproject.org/content/applied-modal-logic/epistemic-logic/public-announcement-logic-lang.pdf). A short introduction to the language of truthful public announcements.
+- Baltag, Alexandru; Moss, Lawrence S.; Solecki, Sławomir. [*The Logic of Public Announcements, Common Knowledge, and Private Suspicions*](https://ir.cwi.nl/pub/4497/04497D.pdf). CWI report SEN-R9922, 1999, following their TARK 1998 paper. Models, epistemic actions, semantics, and proof systems.
+- Charrier, T.; Herzig, A.; Lorini, E.; Maffre, F.; Schwarzentruber, F. [“Building Epistemic Logic from Observations and Public Announcements”](https://cdn.aaai.org/ocs/12899/12899-57552-1-PB.pdf), 2016. Observation-based knowledge and changes to information and visibility.
+
+## Rough sets and limited distinctions
+
+- Pawlak, Zdzisław. [“Rough Sets”](https://link.springer.com/article/10.1007/BF01001956). *International Journal of Computer & Information Sciences* 11:341–356, 1982. DOI: 10.1007/BF01001956. Approximate set operations based on available distinctions.
+- Pawlak, Zdzisław. [“Rough Set Theory and Its Applications to Data Analysis”](https://www.tandfonline.com/doi/abs/10.1080/019697298125470). *Cybernetics and Systems* 29(7), 1998. DOI: 10.1080/019697298125470. Lower and upper approximations and their uses in data analysis.
+
+## Observational equivalence and bisimulation
+
+- Sangiorgi, Davide. [*An Introduction to Bisimulation and Coinduction*](https://www.cs.unibo.it/~sangio/DOC_public/corsoFL.pdf), author-hosted notes. Labelled transition systems, traces, bisimulation, and proof techniques. See also his [book and reading materials](https://www.cs.unibo.it/~sangio/IntroBook.html).
+- Milner, Robin; Sangiorgi, Davide. [“Barbed Bisimulation”](https://www.research.ed.ac.uk/en/publications/barbed-bisimulation/), ICALP 1992. Behavioral comparison based on reductions and observable capabilities.
+
+The machine example uses strong bisimulation on an explicit labelled transition system. Barbed, weak, testing, and trace equivalences make different comparison choices.
+
+## Measurement-based quantum computation
+
+- Danos, Vincent; Kashefi, Elham; Panangaden, Prakash. [*The Measurement Calculus*](https://arxiv.org/abs/0704.1263). *Journal of the ACM* 54(2), 2007. The [full text](https://arxiv.org/html/0704.1263v1), §§2–3, gives commands, dependencies, and the two-qubit Hadamard pattern; §5 gives the rewrite calculus.
+- Nielsen, Michael A. [*Cluster-state Quantum Computation*](https://arxiv.org/abs/quant-ph/0504097), 2005 preprint. A review of computation with entangled resources, measurements, and classical control.
+
+## Relational quantum mechanics
+
+- Rovelli, Carlo. [“Relational Quantum Mechanics”](https://arxiv.org/abs/quant-ph/9609002), 1996. A physical interpretation in which quantum descriptions concern relations between systems. The field map includes it as neighboring reading.
+
 ## Distinction graphs
 
 - Goertzel, Ben. “Distinction Graphs and Graphtropy: A Formalized Phenomenological Layer Underlying Classical and Quantum Entropy, Observational Semantics and Cognitive Computation.” arXiv:1902.00741, 2019.\
@@ -191,7 +221,7 @@ The token-stall example uses a small resource interpretation. It does not define
 
 ## Fuzzy Calculus / bounded observer geometry
 
-This heading refers specifically to Tiffany's framework. These sources establish its definitions and claims; they do not make it the standard meaning of “fuzzy” across mathematics.
+Primary sources for Tiffany's use of the name Fuzzy Calculus. The track follows their specific definitions and theorem assumptions.
 
 - Tiffany III, Paul Carver. *Principia Symbolica*, especially Book IV bounded-observer, observer-kernel, derivation, and curvature constructions.\
   https://paultiffany.github.io/Principia-Symbolica/

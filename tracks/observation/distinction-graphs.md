@@ -80,10 +80,10 @@ A static graph records distinctions under the chosen conditions. Predictions abo
 
 Which differences survive an observation? If you use its record to rebuild something, which details could remain unavailable?
 
-You can ask it in many settings: measurement, data compression, and reconstruction. A shared question does not make their formal models identical.
+Compare another observation rule in [rough sets](rough-sets.md): matching recorded labels groups objects into equivalence classes. Or ask what possibilities a person retains in [epistemic logic](epistemic-logic.md). Each example makes its distinction rule explicit.
 
 ## Sources
 
 The device and label examples are original. The graph definition and its extensions come from Ben Goertzel, [*Distinction Graphs and Graphtropy*](https://arxiv.org/abs/1902.00741) (2019); §3.1 discusses nontransitive indistinguishability. See [References](../../REFERENCES.md#distinction-graphs).
 
-[← Choosing a model](../../lessons/09-choose-and-combine.md) · [Home](../../README.md) · [Field map](../../PANTHEON.md#source-specific-research-explorations)
+[← Choosing a model](../../lessons/09-choose-and-combine.md) · [Home](../../README.md) · [Observation route](../../PANTHEON.md#10-observation-knowledge-and-measurement)

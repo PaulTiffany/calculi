@@ -34,6 +34,11 @@ The tank, hill, garden, counts, badge puzzles, ticket counter, data tables, post
 | [Exterior calculus](tracks/geometry/exterior-calculus.md) | Differential forms and Stokes' theorem; Sjamaar and Tong |
 | [Functional calculus](tracks/operators/functional-calculus.md) | Functions of matrices and operators; Higham |
 | [Linear logic](tracks/proof/linear-logic.md) | Girard's logic; Pfenning's presentation of linear and reusable assumptions |
+| [Epistemic logic](tracks/observation/epistemic-logic.md) | Knowledge models and public announcements; Open Logic; Baltag–Moss–Solecki; Charrier and colleagues |
+| [Rough sets](tracks/observation/rough-sets.md) | Pawlak's equivalence-based lower and upper approximations |
+| [Observational equivalence](tracks/observation/observational-equivalence.md) | Labelled transition systems, trace equivalence, and strong bisimulation; Sangiorgi; Milner–Sangiorgi |
+| [Measurement calculus](tracks/observation/measurement-calculus.md) | Danos–Kashefi–Panangaden's commands and two-qubit Hadamard pattern; Nielsen's review of the computing model |
+| [Do-calculus](tracks/observation/do-calculus.md) | Pearl's intervention semantics, causal identification rules, and back-door adjustment |
 | [Lambda calculus](tracks/computation/lambda-calculus.md) | Church and subsequent lambda-calculus literature |
 | [Sequent calculus](tracks/proof/sequent-calculus.md) | Gentzen and proof theory |
 | [Calculus of Constructions](tracks/types/calculus-of-constructions.md) | Coquand and Huet; later inductive extensions |
@@ -47,6 +52,8 @@ The tank, hill, garden, counts, badge puzzles, ticket counter, data tables, post
 These tracks have different standing and scope: some introduce established advanced subjects; others examine particular symbolic systems or research frameworks. Their shared location under “tracks” only means that they are optional reading.
 
 The map-coordinate, stretching, garden-boundary, robot-turning, weighted-history, sound-box, and token-stall activities are original teaching examples. The arithmetic and diagrams illustrate entry ideas; they do not replace the cited formal definitions or proofs.
+
+The card viewers, batch-labelled crates, drink-machine story, watering table, and new transfer activities are original teaching presentations. The drink machines instantiate a standard trace-versus-bisimulation distinction. The two-qubit Hadamard pattern comes from *The Measurement Calculus*; its illustrated presentation and classical parcel analogy were made for this guide. No quantum diagram was copied from that paper.
 
 ## Reconstruction and evidence
 

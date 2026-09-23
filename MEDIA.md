@@ -20,6 +20,8 @@ Continuity is a memory aid. It does not mean that the mathematical subjects all 
 
 The map scene supports two deliberately different questions: [change coordinates](tracks/geometry/tensor-calculus.md) while keeping an arrow fixed, or [turn the arrow](tracks/change/complex-calculus.md) while keeping the coordinates fixed. The familiar picture gives readers a chance to notice the difference.
 
+The observation route revisits the fair for [different views of a card](tracks/observation/epistemic-logic.md), the delivery service for [limited crate labels](tracks/observation/rough-sets.md), and the workshop for [behavioral comparison](tracks/observation/observational-equivalence.md) and [measurement-driven instructions](tracks/observation/measurement-calculus.md). [Do-calculus](tracks/observation/do-calculus.md) returns to the garden to compare observed watering with an intervention. New exact diagrams do the mathematical work; these visits reuse existing scene art.
+
 ## Give each picture a job
 
 The guide uses nine generated illustrations for familiar settings and a larger set of original SVG diagrams for precise examples. In the diagrams, counts, labels, arrows, and connections are part of the explanation. The scene illustrations do not supply numerical evidence.

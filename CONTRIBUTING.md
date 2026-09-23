@@ -18,6 +18,8 @@ Before changing the main route, ask:
 
 Keep specialist material available as optional tracks within the appropriate subject family. Do not make one author's framework the implied destination of the tour.
 
+For a broad theme such as observation, start with the questions and survey the relevant established subjects before selecting named frameworks. Apply the same source and example standards throughout. Credit documented influence where relevant; distinguish that history from a teaching comparison.
+
 ## Write for an eighth-grade reader
 
 Start with an ordinary question and a tiny example. Introduce the technical name after the reader sees its job.
@@ -42,7 +44,7 @@ A core lesson should contain:
 
 Vary the headings to suit the subject. Do not force every calculus into a shared technical template before readers understand it.
 
-Tables and diagrams should help reasoning. Media and new software are optional; the lesson must work as text. See [Media and Learning Modes](MEDIA.md).
+Tables and diagrams should help reasoning. Media and new software are optional; the lesson must work as text. See [Pictures and Learning Modes](MEDIA.md).
 
 ## Extend the visual language
 

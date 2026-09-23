@@ -23,6 +23,11 @@ This page distinguishes useful connections. It is not a single history of the fi
 | Program logic and separation logic | Extension | Assertions can describe separate parts of memory and support local reasoning | [Reynolds's paper](https://www.cs.cmu.edu/~jcr/seplogic.pdf) |
 | Probability and stochastic calculus | Specialized development | Integration is defined for suitable random processes, with path and information assumptions | [Chance lesson](lessons/08-chance-and-cause.md) and [stochastic track](tracks/change/stochastic-calculus.md) |
 | Probability and causal inference | Added causal structure | Interventions require causal assumptions beyond a joint probability description | [Chance lesson](lessons/08-chance-and-cause.md); Pearl |
+| Epistemic and dynamic epistemic logic | Extension to information-changing events | Public-announcement updates restrict worlds and accessibility relations; general event models add further structure | [Epistemic track](tracks/observation/epistemic-logic.md); Baltag–Moss–Solecki |
+| Recorded attributes and rough approximations | A specified mathematical construction | Equality of recorded attributes yields equivalence classes; classes wholly inside or meeting a target define lower and upper approximations | [Rough-set track](tracks/observation/rough-sets.md); Pawlak |
+| Trace equivalence and strong bisimulation | Different comparison strengths | Strong bisimulation preserves matching action sequences; equal trace sets need not preserve branching behavior | [Behavior track](tracks/observation/observational-equivalence.md); Sangiorgi |
+| Operators and measurement patterns | Concrete implementation | A specified two-qubit pattern implements the Hadamard operator after an outcome-dependent correction | [Measurement track](tracks/observation/measurement-calculus.md); Danos–Kashefi–Panangaden |
+| Observation and intervention | Causal identification under assumptions | Back-door adjustment expresses some intervention probabilities using observational probabilities and a suitable causal graph | [Do-calculus track](tracks/observation/do-calculus.md); Pearl |
 
 These relations are not all historical claims. For example, a mathematical analogy can be useful without showing that one author borrowed from another.
 
@@ -41,7 +46,7 @@ A translation is not automatically an identity, an improvement, or proof that ei
 
 Our delivery service uses a query and a stock update. Their connection depends on facts such as how many crates each order needs. It is a **modeling connection**, not a theorem that all queries and updates fit together.
 
-Likewise, an example about lost information can motivate both a graph model and an observation framework. A shared example does not establish equivalence or historical descent.
+The card viewers, crate labels, and temperature comparisons all ask which distinctions remain available. Their rules differ: equality of recorded labels is transitive, while the temperature track's pairwise tolerance is not. This is a useful comparison of specified examples.
 
 When contributing a connection, say whether it is a theorem, extension, application, historical influence, encoding, analogy, or proposed research bridge. Cite the specific result when the claim is formal.
 

@@ -120,6 +120,10 @@ For random paths, even the integration convention matters. Itô and Stratonovich
 
 </details>
 
+## Keep exploring
+
+The [do-calculus track](../tracks/observation/do-calculus.md) works through a numerical garden example where the observed comparison and the intervention effect point in opposite directions. For a different kind of update, [epistemic logic](../tracks/observation/epistemic-logic.md) follows what Jo and Sam learn about the same card.
+
 ## Sources
 
 The bead, walk, and town examples are original. See MIT's [*Introduction to Probability*](https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/pages/part-i-the-fundamentals/), Varadhan's [notes on stochastic integration](https://math.nyu.edu/~varadhan/fall06/fall06.3.pdf), and Judea Pearl's [*The Do-Calculus Revisited*](https://ftp.cs.ucla.edu/pub/stat_ser/r402.pdf).

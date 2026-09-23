@@ -125,6 +125,10 @@ SQL draws on relational ideas, but practical SQL has features such as duplicates
 
 A question about data is also a small piece of logic. The subject changes from proving a claim to selecting records, while some of the reasoning tools carry over.
 
+## When the records leave things unresolved
+
+A query can use only the information represented in its records. [Rough sets](../tracks/observation/rough-sets.md) asks what a coarse label lets us classify definitely or only possibly. Its crate example connects this data question to observation.
+
 ## Sources
 
 The tables and queries are original. See Silberschatz, Korth, and Sudarshan, *Database System Concepts*, [Chapter 27: Formal Relational Query Languages](https://www.db-book.com/online-chapters-dir/27.pdf), especially tuple calculus, domain calculus, and safe expressions.
