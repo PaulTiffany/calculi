@@ -127,6 +127,8 @@ A question about data is also a small piece of logic. The subject changes from p
 
 ## When the records leave things unresolved
 
+For a longer visit, [tuple relational calculus](../tracks/data/tuple-relational-calculus.md) connects book and request records and checks that the same record meets all the right conditions. [Domain relational calculus](../tracks/data/domain-relational-calculus.md) names individual field values, then asks whether every request is covered—including the case of no requests.
+
 A query can use only the information represented in its records. [Rough sets](../tracks/observation/rough-sets.md) asks what a coarse label lets us classify definitely or only possibly. Its crate example connects this data question to observation.
 
 ## Sources

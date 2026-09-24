@@ -30,6 +30,10 @@ The tank, hill, garden, counts, badge puzzles, ticket counter, data tables, post
 | [Numerical calculus](tracks/change/numerical-calculus.md) | Finite-difference approximations, trapezoidal quadrature, and error estimates; Kleitman, Demanet, and OpenStax |
 | [Differential equations](tracks/change/differential-equations.md) | Initial-value problems, equilibrium, and Euler's method; OpenStax |
 | [Operational calculus](tracks/operators/operational-calculus.md) | A Laplace-transform entry route, with initial-value corrections and inversion; MIT 18.03SC and Strang |
+| [Tuple relational calculus](tracks/data/tuple-relational-calculus.md) | Conditions on whole records, joins, projection, and safety; Silberschatz–Korth–Sudarshan |
+| [Domain relational calculus](tracks/data/domain-relational-calculus.md) | Field-value variables, universal conditions, empty groups, and bounded queries; Silberschatz–Korth–Sudarshan |
+| [CCS, CSP, and ACP](tracks/interaction/ccs-csp-acp.md) | Milner, Hoare, and Bergstra–Klop traditions; Hoare's book, Bergstra–Klop's survey, and van Glabbeek's comparison |
+| [Ambient and spi calculi](tracks/interaction/ambient-and-spi-calculi.md) | Cardelli–Gordon's mobile-ambient rules and Abadi–Gordon's symbolic cryptographic processes |
 | [Variations](tracks/change/variational-calculus.md) | Euler–Lagrange tradition; Gel'fand–Fomin and Strang |
 | [Stochastic calculus](tracks/change/stochastic-calculus.md) | Itô/Stratonovich traditions; modern stochastic integration |
 | [Complex calculus](tracks/change/complex-calculus.md) | Complex analysis, contour integration, and residues; MIT course notes |
@@ -64,6 +68,8 @@ The map-coordinate, stretching, garden-boundary, robot-turning, weighted-history
 The card viewers, batch-labelled crates, drink-machine story, watering table, and new transfer activities are original teaching presentations. The drink machines instantiate a standard trace-versus-bisimulation distinction. The two-qubit Hadamard pattern comes from *The Measurement Calculus*; its illustrated presentation and classical parcel analogy were made for this guide. No quantum diagram was copied from that paper.
 
 ## Reconstruction and evidence
+
+The reader requests, kitchen inventory, poster handoffs, nested bags, and replaying printer are original teaching presentations. The data tracks reuse the core library's four book records. The ambient reductions and spi decryption rule are standard formal rules; the printer's one-use state is part of our stated example. Ten new SVGs illustrate these lessons with existing library, workshop, and delivery scene art. No source diagram was copied.
 
 The tile square, growing rack, sampled flows, controlled-drain tank, and related transfer problems are original teaching examples built from standard mathematics. The differential-equation and operational-calculus tracks deliberately solve the same specified tank model. Nine new SVGs show differences, sample-based estimates, Euler steps, and transform reasoning; these tracks reuse the existing garden scene. No source figure was copied.
 

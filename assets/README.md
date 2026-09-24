@@ -57,6 +57,8 @@ The observation and causal tracks reuse the fair, delivery, workshop, and garden
 
 ## Provenance and reuse
 
+The data and interaction expansion adds ten SVGs: request joins, a mismatched-witness example, field slots, request coverage, preparation orders, a blocked and repaired handshake, two ambient-movement diagrams, decryption, and replay. It reuses the library, workshop, and delivery illustrations. Precise nesting and event order come from the diagrams and their text descriptions.
+
 The change tracks reuse the garden scene. Nine diagrams show growing tile squares, difference tables, sampled rates, trapezoidal totals, a missed pulse, tank balance, Euler steps, a transform route, and a shrinking gap. The same tank model connects the differential-equation and operational-calculus tracks. All nine diagrams rebuild locally without image-generation calls.
 
 The program tracks reuse the workshop scene. Their diagrams show combinator reductions, matching and mismatched types, forward execution and backward conditions, a loop invariant, and separate versus aliased memory cells. The nine additional SVGs need no new image-generation calls.

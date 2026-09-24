@@ -450,6 +450,82 @@ A formula that starts at zero fails both initial conditions. Solving a rate equa
 
 </details>
 
+## Records and interactions
+
+### 28. Keep the evidence on the same route
+
+A bus guide stores two tables:
+
+| Route | Step-free access? |
+|---|---|
+| R1 | Yes |
+| R2 | No |
+| R3 | Yes |
+
+| Route | Stop |
+|---|---|
+| R1 | Library |
+| R2 | Museum |
+| R3 | Museum |
+
+Which routes have both step-free access and a Museum stop? Why isn't “R1 is accessible and R2 visits the Museum” enough to include either route?
+
+<details>
+<summary>Check</summary>
+
+Only **R3** qualifies. Match the Route field across the two tables, then check its access and stop conditions.
+
+R1 and R2 supply different witnesses. Neither route in that pair satisfies both requirements. The relevant facts must concern the **same route**. See [tuple relational calculus](tracks/data/tuple-relational-calculus.md).
+
+</details>
+
+### 29. Has every member arrived?
+
+Three registered clubs are **Hiking, Chess, and New Club**. Hiking has Jo and Sam as members. Chess has Lee. New Club has no members yet. The arrival record lists Jo and Lee.
+
+Which clubs have every recorded member present? Which have both at least one member and every member present? What changes if Sam arrives?
+
+<details>
+<summary>Check</summary>
+
+Initially, **Chess and New Club** have no absent recorded member. Hiking fails because Sam is absent.
+
+Only **Chess** also has at least one member. When Sam arrives, all three pass the every-member test, while **Hiking and Chess** pass the test that also requires membership.
+
+New Club's empty membership does not establish an actual gathering. “Every member” and “at least one member” are separate conditions. See [domain relational calculus](tracks/data/domain-relational-calculus.md).
+
+</details>
+
+### 30. Coordinate a musical cue
+
+A drummer counts, then gives a shared cue. A pianist tunes, joins that cue, then plays. Counting and tuning are independent; the cue needs both musicians ready.
+
+List the complete event orders. A recorder hides the shared cue and records **count, tune, play**. Does that log show that the pianist skipped the cue?
+
+<details>
+<summary>Check</summary>
+
+The full orders are **count, tune, cue, play** and **tune, count, cue, play**.
+
+The shorter log can record the first order with its cue hidden. An internal event can be required by the process while absent from the chosen external record. See [CCS, CSP, and ACP](tracks/interaction/ccs-csp-acp.md).
+
+</details>
+
+### 31. Check the boundary and the used flag
+
+An eraser is inside a pencil case, inside a basket, inside a cupboard. An `out cupboard` instruction runs directly inside the pencil case. Can it move the case out in one basic ambient step? What happens if the basket runs that instruction instead?
+
+Separately, a ticket scanner checks that an encrypted ticket contains the current challenge, but never marks the challenge used. Can a repeated valid ticket pass that same check again?
+
+<details>
+<summary>Check</summary>
+
+The case's immediate parent is **basket**, so its `out cupboard` step is blocked. A basic exit names the immediate parent. The basket can exit cupboard, carrying both the pencil case and the eraser with it.
+
+The ticket can pass again while the challenge stays current. Matching a challenge does not by itself consume it. The one-use promise needs a rule that records its use and checks that state on later attempts. See [ambient and spi calculi](tracks/interaction/ambient-and-spi-calculi.md).
+
+</details>
+
 ## A reusable activity for learners and teachers
 
 Choose one problem above. Have one person change a number, object, condition, or rule. Ask the other person:
