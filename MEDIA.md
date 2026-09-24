@@ -24,6 +24,8 @@ The observation route revisits the fair for [different views of a card](tracks/o
 
 ## Give each picture a job
 
+The [program route](PANTHEON.md#5-computation-types-and-program-guarantees) stays in the workshop while changing the question. Rule cards introduce [combinatory logic](tracks/computation/combinatory-logic.md); repeating a step introduces [System F](tracks/types/system-f.md). Credit balances and job counts support [program proofs](tracks/proof/hoare-logic.md), while addressed boxes show [memory separation](tracks/proof/separation-logic.md). Each uses its own exact diagrams with the existing workshop illustration.
+
 The guide uses nine generated illustrations for familiar settings and a larger set of original SVG diagrams for precise examples. In the diagrams, counts, labels, arrows, and connections are part of the explanation. The scene illustrations do not supply numerical evidence.
 
 Place a visual beside the passage it explains. Let the caption ask a useful question or point out a relationship. For a prediction exercise, show the starting information and keep the answer inside the answer reveal.

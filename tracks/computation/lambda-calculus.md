@@ -104,7 +104,9 @@ This term repeats its own reduction.
 
 ## What this model brings into focus
 
-The native move is applying and rewriting terms. [Typed calculi](../types/calculus-of-constructions.md) add rules about which terms fit together. [Process calculi](../interaction/pi-calculus.md) put communication at the center.
+The native move is applying and rewriting terms. [Combinatory logic](combinatory-logic.md) gives a different presentation using fixed rule cards and application, with no variable-binding declarations.
+
+[System F](../types/system-f.md) makes a type itself an input to a reusable recipe. [The Calculus of Constructions](../types/calculus-of-constructions.md) explores richer dependencies and proofs. [Process calculi](../interaction/pi-calculus.md) put communication at the center.
 
 There are formal encodings of λ-computation in communicating processes; [Relations](../../RELATIONS.md) records that connection.
 

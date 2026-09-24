@@ -11,7 +11,8 @@ The [core lessons](README.md#take-the-tour) are the plain-language entry route. 
 | Rates, totals, and space | OpenStax's worked textbook sections | Differential equations, forms, and manifolds |
 | Differences and approximation | Kleitman's beginner notes | Numerical analysis and error estimates |
 | Logic | The Open Logic Project's *forall x* | Proof theory and type theory |
-| Programs | Pfenning's lambda lecture and CMU's program-logic notes | Dijkstra, Coquand–Huet, Reynolds |
+| Programs | The combinator-card and System F tracks, then Lynn and Bornholt | Bracket abstraction; Girard's *Proofs and Types*; Coquand–Huet |
+| Program guarantees and memory | The credit and separate-cell tracks, then Aldrich's notes | Dijkstra's predicate transformers; Reynolds's separation logic |
 | Data | *Database System Concepts*, query-language chapter | Safety and expressive power |
 | Communication and actions | The everyday track examples, followed by the linked tutorials | Original process and action papers |
 | Chance and cause | MIT's introductory probability course | Stochastic integration and Pearl's do-calculus |
@@ -110,9 +111,11 @@ The token-stall example uses a small resource interpretation. It does not define
 
 ## Program logic and correctness
 
-- Carnegie Mellon University, course 17-355. [Notes on Hoare logic](https://www.cs.cmu.edu/~aldrich/courses/17-355-19sp/notes/notes11-hoare-logic.pdf), 2019. Program contracts, inference rules, weakest preconditions, and partial correctness.
+- Aldrich, Jonathan. [*Axiomatic Semantics and Hoare-style Verification*](https://www.cs.cmu.edu/~aldrich/courses/17-355-19sp/notes/notes11-hoare-logic.pdf), Carnegie Mellon University, 2019. Program contracts, inference rules, weakest preconditions, and loop proofs, especially §§2.1–2.2.
 - Dijkstra, Edsger W. [EWD472: “Guarded commands, non-determinacy and formal derivation of programs”](https://www.cs.utexas.edu/~EWD/transcriptions/EWD04xx/EWD472.html). Predicate transformers and program derivation.
 - Reynolds, John C. [“Separation Logic: A Logic for Shared Mutable Data Structures”](https://www.cs.cmu.edu/~jcr/seplogic.pdf), 2002. Extending program logic with assertions about separate parts of storage and local reasoning.
+
+The [Hoare-logic track](tracks/proof/hoare-logic.md) distinguishes partial-correctness triples from Dijkstra's termination-sensitive wp. The [separation-logic track](tracks/proof/separation-logic.md) uses Reynolds's classical exact-heap assertions and the frame rule, including its condition on modified variables.
 
 ## Process algebra and concurrency
 
@@ -137,6 +140,21 @@ The token-stall example uses a small resource interpretation. It does not define
 - Church, Alonzo. Foundational papers on λ-definability and effective calculability.
 - Stanford Encyclopedia of Philosophy. “The Lambda Calculus.” Substantive revision 2023.\
   https://plato.stanford.edu/entries/lambda-calculus/
+
+## Combinatory logic
+
+- Lynn, Ben. [*Combinatory Logic*](https://theory.stanford.edu/~blynn/lambda/cl.html), author-hosted Stanford exposition. S/K reduction, bracket abstraction, and translation from lambda expressions; includes an interactive evaluator.
+- Diller, Antoni. [*Bracket abstraction algorithms*](https://www.cantab.net/users/antoni.diller/brackets/intro.html), author-hosted exposition and demonstrations. Combinator reductions, the identity $I=SKK$, and several abstraction algorithms.
+
+The [rule-card track](tracks/computation/combinatory-logic.md) works through standard identities using original everyday stand-ins. Translation preserves a specified computational relationship, not necessarily expression size or step count.
+
+## System F and parametric polymorphism
+
+- Girard, Jean-Yves. [*Proofs and Types*, full text](https://www.paultaylor.eu/stable/prot.pdf), translated with appendices by Paul Taylor and Yves Lafont, 1989, corrected reprint 1990. Chapter 11 defines System F and data encodings; Chapter 14 proves strong normalization. See the [book's hosting page](https://www.paultaylor.eu/stable/Proofs+Types.html).
+- Bornholt, James. [*Lecture 8: Polymorphism and System F*](https://www.cs.utexas.edu/~bornholt/courses/cs345h-24sp/lectures/8-system-f/), University of Texas at Austin, 2024. A twice-application recipe motivates explicit type abstraction and type application.
+- Pfenning, Frank. [*Parametric Polymorphism*](https://www.cs.cmu.edu/afs/cs/Web/People/fp/courses/15814-f18/lectures/11-polymorphism.pdf), Carnegie Mellon University lecture notes, October 9, 2018. Quantification over types, typing restrictions, and the Girard/Reynolds origins.
+
+The [System F track](tracks/types/system-f.md) uses familiar data types to teach the recipe; it separates those teaching conveniences from the pure calculus and its termination theorem.
 
 ## Proof calculi
 

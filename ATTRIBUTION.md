@@ -40,6 +40,10 @@ The tank, hill, garden, counts, badge puzzles, ticket counter, data tables, post
 | [Measurement calculus](tracks/observation/measurement-calculus.md) | Danos–Kashefi–Panangaden's commands and two-qubit Hadamard pattern; Nielsen's review of the computing model |
 | [Do-calculus](tracks/observation/do-calculus.md) | Pearl's intervention semantics, causal identification rules, and back-door adjustment |
 | [Lambda calculus](tracks/computation/lambda-calculus.md) | Church and subsequent lambda-calculus literature |
+| [Combinatory logic](tracks/computation/combinatory-logic.md) | Standard S/K/I rules and bracket abstraction; Lynn and Diller |
+| [System F](tracks/types/system-f.md) | Girard/Reynolds polymorphic-calculus tradition; Girard, Bornholt, and Pfenning |
+| [Hoare logic and predicate transformers](tracks/proof/hoare-logic.md) | Hoare-style contracts, Dijkstra's wp, and loop proofs; Aldrich and Dijkstra |
+| [Separation logic](tracks/proof/separation-logic.md) | Classical heap assertions and local reasoning; Reynolds's account of the work with O'Hearn and others |
 | [Sequent calculus](tracks/proof/sequent-calculus.md) | Gentzen and proof theory |
 | [Calculus of Constructions](tracks/types/calculus-of-constructions.md) | Coquand and Huet; later inductive extensions |
 | [Pi calculus](tracks/interaction/pi-calculus.md) | Milner, Parrow, and Walker |
@@ -56,6 +60,8 @@ The map-coordinate, stretching, garden-boundary, robot-turning, weighted-history
 The card viewers, batch-labelled crates, drink-machine story, watering table, and new transfer activities are original teaching presentations. The drink machines instantiate a standard trace-versus-bisimulation distinction. The two-qubit Hadamard pattern comes from *The Measurement Calculus*; its illustrated presentation and classical parcel analogy were made for this guide. No quantum diagram was copied from that paper.
 
 ## Reconstruction and evidence
+
+The rule-card stories, credit balances, print-job counts, memory-cell values, and associated transfer tasks are original teaching presentations. The combinator identities and frame rule are standard mathematics. The System F twice recipe is a standard example, also used in Bornholt's lecture; its workshop, flag, and map presentation was written for this guide. The nine program-route diagrams were authored for these examples and reuse existing workshop scene art.
 
 An analogy helps explain a formal idea; it does not prove a theorem about it. A tiny arithmetic example can introduce an accumulation problem without implementing the full integral calculus.
 

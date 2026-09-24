@@ -376,5 +376,68 @@
     "alt": "The observed watered and unwatered groups have success rates 50 and 70 percent and different weather mixes. Adjusting both to half mild and half hot gives intervention rates 65 and 55 percent under the stated model.",
     "width": 640,
     "height": 390
+  },
+  {
+    "id": "combinator-second",
+    "title": "Build a rule that keeps the second",
+    "alt": "K I receives tea and cake. Applying K to I and tea leaves I, which receives cake and returns cake.",
+    "width": 640,
+    "height": 390
+  },
+  {
+    "id": "combinator-share",
+    "title": "S supplies the same input twice",
+    "alt": "S K K tea rewrites to two copies of the expression K tea, with the left applied to the right. K keeps tea and discards the right expression, leaving tea.",
+    "width": 640,
+    "height": 420
+  },
+  {
+    "id": "polymorphic-twice",
+    "title": "One recipe, two chosen types",
+    "alt": "The same twice recipe uses add three to send four to seven to ten, and uses flip to send on to off to on. Each row keeps one value type throughout.",
+    "width": 640,
+    "height": 340
+  },
+  {
+    "id": "polymorphic-mismatch",
+    "title": "Can the output go back in?",
+    "alt": "A number-to-text label maker accepts four and returns the text four. That text cannot enter its number input for the second use.",
+    "width": 640,
+    "height": 330
+  },
+  {
+    "id": "hoare-contract",
+    "title": "Try the credit program",
+    "alt": "A starting balance of five credits doubles to ten, then loses three to finish at seven. Four doubles to eight, then finishes at five and misses the goal of at least seven.",
+    "width": 640,
+    "height": 350
+  },
+  {
+    "id": "hoare-backward",
+    "title": "Work backward from the promise",
+    "alt": "Reasoning backward begins with the goal of at least seven, moves to at least ten before deducting three, and then at least five before doubling. The program itself runs in the opposite order.",
+    "width": 640,
+    "height": 338
+  },
+  {
+    "id": "hoare-invariant",
+    "title": "A fixed total and a falling count",
+    "alt": "At successive loop checks, waiting and finished counts are three and zero, two and one, one and two, then zero and three. The sum remains three while waiting falls by one.",
+    "width": 640,
+    "height": 354
+  },
+  {
+    "id": "separation-frame",
+    "title": "Separate cells: preserve the rest",
+    "alt": "Before an update, p points to address twelve holding four, and q to address twenty-seven also holding four. After storing nine through p, only address twelve changes; address twenty-seven still holds four.",
+    "width": 640,
+    "height": 390
+  },
+  {
+    "id": "separation-alias",
+    "title": "Different names, one shared cell",
+    "alt": "Both p and q point to the same address twelve, initially holding four. Writing nine through p changes that one cell, so reading through q now also gives nine.",
+    "width": 640,
+    "height": 370
   }
 ]

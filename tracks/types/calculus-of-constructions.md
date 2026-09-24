@@ -42,6 +42,8 @@ The **Calculus of Constructions (CoC)**, introduced by Thierry Coquand and Géra
 
 In a propositions-as-types interpretation, a proposition is represented by a type. To prove it, construct a term of that type. CoC supports dependencies that go beyond simple input/output labels.
 
+For a smaller example of a type becoming an input to a recipe, visit [System F](system-f.md). Its “do it twice” recipe works with a chosen type of value and a matching step.
+
 <details>
 <summary>Optional notation — a construction and its type</summary>
 

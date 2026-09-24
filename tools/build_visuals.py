@@ -729,6 +729,117 @@ def do_pictures():
     d.text(320,366,"Model assumptions justify this adjustment.",23,anchor="middle")
     d.save()
 
+def combinator_pictures():
+    d=Drawing("combinator-second","Build a rule that keeps the second","K I receives tea and cake. Applying K to I and tea leaves I, which receives cake and returns cake.",390)
+    for y,expr,note in [(108,"K I tea cake","Start with two inputs"),(216,"I cake","K keeps I; tea is dropped"),(324,"cake","I returns its input")]:
+        d.rect(35,y-35,270,60,PALE,"none",16,0)
+        d.text(170,y+5,expr,29,anchor="middle",weight="700")
+        d.text(333,y+4,note,22)
+    d.line(170,141,170,170,True)
+    d.line(170,249,170,278,True)
+    d.save()
+    d=Drawing("combinator-share","S supplies the same input twice","S K K tea rewrites to two copies of the expression K tea, with the left applied to the right. K keeps tea and discards the right expression, leaving tea.",420)
+    d.label(320,98,"S K K tea",230)
+    d.path("M280,128 L166,174",arrow=True)
+    d.path("M360,128 L474,174",arrow=True)
+    d.label(156,208,"K tea",150)
+    d.label(484,208,"K tea",150)
+    d.text(156,257,"Instruction",23,anchor="middle")
+    d.text(484,257,"Its next input",23,anchor="middle")
+    d.line(240,203,399,203,True)
+    d.text(320,187,"apply to",21,anchor="middle")
+    d.path("M320,216 L320,329",arrow=True)
+    d.rect(129,278,382,38,PAPER,"none",0,0)
+    d.text(320,304,"K keeps tea; drops the other term",22,anchor="middle")
+    d.label(320,370,"tea",150,GOLD)
+    d.save()
+
+def polymorphic_pictures():
+    d=Drawing("polymorphic-twice","One recipe, two chosen types","The same twice recipe uses add three to send four to seven to ten, and uses flip to send on to off to on. Each row keeps one value type throughout.",340)
+    for y,kind,values,step in [(129,"Count",["4","7","10"],"+3"),(246,"Flag",["on","off","on"],"flip")]:
+        d.text(35,y+7,kind,26,weight="700")
+        for x,value in zip([216,389,562],values):
+            d.label(x,y,value,98,PALE if kind=="Count" else "#f8e6c1")
+        for x in [275,448]:
+            d.line(x,y-3,x+52,y-3,True)
+            d.text(x+26,y-30,step,22,anchor="middle")
+    d.text(320,310,"Each output fits the next input.",24,anchor="middle")
+    d.save()
+    d=Drawing("polymorphic-mismatch","Can the output go back in?","A number-to-text label maker accepts four and returns the text four. That text cannot enter its number input for the second use.",330)
+    d.label(91,121,"4",94)
+    d.text(91,165,"number",22,anchor="middle")
+    d.rect(217,86,206,67,PALE,TEAL)
+    d.text(320,127,"Make text",26,anchor="middle",weight="700")
+    d.label(549,121,'"four"',125,GOLD)
+    d.text(549,165,"text",22,anchor="middle")
+    d.line(148,118,203,118,True);d.line(437,118,473,118,True)
+    d.rect(30,209,257,65,PALE,"none",12,0)
+    d.rect(353,209,257,65,"#fae5dc","none",12,0)
+    d.text(159,236,"Next input needs",22,anchor="middle")
+    d.text(159,263,"a number",23,anchor="middle",weight="700")
+    d.text(481,236,"What we have",22,anchor="middle")
+    d.text(481,263,"is text",23,anchor="middle",weight="700")
+    d.line(307,229,332,254,stroke=RUST);d.line(332,229,307,254,stroke=RUST)
+    d.save()
+
+def hoare_pictures():
+    d=Drawing("hoare-contract","Try the credit program","A starting balance of five credits doubles to ten, then loses three to finish at seven. Four doubles to eight, then finishes at five and misses the goal of at least seven.",350)
+    for x,label in [(85,"Start"),(255,"Double"),(425,"Deduct 3")]:
+        d.text(x,90,label,23,anchor="middle",weight="700")
+    for y,values,result in [(149,[5,10,7],"Meets goal"),(268,[4,8,5],"Misses goal")]:
+        for x,n in zip([85,255,425],values):d.number(x,y,n,PALE if y==149 else "#fae5dc")
+        for x in [125,295]:d.line(x,y,x+84,y,True)
+        d.text(549,y+8,result,21,anchor="middle",weight="700")
+    d.text(320,328,"Goal: at least 7 credits at the end",23,anchor="middle")
+    d.save()
+    d=Drawing("hoare-backward","Work backward from the promise","Reasoning backward begins with the goal of at least seven, moves to at least ten before deducting three, and then at least five before doubling. The program itself runs in the opposite order.",338)
+    for x,value,a,b in [(110,"≥ 5","Before","doubling"),(320,"≥ 10","Before","deducting 3"),(530,"≥ 7","Goal at","the end")]:
+        d.label(x,140,value,122)
+        d.text(x,201,a,23,anchor="middle")
+        d.text(x,229,b,23,anchor="middle")
+    for x in [464,254]:d.line(x,135,x-79,135,True)
+    d.text(320,85,"Required conditions move left",22,anchor="middle")
+    d.line(67,281,572,281,True)
+    d.text(320,317,"Program: double, then deduct 3",23,anchor="middle")
+    d.save()
+    d=Drawing("hoare-invariant","A fixed total and a falling count","At successive loop checks, waiting and finished counts are three and zero, two and one, one and two, then zero and three. The sum remains three while waiting falls by one.",354)
+    for x,r,f,label in [(87,3,0,"Start"),(242,2,1,"1 step"),(397,1,2,"2 steps"),(552,0,3,"Done")]:
+        d.text(x,88,label,23,anchor="middle",weight="700")
+        d.number(x,135,r,PALE)
+        d.number(x,217,f,"#f8e6c1")
+        d.text(x,280,f"{r} + {f} = 3",22,anchor="middle")
+        if x<552:
+            d.line(x+39,135,x+115,135,True)
+            d.line(x+39,217,x+115,217,True)
+    d.text(320,328,"Top: waiting · Bottom: finished",23,anchor="middle")
+    d.save()
+
+def separation_pictures():
+    d=Drawing("separation-frame","Separate cells: preserve the rest","Before an update, p points to address twelve holding four, and q to address twenty-seven also holding four. After storing nine through p, only address twelve changes; address twenty-seven still holds four.",390)
+    d.line(320,65,320,345,stroke="#ccd8d4")
+    for off,title,new in [(0,"Before",False),(320,"After writing 9",True)]:
+        d.text(off+160,87,title,24,anchor="middle",weight="700")
+        for y,name,addr,value in [(160,"p",12,9 if new else 4),(283,"q",27,4)]:
+            d.label(off+56,y,name,50)
+            d.line(off+92,y-4,off+129,y-4,True)
+            d.rect(off+145,y-44,132,89,GOLD if new and name=="p" else PALE,INK,10)
+            d.text(off+211,y-7,value,30,anchor="middle",weight="700")
+            d.text(off+211,y+29,f"address {addr}",20,anchor="middle")
+    d.text(320,366,"q's separate cell is the unchanged frame.",23,anchor="middle")
+    d.save()
+    d=Drawing("separation-alias","Different names, one shared cell","Both p and q point to the same address twelve, initially holding four. Writing nine through p changes that one cell, so reading through q now also gives nine.",370)
+    d.line(320,65,320,326,stroke="#ccd8d4")
+    for off,title,value in [(0,"Before",4),(320,"After writing 9",9)]:
+        d.text(off+160,87,title,24,anchor="middle",weight="700")
+        for y,name in [(153,"p"),(280,"q")]:d.label(off+56,y,name,50)
+        d.path(f"M{off+92},150 L{off+135},190",arrow=True)
+        d.path(f"M{off+92},277 L{off+135},233",arrow=True)
+        d.rect(off+145,170,132,89,PALE if value==4 else GOLD,INK,10)
+        d.text(off+211,207,value,30,anchor="middle",weight="700")
+        d.text(off+211,243,"address 12",20,anchor="middle")
+    d.text(320,344,"Reading through either name finds this value.",23,anchor="middle")
+    d.save()
+
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
     counters(); water(); gardens(); books(); badges(); selector(); selector(True)
@@ -739,6 +850,7 @@ def main():
     fractional_picture(); operator_pictures(); linear_pictures()
     epistemic_pictures(); rough_pictures(); measurement_pictures()
     behavior_picture(); do_pictures()
+    combinator_pictures(); polymorphic_pictures(); hoare_pictures(); separation_pictures()
     (OUT/"manifest.json").write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n")
     print(f"Built {len(manifest)} SVG diagrams.")
 if __name__ == "__main__":

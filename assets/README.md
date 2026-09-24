@@ -57,6 +57,8 @@ The observation and causal tracks reuse the fair, delivery, workshop, and garden
 
 ## Provenance and reuse
 
+The program tracks reuse the workshop scene. Their diagrams show combinator reductions, matching and mismatched types, forward execution and backward conditions, a loop invariant, and separate versus aliased memory cells. The nine additional SVGs need no new image-generation calls.
+
 The scene illustrations were AI-generated for the guide. The SVG diagrams were authored as code for its teaching examples. See [Attribution](../ATTRIBUTION.md) for the generation record, project credit, and applicable [CC BY 4.0 terms](../LICENSE.md).
 
 [Home](../README.md) · [Pictures and learning modes](../MEDIA.md) · [Contributing](../CONTRIBUTING.md)

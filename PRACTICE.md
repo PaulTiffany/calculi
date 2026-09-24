@@ -320,6 +320,70 @@ The position of a variable matters; “adjust for everything” is not a general
 
 </details>
 
+## Program rules and guarantees
+
+### 20. Combine rule cards in a new setting
+
+A parcel record is represented by `parcel`. Use the combinator rules from the track: `I x` returns x, `K x y` returns x, and `S f g x` becomes `(f x) (g x)`.
+
+What does `S K I parcel` become? Does the appearance of `parcel` twice after the S step establish that two physical parcels exist?
+
+<details>
+<summary>Check</summary>
+
+It becomes `(K parcel) (I parcel)`, then **`parcel`**. K keeps its first input and discards the whole second expression, `I parcel`. Reducing `I parcel` first would give the same result.
+
+The rule repeats a symbolic expression. It makes no claim about creating physical parcels. See [combinatory logic](tracks/computation/combinatory-logic.md).
+
+</details>
+
+### 21. Reuse the recipe with pictures
+
+One operation adds a border to an image and returns an image. Another turns an image into a written caption. Which operation fits the System F track's twice recipe? Does having an image-to-image type prove that an operation adds **two** borders?
+
+<details>
+<summary>Check</summary>
+
+The border operation fits because its output can enter the same operation again. The caption operation returns text, which does not fit its image input.
+
+An image-to-image type alone does not count borders. Adding one border, adding two, or returning the original image could all have that type. See [System F](tracks/types/system-f.md).
+
+</details>
+
+### 22. Work backward, respecting the order
+
+A game uses whole-number credits. A program first deducts 4, then triples the remaining balance. We want at least 12 credits at the end. What is the weakest starting condition?
+
+What if the program instead triples first and deducts 4 afterward?
+
+<details>
+<summary>Check</summary>
+
+For **deduct, then triple**, we need at least 4 just before tripling, so we must start with **at least 8**. The result is $3(n-4)$.
+
+For **triple, then deduct**, we need at least 16 just before the deduction. The starting whole-number balance must be **at least 6**. Starting with 5 gives 11 at the end; 6 gives 14. The result is $3n-4$.
+
+Moving the same steps changes the required condition. See [Hoare logic and predicate transformers](tracks/proof/hoare-logic.md).
+
+</details>
+
+### 23. Copies, shortcuts, and separation
+
+Two desktop shortcuts have different names but open the same saved drawing. One person edits through the first shortcut. Can a proof treat the drawing reached by the second shortcut as a separate, untouched object?
+
+Suppose instead that the shortcuts open independent file copies. Later, the second shortcut is redirected to the first file. Does the original claim about what the second shortcut opens still hold?
+
+<details>
+<summary>Check</summary>
+
+In the first case, no: two names reach one object, so the edit changes what both open.
+
+With independent copies, an edit to one can preserve the other, assuming no syncing. But redirecting a shortcut changes which object its name reaches. The second file may remain untouched while the second shortcut now opens the edited first file.
+
+Both separation of objects and stability of the names used in the promise matter. See [separation logic](tracks/proof/separation-logic.md).
+
+</details>
+
 ## A reusable activity for learners and teachers
 
 Choose one problem above. Have one person change a number, object, condition, or rule. Ask the other person:
