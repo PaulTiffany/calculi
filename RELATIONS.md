@@ -9,7 +9,9 @@ This page distinguishes useful connections. It is not a single history of the fi
 | Tools | Kind of connection | What carries across | Where to check |
 |---|---|---|---|
 | Differentiation and integration | Theorem | Under suitable conditions, accumulating a derivative gives endpoint change | [Lesson 1](lessons/01-classical-calculus.md); OpenStax's Fundamental Theorem |
-| Differences/sums and derivatives/integrals | Discrete counterpart and approximation | Both relate changes and totals; finite steps and local limits have different rules | [Lesson 3](lessons/03-discrete-and-numerical.md), including the cancellation identity |
+| Differences/sums and derivatives/integrals | Discrete counterpart and approximation | Telescoping recovers endpoint change exactly; a difference divided by a step can approximate a derivative under suitable conditions | [Finite differences](tracks/change/finite-difference-calculus.md) and [numerical calculus](tracks/change/numerical-calculus.md); Stanley and Demanet |
+| Differential equations and repeated updates | Discretization | Euler's method turns a rate rule into a recurrence; its accuracy and stability depend on the equation and step size | [Tank model](tracks/change/differential-equations.md); OpenStax §4.2 |
+| Differential equations and Laplace transforms | Transform method | Under convergence and regularity conditions, a derivative transforms to multiplication by the new variable with an initial-value correction | [Operational calculus](tracks/operators/operational-calculus.md); MIT 18.03SC |
 | Ordinary optimization and calculus of variations | Extension of the kind of input | A candidate can be a whole function or path rather than a single number | [Variations track](tracks/change/variational-calculus.md); Strang |
 | Real and complex calculus | Extension of the number system with stronger differentiability requirements | Complex difference quotients must converge for arbitrary complex approaches | [Complex track](tracks/change/complex-calculus.md); MIT 18.04 |
 | Tensor and exterior calculus | Specialized mathematical structure | Differential forms are alternating covariant tensors, with an exterior derivative and integration rules | [Tensor](tracks/geometry/tensor-calculus.md) and [exterior](tracks/geometry/exterior-calculus.md) tracks; Tong and Sjamaar |
@@ -46,6 +48,8 @@ An **encoding** translates one formal system into another. A serious claim must 
 A translation is not automatically an identity, an improvement, or proof that either language is best for teaching.
 
 ## Shared examples are not formal bridges
+
+The tank in the [differential-equation](tracks/change/differential-equations.md) and [operational-calculus](tracks/operators/operational-calculus.md) tracks is the same specified model. Here the connection is exact: the transform calculation returns a function satisfying both the original rate equation and its initial value. The Euler calculation approximates that same function at selected times.
 
 Our delivery service uses a query and a stock update. Their connection depends on facts such as how many crates each order needs. It is a **modeling connection**, not a theorem that all queries and updates fit together.
 

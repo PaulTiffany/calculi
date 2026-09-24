@@ -112,6 +112,8 @@ Rates need not involve time. A hillside has a slope even while it stays still. D
 
 ## Keep exploring
 
+[Differential equations](../tracks/change/differential-equations.md) returns to the tank with a drain controlled by the current water amount. [Operational calculus](../tracks/operators/operational-calculus.md) solves that same model using a transform.
+
 [Complex calculus](../tracks/change/complex-calculus.md) gives numbers a second direction and studies functions of them. [Fractional calculus](../tracks/change/fractional-calculus.md) asks what an in-between order of differentiation or integration can mean. Each begins with a small visual example.
 
 ## Sources

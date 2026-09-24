@@ -32,6 +32,9 @@ Use this page when a word blocks your reading. The lesson supplies its precise c
 | derivative | A local rate defined by a limit, when it exists |
 | integral | An accumulation under a specified rule; in elementary calculus, often a limit of sums |
 | differential equation | An equation relating an unknown function to one or more of its derivatives |
+| initial condition | A value fixed at the starting time, used to select a solution of a rate equation |
+| equilibrium | A state that remains constant under the model's rules; things may still flow through it |
+| Euler's method | Estimate the next value by adding the current rate times a chosen step size; then recalculate the rate |
 | multivariable | Having several inputs that can vary |
 | vector | A quantity with size and direction; more abstract definitions extend this picture |
 | field | An assignment of a quantity to each point of a space |
@@ -41,7 +44,14 @@ Use this page when a word blocks your reading. The lesson supplies its precise c
 | discrete | Described in separate steps or values |
 | sequence | Values in a chosen order |
 | finite difference | A difference between values at specified steps |
+| second difference | A difference between neighboring first differences |
+| telescoping sum | A sum whose intermediate terms cancel, leaving endpoint terms |
+| step size | The spacing between successive inputs, such as half a minute |
 | numerical method | A computational method for finding or approximating a mathematical answer |
+| trapezoidal rule | Estimate an integral by joining neighboring samples with straight lines and adding the signed areas below them |
+| transform | A rule that expresses an object in another mathematical form; a stated inverse may recover the original |
+| Laplace transform | An integral transform using exponentially weighted values of a function; it can turn suitable differential equations into algebra |
+| exponential decay | Shrinking by the same factor over equal time intervals; the current rate is proportional to the remaining amount |
 | percentage point | A unit for the difference between percentages: 80% to 70% is a drop of ten percentage points |
 
 ## Reasoning, programs, and data

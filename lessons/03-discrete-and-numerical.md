@@ -111,6 +111,12 @@ If $a_n=n^2$, then $\Delta a_n=2n+1$. The derivative of the continuous function 
 
 </details>
 
+## Keep exploring
+
+[Finite-difference calculus](../tracks/change/finite-difference-calculus.md) follows growing tile squares through first and second differences. [Numerical calculus](../tracks/change/numerical-calculus.md) estimates rates and totals from samples, then finds a pulse that sparse readings miss.
+
+In [differential equations](../tracks/change/differential-equations.md), repeated small steps help predict what a changing tank will do.
+
 ## Sources
 
 The library, walker, and battery examples are original. Daniel Kleitman's MIT [*Calculus for Beginners*, Chapter 9](https://math.mit.edu/~djk/calculus_beginners/chapter09/contents.html) develops numerical differentiation. MIT's [numerical methods notes](https://math.mit.edu/icg/resources/teaching/18.330/18.330-Apr-2014.pdf) cover derivatives as differences and integrals as sums. The cancellation identity above follows directly by expanding the sum.

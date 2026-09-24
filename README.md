@@ -39,6 +39,10 @@ Choose a question for a longer visit:
 
 | Try this question | Explore |
 |---|---|
+| What changes when a tile square grows by one step? | [Finite-difference calculus](tracks/change/finite-difference-calculus.md) |
+| What can a few readings tell us about a changing flow? | [Numerical calculus](tracks/change/numerical-calculus.md) |
+| What happens when a tank's current amount controls its drain? | [Differential equations](tracks/change/differential-equations.md) |
+| Can a transform make that rate equation easier to solve? | [Operational calculus](tracks/operators/operational-calculus.md) |
 | Did the thing move, or did our coordinates change? | [Tensor calculus](tracks/geometry/tensor-calculus.md) |
 | Why do shared edges disappear from a combined boundary? | [Exterior calculus](tracks/geometry/exterior-calculus.md) |
 | How can multiplication turn an arrow? | [Complex calculus](tracks/change/complex-calculus.md) |

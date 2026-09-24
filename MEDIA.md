@@ -18,6 +18,8 @@ The books are counted in [lesson 3](lessons/03-discrete-and-numerical.md) and se
 
 Continuity is a memory aid. It does not mean that the mathematical subjects all have the same objects or rules.
 
+The garden's change route begins with [tile differences](tracks/change/finite-difference-calculus.md) and [sampled water flows](tracks/change/numerical-calculus.md). It then follows one controlled-drain tank through a [rate equation](tracks/change/differential-equations.md) and a [Laplace-transform solution](tracks/operators/operational-calculus.md). The tank's unchanged inflow, drain rule, and starting amount let readers compare two methods on the same problem. Exact SVGs distinguish whole steps, estimates, and the continuous solution.
+
 The map scene supports two deliberately different questions: [change coordinates](tracks/geometry/tensor-calculus.md) while keeping an arrow fixed, or [turn the arrow](tracks/change/complex-calculus.md) while keeping the coordinates fixed. The familiar picture gives readers a chance to notice the difference.
 
 The observation route revisits the fair for [different views of a card](tracks/observation/epistemic-logic.md), the delivery service for [limited crate labels](tracks/observation/rough-sets.md), and the workshop for [behavioral comparison](tracks/observation/observational-equivalence.md) and [measurement-driven instructions](tracks/observation/measurement-calculus.md). [Do-calculus](tracks/observation/do-calculus.md) returns to the garden to compare observed watering with an intervention. New exact diagrams do the mathematical work; these visits reuse existing scene art.

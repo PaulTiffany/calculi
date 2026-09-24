@@ -106,6 +106,10 @@ Further operator calculi require stated classes of operators, functions, and dom
 
 </details>
 
+## A neighboring use of operators
+
+[Operational calculus](operational-calculus.md) uses operators and transforms to solve equations. Its tank example turns a rule about changing water into algebra, then converts the answer back. Applying a function to an operator and transforming a rate equation are different jobs within the wider operator landscape.
+
 ## Sources
 
 The sound-box examples are original. See Nicholas J. Higham, [“What Is a Matrix Function?”](https://nhigham.com/2020/06/09/what-is-a-matrix-function/) and [“Functions of Matrices”](https://eprints.maths.manchester.ac.uk/2109/). These explain matrix functions and why applying a function entry by entry is a different operation.

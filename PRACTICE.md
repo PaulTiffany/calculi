@@ -384,6 +384,72 @@ Both separation of objects and stability of the names used in the promise matter
 
 </details>
 
+## Steps, samples, and continuous change
+
+### 24. Grow a staircase
+
+A tile staircase has rows of lengths 1, 2, 3, and so on. Each stage adds one new row, one tile longer than the last. The first four stage totals are **1, 3, 6, 10**.
+
+Find the first and second differences. What is the fifth total? What lets you justify that answer beyond spotting a pattern in four numbers?
+
+<details>
+<summary>Check</summary>
+
+The first differences are **2, 3, 4**. The second differences are **1, 1**. The fifth row adds 5 tiles, giving **15** altogether.
+
+The construction tells us what comes next: stage five adds a row of length five. Four totals alone could fit other rules with a different fifth value. See [finite-difference calculus](tracks/change/finite-difference-calculus.md).
+
+</details>
+
+### 25. Mind the time gaps
+
+A toy train moves forward. Its speed readings are **0 meters/second at 0 seconds**, **4 meters/second at 1 second**, and **4 meters/second at 3 seconds**.
+
+Join neighboring readings with straight lines. Estimate the distance traveled. Why would averaging all three readings and multiplying by three seconds give a different answer? What assumption makes your first answer exact?
+
+<details>
+<summary>Check</summary>
+
+From 0 to 1 second, the average of the endpoint speeds is 2 meters/second. Over one second, that contributes **2 meters**. From 1 to 3 seconds, the average is 4 meters/second. Over two seconds, that contributes **8 meters**. The estimate is **10 meters**.
+
+Giving the three samples equal weight produces $(0+4+4)/3\times3=8$ meters. That ignores the lengths of the intervals and the straight-line rule we chose. Samples are points in time; they do not each represent an equal share of this trip.
+
+Ten meters is exact if speed really changes linearly on each stated interval. Otherwise it is an estimate based on those joins. See [numerical calculus](tracks/change/numerical-calculus.md).
+
+</details>
+
+### 26. Let a goal control the pace
+
+A game character's energy moves toward 8 points. Its current change per second is **half the gap from its current energy to 8**: subtract the current energy from 8, then halve the result. Temporary bonuses can put energy above 8.
+
+Starting at 12 points, find the current rate and the equilibrium. Take one Euler step lasting half a second. Is its answer necessarily the exact continuous-model value after that time?
+
+<details>
+<summary>Check</summary>
+
+The gap is $8-12=-4$, so the current rate is **−2 points/second**. The equilibrium is **8 points**, where the rate is zero.
+
+One half-second Euler step gives $12+(-2)\times0.5=11$ points. It holds the initial rate fixed for the step. In the continuous rule, the rate changes as the energy changes, so 11 is an approximation. See [differential equations](tracks/change/differential-equations.md).
+
+</details>
+
+### 27. Check the starting gap
+
+A sound control moves a level toward 10. A solved model says: **level = 10 + starting difference from 10 × a shrinking factor**. The factor equals 1 at the start and ¼ at the time we want to inspect.
+
+Find the level then if it starts at 2. What if it starts at 14? A second proposed formula gives zero at the start in both cases. Could it solve either of these starting-value problems, even if it passes a rate-equation check?
+
+<details>
+<summary>Check</summary>
+
+Starting at 2 gives difference $2-10=-8$, so the later level is $10-8/4=\mathbf{8}$. Starting at 14 gives difference $14-10=4$, so the later level is $10+4/4=\mathbf{11}$.
+
+The differences shrink toward zero from opposite sides. The equilibrium stays 10, while the starting value chooses the path.
+
+A formula that starts at zero fails both initial conditions. Solving a rate equation and meeting its starting value are both required. The [operational-calculus track](tracks/operators/operational-calculus.md) shows where that starting value enters a transform calculation.
+
+</details>
+
 ## A reusable activity for learners and teachers
 
 Choose one problem above. Have one person change a number, object, condition, or rule. Ask the other person:

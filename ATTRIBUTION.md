@@ -26,6 +26,10 @@ The tank, hill, garden, counts, badge puzzles, ticket counter, data tables, post
 
 | Track | Provenance and scope |
 |---|---|
+| [Finite-difference calculus](tracks/change/finite-difference-calculus.md) | Sequence differences and shift operators; Stanley and Demanet; the product and telescoping identities are derived in the lesson |
+| [Numerical calculus](tracks/change/numerical-calculus.md) | Finite-difference approximations, trapezoidal quadrature, and error estimates; Kleitman, Demanet, and OpenStax |
+| [Differential equations](tracks/change/differential-equations.md) | Initial-value problems, equilibrium, and Euler's method; OpenStax |
+| [Operational calculus](tracks/operators/operational-calculus.md) | A Laplace-transform entry route, with initial-value corrections and inversion; MIT 18.03SC and Strang |
 | [Variations](tracks/change/variational-calculus.md) | Euler–Lagrange tradition; Gel'fand–Fomin and Strang |
 | [Stochastic calculus](tracks/change/stochastic-calculus.md) | Itô/Stratonovich traditions; modern stochastic integration |
 | [Complex calculus](tracks/change/complex-calculus.md) | Complex analysis, contour integration, and residues; MIT course notes |
@@ -60,6 +64,8 @@ The map-coordinate, stretching, garden-boundary, robot-turning, weighted-history
 The card viewers, batch-labelled crates, drink-machine story, watering table, and new transfer activities are original teaching presentations. The drink machines instantiate a standard trace-versus-bisimulation distinction. The two-qubit Hadamard pattern comes from *The Measurement Calculus*; its illustrated presentation and classical parcel analogy were made for this guide. No quantum diagram was copied from that paper.
 
 ## Reconstruction and evidence
+
+The tile square, growing rack, sampled flows, controlled-drain tank, and related transfer problems are original teaching examples built from standard mathematics. The differential-equation and operational-calculus tracks deliberately solve the same specified tank model. Nine new SVGs show differences, sample-based estimates, Euler steps, and transform reasoning; these tracks reuse the existing garden scene. No source figure was copied.
 
 The rule-card stories, credit balances, print-job counts, memory-cell values, and associated transfer tasks are original teaching presentations. The combinator identities and frame rule are standard mathematics. The System F twice recipe is a standard example, also used in Bornholt's lecture; its workshop, flag, and map presentation was written for this guide. The nine program-route diagrams were authored for these examples and reuse existing workshop scene art.
 
