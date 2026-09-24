@@ -101,6 +101,8 @@ A courier sends “I am outside.” The recipient's phone receives the message.
 
 ## Explore further
 
+[CCS, CSP, and ACP](../tracks/interaction/ccs-csp-acp.md) compare ways to coordinate a handoff and diagnose a blocked next step. [Ambient and spi calculi](../tracks/interaction/ambient-and-spi-calculi.md) ask what moves with a container and why a locked message can still be replayed.
+
 The [action-calculi track](../tracks/action/situation-event-fluent.md) explains persistence more closely. The [pi](../tracks/interaction/pi-calculus.md) and [rho](../tracks/interaction/rho-calculus.md) tracks explore two particular process languages. They are optional branches, not stages every calculus must pass through.
 
 ## Compare two systems

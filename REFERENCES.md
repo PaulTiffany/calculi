@@ -139,14 +139,25 @@ The [Hoare-logic track](tracks/proof/hoare-logic.md) distinguishes partial-corre
 - Hoare, C. A. R. [*Communicating Sequential Processes*](https://www.cs.ox.ac.uk/ucs/hoarebook.pdf), Prentice Hall, 1985. Author-hosted book; communication, deadlock, and process behavior.
 - Hoare, C. A. R. “Communicating Sequential Processes.” *Communications of the ACM* 21(8), 1978.
 - Bergstra, J. A.; Klop, J. W. “Process Algebra for Synchronous Communication.” *Information and Control* 60, 1984.
-- Cardelli, Luca; Gordon, Andrew D. “Mobile Ambients.” 1998.
-- Abadi, Martín; Gordon, Andrew D. “A Calculus for Cryptographic Protocols: The Spi Calculus.” *Information and Computation* 148(1), 1999.
+- Bergstra, J. A.; Klop, J. W. [*Algebra of Communicating Processes*](https://ir.cwi.nl/pub/1778/1778D.pdf), CWI-hosted author survey. §§1–2 introduce sequential, alternative, and parallel composition, communication functions, and encapsulation.
+- van Glabbeek, Rob. [*Comparative Concurrency Semantics*, COMP3152/9152 course notes](https://cgi.cse.unsw.edu.au/~rvg/3152/notes.html), UNSW, 2012. CCS operational semantics, CSP synchronization, and the comparison of CCS/CSP/ACP on May 8.
+
+The [coordination track](tracks/interaction/ccs-csp-acp.md) specifies which events must synchronize. Its CCS handoff becomes an internal tau step; its CSP handoff is initially visible. Any comparison of their traces must account for that choice.
+
+## Locations and cryptographic processes
+
+- Cardelli, Luca; Gordon, Andrew D. [*Mobile Ambients*](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/fossacs98.pdf), FoSSaCS 1998, LNCS 1378, pp. 140–155. §2 gives ambient nesting and the in, out, and open rules. A later journal version appeared in *Theoretical Computer Science* 240(1), 2000, pp. 177–213.
+- Abadi, Martín; Gordon, Andrew D. [*A Calculus for Cryptographic Protocols: The Spi Calculus*](https://andrewdgordon.github.io/papers/ic99spi.pdf), *Information and Computation* 148(1), 1999, pp. 1–70. §§3–4 give symbolic cryptography, replay examples and repairs, and operational rules; later sections develop behavioral proof methods.
+
+The [locations and messages track](tracks/interaction/ambient-and-spi-calculi.md) uses original bag, printer, and ticket stories. A basic ambient move depends on capability and nesting. The printer's one-use challenge check is an explicit protocol condition, not an automatic effect of encryption or a complete real-world security proof.
 
 ## Data and relations
 
-- Silberschatz, Abraham; Korth, Henry F.; Sudarshan, S. *Database System Concepts*, [Chapter 27: Formal Relational Query Languages](https://www.db-book.com/online-chapters-dir/27.pdf). Author-hosted treatment of relational algebra, tuple/domain relational calculus, safety, and expressive power.
+- Silberschatz, Abraham; Korth, Henry F.; Sudarshan, S. *Database System Concepts*, [Chapter 27: Formal Relational Query Languages](https://www.db-book.com/online-chapters-dir/27.pdf). §§27.1–27.2 treat tuple/domain relational calculus, quantifiers, empty groups, and safety; §27.3 compares their expressive power with relational algebra.
 
 - Codd, E. F. “A Relational Model of Data for Large Shared Data Banks.” *Communications of the ACM* 13(6), 1970.
+
+The [tuple track](tracks/data/tuple-relational-calculus.md) queries whole records; the [domain track](tracks/data/domain-relational-calculus.md) queries field values and changes an existential question into a universal one. Both use finite, complete tables for the exercise and classical set semantics. Their particular bounded queries remain unchanged when unused possible values are added to the surrounding domains.
 
 ## λ-calculus
 

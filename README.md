@@ -53,6 +53,10 @@ Choose a question for a longer visit:
 | Can one recipe work with different types? | [System F](tracks/types/system-f.md) |
 | What must be true before a program starts? | [Hoare logic and predicate transformers](tracks/proof/hoare-logic.md) |
 | When does changing one part leave the rest alone? | [Separation logic](tracks/proof/separation-logic.md) |
+| Which request and book records make a valid match? | [Tuple relational calculus](tracks/data/tuple-relational-calculus.md) |
+| Does every requested topic have an available book? | [Domain relational calculus](tracks/data/domain-relational-calculus.md) |
+| When can two helpers complete a shared handoff? | [CCS, CSP, and ACP](tracks/interaction/ccs-csp-acp.md) |
+| What moves with a container, and what can a copied message do? | [Ambient and spi calculi](tracks/interaction/ambient-and-spi-calculi.md) |
 | Who learns what when a card is revealed? | [Epistemic logic](tracks/observation/epistemic-logic.md) |
 | What can an incomplete label tell us for sure? | [Rough sets](tracks/observation/rough-sets.md) |
 | Can an interaction tell two machines apart? | [Observational equivalence](tracks/observation/observational-equivalence.md) |

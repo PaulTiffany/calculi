@@ -502,5 +502,75 @@
     "alt": "Three bars each span the twelve-liter equilibrium amount. At the start, water four plus gap eight makes twelve. At one minute, about seven point one five plus four point eight five makes twelve. At two minutes, about nine point zero six plus two point nine four makes twelve.",
     "width": 640,
     "height": 395
+  },
+  {
+    "id": "tuple-join",
+    "title": "Match the topic, then check availability",
+    "alt": "Jo's gardening request matches available books B1 and B4. Jo's astronomy request matches B2. Sam's gardening request matches B1 and B4. Lee's history request has no match.",
+    "width": 640,
+    "height": 446
+  },
+  {
+    "id": "tuple-witness",
+    "title": "Both properties must hold in one row",
+    "alt": "In a two-row catalog, B2 is astronomy and available, while B3 is gardening and unavailable. Each desired property appears somewhere, but no single row is both gardening and available.",
+    "width": 640,
+    "height": 353
+  },
+  {
+    "id": "domain-slots",
+    "title": "Connect records through a shared value",
+    "alt": "A request has reader Jo and topic Gardening. A book has ID B1, title Small Gardens, topic Gardening, and availability Yes. The same topic value fills the topic slot in both records; the output keeps Jo and B1.",
+    "width": 640,
+    "height": 402
+  },
+  {
+    "id": "domain-coverage",
+    "title": "Does every request have a match?",
+    "alt": "Jo's Gardening and Astronomy requests are covered, Sam's Gardening request is covered, and Lee's History request is missing. Dee has no requests. The every-request condition passes Jo, Sam, and Dee; requiring at least one request removes Dee.",
+    "width": 640,
+    "height": 434
+  },
+  {
+    "id": "process-orders",
+    "title": "Two preparations, one shared handoff",
+    "alt": "Starting with neither preparation done, folding makes only Jo ready and clearing makes only Sam ready. Either preparation can happen first. After both, the handoff can occur, followed by displaying the poster.",
+    "width": 640,
+    "height": 457
+  },
+  {
+    "id": "process-deadlock",
+    "title": "Agree on the next shared event",
+    "alt": "In the blocked version Jo's first event is receipt and Sam's first event is handoff, so no shared first event is possible. In the repaired version both begin with handoff and then receipt, so they can agree at each step.",
+    "width": 640,
+    "height": 443
+  },
+  {
+    "id": "ambient-enter",
+    "title": "Move a boundary with its contents",
+    "alt": "Before entry, bag and van are side by side, and parcel is inside bag. After bag enters van, parcel remains inside bag, and bag is inside van.",
+    "width": 640,
+    "height": 389
+  },
+  {
+    "id": "ambient-exit-open",
+    "title": "Leave the van, or remove the bag?",
+    "alt": "Starting from parcel inside bag inside van, exiting moves the intact bag beside the van. Opening bag instead removes its boundary, leaving parcel directly inside van. The two outcomes preserve the parcel but change different boundaries.",
+    "width": 640,
+    "height": 570
+  },
+  {
+    "id": "spi-decrypt",
+    "title": "Receiving is not yet reading",
+    "alt": "The same ciphertext C is tested with two keys. Decryption with the matching key K recovers print one poster and continues. A different key J does not enable that decryption step.",
+    "width": 640,
+    "height": 356
+  },
+  {
+    "id": "spi-replay",
+    "title": "Copying a message can repeat an action",
+    "alt": "A printer that remembers no earlier requests accepts ciphertext C twice and prints two posters. A printer that checks a matching one-use challenge accepts the first valid response, marks the challenge used, and rejects a repeated response, printing one poster.",
+    "width": 640,
+    "height": 434
   }
 ]

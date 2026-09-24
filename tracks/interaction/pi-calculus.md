@@ -103,6 +103,8 @@ The wider language includes restricted names and repeated behavior. Comparing pr
 
 Milner, Parrow, and Walker developed π-calculus within the process-algebra tradition. It extends ideas from CCS with name passing and changing connections.
 
+The [CCS/CSP/ACP track](ccs-csp-acp.md) compares ways to synchronize actions. [Spi calculus](ambient-and-spi-calculi.md#a-different-kind-of-boundary-encrypted-content) extends pi-style communication with cryptographic operations; receiving a channel name, receiving ciphertext, and successfully decrypting it are different capabilities.
+
 [λ-calculus](../computation/lambda-calculus.md) foregrounds application. This lesson foregrounds interaction. [ρ-calculus](rho-calculus.md) next asks how process descriptions can themselves serve as names.
 
 ## Sources

@@ -26,6 +26,8 @@ The observation route revisits the fair for [different views of a card](tracks/o
 
 ## Give each picture a job
 
+The [data tracks](tracks/data/tuple-relational-calculus.md) share a catalog and request list. Row cards keep evidence attached to the right record; field slots show shared values; a coverage table reveals an unmet request. The [interaction tracks](tracks/interaction/ccs-csp-acp.md) use event orders, nested boundaries, and decryption outcomes for their different questions. The diagrams supply the exact relationships while the existing library, workshop, and delivery scenes retain visual continuity.
+
 The [program route](PANTHEON.md#5-computation-types-and-program-guarantees) stays in the workshop while changing the question. Rule cards introduce [combinatory logic](tracks/computation/combinatory-logic.md); repeating a step introduces [System F](tracks/types/system-f.md). Credit balances and job counts support [program proofs](tracks/proof/hoare-logic.md), while addressed boxes show [memory separation](tracks/proof/separation-logic.md). Each uses its own exact diagrams with the existing workshop illustration.
 
 The guide uses nine generated illustrations for familiar settings and a larger set of original SVG diagrams for precise examples. In the diagrams, counts, labels, arrows, and connections are part of the explanation. The scene illustrations do not supply numerical evidence.

@@ -81,6 +81,12 @@ Use this page when a word blocks your reading. The lesson supplies its precise c
 | relation | In relational databases, a set of tuples with the specified fields |
 | tuple | An ordered collection of values; pictured as a database record |
 | query | A question expressed for a data system to answer |
+| domain | A set of allowed values; in domain relational calculus, variables stand for individual field values |
+| join | Connect records through a stated matching condition, such as equal topic values |
+| projection | Keep selected fields in a relational answer; under set semantics, identical output records appear only once |
+| witness | An example or assignment that makes an “at least one exists” claim true |
+| vacuous truth | An “every” condition is true for an empty group because the group has no counterexample |
+| safe query | A relational-calculus query restricted so its answers stay within the values available from the data and query; precise rules also govern quantification |
 | declarative | Stating what conditions an answer must meet rather than prescribing every execution step |
 
 ## Interaction, chance, and cause
@@ -89,6 +95,13 @@ Use this page when a word blocks your reading. The lesson supplies its precise c
 |---|---|
 | process | An actor or activity described by a formal model |
 | concurrency | Activities being in progress over overlapping periods |
+| synchronization | A joint step that requires the specified participants to offer matching actions |
+| internal action | A modeled step omitted from a chosen external observation, often labelled tau, $\tau$ |
+| ambient | In mobile-ambient calculi, a named boundary containing processes and possibly other ambients |
+| capability | In the ambient track, an available operation for entering, leaving, or opening a specified boundary |
+| ciphertext | The encrypted form of a message |
+| replay | Reusing a previously sent message; copying it need not require reading its contents |
+| nonce | A value generated fresh for a protocol use, such as a challenge; its required freshness and other properties belong to the model |
 | deadlock | A state where the relevant activities cannot proceed because they are blocked |
 | fluent | A property or value that can depend on time or situation |
 | persistence | A fact continuing to hold when the rules specify no relevant change |

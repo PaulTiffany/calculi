@@ -108,12 +108,12 @@ A type check establishes what that type system's rules guarantee. It does not au
 
 | Language or method | Main job | Place in the landscape |
 |---|---|---|
-| Tuple relational calculus | State conditions on whole records | A formal database-query language |
-| Domain relational calculus | State conditions on individual field values | Another form of relational calculus |
+| [Tuple relational calculus](tracks/data/tuple-relational-calculus.md) | State conditions on whole records | A formal database-query language |
+| [Domain relational calculus](tracks/data/domain-relational-calculus.md) | State conditions on individual field values | Another form of relational calculus |
 | Relational algebra | Build queries from operations on relations | A closely related formal language |
 
 **Learn:** [Asking Questions of Data](lessons/06-data-and-relations.md).\
-**Explore:** [Formal relational query languages](https://www.db-book.com/online-chapters-dir/27.pdf).
+**Explore:** [Tuple relational calculus](tracks/data/tuple-relational-calculus.md) matches whole records; [domain relational calculus](tracks/data/domain-relational-calculus.md) names their field values and checks every requested topic. See [formal relational query sources](REFERENCES.md#data-and-relations).
 
 The connection to logic is direct: a query states conditions that answers must satisfy. A correct query still depends on its data.
 
@@ -123,14 +123,14 @@ The connection to logic is direct: a query states conditions that answers must s
 
 | Family or system | Main job | Place in the landscape |
 |---|---|---|
-| CCS, CSP, and ACP | Describe and reason about concurrent behavior | Major process-calculus and process-algebra traditions |
+| [CCS, CSP, and ACP](tracks/interaction/ccs-csp-acp.md) | Describe and reason about concurrent behavior | Major process-calculus and process-algebra traditions |
 | Pi calculus | Pass names and change communication connections | A particular process calculus |
-| Ambient and spi calculi | Focus on locations or security | Specialist process formalisms |
+| [Ambient and spi calculi](tracks/interaction/ambient-and-spi-calculi.md) | Focus on locations or security | Specialist process formalisms |
 | Rho calculus | Build names from quoted processes and use reflection | A particular reflective process calculus |
 | Situation, event, and fluent calculi | Represent action effects and persistence | Related formalisms in knowledge representation |
 
 **Learn:** [Messages and Events](lessons/07-interaction-and-action.md).\
-**Explore:** [Pi](tracks/interaction/pi-calculus.md), [rho](tracks/interaction/rho-calculus.md), or [action calculi](tracks/action/situation-event-fluent.md). [Observational equivalence](tracks/observation/observational-equivalence.md) asks when systems behave alike under a chosen comparison.
+**Explore:** [CCS, CSP, and ACP](tracks/interaction/ccs-csp-acp.md) coordinate a shared handoff. [Ambient and spi calculi](tracks/interaction/ambient-and-spi-calculi.md) explore nested places and locked messages. Visit [pi](tracks/interaction/pi-calculus.md), [rho](tracks/interaction/rho-calculus.md), or [action calculi](tracks/action/situation-event-fluent.md) for other questions. [Observational equivalence](tracks/observation/observational-equivalence.md) asks when systems behave alike under a chosen comparison.
 
 Process languages and action formalisms can describe parts of the same system. Their questions and rules differ. This grouping does not claim they share one ancestry.
 
