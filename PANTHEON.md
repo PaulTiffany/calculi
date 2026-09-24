@@ -23,12 +23,12 @@ Some names identify broad subjects. Others identify a specific language, a proof
 | Differential calculus | Find local rates and sensitivity | A central part of introductory calculus |
 | Integral calculus | Accumulate quantities over intervals or regions | A central part of introductory calculus |
 | Complex-variable calculus / complex analysis | Differentiate complex functions and integrate along contours | A major branch of analysis, including residue calculus |
-| Differential equations | Find functions obeying rules that involve their rates | A broad neighboring subject built with calculus |
+| [Differential equations](tracks/change/differential-equations.md) | Find functions obeying rules that involve their rates | A broad neighboring subject built with calculus |
 | Calculus of variations | Vary a whole function, path, or shape | An established advanced area |
 | Fractional calculus | Extend derivatives and integrals to noninteger orders | A family of advanced definitions and methods |
 
 **Learn:** [Rates and totals](lessons/01-classical-calculus.md), then the garden example in [space and shape](lessons/02-space-and-shape.md).\
-**Explore:** [Variations](tracks/change/variational-calculus.md), [complex calculus](tracks/change/complex-calculus.md), or [fractional calculus](tracks/change/fractional-calculus.md).
+**Explore:** [Differential equations](tracks/change/differential-equations.md), [variations](tracks/change/variational-calculus.md), [complex calculus](tracks/change/complex-calculus.md), or [fractional calculus](tracks/change/fractional-calculus.md).
 
 “Best” requires a goal and constraints. A stationary point is a candidate, not automatically the winner.
 
@@ -55,12 +55,12 @@ These areas overlap with [complex analysis](tracks/change/complex-calculus.md) a
 
 | Subject or method | Main job | Place in the landscape |
 |---|---|---|
-| Finite-difference calculus | Work with differences of sequences | A discrete counterpart to differentiation |
+| [Finite-difference calculus](tracks/change/finite-difference-calculus.md) | Work with differences of sequences | A discrete counterpart to differentiation |
 | Sums and recurrence relations | Accumulate terms and describe repeated updates | Closely connected discrete tools |
-| Numerical differentiation and integration | Estimate derivatives and integrals through finite calculations | Methods within numerical analysis |
+| [Numerical differentiation and integration](tracks/change/numerical-calculus.md) | Estimate derivatives and integrals through finite calculations | Methods within numerical analysis |
 
 **Learn:** [Working in Steps](lessons/03-discrete-and-numerical.md).\
-**Explore:** [Discrete and numerical sources](REFERENCES.md#discrete-and-numerical-methods).
+**Explore:** [Finite-difference calculus](tracks/change/finite-difference-calculus.md) and [numerical calculus](tracks/change/numerical-calculus.md), with [discrete and numerical sources](REFERENCES.md#discrete-and-numerical-methods).
 
 A discrete answer can be exact for a discrete question. Approximation is a different use of the same tools.
 
@@ -157,11 +157,11 @@ Probability, stochastic calculus, and causal inference are different subjects. O
 | Name | A first orientation | Starting source |
 |---|---|---|
 | Functional calculus | Apply functions to matrices or operators | [Higham, *Functions of Matrices*](https://eprints.maths.manchester.ac.uk/2109/) |
-| Operational calculus | Use operators and transforms to turn some differential problems into algebra | [Strang's differential-equations materials](https://math.mit.edu/~gs/dela/) |
+| [Operational calculus](tracks/operators/operational-calculus.md) | Use operators and transforms to turn some differential problems into algebra | [Strang's differential-equations materials](https://math.mit.edu/~gs/dela/) |
 
 A matrix is an array of numbers with rules for combining such arrays. An operator acts on objects such as functions. The full theories need more background, but a two-channel sound box gives us a small place to begin.
 
-**Explore:** [Functional calculus](tracks/operators/functional-calculus.md): apply a function to an action.
+**Explore:** [Functional calculus](tracks/operators/functional-calculus.md): apply a function to an action. [Operational calculus](tracks/operators/operational-calculus.md): use a transform to solve a rate equation.
 
 **Functional calculus is not another name for functional programming.** Similar names need not mean similar objects or rules.
 

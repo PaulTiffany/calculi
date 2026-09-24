@@ -3,6 +3,7 @@
 from pathlib import Path
 from html import escape
 import json
+from math import exp
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "assets" / "diagrams"
@@ -840,6 +841,148 @@ def separation_pictures():
     d.text(320,344,"Reading through either name finds this value.",23,anchor="middle")
     d.save()
 
+def difference_pictures():
+    d=Drawing("difference-tiles","Grow the square by one step","A three-by-three square has nine old tiles. Extending it to four by four adds a row of four and a column of three, for seven new tiles and sixteen total.",355)
+    for x,n in [(75,3),(414,4)]:
+        for row in range(n):
+            for col in range(n):
+                new=row==3 or col==3
+                d.rect(x+col*37,106+row*37,37,37,GOLD if new else PALE,INK,0,2)
+        d.text(x+n*18.5,85,f"{n} × {n}",27,anchor="middle",weight="700")
+        d.text(x+n*18.5,295,f"{n*n} tiles",26,anchor="middle",weight="700")
+    d.line(224,171,380,171,True)
+    d.text(303,142,"Add 7",26,anchor="middle",weight="700")
+    d.text(303,211,"4 + 3",25,anchor="middle")
+    d.text(320,334,"New tiles: a row of 4 and a column of 3.",23,anchor="middle")
+    d.save()
+    d=Drawing("difference-table","Take the differences again","The values zero, one, four, nine, sixteen have first differences one, three, five, seven. Their second differences are two, two, two.",417)
+    rows=[([0,1,4,9,16],217,113),([1,3,5,7],259,223),([2,2,2],301,333)]
+    for values,start,y in rows[:-1]:
+        for i in range(len(values)-1):
+            x=start+84*i
+            d.line(x+10,y+29,x+42,y+78,stroke="#8ca7a5")
+            d.line(x+74,y+29,x+42,y+78,stroke="#8ca7a5")
+    for values,start,y in rows:
+        for i,n in enumerate(values):d.number(start+84*i,y,n,GOLD if y==333 else PALE,r=26)
+    for y,lines in [(110,["Total"]),(212,["Next minus","current"]),(322,["Difference","of differences"])]:
+        for j,line in enumerate(lines):d.text(26,y+j*27,line,22,weight="600")
+    d.text(320,78,"Side lengths: 0, 1, 2, 3, 4",22,anchor="middle")
+    d.text(320,398,"Each lower value is right minus left.",22,anchor="middle")
+    d.save()
+
+def numerical_pictures():
+    d=Drawing("numerical-slopes","Three samples, three rate estimates","Tank readings are six liters at minute one, nine at minute two, and fourteen at minute three. Backward and forward one-minute changes give rates three and five; the two-minute centered comparison gives four liters per minute.",375)
+    for x,t,v in [(90,1,6),(320,2,9),(550,3,14)]:
+        d.text(x,89,f"Minute {t}",23,anchor="middle")
+        d.number(x,133,v,r=30)
+        d.text(x,184,"liters",23,anchor="middle")
+    for x,rate in [(132,3),(362,5)]:
+        d.line(x,128,x+144,128,True)
+        d.text(x+72,113,f"+{rate} L",23,anchor="middle",weight="700")
+        d.text(x+72,164,"in 1 min",20,anchor="middle")
+    d.rect(29,209,582,57,PALE,"none",12,0)
+    d.text(320,245,"Backward: 3 L/min · Forward: 5 L/min",24,anchor="middle")
+    d.line(90,299,550,299,True)
+    d.rect(199,281,242,36,PAPER,"none",0,0)
+    d.text(320,306,"+8 L in 2 minutes",24,anchor="middle")
+    d.text(320,350,"Centered: 8 ÷ 2 = 4 L/min",25,anchor="middle",weight="700")
+    d.save()
+    d=Drawing("numerical-trapezoids","Straight joins estimate a curved flow","Two graphs show the known flow curve q equals time squared from zero to four minutes. Straight joins using two-minute steps give twenty-four liters; one-minute steps give twenty-two. Both lie above the curved flow, whose exact total is twenty-one and one-third liters.",425)
+    for off,step,total in [(0,2,24),(320,1,22)]:
+        left,bottom,w,h=off+67,280,227,159
+        def point(t,q):return (left+w*t/4,bottom-h*q/16)
+        def coord(t,q):return ",".join(f"{v:.2f}" for v in point(t,q))
+        d.text(off+168,84,f"{step}-minute steps",24,anchor="middle",weight="700")
+        for t in range(0,4,step):
+            d.path(f"M{coord(t,0)} L{coord(t,t*t)} L{coord(t+step,(t+step)**2)} L{coord(t+step,0)} Z",TEAL,PALE,2)
+        curve=" ".join(("M" if i==0 else "L")+coord(i/20,(i/20)**2) for i in range(81))
+        d.path(curve,RUST,sw=3,dash=True)
+        d.line(left,bottom,left+w+6,bottom)
+        d.line(left,bottom,left,110)
+        for t in [0,2,4]:
+            x,y=point(t,0);d.text(x,y+26,t,21,anchor="middle")
+        for q in [0,8,16]:
+            x,y=point(0,q);d.text(x-10,y+7,q,21,anchor="end")
+        d.text(left,108,"L/min",20)
+        for t in range(0,5,step):d.circle(*point(t,t*t),4,INK,"none",0)
+        d.text(off+172,338,f"Estimate: {total} L",24,anchor="middle",weight="700")
+    d.text(320,374,"Horizontal axis: time in minutes",22,anchor="middle")
+    d.text(320,405,"Dashed curve: exact total 21⅓ L",23,anchor="middle")
+    d.save()
+    d=Drawing("numerical-pulse","The readings can miss a whole pulse","Zero flow throughout and a triangular pulse share zero-valued readings at minutes zero and one. The pulse peaks at four liters per minute halfway through and adds two liters that the endpoint-only estimate misses.",383)
+    for off,pulse in [(0,False),(320,True)]:
+        left,bottom,w=off+57,264,235
+        d.text(off+170,85,"Hidden pulse" if pulse else "No flow",24,anchor="middle",weight="700")
+        d.line(left,bottom,left+w+7,bottom)
+        d.line(left,bottom,left,115)
+        if pulse:
+            d.path(f"M{left},{bottom} L{left+w/2},130 L{left+w},{bottom} Z",RUST,"#fbe6de",3)
+            d.text(left+w/2,118,"4 L/min",22,anchor="middle")
+            d.line(left+w/2,136,left+w/2,bottom,dash=True,stroke="#9b8c82")
+            d.text(left+w/2,294,"½",22,anchor="middle")
+        else:d.line(left,bottom,left+w,bottom,stroke=TEAL)
+        for x,t in [(left,0),(left+w,1)]:
+            d.circle(x,bottom,7,GOLD,INK,2)
+            d.text(x,294,t,22,anchor="middle")
+            d.text(x,bottom-18,"0",22,anchor="middle")
+        d.text(off+175,331,"Added: 2 L" if pulse else "Added: 0 L",25,anchor="middle",weight="700")
+    d.text(320,366,"Same endpoint readings · time in minutes",22,anchor="middle")
+    d.save()
+
+def differential_equation_pictures():
+    d=Drawing("ode-balance","Where does the amount stop changing?","With inflow six liters per minute, amounts four, eight, twelve, and sixteen liters produce net rates plus four, plus two, zero, and minus two. Below twelve the amount rises; above twelve it falls.",354)
+    d.text(320,80,"Inflow: 6 L/min · Outflow: half the amount / min",22,anchor="middle")
+    for x,v,rate,state in [(87,4,"+4","Rises"),(242,8,"+2","Rises"),(397,12,"0","Steady"),(552,16,"−2","Falls")]:
+        d.text(x,122,f"{v} liters",25,anchor="middle",weight="700")
+        d.rect(x-43,143,86,104,"white",INK,5,2)
+        d.rect(x-39,243-v*5.7,78,v*5.7,BLUE,"none",0,0)
+        d.text(x,282,f"{rate} L/min",24,anchor="middle",weight="700")
+        d.text(x,321,state,23,anchor="middle")
+    d.save()
+    d=Drawing("ode-euler","Recalculate the rate halfway through","One one-minute Euler step goes from four to eight liters. Two half-minute steps go from four to six to seven and a half liters. The continuous model gives about seven point one five liters at one minute.",376)
+    for x,t in [(159,"0 min"),(346,"½ min"),(548,"1 min")]:d.text(x,91,t,23,anchor="middle",weight="700")
+    for y,label,values in [(152,"1 step",[(159,"4"),(548,"8")]),(260,"2 steps",[(159,"4"),(346,"6"),(548,"7.5")])]:
+        d.text(27,y+8,label,24,weight="600")
+        for (x,_),(xn,_) in zip(values,values[1:]):d.line(x+40,y,xn-40,y,True)
+        for x,v in values:d.number(x,y,v,r=32)
+    d.text(350,142,"+4 × 1",23,anchor="middle")
+    d.text(252,245,"+4 × ½",22,anchor="middle")
+    d.text(447,245,"+3 × ½",22,anchor="middle")
+    d.text(320,335,"Amounts in liters",22,anchor="middle")
+    d.text(320,363,"Continuous model at 1 minute: about 7.15 L",23,anchor="middle",weight="600")
+    d.save()
+
+def operational_pictures():
+    d=Drawing("operational-route","Solve in a different form","The time equation and starting value are transformed into an algebra equation. Solving gives the transformed answer; the inverse transform returns the amount as a function of time. The starting four liters is included in the first step.",422)
+    for x,y,title,line1,line2 in [(29,80,"Time problem","Rate = 6 − amount/2","Start = 4 liters"),(361,80,"Algebra problem","Transform the rate","and carry the start"),(361,294,"Algebra answer","Solve for the","transformed function"),(29,294,"Time answer","12 minus a","shrinking gap of 8")]:
+        d.rect(x,y,250,107,PALE,TEAL,12,2)
+        d.text(x+125,y+28,title,24,anchor="middle",weight="700")
+        d.text(x+125,y+62,line1,22,anchor="middle")
+        d.text(x+125,y+91,line2,22,anchor="middle")
+    d.line(288,134,352,134,True)
+    d.line(486,197,486,284,True)
+    d.line(352,348,288,348,True)
+    d.text(319,118,"L",25,anchor="middle",weight="700")
+    d.text(502,246,"Solve",22)
+    d.text(319,332,"L⁻¹",25,anchor="middle",weight="700")
+    d.text(41,226,"L: Laplace transform",22)
+    d.text(41,257,"L⁻¹: transform back",22)
+    d.save()
+    d=Drawing("operational-gap","Water plus gap always makes twelve","Three bars each span the twelve-liter equilibrium amount. At the start, water four plus gap eight makes twelve. At one minute, about seven point one five plus four point eight five makes twelve. At two minutes, about nine point zero six plus two point nine four makes twelve.",395)
+    left,width=133,470
+    for y,t in [(113,0),(207,1),(301,2)]:
+        gap=8*exp(-t/2); water=12-gap; split=left+width*water/12
+        d.text(28,y+9,f"{t} min",24,weight="600")
+        d.rect(left,y-27,width,54,GOLD,INK,0,2)
+        d.rect(left,y-27,width*water/12,54,BLUE,INK,0,2)
+        for x,n in [(left+(split-left)/2,water),(split+(left+width-split)/2,gap)]:
+            d.text(x,y+8,f"{n:.2f}" if t else str(int(n)),25,anchor="middle",weight="700")
+        d.text(left+(split-left)/2,y+53,"water",22,anchor="middle")
+        d.text(split+(left+width-split)/2,y+53,"gap",22,anchor="middle")
+    d.text(320,78,"Each bar spans 12 liters",23,anchor="middle")
+    d.text(320,382,"Later amounts are rounded to 0.01 liter.",22,anchor="middle")
+    d.save()
+
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
     counters(); water(); gardens(); books(); badges(); selector(); selector(True)
@@ -851,6 +994,7 @@ def main():
     epistemic_pictures(); rough_pictures(); measurement_pictures()
     behavior_picture(); do_pictures()
     combinator_pictures(); polymorphic_pictures(); hoare_pictures(); separation_pictures()
+    difference_pictures(); numerical_pictures(); differential_equation_pictures(); operational_pictures()
     (OUT/"manifest.json").write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n")
     print(f"Built {len(manifest)} SVG diagrams.")
 if __name__ == "__main__":

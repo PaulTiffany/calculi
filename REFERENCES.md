@@ -37,10 +37,26 @@ These support modern formulations, not historical priority claims.
 
 ## Discrete and numerical methods
 
-- Kleitman, Daniel J. *Calculus for Beginners and Artists*, MIT, [Chapter 9: Numerical Differentiation](https://math.mit.edu/~djk/calculus_beginners/chapter09/contents.html).
-- MIT, 18.330. [Numerical analysis notes, April 2014](https://math.mit.edu/icg/resources/teaching/18.330/18.330-Apr-2014.pdf). Derivatives as differences, integrals as sums, and numerical methods.
+- Stanley, Richard P. [*Enumerative Combinatorics*, Volume 1, second edition](https://math.mit.edu/~rstan/ec/ec1.pdf), author-hosted text, §1.9. Difference tables, the forward-difference operator, and the shift operator. This is an advanced source; the [tile track](tracks/change/finite-difference-calculus.md) starts with a small construction.
+- Demanet, Laurent. [MIT 18.336 notes, spring 2011](https://math.mit.edu/icg/resources/teaching/18.336-spring2011/notes-18.336.pdf), Chapter 1. Finite-difference methods and their operator notation. These notes divide a first difference by the grid spacing; our sequence track writes that division separately.
+- Kleitman, Daniel J. *Calculus for Beginners and Artists*, MIT, [Chapter 9: Numerical Differentiation](https://math.mit.edu/~djk/calculus_beginners/chapter09/contents.html), especially [§9.1](https://math.mit.edu/~djk/calculus_beginners/chapter09/section01.html). Difference quotients and the effect of limited numerical precision.
+- Demanet, Laurent. [MIT 18.330 numerical analysis notes, draft April 25, 2014](https://math.mit.edu/icg/resources/teaching/18.330/18.330-Apr-2014.pdf), Chapter 2, “Integrals as sums and derivatives as differences.” Trapezoidal sums, finite differences, and error orders.
+- Strang, Gilbert; Herman, Edwin “Jed.” *Calculus Volume 2*, OpenStax, [§3.6, Numerical Integration](https://openstax.org/books/calculus-volume-2/pages/3-6-numerical-integration). Trapezoidal approximation and error bounds.
 
-The finite-sum cancellation identity in lesson 3 is also shown directly; it needs no claim about historical priority.
+The finite-sum cancellation and product identities are shown directly in the [finite-difference track](tracks/change/finite-difference-calculus.md). The [numerical track](tracks/change/numerical-calculus.md) separates approximation error from measurement error and checks its estimates against a known curve.
+
+## Differential equations and initial values
+
+- Strang, Gilbert; Herman, Edwin “Jed.” *Calculus Volume 2*, OpenStax: [§4.1, Basics of Differential Equations](https://openstax.org/books/calculus-volume-2/pages/4-1-basics-of-differential-equations); [§4.2, Direction Fields and Numerical Methods](https://openstax.org/books/calculus-volume-2/pages/4-2-direction-fields-and-numerical-methods); [§4.3, Separable Equations](https://openstax.org/books/calculus-volume-2/pages/4-3-separable-equations); [§4.5, First-Order Linear Equations](https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations). Initial values, Euler's method, Newton's cooling model, and solution methods.
+
+The [tank track](tracks/change/differential-equations.md) specifies a controlled drain proportional to the water amount. It is an idealized feedback rule, not a claim about every hole in a tank. Its Euler step-size condition follows by subtracting the equilibrium from the displayed recurrence.
+
+## Operational calculus and Laplace transforms
+
+- Mattuck, Arthur; Miller, Haynes; Orloff, Jeremy; Lewis, John. MIT 18.03SC, *Differential Equations*, 2011. [Laplace Transform: Solving Initial Value Problems](https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/pages/unit-iii-fourier-series-and-laplace-transform/laplace-transform-solving-initial-value-problems/), with readings on [derivatives](https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/22aba4126352ce0f76930d858d8dffa5_MIT18_03SCF11_s29_1text.pdf), [inversion](https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/93bc4d1fe9fadd1b4e78b90566cdc1e7_MIT18_03SCF11_s29_2text.pdf), [initial-value examples](https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/30364347a6539066d841ffd90fece5b6_MIT18_03SCF11_s29_3text.pdf), and a [transform table](https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/a85bae85be861b27bcbb0e5332483df2_MIT18_03SCF11_laptable29.pdf).
+- Strang, Gilbert. [*Differential Equations and Linear Algebra* materials](https://math.mit.edu/~gs/dela/), including Laplace-transform explanations.
+
+The [operational-calculus track](tracks/operators/operational-calculus.md) introduces one Laplace-transform route through this wider subject. Its smooth example uses the ordinary initial value; MIT's generalized-signal convention uses a left-hand initial value at zero. The distinction matters when impulses or jumps occur.
 
 ## Complex analysis and residue calculus
 

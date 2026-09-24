@@ -439,5 +439,68 @@
     "alt": "Both p and q point to the same address twelve, initially holding four. Writing nine through p changes that one cell, so reading through q now also gives nine.",
     "width": 640,
     "height": 370
+  },
+  {
+    "id": "difference-tiles",
+    "title": "Grow the square by one step",
+    "alt": "A three-by-three square has nine old tiles. Extending it to four by four adds a row of four and a column of three, for seven new tiles and sixteen total.",
+    "width": 640,
+    "height": 355
+  },
+  {
+    "id": "difference-table",
+    "title": "Take the differences again",
+    "alt": "The values zero, one, four, nine, sixteen have first differences one, three, five, seven. Their second differences are two, two, two.",
+    "width": 640,
+    "height": 417
+  },
+  {
+    "id": "numerical-slopes",
+    "title": "Three samples, three rate estimates",
+    "alt": "Tank readings are six liters at minute one, nine at minute two, and fourteen at minute three. Backward and forward one-minute changes give rates three and five; the two-minute centered comparison gives four liters per minute.",
+    "width": 640,
+    "height": 375
+  },
+  {
+    "id": "numerical-trapezoids",
+    "title": "Straight joins estimate a curved flow",
+    "alt": "Two graphs show the known flow curve q equals time squared from zero to four minutes. Straight joins using two-minute steps give twenty-four liters; one-minute steps give twenty-two. Both lie above the curved flow, whose exact total is twenty-one and one-third liters.",
+    "width": 640,
+    "height": 425
+  },
+  {
+    "id": "numerical-pulse",
+    "title": "The readings can miss a whole pulse",
+    "alt": "Zero flow throughout and a triangular pulse share zero-valued readings at minutes zero and one. The pulse peaks at four liters per minute halfway through and adds two liters that the endpoint-only estimate misses.",
+    "width": 640,
+    "height": 383
+  },
+  {
+    "id": "ode-balance",
+    "title": "Where does the amount stop changing?",
+    "alt": "With inflow six liters per minute, amounts four, eight, twelve, and sixteen liters produce net rates plus four, plus two, zero, and minus two. Below twelve the amount rises; above twelve it falls.",
+    "width": 640,
+    "height": 354
+  },
+  {
+    "id": "ode-euler",
+    "title": "Recalculate the rate halfway through",
+    "alt": "One one-minute Euler step goes from four to eight liters. Two half-minute steps go from four to six to seven and a half liters. The continuous model gives about seven point one five liters at one minute.",
+    "width": 640,
+    "height": 376
+  },
+  {
+    "id": "operational-route",
+    "title": "Solve in a different form",
+    "alt": "The time equation and starting value are transformed into an algebra equation. Solving gives the transformed answer; the inverse transform returns the amount as a function of time. The starting four liters is included in the first step.",
+    "width": 640,
+    "height": 422
+  },
+  {
+    "id": "operational-gap",
+    "title": "Water plus gap always makes twelve",
+    "alt": "Three bars each span the twelve-liter equilibrium amount. At the start, water four plus gap eight makes twelve. At one minute, about seven point one five plus four point eight five makes twelve. At two minutes, about nine point zero six plus two point nine four makes twelve.",
+    "width": 640,
+    "height": 395
   }
 ]
